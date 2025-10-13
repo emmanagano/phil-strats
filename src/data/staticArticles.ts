@@ -79,5 +79,15 @@ export const staticArticles: Article[] = [
     region: "Surigao del Norte, Mindanao",
     category: "Beaches & Adventure",
     alt: "A winding coastal road surrounded by palm trees and morning mist in Siargao Island, Philippines — a serene tropical landscape known for surfing and island-hopping."
+  },
+  {
+    id: 8,
+    title: "Vigan and Laoag, Ilocos Region: Heritage Towns of Northern Philippines",
+    description: "Explore the charm of Vigan and Laoag, two of the most historically rich destinations in Northern Philippines, known for their Spanish-era architecture, cobblestone streets, and cultural heritage.",
+    date: "2025-10-14",
+    slug: "vigan-and-laoag-ilocos",
+    region: "Ilocos Region",
+    category: "heritage",
+    alt: "A scenic view of Vigan Cathedral and the cobblestone streets of the heritage town in Ilocos Sur"
   }
 ];
