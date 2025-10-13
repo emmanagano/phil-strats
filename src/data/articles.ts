@@ -29,9 +29,11 @@ export function getAllArticles() {
                 description: data.description,
                 date: data.date,
                 slug: data.slug,
+                region: data.region,
                 category: data.category || "all-article",
                 tags: data.tags || [],
-                alt: data.alt || ""
+                alt: data.alt || "",
+                faq: data.faq
             };
         })
         .sort((a, b) => b.id - a.id); // Sort in descending order
@@ -59,9 +61,11 @@ export async function getArticleBySlug(slug: string) {
         description: data.description,
         date: data.date,
         slug: data.slug,
+        region: data.region,
         tags: data.tags || [],
         category: data.category || "all-article",
         alt: data.alt || "",
+        faq: data.faq,
         content: String(htmlContent),
     };
 }

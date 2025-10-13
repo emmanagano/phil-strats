@@ -31,14 +31,43 @@
 
 .article-content ul,
 .article-content ol {
-  padding-left: 1.5rem;
+  list-style: none;
+  padding-left: 0;
   margin-top: 1rem;
   margin-bottom: 1.5rem;
 }
 
-.article-content li {
-  margin-bottom: 0.5rem;
-  line-height: 1.6;
+.article-content ul li {
+  position: relative;
+  padding-left: 1.25rem;
+  margin-bottom: 0.4rem;
+}
+
+.article-content ul li::before {
+  content: "–"; /* aesthetic dash */
+  position: absolute;
+  left: 0;
+  color: #2563eb; /* blue accent */
+  font-weight: 600;
+}
+
+.article-content ol {
+  counter-reset: list-counter;
+}
+
+.article-content ol li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.4rem;
+  counter-increment: list-counter;
+}
+
+.article-content ol li::before {
+  content: counter(list-counter) ".";
+  position: absolute;
+  left: 0;
+  color: #2563eb; /* blue accent */
+  font-weight: 600;
 }
 
 .article-content table {

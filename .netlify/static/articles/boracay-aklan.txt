@@ -1,0 +1,79 @@
+1:"$Sreact.fragment"
+2:I[9243,["446","static/chunks/53c13509-917b802fdfd908a0.js","874","static/chunks/874-9a20938853981c70.js","14","static/chunks/14-bbfcce136f90e725.js","177","static/chunks/app/layout-c83233451799d429.js"],""]
+3:I[122,["446","static/chunks/53c13509-917b802fdfd908a0.js","874","static/chunks/874-9a20938853981c70.js","14","static/chunks/14-bbfcce136f90e725.js","177","static/chunks/app/layout-c83233451799d429.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+7:I[9665,[],"OutletBoundary"]
+a:I[9665,[],"ViewportBoundary"]
+c:I[9665,[],"MetadataBoundary"]
+e:I[6614,[],""]
+:HL["/_next/static/media/4cf2300e9c8272f7-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/93f479601ee12b01-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/65a8bb75faa5a6ad.css","style"]
+:HL["/_next/static/css/f76dfc01a189a19c.css","style"]
+0:{"P":null,"b":"7A8_7bWG06IAvJV3Ll_49","p":"","c":["","articles","boracay-aklan"],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","boracay-aklan","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65a8bb75faa5a6ad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","$L2",null,{"id":"gtm-head","strategy":"beforeInteractive","children":"\n            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n            })(window,document,'script','dataLayer','GTM-TSZNKNFN');\n          "}]}],["$","body",null,{"className":"__variable_188709 __variable_9a8899 antialiased","children":[["$","noscript",null,{"children":["$","iframe",null,{"src":"https://www.googletagmanager.com/ns.html?id=GTM-TSZNKNFN","height":"0","width":"0","style":{"display":"none","visibility":"hidden"}}]}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["articles",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","boracay-aklan","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6","$undefined",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f76dfc01a189a19c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L7",null,{"children":["$L8","$L9",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","gDIp28ckfMWulLb_yeb5x",{"children":[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Lc",null,{"children":"$Ld"}]]}],false]],"m":"$undefined","G":["$e","$undefined"],"s":false,"S":true}
+10:I[1851,["904","static/chunks/app/articles/%5Bslug%5D/page-c4b19b5d5cf6195e.js"],"default"]
+f:Teb8,<p>Boracay is more than just a beach — it’s a tropical escape. With its powdery white sand, crystal-clear waters, and epic sunsets, this Aklan island ranks among the Philippines’ top vacation destinations. After its 2018 rehabilitation, Boracay has reinvented itself as a model of sustainable tourism and laid-back luxury. Whether you’re chasing sunrises, island hopping, or barefoot dinners by the shore, Boracay delivers unforgettable moments.</p>
+<h2>Quick Facts:</h2>
+<ul>
+<li><strong>Region</strong>: Western Visayas</li>
+<li><strong>Best Time to Visit</strong>: November to May</li>
+<li><strong>How to Get There</strong>: Fly to Caticlan (Boracay Airport) or Kalibo, then take a short ferry to the island</li>
+<li><strong>Ideal Stay</strong>: 3–5 days</li>
+</ul>
+<h2>Summary</h2>
+<ul>
+<li>Famous for its 4-km stretch of White Beach and epic sunsets</li>
+<li>Rebuilt with eco-friendly tourism standards after 2018 rehabilitation</li>
+<li>Great for swimming, island hopping, and beachfront dining</li>
+<li>Easy access via Caticlan Airport</li>
+<li>Wide range of stays — from budget hostels to luxury resorts</li>
+</ul>
+<h2>Top Attractions:</h2>
+<ol>
+<li>White Beach (Stations 1–3): The heart of Boracay — ideal for swimming, walks, and sunset views.</li>
+<li>Puka Shell Beach: A quieter, natural stretch known for its coarse sand and laid-back vibe.</li>
+<li>Ariel’s Point: A must-try for cliff diving and adrenaline seekers.</li>
+<li>Mount Luho Viewpoint: Offers a panoramic view of the island.</li>
+<li>Bulabog Beach: The kite-surfing and windsurfing hub, best during amihan season.</li>
+<li>Island Hopping: Crocodile Island, Crystal Cove, and Magic Island for snorkeling and picnics.</li>
+</ol>
+<h2>How to Get There:</h2>
+<p>Fly to Caticlan Airport (MPH) for the quickest access — only a 10-minute ride to Caticlan Jetty Port, then a 15-minute boat trip to Boracay.</p>
+<p>Alternatively, flights to Kalibo International Airport (KLO) are cheaper but require a 1.5-hour land transfer to the port.</p>
+<p>Once on the island, tricycles and e-trikes are the main transport — though most areas are walkable along White Beach.</p>
+<h2>Best Time to Visit:</h2>
+<p>November to May is the dry season with calm seas and cool breezes — ideal for swimming and sunsets.
+Avoid July to October if possible, as typhoons can disrupt travel.</p>
+<p>For fewer crowds but great weather, travel between February and April.</p>
+<h2>Where to Stay:</h2>
+<ul>
+<li>Station 1: Premium resorts and quieter ambiance (The Lind, Discovery Shores)</li>
+<li>Station 2: Central area near D’Mall, nightlife, and midrange hotels</li>
+<li>Station 3: Budget stays and a more relaxed atmosphere</li>
+</ul>
+<h2>Where to eat:</h2>
+<ul>
+<li>Sunny Side Café — famous for breakfast and beachfront pancakes</li>
+<li>Dos Mestizos — Spanish-Filipino fusion</li>
+<li>Los Indios Bravos — craft beer and hearty meals</li>
+<li>Cha Cha’s Beach Café — tropical cocktails with sunset views</li>
+</ul>
+<h2>Tips &#x26; Local Hacks:</h2>
+<ul>
+<li>Bring reef-safe sunscreen (it’s a requirement on the island).</li>
+<li>Avoid bringing single-use plastics — Boracay enforces strict eco rules.</li>
+<li>Book sunset sailing (paraw) around 5 PM for best photos.</li>
+<li>Use e-trikes instead of regular tricycles — quieter and eco-friendly.</li>
+<li>Walk from Station 1 to Station 3 for the full White Beach experience.</li>
+</ul>
+<h2>3-Day Suggested Itinerary:</h2>
+<ul>
+<li>Day 1: Arrive → Check in → Walk White Beach → Sunset paraw → Dinner by the shore</li>
+<li>Day 2: Island hopping (Crocodile Island, Crystal Cove) → Puka Beach → D’Mall at night</li>
+<li>Day 3: Mount Luho viewpoint → Chill morning swim → Brunch → Souvenir shopping → Depart</li>
+</ul>6:["$","div",null,{"className":"min-h-screen bg-gray-100 py-12","children":["$","section",null,{"className":"max-w-3xl mx-auto px-6","children":[["$","div",null,{"className":"flex justify-between items-center gap-4 text-sm border-b border-gray-300 pb-6 mb-8","children":[["$","a",null,{"href":"/articles/el-nido-palawan","className":"flex items-center text-[#111828] hover:underline","children":[["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"mr-1","children":["$undefined",[["$","path","0",{"d":"M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}],"Previous Article"]}],["$","div",null,{}]]}],["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-gray-900 mb-4","children":"Boracay, Aklan: 2025 Travel Guide"}],["$","div",null,{"className":"flex gap-2","children":[["$","time",null,{"suppressHydrationWarning":true,"className":"text-gray-500 text-sm mb-0.5","children":"2025-10-13"}],["$","div",null,{"className":"text-gray-500 text-sm","children":["$","span",null,{"children":"Emma Nagano"}]}]]}],["$","img",null,{"src":"/images/boracay-aklan.jpg","alt":"Sandcastle sculpture reading “I ❤️ Boracay” on White Beach, with people swimming and sailboats on turquoise water in the background — a classic scene from Boracay Island, Aklan.","className":"w-full h-[500px] object-cover mb-6"}],["$","p",null,{"className":"text-base text-gray-700 mb-6","children":"Boracay Travel Guide 2025 — Discover white sand beaches, top resorts, and island activities in the Philippines’ most famous destination."}],["$","article",null,{"className":"article-content","dangerouslySetInnerHTML":{"__html":"$f"}}],["$","div",null,{"className":"flex justify-between items-center gap-4 text-sm border-t border-gray-300 pt-6 mt-12","children":[["$","a",null,{"href":"/articles/el-nido-palawan","className":"flex items-center text-[#111828] hover:underline","children":[["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"mr-1","children":["$undefined",[["$","path","0",{"d":"M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}],"Previous Article"]}],["$","div",null,{}]]}],["$","$L10",null,{"faq":[{"question":"Is Boracay safe for solo travelers?","answer":"Absolutely. The island is one of the most tourist-friendly destinations in the Philippines with 24-hour security and a vibrant backpacker community."},{"question":"How expensive is Boracay?","answer":"You can travel comfortably on ₱3,000–₱5,000 per day, depending on accommodation. Local eateries and trike rides make it budget-friendly."},{"question":"Can I swim anywhere along White Beach?","answer":"Yes, the entire stretch is swimmable, but Station 1 has the finest sand and calmest waters."},{"question":"What’s new since the rehabilitation?","answer":"Cleaner waters, organized beachfront zones, better waste management, and a ban on beach parties — making it more peaceful and eco-focused."}]}]," ",["$","div",null,{"className":"mt-8 border-t pt-6","children":[["$","h2",null,{"className":"text-2xl font-semibold mb-6 text-gray-900","children":"Related Articles"}],["$","ul",null,{"className":"space-y-4","children":[["$","li","coron-palawan",{"children":[["$","a",null,{"href":"/articles/coron-palawan","className":"text-blue-600 hover:underline text-lg font-medium","children":"Coron Palawan Travel: Best Lakes, Wreck Dives & Island Adventures"}],["$","p",null,{"className":"text-sm text-gray-500","children":"Coron Palawan Travel Guide 2025 — Discover Kayangan Lake, Twin Lagoon, and the best wreck diving spots in one of the Philippines’ most stunning island destinations."}]]}],["$","li","el-nido-palawan",{"children":[["$","a",null,{"href":"/articles/el-nido-palawan","className":"text-blue-600 hover:underline text-lg font-medium","children":"El Nido Palawan: Top Attractions, Island Hopping & Tips"}],["$","p",null,{"className":"text-sm text-gray-500","children":"El Nido Travel Guide 2025 — Discover Palawan’s top lagoons, beaches, and island-hopping tours in the Philippines’ most scenic paradise. Find tips on when to visit, how to get there, and the best things to do in El Nido."}]]}]]}]]}]]}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+9:null
+d:[["$","title","0",{"children":"Boracay, Aklan: 2025 Travel Guide | Philippine Strategies"}],["$","meta","1",{"name":"description","content":"Boracay Travel Guide 2025 — Discover white sand beaches, top resorts, and island activities in the Philippines’ most famous destination."}],["$","meta","2",{"name":"author","content":"Robert T. Wagner"}],["$","meta","3",{"name":"keywords","content":"boracay travel guide,things to do in boracay,boracay beaches,philippines travel"}],["$","meta","4",{"name":"google-site-verification","content":"EQqhGxhaHmSfsa0YO7JPHF_HL3EFa2h--C74nSnRbaI"}],["$","meta","5",{"property":"og:title","content":"Boracay, Aklan: 2025 Travel Guide"}],["$","meta","6",{"property":"og:description","content":"Boracay Travel Guide 2025 — Discover white sand beaches, top resorts, and island activities in the Philippines’ most famous destination."}],["$","meta","7",{"property":"og:url","content":"https://philippinestrategies.com/articles/boracay-aklan"}],["$","meta","8",{"property":"og:image","content":"https://philippinestrategies.com/images/boracay-aklan.jpg"}],["$","meta","9",{"property":"og:image:width","content":"1200"}],["$","meta","10",{"property":"og:image:height","content":"630"}],["$","meta","11",{"property":"og:image:alt","content":"Sandcastle sculpture reading “I ❤️ Boracay” on White Beach, with people swimming and sailboats on turquoise water in the background — a classic scene from Boracay Island, Aklan."}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Boracay, Aklan: 2025 Travel Guide"}],["$","meta","14",{"name":"twitter:description","content":"Boracay Travel Guide 2025 — Discover white sand beaches, top resorts, and island activities in the Philippines’ most famous destination."}],["$","meta","15",{"name":"twitter:image","content":"https://philippinestrategies.com/images/boracay-aklan.jpg"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]

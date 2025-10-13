@@ -88,6 +88,7 @@ export default async function BlogPost({ params }: any) {
             <div />
           )}
         </div>
+        {article.faq && article.faq.length > 0 && <FAQ faq={article.faq} />}{" "}
         {article.category && (
           <div className="mt-8 border-t pt-6">
             <h2 className="text-2xl font-semibold mb-6 text-gray-900">
@@ -122,6 +123,7 @@ export default async function BlogPost({ params }: any) {
 }
 
 import type { Metadata } from "next";
+import FAQ from "@/app/components/article/FAQ";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export async function generateMetadata({ params }: any): Promise<Metadata> {

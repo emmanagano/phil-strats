@@ -85,31 +85,31 @@ export default function Home() {
           <SecondaryCTA label="View All Articles" href="/articles" />
         </div>
       </section>
-      {/* Services Promo Section */}
+      {/* Explore With Us Section */}
       <section className="max-w-6xl mx-auto px-6 md:px-8 py-20">
         <div className="border-t border-b border-gray-400 py-12">
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-8 items-center">
             {/* Left Side - Intro */}
             <div>
               <h2 className="text-3xl md:text-4xl font-extrabold text-black mb-4">
-                Work With Us
+                Explore With Us
               </h2>
               <div className="self-center">
                 <p className="text-gray-700 text-lg">
-                  For over 25 years, we’ve helped clients navigate the
-                  Philippines with unmatched insight and access. Whether you
-                  need on-the-ground security or strategic market guidance, our
-                  team blends international standards with deep local
-                  intelligence.
+                  At <strong>Phil Strats</strong>, we help you discover the best
+                  of the Philippines, from hidden beaches and mountain escapes
+                  to historical towns and cultural experiences. Whether
+                  you&apos;re a first-time visitor or an island-hopping regular,
+                  we’ll guide you to explore the country like a local.
                 </p>
               </div>
             </div>
             {/* Right Side - Accordion */}
             <div className="space-y-4 self-center">
-              {/* Accordion Item: Consulting Services */}
+              {/* Accordion Item: Travel Guides */}
               <details className="border border-gray-300 rounded-md p-4 group">
                 <summary className="font-semibold text-black cursor-pointer flex justify-between items-center">
-                  <span>Consulting Services</span>
+                  <span>Travel Guides</span>
                   <span className="ml-4 text-lg group-open:hidden">+</span>
                   <span className="ml-4 text-lg hidden group-open:inline">
                     −
@@ -117,22 +117,21 @@ export default function Home() {
                 </summary>
                 <div className="mt-2 text-gray-700 space-y-3">
                   <p>
-                    We guide investors, diplomats, and analysts through
-                    Philippine realities—offering customized reports, in-country
-                    validation, and real-world access far beyond desk research.
+                    Discover curated travel guides for the Philippines’ top
+                    destinations — from Boracay to Siargao. Each article
+                    includes tips, itineraries, and honest insights to help you
+                    plan your trip.
                   </p>
-                  <a
-                    href="https://philippinestrategies.com/consulting"
-                    className="text-blue-600 underline"
-                  >
-                    Learn more about Consulting Services →
-                  </a>
+                  <Link href="/articles" className="text-blue-600 underline">
+                    Read our latest travel guides →
+                  </Link>
                 </div>
               </details>
-              {/* Accordion Item: Security Services */}
+
+              {/* Accordion Item: Destination Highlights */}
               <details className="border border-gray-300 rounded-md p-4 group">
                 <summary className="font-semibold text-black cursor-pointer flex justify-between items-center">
-                  <span>Security Services</span>
+                  <span>Destination Highlights</span>
                   <span className="ml-4 text-lg group-open:hidden">+</span>
                   <span className="ml-4 text-lg hidden group-open:inline">
                     −
@@ -140,16 +139,29 @@ export default function Home() {
                 </summary>
                 <div className="mt-2 text-gray-700 space-y-3">
                   <p>
-                    Discreet protection for travelers, missions, and high-risk
-                    scenarios—led by seasoned US and Philippine force recon
-                    veterans, covering all regions with rapid, low-profile
-                    response.
+                    Go beyond the usual tourist spots — learn where to stay,
+                    what to eat, and what to expect in each province, crafted
+                    from real travel experiences.
                   </p>
-                  <a
-                    href="https://philippinestrategies.com/security"
-                    className="text-blue-600 underline"
-                  >
-                    Learn more about Security Services →
+                </div>
+              </details>
+
+              {/* Accordion Item: Newsletter & Tips */}
+              <details className="border border-gray-300 rounded-md p-4 group">
+                <summary className="font-semibold text-black cursor-pointer flex justify-between items-center">
+                  <span>Newsletter & Tips</span>
+                  <span className="ml-4 text-lg group-open:hidden">+</span>
+                  <span className="ml-4 text-lg hidden group-open:inline">
+                    −
+                  </span>
+                </summary>
+                <div className="mt-2 text-gray-700 space-y-3">
+                  <p>
+                    Stay updated with new travel guides, seasonal picks, and
+                    hidden gems — straight to your inbox every week.
+                  </p>
+                  <a href="/newsletter" className="text-blue-600 underline">
+                    Subscribe to our newsletter →
                   </a>
                 </div>
               </details>

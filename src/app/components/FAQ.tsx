@@ -4,54 +4,53 @@ import { useState } from "react";
 
 const faqs = [
   {
-    question: "What is Philippine Strategies?",
+    question: "What is Phil Strats?",
     answer:
-      "Philippine Strategies is non-governmental information resources service published by a legacy commonwealth family, offering real-world insights on military, economic, and political environments in the Philippines, made available to benefit those engaged in diplomatic, visiting forces, and foreign investment activities.",
+      "Phil Strats is your go-to travel and culture guide to the Philippines. We explore destinations, traditions, food, and local stories to help travelers experience the country beyond the usual tourist spots.",
   },
   {
     question: "Who writes the content on this site?",
     answer:
-      "Articles are mostly written by AEGIS, Inc. President & CEO, Robert T. Wagner, a former US Marine Force Recon operator and aviator, whose family of military men have been active in defending Filipinos and performing charity work aiding elementary schools throughout the Philippines since 1899, augmented with occaisional pieces contributed by other organization Fellows.",
+      "Our articles are written and curated by a small team of Filipino travelers, writers, and digital creators who have explored different parts of the Philippines firsthand.",
   },
   {
     question: "What sort of topics do we cover?",
     answer:
-      "We discuss and comment on military alliance affairs, foreign investment, politics, and the cultural uniqueness of the Philippines,  with a focus on strategic preparedness.",
+      "We cover travel guides, itineraries, food spots, cultural insights, and off-the-beaten-path adventures from all over the Philippines — from iconic islands to hidden gems.",
   },
   {
     question: "Is the content based on facts, opinions, or both?",
     answer:
-      "Both. Articles are grounded in research and historical analysis, often combined with personal insights and strategic interpretation.",
+      "Our guides blend firsthand experiences, factual travel details, and local perspectives to ensure readers get accurate and authentic insights about each destination.",
   },
   {
     question: "Can I suggest a topic or article idea?",
     answer:
-      "Yes. We welcome thoughtful suggestions and topic ideas. Feel free to use the contact form above to get in touch with us.",
+      "Absolutely! We welcome story ideas, travel tips, or local experiences you’d like us to feature. Just reach out through our contact page or social media.",
   },
   {
     question: "Do you accept guest writers or contributors?",
     answer:
-      "We’re open to featuring guest contributions if the work aligns with our voice and mission. Reach out if you’re interested.",
+      "Yes, we occasionally collaborate with Filipino and international writers who share our passion for travel and culture. Send us a short pitch if you're interested!",
   },
   {
     question: "Why are the topics on this site relevant today?",
     answer:
-      "We examine root issues and long-term power dynamics that are often overlooked, but critical to comprehending the mood, movements and directions of the country.",
+      "The Philippines is one of Asia’s fastest-growing travel destinations. Our content highlights authentic, sustainable, and locally-rooted experiences that matter in today’s tourism landscape.",
   },
   {
     question: "How often is the site updated with new content?",
     answer:
-      "We aim to post once or twice a week depending on relevance, research, and available time for analysis.",
+      "We update our site regularly with new destination guides, seasonal picks, and travel insights — usually every week or two.",
   },
   {
     question: "How can I contact you directly?",
-    answer:
-      "Use the contact form above to send us a message. We do our best to reply promptly.",
+    answer: "You can reach us through our contact page.",
   },
   {
     question: "Can I share or repost your articles?",
     answer:
-      "Yes. You’re welcome to share articles as long as you credit Philippine Strategies and link to the original post.",
+      "Yes, you’re welcome to share our articles on social media or with friends, as long as you credit Phil Strats and link back to the original post.",
   },
 ];
 

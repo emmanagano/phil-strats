@@ -1,115 +1,198 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
- 
-  <url>
-    <loc>https://philippinestrategies.com/</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/blurbs</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/oidp</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/contact</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/military</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/foreign-investment</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/politics</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/consulting</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/civil-war-philippines-duterte-impeachment-secession</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/young-filipinos-vs-dds-propaganda</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/rodrigo-duterte-uncooked</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/climate-change-impact-philippines</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/artificial-sweeteners-mental-illness</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/a-chinese-philippines</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/page/2</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/page/3</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.64</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/tribes-and-bribes</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.51</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/problem-with-squid-game</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.51</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/why-is-philippines-backward</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.51</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/sun-exposure-covid19-philippines</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.51</priority>
-  </url>
-  <url>
-    <loc>https://philippinestrategies.com/articles/when-the-koreans-have-gone</loc>
-    <lastmod>2025-04-18T05:25:51+00:00</lastmod>
-    <priority>0.51</priority>
-  </url>
- 
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
+<url>
+<loc>https://philippinestrategies.com/</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>1.00</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/contact</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/consulting</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/security</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/blurbs</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/fellows</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/newsletter</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/quiboloy-extradition-us-philippines-relations</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/philippines-if-us-retained-control</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/philippines-if-us-lost-wwii</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/rat-people-china-demographic-crisis</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/10-measures-to-fix-the-philippines</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.80</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/fellows/robert-wagner</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/fellows/delfin-n-lorenzana</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/fellows/romeo-t-tanalgo</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/fellows/josep-jepri-miranda</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/fellows/ricardo-navalta</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/china-winning-without-fighting-south-china-sea</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/climate-change-impact-philippines</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/artificial-sweeteners-mental-illness</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/sun-exposure-covid19-philippines</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/bbc-anti-us-bias</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/filipinos-discipline-justice</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/persistent-corruption-philippines</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/rodrigo-duterte-uncooked</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.64</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/duterte-icc-trial-conviction-penalty-assessment</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/us-china-conflict-west-philippine-sea</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/a-chinese-philippines</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/why-is-philippines-backward</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/when-the-koreans-have-gone</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/young-filipinos-vs-dds-propaganda</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/problem-with-squid-game</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/sara-duterte-impeachment-acquittal-impact</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/politics</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.51</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/tribes-and-bribes</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.41</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/civil-war-philippines-duterte-impeachment-secession</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.41</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/foreign-investment</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.41</priority>
+</url>
+<url>
+<loc>https://philippinestrategies.com/articles/military</loc>
+<lastmod>2025-08-29T12:55:59+00:00</lastmod>
+<priority>0.33</priority>
+</url>
 </urlset>

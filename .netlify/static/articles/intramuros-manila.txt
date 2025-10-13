@@ -1,0 +1,84 @@
+1:"$Sreact.fragment"
+2:I[9243,["446","static/chunks/53c13509-917b802fdfd908a0.js","874","static/chunks/874-9a20938853981c70.js","14","static/chunks/14-bbfcce136f90e725.js","177","static/chunks/app/layout-c83233451799d429.js"],""]
+3:I[122,["446","static/chunks/53c13509-917b802fdfd908a0.js","874","static/chunks/874-9a20938853981c70.js","14","static/chunks/14-bbfcce136f90e725.js","177","static/chunks/app/layout-c83233451799d429.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+7:I[9665,[],"OutletBoundary"]
+a:I[9665,[],"ViewportBoundary"]
+c:I[9665,[],"MetadataBoundary"]
+e:I[6614,[],""]
+:HL["/_next/static/media/4cf2300e9c8272f7-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/93f479601ee12b01-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/65a8bb75faa5a6ad.css","style"]
+:HL["/_next/static/css/f76dfc01a189a19c.css","style"]
+0:{"P":null,"b":"7A8_7bWG06IAvJV3Ll_49","p":"","c":["","articles","intramuros-manila"],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","intramuros-manila","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65a8bb75faa5a6ad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":["$","$L2",null,{"id":"gtm-head","strategy":"beforeInteractive","children":"\n            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n            })(window,document,'script','dataLayer','GTM-TSZNKNFN');\n          "}]}],["$","body",null,{"className":"__variable_188709 __variable_9a8899 antialiased","children":[["$","noscript",null,{"children":["$","iframe",null,{"src":"https://www.googletagmanager.com/ns.html?id=GTM-TSZNKNFN","height":"0","width":"0","style":{"display":"none","visibility":"hidden"}}]}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["articles",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","intramuros-manila","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6","$undefined",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/f76dfc01a189a19c.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L7",null,{"children":["$L8","$L9",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","iD4eGB-LlgUFJwJMqVJp-",{"children":[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Lc",null,{"children":"$Ld"}]]}],false]],"m":"$undefined","G":["$e","$undefined"],"s":false,"S":true}
+10:I[1851,["904","static/chunks/app/articles/%5Bslug%5D/page-c4b19b5d5cf6195e.js"],"default"]
+f:Tfc2,<p>Step back in time inside Intramuros, the walled city of Manila that once served as the political and religious center of Spanish colonial rule. Cobblestone streets, centuries-old churches, and horse-drawn carriages bring history to life in this well-preserved district. From Fort Santiago to San Agustin Church, Intramuros offers a rare glimpse into the Philippines’ colonial past — a must-visit for culture, architecture, and history lovers alike.</p>
+<h2>Quick Facts:</h2>
+<ul>
+<li>Region Metro Manila</li>
+<li>Best Time to Visit November to February (cooler and less humid)</li>
+<li>How to Get There Located in central Manila; accessible via taxi, Grab, or LRT (Central or United Nations station)</li>
+<li>Ideal Stay Half-day to 1 full day</li>
+</ul>
+<h2>Summary</h2>
+<ul>
+<li>Historical core of old Manila, surrounded by 16th-century stone walls</li>
+<li>Home to Fort Santiago, San Agustin Church, and Manila Cathedral</li>
+<li>Great for heritage walks, museums, and photography</li>
+<li>Easily accessible and perfect for day trips within the city</li>
+</ul>
+<h2>Top Attractions:</h2>
+<ol>
+<li>Fort Santiago — Explore the citadel that once served as a defense fortress and prison; visit the Rizal Shrine Museum inside.</li>
+<li>San Agustin Church — The oldest stone church in the Philippines, a UNESCO World Heritage Site.</li>
+<li>Manila Cathedral — A majestic structure rebuilt several times since the 1500s, now the seat of the Roman Catholic Archdiocese of Manila.</li>
+<li>Casa Manila — A recreated colonial home showcasing Spanish-era furniture, art, and lifestyle.</li>
+<li>Baluarte de San Diego — A circular bastion offering panoramic views of the walls and surrounding city.</li>
+<li>Bamboo Bicycle Tour — A fun and eco-friendly way to explore Intramuros on handcrafted bamboo bikes.</li>
+<li>Plaza San Luis Complex — A cluster of colonial-style buildings filled with cafés, shops, and cultural exhibits.</li>
+</ol>
+<h2>How to Get There:</h2>
+<p>Intramuros is located in central Manila, near Rizal Park (Luneta).</p>
+<ul>
+<li>By Car / Grab: 15–30 minutes from most parts of Metro Manila, depending on traffic.</li>
+<li>By Public Transport: Take the LRT-1 to Central Terminal or United Nations Avenue Station, then walk or ride a tricycle to Intramuros.</li>
+<li>By Tour: Heritage walking and bicycle tours are available daily.</li>
+</ul>
+<h2>Best Time to Visit:</h2>
+<ul>
+<li>Visit in the morning or late afternoon for cooler weather and softer light for photos.</li>
+<li>Avoid noon hours due to heat and humidity.</li>
+<li>Evening tours offer a romantic, lantern-lit view of the walled city.</li>
+</ul>
+<h2>Where to Stay:</h2>
+<ul>
+<li>The Bayleaf Intramuros — modern hotel with rooftop views of Manila skyline</li>
+<li>White Knight Hotel — colonial-themed rooms inside Intramuros</li>
+<li>Hotel H2O (nearby) — unique ocean-themed hotel near Rizal Park</li>
+</ul>
+<h2>Where to eat:</h2>
+<ul>
+<li>Barbara’s Heritage Restaurant — traditional Filipino cuisine with cultural performances</li>
+<li>Ilustrado Restaurant — Filipino-Spanish fine dining in a heritage setting</li>
+<li>Ristorante Delle Mitre — cozy café across San Agustin Church</li>
+<li>Belfry Café — new spot located inside the old Manila Cathedral belfry</li>
+</ul>
+<h2>Tips &#x26; Local Hacks:</h2>
+<ul>
+<li>Wear light, breathable clothing — Manila can be hot and humid.</li>
+<li>Join a guided walking or bamboo bike tour to learn the historical context.</li>
+<li>Bring a camera — every corner is photo-worthy.</li>
+<li>Combine Intramuros with Rizal Park and National Museum for a full-day heritage trip.</li>
+<li>Visit on Sunday mornings when streets are quieter and more atmospheric.</li>
+</ul>
+<h2>3-Day Suggested Itinerary:</h2>
+<ul>
+<li>Day 1: Arrive in Manila → Explore Intramuros (Fort Santiago, San Agustin Church) → Dinner at Barbara’s</li>
+<li>Day 2: Visit National Museum → Luneta Park → Escolta heritage walk</li>
+<li>Day 3: Binondo food crawl → Manila Bay sunset → Departure</li>
+</ul>6:["$","div",null,{"className":"min-h-screen bg-gray-100 py-12","children":["$","section",null,{"className":"max-w-3xl mx-auto px-6","children":[["$","div",null,{"className":"flex justify-between items-center gap-4 text-sm border-b border-gray-300 pb-6 mb-8","children":[["$","a",null,{"href":"/articles/chocolate-hills-bohol","className":"flex items-center text-[#111828] hover:underline","children":[["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"mr-1","children":["$undefined",[["$","path","0",{"d":"M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}],"Previous Article"]}],["$","a",null,{"href":"/articles/puerto-princesa-palawan","className":"flex items-center text-[#111828] hover:underline","children":["Next Article",["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"ml-1","children":["$undefined",[["$","path","0",{"d":"M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]]}]]}],["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-gray-900 mb-4","children":"Intramuros Manila: Exploring the Walled City and the Heart of Philippine History"}],["$","div",null,{"className":"flex gap-2","children":[["$","time",null,{"suppressHydrationWarning":true,"className":"text-gray-500 text-sm mb-0.5","children":"2025-10-14"}],["$","div",null,{"className":"text-gray-500 text-sm","children":["$","span",null,{"children":"Emma Nagano"}]}]]}],["$","img",null,{"src":"/images/intramuros-manila.jpg","alt":"View of Manila Cathedral inside Intramuros with its iconic dome and clock tower, surrounded by colonial architecture and historic charm.","className":"w-full h-[500px] object-cover mb-6"}],["$","p",null,{"className":"text-base text-gray-700 mb-6","children":"Intramuros Manila Travel Guide — Explore the historic Walled City of Manila, home to Fort Santiago, San Agustin Church, and Spanish colonial architecture that shaped Philippine history."}],["$","article",null,{"className":"article-content","dangerouslySetInnerHTML":{"__html":"$f"}}],["$","div",null,{"className":"flex justify-between items-center gap-4 text-sm border-t border-gray-300 pt-6 mt-12","children":[["$","a",null,{"href":"/articles/chocolate-hills-bohol","className":"flex items-center text-[#111828] hover:underline","children":[["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"mr-1","children":["$undefined",[["$","path","0",{"d":"M257.5 445.1l-22.2 22.2c-9.4 9.4-24.6 9.4-33.9 0L7 273c-9.4-9.4-9.4-24.6 0-33.9L201.4 44.7c9.4-9.4 24.6-9.4 33.9 0l22.2 22.2c9.5 9.5 9.3 25-.4 34.3L136.6 216H424c13.3 0 24 10.7 24 24v32c0 13.3-10.7 24-24 24H136.6l120.5 114.8c9.8 9.3 10 24.8.4 34.3z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}],"Previous Article"]}],["$","a",null,{"href":"/articles/puerto-princesa-palawan","className":"flex items-center text-[#111828] hover:underline","children":["Next Article",["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"ml-1","children":["$undefined",[["$","path","0",{"d":"M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]]}]]}],["$","$L10",null,{"faq":[{"question":"Is Intramuros safe to visit?","answer":"Yes. It’s well-patrolled, especially around main attractions. Exercise usual city awareness."},{"question":"Can you explore Intramuros on your own?","answer":"Absolutely — it’s walkable and easy to navigate, but guided tours offer deeper insights."},{"question":"How long does it take to explore?","answer":"Half a day is enough to see the highlights, though history lovers may spend a full day exploring."},{"question":"What should I wear?","answer":"Light clothing, comfortable shoes, and a hat — the area gets sunny and warm."}]}]," ",["$","div",null,{"className":"mt-8 border-t pt-6","children":[["$","h2",null,{"className":"text-2xl font-semibold mb-6 text-gray-900","children":"Related Articles"}],["$","ul",null,{"className":"space-y-4","children":[]}]]}]]}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+9:null
+d:[["$","title","0",{"children":"Intramuros Manila: Exploring the Walled City and the Heart of Philippine History | Philippine Strategies"}],["$","meta","1",{"name":"description","content":"Intramuros Manila Travel Guide — Explore the historic Walled City of Manila, home to Fort Santiago, San Agustin Church, and Spanish colonial architecture that shaped Philippine history."}],["$","meta","2",{"name":"author","content":"Robert T. Wagner"}],["$","meta","3",{"name":"keywords","content":"intramuros manila travel guide,old manila attractions,fort santiago manila,historical sites philippines"}],["$","meta","4",{"name":"google-site-verification","content":"EQqhGxhaHmSfsa0YO7JPHF_HL3EFa2h--C74nSnRbaI"}],["$","meta","5",{"property":"og:title","content":"Intramuros Manila: Exploring the Walled City and the Heart of Philippine History"}],["$","meta","6",{"property":"og:description","content":"Intramuros Manila Travel Guide — Explore the historic Walled City of Manila, home to Fort Santiago, San Agustin Church, and Spanish colonial architecture that shaped Philippine history."}],["$","meta","7",{"property":"og:url","content":"https://philippinestrategies.com/articles/intramuros-manila"}],["$","meta","8",{"property":"og:image","content":"https://philippinestrategies.com/images/intramuros-manila.jpg"}],["$","meta","9",{"property":"og:image:width","content":"1200"}],["$","meta","10",{"property":"og:image:height","content":"630"}],["$","meta","11",{"property":"og:image:alt","content":"View of Manila Cathedral inside Intramuros with its iconic dome and clock tower, surrounded by colonial architecture and historic charm."}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Intramuros Manila: Exploring the Walled City and the Heart of Philippine History"}],["$","meta","14",{"name":"twitter:description","content":"Intramuros Manila Travel Guide — Explore the historic Walled City of Manila, home to Fort Santiago, San Agustin Church, and Spanish colonial architecture that shaped Philippine history."}],["$","meta","15",{"name":"twitter:image","content":"https://philippinestrategies.com/images/intramuros-manila.jpg"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]

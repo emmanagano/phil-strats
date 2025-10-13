@@ -14,7 +14,7 @@ export type AuthorProps = {
  * <Author date="Aug 14, 2025" />
  */
 export default function Author({ date, className = "" }: AuthorProps) {
-  const name = "Robert T. Wagner";
+  const name = "Emma Nagano";
 
   return (
     <div className={`flex${className ? ` ${className}` : ""} gap-2`}>

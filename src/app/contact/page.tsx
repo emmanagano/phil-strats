@@ -38,10 +38,8 @@ export default function ContactPage() {
             Connect
           </p>
           <p className="text-gray-600">
-            Whether you have questions, thoughts about our work, or would like a
-            signed copy of{" "}
-            <span className="italic">OIDP - Onli In Da Pilipines</span>, send us
-            a message.
+            Whether you have questions, thoughts about our work, send us a
+            message.
           </p>
         </div>
         <form
