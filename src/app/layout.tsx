@@ -15,9 +15,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Philippine Strategies",
+  title: "Phil Strats",
   description:
-    "Before charging in with the cavalry, one must always have a good scouting team",
+    "Your ultimate travel and culture guide to the Philippines — discover hidden islands, historical towns, and authentic local experiences with Phil Strats.",
   verification: {
     google: "EQqhGxhaHmSfsa0YO7JPHF_HL3EFa2h--C74nSnRbaI",
   },
@@ -37,7 +37,7 @@ export default function RootLayout({
             new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-            })(window,document,'script','dataLayer','GTM-TSZNKNFN');
+            })(window,document,'script','dataLayer','GTM-T7DPHNJK');
           `}
         </Script>
       </head>
@@ -46,7 +46,7 @@ export default function RootLayout({
       >
         <noscript>
           <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-TSZNKNFN"
+            src="https://www.googletagmanager.com/ns.html?id=GTM-T7DPHNJK"
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}

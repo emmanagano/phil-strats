@@ -6,7 +6,7 @@ date: "2025-10-14"
 slug: "vigan-and-laoag-ilocos"
 region: "Ilocos Region"
 category: "heritage"
-alt: "A scenic view of Vigan Cathedral and the cobblestone streets of the heritage town in Ilocos Sur"
+alt: "Tourists walking along Calle Crisologo in Vigan, Ilocos Sur, surrounded by Spanish colonial houses and cobblestone streets."
 faq:
   - question: "How do I get from Vigan to Laoag?"
     answer: "Vigan and Laoag are about two hours apart by car. You can ride a bus or van from Vigan’s main terminal heading north to Laoag City."

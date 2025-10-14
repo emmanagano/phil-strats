@@ -89,5 +89,15 @@ export const staticArticles: Article[] = [
     region: "Ilocos Region",
     category: "heritage",
     alt: "A scenic view of Vigan Cathedral and the cobblestone streets of the heritage town in Ilocos Sur"
+  },
+  {
+    id: 9,
+    title: "Banaue Rice Terraces, Ifugao: The Stairways to Heaven of the Philippines",
+    description: "Banaue Rice Terraces Travel Guide 2025 — Discover the 2,000-year-old hand-carved rice terraces of Ifugao, a UNESCO World Heritage site and a masterpiece of ancient Filipino engineering.",
+    date: "2025-10-14",
+    slug: "banaue-rice-terraces-ifugao",
+    region: "Cordillera Administrative Region (Ifugao Province)",
+    category: "Nature & Culture",
+    alt: "Panoramic view of the Banaue Rice Terraces in Ifugao, Philippines, showing lush green terraces and traditional huts surrounded by mountain ranges."
   }
 ];
