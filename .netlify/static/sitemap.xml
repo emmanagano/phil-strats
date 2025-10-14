@@ -1,71 +1,73 @@
-<url>
-<loc>https://philstrats.com/</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>1.00</priority>
-</url>
-<url>
-<loc>https://philstrats.com/newsletter</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/blurbs</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/contact</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/banaue-rice-terraces-ifugao</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/vigan-and-laoag-ilocos</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/siargao-surfing-capital</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/chocolate-hills-bohol</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/intramuros-manila</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.80</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/puerto-princesa-palawan</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.64</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/coron-palawan</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.51</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/el-nido-palawan</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.41</priority>
-</url>
-<url>
-<loc>https://philstrats.com/articles/boracay-aklan</loc>
-<lastmod>2025-10-14T00:43:57+00:00</lastmod>
-<priority>0.41</priority>
-</url>
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://philstrats.com/</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/newsletter</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/blurbs</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/contact</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/banaue-rice-terraces-ifugao</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/vigan-and-laoag-ilocos</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/siargao-surfing-capital</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/chocolate-hills-bohol</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/intramuros-manila</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/puerto-princesa-palawan</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.64</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/coron-palawan</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.51</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/el-nido-palawan</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.41</priority>
+  </url>
+  <url>
+    <loc>https://philstrats.com/articles/boracay-aklan</loc>
+    <lastmod>2025-10-14T00:43:57+00:00</lastmod>
+    <priority>0.41</priority>
+  </url>
 </urlset>
