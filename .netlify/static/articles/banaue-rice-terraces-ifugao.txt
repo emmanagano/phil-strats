@@ -1,0 +1,87 @@
+1:"$Sreact.fragment"
+2:I[9243,["446","static/chunks/53c13509-917b802fdfd908a0.js","874","static/chunks/874-9a20938853981c70.js","14","static/chunks/14-bbfcce136f90e725.js","177","static/chunks/app/layout-c83233451799d429.js"],""]
+3:I[122,["446","static/chunks/53c13509-917b802fdfd908a0.js","874","static/chunks/874-9a20938853981c70.js","14","static/chunks/14-bbfcce136f90e725.js","177","static/chunks/app/layout-c83233451799d429.js"],"default"]
+4:I[7555,[],""]
+5:I[1295,[],""]
+7:I[9665,[],"OutletBoundary"]
+a:I[9665,[],"ViewportBoundary"]
+c:I[9665,[],"MetadataBoundary"]
+e:I[6614,[],""]
+:HL["/_next/static/media/4cf2300e9c8272f7-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/media/93f479601ee12b01-s.p.woff2","font",{"crossOrigin":"","type":"font/woff2"}]
+:HL["/_next/static/css/65a8bb75faa5a6ad.css","style"]
+:HL["/_next/static/css/b2d74a7e18dd205b.css","style"]
+0:{"P":null,"b":"pcRYIKAIIgDTyuyhT3E9Q","p":"","c":["","articles","banaue-rice-terraces-ifugao"],"i":false,"f":[[["",{"children":["articles",{"children":[["slug","banaue-rice-terraces-ifugao","d"],{"children":["__PAGE__",{}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/65a8bb75faa5a6ad.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"en","children":[["$","head",null,{"children":[["$","$L2",null,{"id":"gtm-head","strategy":"beforeInteractive","children":"\n            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':\n            new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],\n            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=\n            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);\n            })(window,document,'script','dataLayer','GTM-T7DPHNJK');\n          "}],["$","$L2",null,{"src":"https://www.googletagmanager.com/gtag/js?id=G-H582PJ5QN6","strategy":"afterInteractive"}],["$","$L2",null,{"id":"google-analytics","strategy":"afterInteractive","children":"\n            window.dataLayer = window.dataLayer || [];\n            function gtag(){dataLayer.push(arguments);}\n            gtag('js', new Date());\n            gtag('config', 'G-H582PJ5QN6');\n          "}]]}],["$","body",null,{"className":"__variable_188709 __variable_9a8899 antialiased","children":[["$","noscript",null,{"children":["$","iframe",null,{"src":"https://www.googletagmanager.com/ns.html?id=GTM-T7DPHNJK","height":"0","width":"0","style":{"display":"none","visibility":"hidden"}}]}],["$","$L3",null,{"children":["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}]}]]}]]}]]}],{"children":["articles",["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","banaue-rice-terraces-ifugao","d"],["$","$1","c",{"children":[null,["$","$L4",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L5",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6","$undefined",[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b2d74a7e18dd205b.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","$L7",null,{"children":["$L8","$L9",null]}]]}],{},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,["$","$1","wdkmLsVMJgWf61o7kByV6",{"children":[["$","$La",null,{"children":"$Lb"}],["$","meta",null,{"name":"next-size-adjust","content":""}]]}],["$","$Lc",null,{"children":"$Ld"}]]}],false]],"m":"$undefined","G":["$e","$undefined"],"s":false,"S":true}
+10:I[1851,["904","static/chunks/app/articles/%5Bslug%5D/page-c4b19b5d5cf6195e.js"],"default"]
+f:T10a9,<p>The Banaue Rice Terraces, often called the Eighth Wonder of the World, are living testaments to ancient Filipino ingenuity. Carved by hand into the mountains of Ifugao over 2,000 years ago, these emerald-green terraces represent both natural beauty and the rich cultural traditions of the Cordillera people. Beyond breathtaking views, Banaue invites visitors to experience indigenous heritage, cool mountain air, and a peaceful escape from city life.</p>
+<h2>Quick Facts:</h2>
+<ul>
+<li>Region: Cordillera Administrative Region (Ifugao Province)</li>
+<li>Best Time to Visit: February to May (planting season) or June to September (harvest season)</li>
+<li>How to Get There: 9–10 hour bus ride from Manila to Banaue via Ohayami or Coda Lines</li>
+<li>Ideal Stay: 3–5 days</li>
+<li>Notable For: 2,000-year-old rice terraces, UNESCO World Heritage Sites, and indigenous Ifugao culture</li>
+</ul>
+<h2>Summary</h2>
+<ul>
+<li>Home to UNESCO-listed rice terraces in Banaue, Batad, and Mayoyao</li>
+<li>Known for scenic trekking, traditional villages, and rich mountain culture</li>
+<li>Great for nature photography and eco-adventures</li>
+<li>Offers homestays and guided tours by local Ifugao people</li>
+<li>A must-visit for those seeking authentic highland experiences</li>
+</ul>
+<h2>Top Attractions:</h2>
+<ol>
+<li>Banaue Rice Terraces Viewpoint - Panoramic vista of the world-famous terraces, especially stunning at sunrise.</li>
+<li>Batad Rice Terraces - A UNESCO World Heritage site shaped like an amphitheater, ideal for trekking.</li>
+<li>Tappiya Waterfalls - A 70-meter waterfall near Batad village, perfect for cooling off after a hike.</li>
+<li>Bangaan Rice Terraces - Smaller but equally picturesque terraces with a preserved Ifugao village.</li>
+<li>Banaue Museum - Showcases local artifacts, Ifugao wood carvings, and traditional attire.</li>
+<li>Hungduan Rice Terraces - Another UNESCO site less crowded and deeply cultural.</li>
+<li>Tam-an Village - A living heritage community near the Banaue viewpoint where you can meet local craftsmen.</li>
+</ol>
+<h2>How to Get There:</h2>
+<ul>
+<li>From Manila, take an overnight bus (Coda Lines or Ohayami Trans) to Banaue Town Proper.</li>
+<li>From Banaue, hire a jeepney or tricycle to reach Batad, Bangaan, or Hungduan.</li>
+<li>Local guides are available for treks and homestay arrangements.</li>
+</ul>
+<h2>Best Time to Visit:</h2>
+<ul>
+<li>February to May: Greenest views during the planting season.</li>
+<li>June to September: Golden hues as harvest season approaches.</li>
+<li>Avoid December to January when fog and rain can obscure mountain views.</li>
+</ul>
+<h2>Where to Stay:</h2>
+<ul>
+<li>Batad View Inn and Restaurant - Great views of the amphitheater terraces.</li>
+<li>Native Village Inn - Traditional Ifugao-style huts with panoramic rice terrace views.</li>
+<li>Banaue Homestay - Budget-friendly and located in the town center.</li>
+<li>Batad Pension and Restaurant - Comfortable stop for trekkers exploring Batad.</li>
+</ul>
+<h2>Where to eat:</h2>
+<ul>
+<li>Las Vegas Lodge &#x26; Restaurant - Serves Filipino classics and local rice wine.</li>
+<li>7th Heaven’s Café - Homey café with mountain views and coffee.</li>
+<li>People’s Lodge and Restaurant - Staple eatery offering affordable meals and traveler tips.</li>
+</ul>
+<h2>Tips &#x26; Local Hacks:</h2>
+<ul>
+<li>Hire a local guide to navigate the terraces and learn about Ifugao traditions.</li>
+<li>Bring cash — ATMs are rare in Banaue.</li>
+<li>Trek early in the morning for the best lighting and cooler temperatures.</li>
+<li>Support locals by buying handwoven Ifugao textiles and carved wooden souvenirs.</li>
+<li>Respect the land — the terraces are still actively farmed by local communities.</li>
+</ul>
+<h2>5-Day Suggested Itinerary:</h2>
+<ul>
+<li>Day 1: Overnight bus from Manila → Arrive in Banaue → Visit Banaue Viewpoint and local museum.</li>
+<li>Day 2: Jeepney ride to Batad → Hike to the amphitheater terraces and stay in a local homestay.</li>
+<li>Day 3: Trek to Tappiya Waterfalls → Explore Batad Village → Dinner with locals.</li>
+<li>Day 4: Visit Bangaan Rice Terraces and Tam-an Village → Return to Banaue Town.</li>
+<li>Day 5: Souvenir shopping and scenic morning views → Return to Manila.</li>
+</ul>6:["$","div",null,{"className":"min-h-screen bg-gray-100 py-12","children":["$","section",null,{"className":"max-w-3xl mx-auto px-6","children":[["$","div",null,{"className":"flex justify-between items-center gap-4 text-sm border-b border-gray-300 pb-6 mb-8","children":[["$","div",null,{}],["$","a",null,{"href":"/articles/vigan-and-laoag-ilocos","className":"flex items-center text-[#111828] hover:underline","children":["Next Article",["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"ml-1","children":["$undefined",[["$","path","0",{"d":"M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]]}]]}],["$","h1",null,{"className":"text-3xl md:text-4xl font-bold text-gray-900 mb-4","children":"Banaue Rice Terraces, Ifugao: The Stairways to Heaven of the Philippines"}],["$","div",null,{"className":"flex gap-2","children":[["$","time",null,{"suppressHydrationWarning":true,"className":"text-gray-500 text-sm mb-0.5","children":"2025-10-14"}],["$","div",null,{"className":"text-gray-500 text-sm","children":["$","span",null,{"children":"Emma Nagano"}]}]]}],["$","img",null,{"src":"/images/banaue-rice-terraces-ifugao.jpg","alt":"Panoramic view of the Banaue Rice Terraces in Ifugao, Philippines, showing lush green terraces and traditional huts surrounded by mountain ranges.","className":"w-full h-[500px] object-cover mb-6"}],["$","p",null,{"className":"text-base text-gray-700 mb-6","children":"Banaue Rice Terraces Travel Guide 2025 — Discover the 2,000-year-old hand-carved rice terraces of Ifugao, a UNESCO World Heritage site and a masterpiece of ancient Filipino engineering."}],["$","article",null,{"className":"article-content","dangerouslySetInnerHTML":{"__html":"$f"}}],["$","div",null,{"className":"flex justify-between items-center gap-4 text-sm border-t border-gray-300 pt-6 mt-12","children":[["$","div",null,{}],["$","a",null,{"href":"/articles/vigan-and-laoag-ilocos","className":"flex items-center text-[#111828] hover:underline","children":["Next Article",["$","svg",null,{"stroke":"currentColor","fill":"currentColor","strokeWidth":"0","viewBox":"0 0 448 512","className":"ml-1","children":["$undefined",[["$","path","0",{"d":"M190.5 66.9l22.2-22.2c9.4-9.4 24.6-9.4 33.9 0L441 239c9.4 9.4 9.4 24.6 0 33.9L246.6 467.3c-9.4 9.4-24.6 9.4-33.9 0l-22.2-22.2c-9.5-9.5-9.3-25 .4-34.3L311.4 296H24c-13.3 0-24-10.7-24-24v-32c0-13.3 10.7-24 24-24h287.4L190.9 101.2c-9.8-9.3-10-24.8-.4-34.3z","children":[]}]]],"style":{"color":"$undefined"},"height":"1em","width":"1em","xmlns":"http://www.w3.org/2000/svg"}]]}]]}],["$","$L10",null,{"faq":[{"question":"How old are the Banaue Rice Terraces?","answer":"Over 2,000 years old — they were carved by hand by the ancestors of the Ifugao people using simple tools."},{"question":"Are the Banaue Rice Terraces part of the UNESCO World Heritage list?","answer":"Yes — while the main Banaue terraces are recognized nationally, the nearby Batad, Bangaan, Hungduan, and Mayoyao terraces are officially UNESCO-listed."},{"question":"How do I get to Batad from Banaue?","answer":"Take a jeepney or tricycle from Banaue Town to the Batad Saddle Point, then hike for about 30 minutes to reach the village."},{"question":"Do I need a guide for trekking?","answer":"Yes — hiring a local guide is highly recommended for safety, navigation, and cultural insight."},{"question":"Is it cold in Banaue?","answer":"Yes, especially at night. Bring a jacket — temperatures can drop to 15°C or lower during the dry season."}]}]," ",["$","div",null,{"className":"mt-8 border-t pt-6","children":[["$","h2",null,{"className":"text-2xl font-semibold mb-6 text-gray-900","children":"Related Articles"}],["$","ul",null,{"className":"space-y-4","children":[]}]]}]]}]}]
+b:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1"}]]
+8:null
+9:null
+d:[["$","title","0",{"children":"Banaue Rice Terraces, Ifugao: The Stairways to Heaven of the Philippines | Philippine Strategies"}],["$","meta","1",{"name":"description","content":"Banaue Rice Terraces Travel Guide 2025 — Discover the 2,000-year-old hand-carved rice terraces of Ifugao, a UNESCO World Heritage site and a masterpiece of ancient Filipino engineering."}],["$","meta","2",{"name":"author","content":"Robert T. Wagner"}],["$","meta","3",{"name":"keywords","content":"banaue,ifugao,cordillera,rice terraces,unesco philippines,nature travel,heritage philippines"}],["$","meta","4",{"name":"google-site-verification","content":"EQqhGxhaHmSfsa0YO7JPHF_HL3EFa2h--C74nSnRbaI"}],["$","meta","5",{"property":"og:title","content":"Banaue Rice Terraces, Ifugao: The Stairways to Heaven of the Philippines"}],["$","meta","6",{"property":"og:description","content":"Banaue Rice Terraces Travel Guide 2025 — Discover the 2,000-year-old hand-carved rice terraces of Ifugao, a UNESCO World Heritage site and a masterpiece of ancient Filipino engineering."}],["$","meta","7",{"property":"og:url","content":"https://philippinestrategies.com/articles/banaue-rice-terraces-ifugao"}],["$","meta","8",{"property":"og:image","content":"https://philippinestrategies.com/images/banaue-rice-terraces-ifugao.jpg"}],["$","meta","9",{"property":"og:image:width","content":"1200"}],["$","meta","10",{"property":"og:image:height","content":"630"}],["$","meta","11",{"property":"og:image:alt","content":"Panoramic view of the Banaue Rice Terraces in Ifugao, Philippines, showing lush green terraces and traditional huts surrounded by mountain ranges."}],["$","meta","12",{"name":"twitter:card","content":"summary_large_image"}],["$","meta","13",{"name":"twitter:title","content":"Banaue Rice Terraces, Ifugao: The Stairways to Heaven of the Philippines"}],["$","meta","14",{"name":"twitter:description","content":"Banaue Rice Terraces Travel Guide 2025 — Discover the 2,000-year-old hand-carved rice terraces of Ifugao, a UNESCO World Heritage site and a masterpiece of ancient Filipino engineering."}],["$","meta","15",{"name":"twitter:image","content":"https://philippinestrategies.com/images/banaue-rice-terraces-ifugao.jpg"}],["$","link","16",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"16x16"}]]

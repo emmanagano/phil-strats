@@ -40,6 +40,18 @@ export default function RootLayout({
             })(window,document,'script','dataLayer','GTM-T7DPHNJK');
           `}
         </Script>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-H582PJ5QN6"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-H582PJ5QN6');
+          `}
+        </Script>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
