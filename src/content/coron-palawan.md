@@ -5,7 +5,8 @@ description: "Coron Palawan Travel Guide 2025 — Discover Kayangan Lake, Twin L
 date: "2025-10-14"
 slug: "coron-palawan"
 region: "Palawan"
-category: "Beaches"
+category: "beaches-islands"
+islandGroup: "palawan"
 alt: "Aerial view of Coron Bay in Palawan, featuring limestone cliffs, turquoise reefs, and a traditional Filipino outrigger boat sailing through the clear blue water."
 faq:
   - question: "Is Coron better than El Nido?"

@@ -1,41 +1,60 @@
-import PageHeader from "@/app/components/PageHeader";
+import type { Metadata } from "next";
+import { FaCompass, FaEnvelopeOpenText, FaSun } from "react-icons/fa6";
+import { getAllArticles } from "@/data/articles";
+import PageHero from "@/app/components/PageHero";
+import Container from "@/app/components/ui/Container";
+import NewsletterForm from "@/app/components/ui/NewsletterForm";
+
+export const metadata: Metadata = {
+  title: "Newsletter",
+  description: "Get new Phil Strats travel guides, seasonal picks, and hidden gems in your inbox every week.",
+  alternates: { canonical: "/newsletter" },
+};
+
+const PERKS = [
+  { icon: FaEnvelopeOpenText, title: "New guides first", text: "Every new destination guide, the week it's published." },
+  { icon: FaSun, title: "Seasonal picks", text: "Where the weather's best, and when to skip typhoon season." },
+  { icon: FaCompass, title: "Hidden gems", text: "Quiet beaches and local spots that don't make the big lists." },
+];
 
 export default function NewsletterPage() {
+  const covers = getAllArticles().slice(0, 3);
+
   return (
-    <div className="bg-gray-100 min-h-screen flex items-center justify-center">
-      <div className="w-full">
-        <PageHeader
-          title="Newsletter"
-          subtitle="Stay in the loop. Get updates straight to your inbox."
-        />
-        <div className="text-black py-8 px-4 sm:px-6">
-          <div className="mx-auto text-center">
-            <p className="text-gray-700 mb-8 text-base">
-              Enter your email address to get notified about new articles. No
-              spam, just insights.
-            </p>
-            <form
-              action="https://buttondown.email/api/emails/embed-subscribe/philippinestrategies"
-              method="post"
-              className="flex items-center border border-black rounded-full overflow-hidden w-full max-w-xl mx-auto"
-            >
-              <input
-                type="email"
-                name="email"
-                required
-                placeholder="Your email address"
-                className="px-6 py-4 w-full bg-gray-100 text-black placeholder-gray-600 text-lg focus:outline-none rounded-l-full"
-              />
-              <button
-                type="submit"
-                className="bg-black text-white text-2xl px-6 py-4 rounded-r-full hover:bg-gray-100 hover:text-black border-l border-black hover:scale-[1.03] transition-all duration-200"
-              >
-                →
-              </button>
-            </form>
-          </div>
+    <>
+      <PageHero
+        eyebrow="Newsletter"
+        title="A postcard from the islands, every week"
+        description="One short email. New guides, seasonal tips, and a hidden gem or two. No spam, unsubscribe anytime."
+      >
+        <NewsletterForm id="newsletter-page" className="mt-8 max-w-xl" />
+      </PageHero>
+      <Container className="pb-24">
+        <div className="grid gap-5 md:grid-cols-3">
+          {PERKS.map(({ icon: Icon, title, text }) => (
+            <div key={title} className="rounded-3xl bg-white p-8 shadow-card">
+              <span className="grid h-12 w-12 place-items-center rounded-2xl bg-lagoon-100 text-lagoon-700">
+                <Icon aria-hidden className="h-5 w-5" />
+              </span>
+              <h2 className="mt-5 text-xl font-semibold text-ocean-900">{title}</h2>
+              <p className="mt-2 text-muted">{text}</p>
+            </div>
+          ))}
         </div>
-      </div>
-    </div>
+        <div aria-hidden className="mt-16 flex justify-center">
+          {covers.map((a, i) => (
+            <img
+              key={a.slug}
+              src={a.image}
+              alt=""
+              loading="lazy"
+              className={`h-56 w-40 rounded-3xl border-4 border-white object-cover shadow-card-hover sm:h-72 sm:w-52 ${
+                ["-rotate-6 translate-y-4", "z-10 -mx-6", "rotate-6 translate-y-4"][i]
+              }`}
+            />
+          ))}
+        </div>
+      </Container>
+    </>
   );
 }

@@ -5,7 +5,8 @@ description: "El Nido Travel Guide 2025 — Discover Palawan’s top lagoons, be
 date: "2025-10-13"
 slug: "el-nido-palawan"
 region: "Palawan"
-category: "Beaches"
+category: "beaches-islands"
+islandGroup: "palawan"
 alt: "Aerial view of El Nido’s Big Lagoon in Palawan, featuring turquoise waters, limestone cliffs, and a secluded white sand beach — a signature sight from the island-hopping tours."
 faq:
   - question: "What is the best month to visit El Nido?"

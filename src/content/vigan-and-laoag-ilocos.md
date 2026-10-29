@@ -5,7 +5,8 @@ description: "Explore the charm of Vigan and Laoag, two of the most historically
 date: "2025-10-14"
 slug: "vigan-and-laoag-ilocos"
 region: "Ilocos Region"
-category: "heritage"
+category: "heritage-culture"
+islandGroup: "luzon"
 alt: "Tourists walking along Calle Crisologo in Vigan, Ilocos Sur, surrounded by Spanish colonial houses and cobblestone streets."
 faq:
   - question: "How do I get from Vigan to Laoag?"

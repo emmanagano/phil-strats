@@ -5,7 +5,8 @@ description: "Boracay Travel Guide 2025 — Discover white sand beaches, top res
 date: "2025-10-13"
 slug: "boracay-aklan"
 region: "Western Visayas"
-category: "Beaches"
+category: "beaches-islands"
+islandGroup: "visayas"
 alt: "Sandcastle sculpture reading “I ❤️ Boracay” on White Beach, with people swimming and sailboats on turquoise water in the background — a classic scene from Boracay Island, Aklan."
 faq:
   - question: "Is Boracay safe for solo travelers?"

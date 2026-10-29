@@ -5,7 +5,8 @@ description: "Chocolate Hills Bohol Travel Guide 2025 — Discover over 1,200 ic
 date: "2025-10-14"
 slug: "chocolate-hills-bohol"
 region: "Bohol, Central Visayas"
-category: "Nature & Adventure"
+category: "nature-adventure"
+islandGroup: "visayas"
 alt: "Panoramic view of the Chocolate Hills in Bohol, Philippines, showing lush green mounds and tropical forest under a bright blue sky."
 faq:
   - question: "Why are they called Chocolate Hills?"

@@ -5,7 +5,8 @@ description: "Puerto Princesa Underground River Travel Guide 2025 — Discover P
 date: "2025-10-14"
 slug: "puerto-princesa-palawan"
 region: "Palawan"
-category: "Nature & Adventure"
+category: "nature-adventure"
+islandGroup: "palawan"
 alt: "Tourists on a paddleboat entering the Puerto Princesa Underground River cave, surrounded by limestone cliffs and turquoise water in Palawan, Philippines."
 faq:
   - question: "Do I need to book the Underground River tour in advance?"

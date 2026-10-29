@@ -5,7 +5,8 @@ description: "Intramuros Manila Travel Guide — Explore the historic Walled Cit
 date: "2025-10-14"
 slug: "intramuros-manila"
 region: "Metro Manila"
-category: "Historical & Cultural"
+category: "heritage-culture"
+islandGroup: "luzon"
 alt: "View of Manila Cathedral inside Intramuros with its iconic dome and clock tower, surrounded by colonial architecture and historic charm."
 faq:
   - question: "Is Intramuros safe to visit?"

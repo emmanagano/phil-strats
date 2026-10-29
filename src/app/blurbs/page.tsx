@@ -1,65 +1,63 @@
+import type { Metadata } from "next";
+import { FaArrowUpRightFromSquare } from "react-icons/fa6";
 import { blurbs } from "@/data/blurbs";
-import PageHeader from "@/app/components/PageHeader";
-import MoreInfo from "@/app/components/CTA/MoreInfo";
+import PageHero from "@/app/components/PageHero";
+import Container from "@/app/components/ui/Container";
+
+export const metadata: Metadata = {
+  title: "Blurbs",
+  description: "Our favorite Philippines travel reads from around the web, with a quick take on each.",
+  alternates: { canonical: "/blurbs" },
+};
 
 export default function BlurbsPage() {
   return (
-    <div className="min-h-screen bg-gray-100 py-12 bg-[radial-gradient(circle,#0000000d_1px,transparent_1px)] bg-[size:8px_8px]">
-      <PageHeader title="Blurbs" />
-      <section className="max-w-4xl mx-auto px-6">
-        <div className="space-y-16">
-          {blurbs
-            .sort(
-              (a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()
-            )
-            .map((blurb, index) => (
-              <div
-                key={index}
-                className="relative border-t border-b border-gray-300 py-8"
+    <>
+      <PageHero
+        eyebrow="Blurbs"
+        title="Good reads from around the web"
+        description="The best Philippines travel writing we've found lately, with a quick note on why it's worth your time."
+      />
+      <Container className="pb-24">
+        <ol className="grid gap-5 md:grid-cols-2">
+          {blurbs.map((blurb, i) => (
+            <li key={blurb.article_link} className="reveal">
+              <a
+                href={blurb.article_link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group flex h-full flex-col rounded-3xl p-7 shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover sm:p-8 ${
+                  i === 0 ? "bg-ocean-900 text-white md:col-span-2" : "bg-white"
+                }`}
               >
-                <div className="grid md:grid-cols-2 gap-12 items-center">
-                  {/* Left - Title Displayed in Staggered Lines */}
-                  <a
-                    href={blurb.article_link}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="text-gray-900 font-extrabold text-xl md:text-3xl leading-tight hover:underline block"
-                  >
-                    {blurb.article_title
-                      .split(" ")
-                      .reduce<string[][]>(
-                        (acc, word) => {
-                          if (acc[acc.length - 1].length < 3) {
-                            acc[acc.length - 1].push(word);
-                          } else {
-                            acc.push([word]);
-                          }
-                          return acc;
-                        },
-                        [[]]
-                      )
-                      .map((line, i) => (
-                        <div key={i} className="text-center">
-                          {line.join(" ")}
-                        </div>
-                      ))}
-                  </a>
-                  {/* Right - Date, Commentary, Button */}
-                  <div className="space-y-4">
-                    <p className="text-sm text-gray-500">{blurb.date}</p>
-                    <p className="text-gray-800">{blurb.commentary}</p>
-                    <MoreInfo
-                      href={blurb.article_link}
-                      label="Learn More"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    />
-                  </div>
+                <div className="flex items-center justify-between gap-4 text-xs font-bold uppercase tracking-[0.15em]">
+                  <span className={i === 0 ? "text-mango-400" : "text-coral-700"}>{blurb.source}</span>
+                  <time className={i === 0 ? "text-white/70" : "text-muted"}>{blurb.date}</time>
                 </div>
-              </div>
-            ))}
-        </div>
-      </section>
-    </div>
+                <h2
+                  className={`mt-4 text-2xl font-semibold leading-snug ${
+                    i === 0 ? "sm:text-4xl" : "text-ocean-900 group-hover:text-lagoon-700"
+                  }`}
+                >
+                  {blurb.article_title}
+                </h2>
+                <p className={`mt-3 flex-1 leading-relaxed ${i === 0 ? "text-white/80 sm:text-lg" : "text-muted"}`}>
+                  {blurb.commentary}
+                </p>
+                <span
+                  className={`mt-6 inline-flex items-center gap-2 text-sm font-semibold ${
+                    i === 0 ? "text-mango-400" : "text-lagoon-700"
+                  }`}
+                >
+                  Read the article
+                  <FaArrowUpRightFromSquare aria-hidden className="h-3 w-3" />
+                  <span className="sr-only">(opens in a new tab)</span>
+                </span>
+              </a>
+            </li>
+          ))}
+        </ol>
+      </Container>
+    </>
   );
 }

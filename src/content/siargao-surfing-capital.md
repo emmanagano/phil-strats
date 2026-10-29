@@ -5,7 +5,8 @@ description: "Siargao Travel Guide 2025 — Discover the Surfing Capital of the 
 date: "2025-10-14"
 slug: "siargao-surfing-capital"
 region: "Surigao del Norte, Mindanao"
-category: "Beaches & Adventure"
+category: "beaches-islands"
+islandGroup: "mindanao"
 alt: "A winding coastal road surrounded by palm trees and morning mist in Siargao Island, Philippines — a serene tropical landscape known for surfing and island-hopping."
 faq:
   - question: "Is Siargao good for non-surfers?"

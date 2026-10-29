@@ -1,7 +1,22 @@
-import blurbs from "./blurbs.json";
+import rawBlurbs from "./blurbs.json";
 
-export function getLatestBlurb() {
-	return blurbs.length > 0 ? blurbs[0] : null;
+export interface Blurb {
+  title: string;
+  date: string;
+  article_title: string;
+  article_link: string;
+  commentary: string;
+  source: string;
 }
 
-export { blurbs }; // ✅ Ensure blurbs is explicitly exported
+// Newest first, with the source site's domain for display.
+export const blurbs: Blurb[] = rawBlurbs
+  .map((b) => ({
+    ...b,
+    source: new URL(b.article_link).hostname.replace(/^www\./, ""),
+  }))
+  .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime());
+
+export function getLatestBlurb() {
+  return blurbs[0] ?? null;
+}

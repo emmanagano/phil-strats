@@ -5,7 +5,8 @@ description: "Banaue Rice Terraces Travel Guide 2025 — Discover the 2,000-year
 date: "2025-10-14"
 slug: "banaue-rice-terraces-ifugao"
 region: "Cordillera Administrative Region (Ifugao Province)"
-category: "Nature & Culture"
+category: "heritage-culture"
+islandGroup: "luzon"
 alt: "Panoramic view of the Banaue Rice Terraces in Ifugao, Philippines, showing lush green terraces and traditional huts surrounded by mountain ranges."
 faq:
   - question: "How old are the Banaue Rice Terraces?"

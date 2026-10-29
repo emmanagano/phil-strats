@@ -1,95 +1,66 @@
-"use client";
-
-import { useRef, useState } from "react";
-import emailjs from "@emailjs/browser";
+import type { Metadata } from "next";
+import { FaInstagram, FaXTwitter } from "react-icons/fa6";
+import { siteFaq } from "@/data/siteFaq";
+import { SOCIALS } from "@/lib/site";
 import FAQ from "@/app/components/FAQ";
-import PageHeader from "@/app/components/PageHeader";
+import PageHero from "@/app/components/PageHero";
+import Container from "@/app/components/ui/Container";
+import ContactForm from "./ContactForm";
+
+export const metadata: Metadata = {
+  title: "Contact",
+  description: "Questions, destination tips, or collaboration ideas — get in touch with Phil Strats.",
+  alternates: { canonical: "/contact" },
+};
 
 export default function ContactPage() {
-  const form = useRef<HTMLFormElement>(null);
-  const [status, setStatus] = useState("");
-
-  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-
-    if (form.current) {
-      emailjs
-        .sendForm(
-          "service_k5e306h",
-          "template_o3ag3yo",
-          form.current,
-          "qDUHz4jJcfdXrK5WG"
-        )
-        .then(() => setStatus("Message sent successfully!"))
-        .catch(() =>
-          setStatus("Failed to send message. Please try again later.")
-        );
-
-      form.current.reset();
-    }
-  };
-
   return (
-    <div className="min-h-screen flex flex-col items-center justify-center bg-[var(--color-gray-100)] py-10 px-4">
-      <PageHeader title="Contact Us" />
-      <div className="flex flex-col lg:flex-row justify-between w-full max-w-6xl gap-10">
-        <div className="lg:w-1/2 space-y-4">
-          <p className="text-sm uppercase tracking-widest text-gray-500">
-            Connect
-          </p>
-          <p className="text-gray-600">
-            Whether you have questions, thoughts about our work, send us a
-            message.
-          </p>
+    <>
+      <PageHero
+        eyebrow="Contact"
+        title="Let's talk travel"
+        description="Got a question, a hidden gem we should know about, or an idea for a story? Send us a message."
+      />
+      <Container className="pb-20">
+        <div className="grid gap-10 lg:grid-cols-5">
+          <div className="space-y-6 lg:col-span-2">
+            <div className="rounded-3xl bg-lagoon-700 p-8 text-white">
+              <h2 className="text-2xl font-semibold">Find us online</h2>
+              <p className="mt-2 text-lagoon-50/90">
+                Daily island snaps and travel notes live on our socials.
+              </p>
+              <div className="mt-6 flex flex-col gap-3">
+                <a
+                  href={SOCIALS.instagram}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 rounded-full bg-white/10 px-5 py-3 font-semibold transition hover:bg-white hover:text-ocean-900"
+                >
+                  <FaInstagram aria-hidden className="h-5 w-5" /> Instagram
+                </a>
+                <a
+                  href={SOCIALS.x}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-3 rounded-full bg-white/10 px-5 py-3 font-semibold transition hover:bg-white hover:text-ocean-900"
+                >
+                  <FaXTwitter aria-hidden className="h-5 w-5" /> X (Twitter)
+                </a>
+              </div>
+            </div>
+            <div className="rounded-3xl bg-mango-100 p-8">
+              <h2 className="text-2xl font-semibold text-ocean-900">Reply time</h2>
+              <p className="mt-2 text-ocean-800">We usually answer within two or three days.</p>
+            </div>
+          </div>
+          <div className="lg:col-span-3">
+            <ContactForm />
+          </div>
         </div>
-        <form
-          ref={form}
-          onSubmit={sendEmail}
-          className="lg:w-1/2 bg-white p-8 rounded-none space-y-6 shadow-md"
-        >
-          <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Name
-            </label>
-            <input
-              type="text"
-              name="name"
-              required
-              className="mt-1 w-full px-4 py-2 border border-gray-500 rounded-sm focus:ring-2 focus:ring-indigo-500 text-gray-900 placeholder:text-gray-500"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Email
-            </label>
-            <input
-              type="email"
-              name="email"
-              required
-              className="mt-1 w-full px-4 py-2 border border-gray-500 rounded-sm focus:ring-2 focus:ring-indigo-500 text-gray-900 placeholder:text-gray-500"
-            />
-          </div>
-          <div>
-            <label className="block text-sm font-medium text-gray-700">
-              Message
-            </label>
-            <textarea
-              name="message"
-              rows={4}
-              required
-              className="mt-1 w-full px-4 py-2 border border-gray-500 rounded-sm focus:ring-2 focus:ring-indigo-500 text-gray-900 placeholder:text-gray-500"
-            />
-          </div>
-          <button
-            type="submit"
-            className="w-full bg-black text-white py-2 hover:bg-white hover:text-black border border-black transition-all duration-200 shadow-md"
-          >
-            Send Message
-          </button>
-          {status && <p className="text-sm text-green-600 mt-2">{status}</p>}
-        </form>
-      </div>
-      <FAQ />
-    </div>
+        <div className="mx-auto mt-20 max-w-3xl">
+          <FAQ faq={siteFaq} />
+        </div>
+      </Container>
+    </>
   );
 }
