@@ -1,8 +1,8 @@
 ---
-id: 7
+id: 21
 title: "Surfing Capital of the Philippines, Siargao"
 description: "Siargao Travel Guide 2025 — Discover the Surfing Capital of the Philippines. From Cloud 9 waves to island-hopping, lagoons, and palm-lined roads, explore why Siargao is the country’s top island paradise."
-date: "2025-10-14"
+date: "2026-10-30"
 slug: "siargao-surfing-capital"
 region: "Surigao del Norte, Mindanao"
 category: "beaches-islands"

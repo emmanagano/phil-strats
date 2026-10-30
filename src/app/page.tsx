@@ -59,7 +59,7 @@ export default function Home() {
                   </Link>
                 </div>
               </div>
-              <dl className="mt-12 grid max-w-xl grid-cols-3 gap-6 border-t border-white/20 pt-6 text-white">
+              <dl className="mt-12 grid max-w-xl grid-cols-3 gap-6 rounded-2xl border border-white/25 bg-white/10 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.3)] backdrop-blur-xl backdrop-saturate-150">
                 {[
                   [articles.length, "Travel guides"],
                   [ISLAND_GROUPS.length, "Island groups"],
@@ -88,7 +88,7 @@ export default function Home() {
             <Link
               key={category.slug}
               href={`/articles?category=${category.slug}`}
-              className="group relative isolate flex aspect-[4/5] items-end overflow-hidden rounded-3xl p-7 shadow-card transition-shadow hover:shadow-card-hover md:aspect-[3/4]"
+              className="group relative isolate flex aspect-[4/5] items-end overflow-hidden rounded-3xl p-3 shadow-card transition-shadow hover:shadow-card-hover md:aspect-[3/4]"
             >
               <img
                 src={category.image}
@@ -100,11 +100,15 @@ export default function Home() {
                 aria-hidden
                 className="absolute inset-0 -z-10 bg-gradient-to-t from-ocean-950/85 via-ocean-950/20 to-transparent"
               />
-              <div className="text-white">
+              <div className="w-full rounded-2xl border border-transparent p-4 text-white transition duration-300 group-hover:border-white/25 group-hover:bg-white/10 group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.3)] group-hover:backdrop-blur-xl group-hover:backdrop-saturate-150 group-focus-visible:border-white/25 group-focus-visible:bg-white/10 group-focus-visible:backdrop-blur-xl">
                 <p className="text-xs font-semibold uppercase tracking-widest text-mango-400">
                   {countBy("category", category.slug)} guides
                 </p>
-                <h3 className="mt-2 text-3xl font-semibold">{category.label}</h3>
+                <h3 className="mt-2 text-3xl font-semibold">
+                  <span className="box-decoration-clone bg-gradient-to-r from-mango-400/50 to-mango-400/50 bg-[length:0%_38%] bg-[position:0_90%] bg-no-repeat px-1 -mx-1 transition-[background-size] duration-500 ease-out group-hover:bg-[length:100%_38%] group-focus-visible:bg-[length:100%_38%] motion-reduce:transition-none">
+                    {category.label}
+                  </span>
+                </h3>
                 <p className="mt-2 text-white/80">{category.blurb}</p>
                 <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold">
                   Explore
@@ -120,7 +124,12 @@ export default function Home() {
       </Container>
 
       {/* Latest guides */}
-      <section className="bg-sand-100 py-20 sm:py-28">
+      <section className="relative isolate overflow-hidden bg-gradient-to-br from-lagoon-100 via-lagoon-50 to-mango-100 py-20 sm:py-28">
+        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
+          <div className="absolute -left-24 top-10 h-96 w-96 rounded-full bg-lagoon-300/60 blur-3xl" />
+          <div className="absolute right-0 top-1/3 h-[28rem] w-[28rem] rounded-full bg-coral-400/25 blur-3xl" />
+          <div className="absolute -bottom-24 left-1/3 h-80 w-80 rounded-full bg-mango-400/35 blur-3xl" />
+        </div>
         <Container className="reveal">
           <SectionHeading
             eyebrow="Fresh from the road"
@@ -219,25 +228,31 @@ export default function Home() {
 
       {/* Newsletter */}
       <section className="px-2 pb-2 sm:px-4">
-        <div className="relative isolate overflow-hidden rounded-[2rem] bg-ocean-900 px-6 py-20 text-center sm:rounded-[2.5rem]">
+        <div className="relative isolate overflow-hidden rounded-[2rem] bg-ocean-900 px-4 py-16 text-center sm:rounded-[2.5rem] sm:px-6 sm:py-24">
           <div
             aria-hidden
-            className="absolute -left-20 -top-20 -z-10 h-80 w-80 rounded-full bg-lagoon-500/30 blur-3xl"
+            className="absolute left-[8%] top-[-4rem] -z-10 h-80 w-80 rounded-full bg-lagoon-500/60 blur-3xl"
           />
           <div
             aria-hidden
-            className="absolute -bottom-24 -right-10 -z-10 h-80 w-80 rounded-full bg-coral-500/30 blur-3xl"
+            className="absolute bottom-[-5rem] right-[10%] -z-10 h-80 w-80 rounded-full bg-coral-500/50 blur-3xl"
           />
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-mango-400">
-            The weekly postcard
-          </p>
-          <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-semibold text-white sm:text-5xl">
-            New islands in your inbox, every week.
-          </h2>
-          <p className="mx-auto mt-4 max-w-xl text-lagoon-100/80">
-            Fresh guides, seasonal picks, and hidden gems. No spam — unsubscribe anytime.
-          </p>
-          <NewsletterForm id="home-newsletter" tone="dark" className="mx-auto mt-8 max-w-lg" />
+          <div
+            aria-hidden
+            className="absolute right-[28%] top-[8%] -z-10 h-56 w-56 rounded-full bg-mango-400/40 blur-3xl"
+          />
+          <div className="mx-auto max-w-3xl rounded-3xl border border-white/25 bg-white/10 px-6 py-12 shadow-[0_8px_32px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.3)] backdrop-blur-xl backdrop-saturate-150 sm:px-12">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-mango-400">
+              The weekly postcard
+            </p>
+            <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-semibold text-white sm:text-5xl">
+              New islands in your inbox, every week.
+            </h2>
+            <p className="mx-auto mt-4 max-w-xl text-white/80">
+              Fresh guides, seasonal picks, and hidden gems. No spam — unsubscribe anytime.
+            </p>
+            <NewsletterForm id="home-newsletter" tone="dark" className="mx-auto mt-8 max-w-lg" />
+          </div>
         </div>
       </section>
     </>
