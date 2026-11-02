@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa6";
 import { getAllArticles, getArticleBySlug, type ArticleSummary } from "@/data/articles";
 import { formatDate } from "@/lib/format";
-import { AUTHOR, SITE_NAME, SITE_URL } from "@/lib/site";
+import { AUTHOR, SITE_NAME, SITE_URL, SOCIALS } from "@/lib/site";
 import FAQ from "@/app/components/FAQ";
 import ArticleCard from "@/app/components/ui/ArticleCard";
 import Badge from "@/app/components/ui/Badge";
@@ -41,13 +41,17 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
       description: article.description,
       url: `/articles/${article.slug}`,
       publishedTime: article.date,
-      images: [{ url: article.image, width: 1200, height: 630, alt: article.alt }],
+      modifiedTime: article.updated,
+      authors: [AUTHOR],
+      section: article.categoryLabel,
+      tags: article.tags,
+      images: [{ url: article.imageOg, width: 1200, height: 630, alt: article.alt }],
     },
     twitter: {
       card: "summary_large_image",
       title: article.title,
       description: article.description,
-      images: [article.image],
+      images: [article.imageOg],
     },
   };
 }
@@ -78,10 +82,20 @@ export default async function ArticlePage({ params }: Params) {
       "@type": "Article",
       headline: article.title,
       description: article.description,
-      image: `${SITE_URL}${article.image}`,
+      image: [article.imageOg, article.image].map((i) => `${SITE_URL}${i}`),
       datePublished: article.date,
-      author: { "@type": "Person", name: AUTHOR },
-      publisher: { "@type": "Organization", name: SITE_NAME },
+      dateModified: article.updated,
+      author: { "@type": "Person", name: AUTHOR, url: SOCIALS.instagram },
+      publisher: {
+        "@type": "Organization",
+        name: SITE_NAME,
+        logo: { "@type": "ImageObject", url: `${SITE_URL}/images/logo.png` },
+      },
+      articleSection: article.categoryLabel,
+      keywords: article.tags.join(", "),
+      wordCount: article.wordCount,
+      inLanguage: "en",
+      about: { "@type": "TouristDestination", name: article.region },
       mainEntityOfPage: url,
     },
     {
@@ -122,6 +136,8 @@ export default async function ArticlePage({ params }: Params) {
           <img
             src={article.image}
             alt={article.alt}
+            width={1600}
+            height={1200}
             fetchPriority="high"
             className="animate-hero-zoom absolute inset-0 -z-10 h-full w-full object-cover"
           />
@@ -156,6 +172,11 @@ export default async function ArticlePage({ params }: Params) {
                 <FaRegClock aria-hidden className="text-lagoon-300" />
                 {article.readingTime} min read
               </span>
+              {article.updated !== article.date && (
+                <span>
+                  Updated <time dateTime={article.updated}>{formatDate(article.updated)}</time>
+                </span>
+              )}
               <span>By {AUTHOR}</span>
             </div>
           </Container>
@@ -204,6 +225,21 @@ export default async function ArticlePage({ params }: Params) {
                 ))}
               </ul>
             )}
+            <nav aria-label="Plan your trip" className="mt-12 rounded-3xl bg-sand-100 p-6">
+              <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">Plan your trip</p>
+              <ul className="mt-3 space-y-2 text-ocean-900">
+                <li>
+                  <Link className="underline decoration-lagoon-300 underline-offset-4 hover:text-lagoon-700" href={`/articles?region=${article.islandGroup}`}>
+                    More {article.islandGroupLabel} travel guides
+                  </Link>
+                </li>
+                <li>
+                  <Link className="underline decoration-lagoon-300 underline-offset-4 hover:text-lagoon-700" href={`/articles?category=${article.category}`}>
+                    More {article.categoryLabel.toLowerCase()} guides
+                  </Link>
+                </li>
+              </ul>
+            </nav>
             {article.faq.length > 0 && (
               <div className="mt-14">
                 <FAQ faq={article.faq} />
@@ -275,7 +311,7 @@ function PagerCard({ article, direction }: { article: ArticleSummary; direction:
         next ? "flex-row-reverse text-right" : ""
       }`}
     >
-      <img src={article.image} alt="" loading="lazy" className="h-20 w-20 shrink-0 rounded-2xl object-cover sm:h-24 sm:w-24" />
+      <img src={article.imageSmall} alt="" width={96} height={96} loading="lazy" decoding="async" className="h-20 w-20 shrink-0 rounded-2xl object-cover sm:h-24 sm:w-24" />
       <div className="min-w-0">
         <p className={`flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-coral-700 ${next ? "justify-end" : ""}`}>
           {next ? (

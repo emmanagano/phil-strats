@@ -1,7 +1,7 @@
 ---
 id: 21
-title: "Surfing Capital of the Philippines, Siargao"
-description: "Siargao Travel Guide 2025 — Discover the Surfing Capital of the Philippines. From Cloud 9 waves to island-hopping, lagoons, and palm-lined roads, explore why Siargao is the country’s top island paradise."
+title: "Siargao Travel Guide: Surfing Capital of the Philippines"
+description: "Plan a Siargao trip: surf Cloud 9, hop to island lagoons, ride palm-lined roads, and find where to stay, eat, and when to go."
 date: "2026-10-30"
 slug: "siargao-surfing-capital"
 region: "Surigao del Norte, Mindanao"
@@ -27,21 +27,23 @@ tags:
 
 Known as the Surfing Capital of the Philippines, Siargao is more than just waves — it’s a whole lifestyle. Beyond its world-class surf breaks, this tear-shaped island in Surigao del Norte offers crystal-clear lagoons, island-hopping adventures, palm-fringed roads, and a laid-back community that draws travelers from around the world. Whether you surf, explore, or simply vibe — Siargao is where island dreams feel real.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [Camiguin](/articles/camiguin-island) or [Davao City](/articles/davao-city-mindanao).
+
+## Siargao Quick Facts
 
 - Region: Surigao del Norte, Mindanao
 - Best Time to Visit: March to October for surfing; March to June for calm seas and island-hopping
 - How to Get There: Fly directly to Sayak Airport (IAO) from Manila or Cebu
 - Ideal Stay: 4–7 days
 
-## Summary
+## Siargao at a Glance
 
 - Philippines’ top surf destination — home to the legendary Cloud 9 break
 - Offers island-hopping, lagoons, waterfalls, and chill beach town vibes
 - Great mix of adventure and slow travel lifestyle
 - Best visited for both surfers (Sept–Nov) and beachgoers (Mar–Jun)
 
-## Top Attractions:
+## Top Attractions in Siargao
 
 1. Cloud 9 — Siargao’s iconic surf spot with a wooden boardwalk and viewing deck.
 2. Sugba Lagoon (Del Carmen) — Paddleboard or swim in emerald water surrounded by limestone cliffs.
@@ -51,32 +53,32 @@ Known as the Surfing Capital of the Philippines, Siargao is more than just waves
 6. Pacifico Beach — A quieter surf break and a great alternative to Cloud 9.
 7. Taktak Falls — The island’s only waterfall, great for a refreshing dip.
 
-## How to Get There:
+## How to Get to Siargao
 
 - By Air: Daily flights from Manila or Cebu to Sayak Airport (IAO).
 - By Ferry: From Surigao City, take a ferry to Dapa Port (approx. 2–3 hours).
 - Getting Around: Rent a motorbike — the best way to explore at your own pace. Tricycles and habal-habal (motorcycle taxis) are also available.
 
-## Best Time to Visit:
+## Best Time to Visit Siargao
 
 - Surfing Season: September to November for consistent, big waves.
 - Island-Hopping Season: March to June when the sea is calm and clear.
 - Avoid the rainy season (December to February) if you want uninterrupted beach days.
 
-## Where to Stay:
+## Where to Stay in Siargao
 
 - Kermit Surf Resort — surf camp and one of the island’s most iconic stays.
 - Isla Cabana Resort — beachfront luxury with stunning sea views.
 - Lampara Siargao — chic eco-glamping experience for travelers who want something different.
 
-## Where to eat:
+## Where to Eat in Siargao
 
 - Kermit Siargao — best pizza and pasta on the island.
 - Shaka Café — famous for smoothie bowls and coffee by Cloud 9.
 - Bravo Beach Resort — Spanish-Filipino fusion with a beachfront bar.
 - La Mesa Siargao — elevated Filipino cuisine in General Luna.
 
-## Tips & Local Hacks:
+## Siargao Travel Tips & Local Hacks
 
 - Rent a scooter early — they sell out fast during peak months.
 - Respect the ocean — only surf with a guide if you’re a beginner.
@@ -84,7 +86,7 @@ Known as the Surfing Capital of the Philippines, Siargao is more than just waves
 - Start early for Magpupungko — it’s tide-dependent and gets crowded.
 - Slow down — Siargao is best enjoyed at island pace.
 
-## 7-Day Suggested Itinerary:
+## 7-Day Siargao Itinerary
 
 Day 1 – Arrival + Welcome to Siargao
 

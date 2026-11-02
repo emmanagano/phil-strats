@@ -1,7 +1,7 @@
 ---
 id: 4
-title: "Puerto Princesa Underground River: Nature’s Hidden Wonder of Palawan"
-description: "Puerto Princesa Underground River Travel Guide 2025 — Discover Palawan’s UNESCO World Heritage Site, one of the New 7 Wonders of Nature, featuring limestone caves and an 8.2 km subterranean river."
+title: "Puerto Princesa Underground River Guide: Palawan's Wonder"
+description: "Visit Palawan's UNESCO-listed Underground River, one of the New 7 Wonders of Nature, with permit tips, tours, where to stay, and what to eat."
 date: "2025-10-14"
 slug: "puerto-princesa-palawan"
 region: "Palawan"
@@ -26,21 +26,23 @@ tags:
 
 Hidden beneath limestone mountains and dense rainforest, the Puerto Princesa Underground River is one of Palawan’s most extraordinary experiences. This 8.2-kilometer subterranean river flows directly into the sea, winding through cathedral-like caverns filled with rock formations, stalactites, and bats. Recognized as one of the New 7 Wonders of Nature, it’s a must-visit for travelers exploring central Palawan.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [El Nido](/articles/el-nido-palawan) or [Coron](/articles/coron-palawan).
+
+## Puerto Princesa Quick Facts
 
 - Region: Palawan (Central)
 - Best Time to Visit: November to May (dry season)
 - How to Get There: Fly to Puerto Princesa City, then take a 2-hour van or bus ride to Sabang
 - Ideal Stay: 2–3 days
 
-## Summary
+## Puerto Princesa at a Glance
 
 - UNESCO World Heritage Site and one of the New 7 Wonders of Nature
 - 8.2 km-long underground river system accessible by boat
 - Ideal for eco-tourism and day trips from Puerto Princesa City
 - Best visited during dry months for calm river conditions
 
-## Top Attractions:
+## Top Attractions in Puerto Princesa
 
 1. Underground River Tour — Explore the limestone caverns by paddleboat, guided by local boatmen trained by the park.
 2. Sabang Mangrove Paddle Tour — A relaxing ride through a mangrove forest, home to birds, snakes, and monkeys.
@@ -48,30 +50,30 @@ Hidden beneath limestone mountains and dense rainforest, the Puerto Princesa Und
 4. Sabang Beach — A scenic, less-crowded beach perfect for post-tour relaxation.
 5. Palawan Wildlife Rescue and Conservation Center — See crocodiles and learn about local wildlife conservation.
 
-## How to Get There:
+## How to Get to Puerto Princesa
 
 - By Air: Fly to Puerto Princesa International Airport (PPS).
 - By Land: From Puerto Princesa City, take a van or bus to Sabang (approx. 2 hours).
 - By Tour: Most hotels and agencies offer organized day tours with transport, permits, and lunch included.
 
-## Best Time to Visit:
+## Best Time to Visit Puerto Princesa
 
 - Visit from November to May, during the dry season. The river is calmer, and tours are rarely canceled due to weather.
 - Avoid July to October when heavy rainfall can cause flooding inside the cave.
 
-## Where to Stay:
+## Where to Stay in Puerto Princesa
 
 - Daluyon Beach and Mountain Resort — eco-luxury resort close to the park entrance
 - Sheridan Beach Resort & Spa — beachfront resort with full amenities
 - Bambua Nature Cottages — eco-friendly lodging surrounded by greenery
 
-## Where to eat:
+## Where to Eat in Puerto Princesa
 
 - Gusto Grill & Resto — grilled seafood and Filipino favorites
 - The Smoky Place — wood-fired pizza near Sabang Beach
 - Daluyon Café — healthy local and international dishes with ocean views
 
-## Tips & Local Hacks:
+## Puerto Princesa Travel Tips & Local Hacks
 
 - Secure your Underground River permit at least a day before — required by the park office.
 - Bring a dry bag for valuables during the boat ride.
@@ -79,7 +81,7 @@ Hidden beneath limestone mountains and dense rainforest, the Puerto Princesa Und
 - Combine the river tour with Ugong Rock or the mangrove tour to maximize your trip.
 - Keep voices low inside the cave — sound echoes easily!
 
-## 3-Day Suggested Itinerary:
+## 3-Day Puerto Princesa Itinerary
 
 - Day 1: Arrival in Puerto Princesa → Visit Crocodile Farm → Dinner at KaLui Restaurant
 - Day 2: Underground River Tour + Sabang Beach afternoon swim

@@ -1,6 +1,6 @@
 ---
 id: 13
-title: "Davao City: Durian, Mount Apo and Mindanao's Cultural Heart"
+title: "Davao City Travel Guide: Durian, Mount Apo & Culture"
 description: "Explore Davao City's markets, indigenous crafts, Philippine Eagle Center, and Samal Island, with food and itinerary tips for first-time visitors."
 date: "2026-10-30"
 slug: "davao-city-mindanao"
@@ -27,7 +27,9 @@ tags:
 
 Davao blends big-city comfort with easy access to rainforest, cacao farms, and island beaches. It is also a good introduction to the culture of Mindanao, from indigenous weaving to some of the freshest fruit in the country.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [Zamboanga City](/articles/zamboanga-city-mindanao) or [Siargao](/articles/siargao-surfing-capital).
+
+## Davao City Quick Facts
 
 - Region: Davao Region (Mindanao)
 - Best Time to Visit: March to October for fruit season, December to May for dry weather
@@ -35,7 +37,7 @@ Davao blends big-city comfort with easy access to rainforest, cacao farms, and i
 - Ideal Stay: 3–4 days
 - Notable For: Durian, indigenous crafts, wildlife, and Mount Apo
 
-## Summary
+## Davao City at a Glance
 
 - Large, walkable city with strong local food scene
 - Wildlife, culture, and nature close together
@@ -43,7 +45,7 @@ Davao blends big-city comfort with easy access to rainforest, cacao farms, and i
 - Good base for exploring Mindanao
 - Direct flights from Manila and Cebu
 
-## Top Attractions:
+## Top Attractions in Davao City
 
 1. Philippine Eagle Center – Conservation home of the national bird.
 2. Davao Crocodile Park – Wildlife shows and nature exhibits.
@@ -53,37 +55,37 @@ Davao blends big-city comfort with easy access to rainforest, cacao farms, and i
 6. Samal Island – Beaches, caves, and resorts.
 7. Magsaysay Fruit Market – Local fruit and souvenirs.
 
-## How to Get There:
+## How to Get to Davao City
 
 - Fly into Francisco Bangoy International Airport from Manila, Cebu, or Singapore.
 - Use taxis, ride-hailing, or jeepneys inside the city.
 - Take a ferry to Samal Island for beaches and day trips.
 
-## Best Time to Visit:
+## Best Time to Visit Davao City
 
 Davao has little seasonality and is largely outside the typhoon belt. Durian season generally peaks around August to October, while dry months are best for outdoor trips.
 
-## Where to Stay:
+## Where to Stay in Davao City
 
 - Downtown hotels – Walkable to markets and restaurants.
 - Eco-lodges near the Eagle Center – Quiet, forest setting.
 - Resorts on Samal Island – Beach-focused stays.
 
-## Where to eat:
+## Where to Eat in Davao City
 
 - Roadside durian stalls – Try it fresh and cold.
 - Tuna restaurants – Grilled tuna jaw and belly are local specialties.
 - Local chocolate shops – Davao cacao is excellent.
 - Seafood grills – Fresh catch by the waterfront.
 
-## Tips & Local Hacks:
+## Davao City Travel Tips & Local Hacks
 
 - Some hotels ban durian; ask before bringing it back.
 - Book Mount Apo treks with licensed guides only.
 - Bring a light jacket for evening rain.
 - Check local advisories for regional travel.
 
-## 3-Day Suggested Itinerary:
+## 3-Day Davao City Itinerary
 
 - Day 1: City tour, People's Park, and the fruit market.
 - Day 2: Philippine Eagle Center and Davao Crocodile Park.

@@ -1,6 +1,6 @@
 ---
 id: 11
-title: "Siquijor: The Mystical Island of Waterfalls and White Sand"
+title: "Siquijor Travel Guide: Waterfalls & White Sand Beaches"
 description: "Discover Siquijor's Cambugahay Falls, Salagdoong Beach, and old-growth balete trees, with practical tips for a laid-back island getaway."
 date: "2026-10-30"
 slug: "siquijor-island"
@@ -27,7 +27,9 @@ tags:
 
 Siquijor is small, quiet, and a little mysterious. Its reputation for folk healing and legends sits alongside very real attractions: a turquoise multi-tier waterfall, quiet beaches, and a ring road that feels made for a slow motorbike loop.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [Bohol](/articles/chocolate-hills-bohol) or [Camiguin](/articles/camiguin-island).
+
+## Siquijor Quick Facts
 
 - Region: Central Visayas (Siquijor Province)
 - Best Time to Visit: November to May
@@ -35,7 +37,7 @@ Siquijor is small, quiet, and a little mysterious. Its reputation for folk heali
 - Ideal Stay: 2–3 days
 - Notable For: Cambugahay Falls, Salagdoong Beach, and a relaxed island pace
 
-## Summary
+## Siquijor at a Glance
 
 - Compact island with a single easy ring road
 - Beach days, waterfalls, and cliff jumping in one trip
@@ -43,7 +45,7 @@ Siquijor is small, quiet, and a little mysterious. Its reputation for folk heali
 - Easy add-on to Dumaguete or Bohol
 - Best explored by scooter
 
-## Top Attractions:
+## Top Attractions in Siquijor
 
 1. Cambugahay Falls (Lazi) – Three tiers of blue water with a rope swing.
 2. Salagdoong Beach (Maria) – White sand with cliff-diving platforms.
@@ -53,36 +55,36 @@ Siquijor is small, quiet, and a little mysterious. Its reputation for folk heali
 6. Mt. Bandilaan – Viewpoint at the island's highest point.
 7. Lugnason Falls – A quieter option away from the crowds.
 
-## How to Get There:
+## How to Get to Siquijor
 
 - Fly to Dumaguete, then take a fast ferry to Siquijor port (about 1.5 hours).
 - Ferries also run from Tagbilaran (Bohol) and Cebu.
 - On the island, rent a scooter or hire a tricycle for the day.
 
-## Best Time to Visit:
+## Best Time to Visit Siquijor
 
 November to May offers dry weather and calm crossings. Rough seas can delay ferries during the rainy season, so leave some buffer in your schedule.
 
-## Where to Stay:
+## Where to Stay in Siquijor
 
 - Paliton and San Juan beachfront resorts – Sunset views and easy swimming.
 - Lazi guesthouses – Close to Cambugahay Falls and the old church.
 - Siquijor town hostels – Budget-friendly and near the port.
 
-## Where to eat:
+## Where to Eat in Siquijor
 
 - Beach cafés in San Juan – Fresh seafood and relaxed sunset dinners.
 - Local carinderias – Simple, cheap, and filling.
 - Bakeries and juice stands – Good for road-trip snacks.
 
-## Tips & Local Hacks:
+## Siquijor Travel Tips & Local Hacks
 
 - Fill your scooter's tank before leaving town; stations are sparse.
 - Bring cash and reef-safe sunscreen.
 - Visit Cambugahay early for photos without the crowds.
 - Respect local customs and sacred sites, and ask before photographing people.
 
-## 3-Day Suggested Itinerary:
+## 3-Day Siquijor Itinerary
 
 - Day 1: Ferry from Dumaguete, check in, and watch the sunset at Paliton Beach.
 - Day 2: Ride the ring road to Cambugahay Falls, the Balete Tree, and Lazi Church.

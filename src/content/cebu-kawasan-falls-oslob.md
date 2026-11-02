@@ -1,6 +1,6 @@
 ---
 id: 10
-title: "Cebu: Kawasan Falls, Canyoneering and Oslob Whale Sharks"
+title: "Cebu Travel Guide: Kawasan Falls, Canyoneering & Oslob"
 description: "Plan a Cebu adventure trip around Kawasan Falls canyoneering, Moalboal sardine runs, and Oslob, with transport, food, and itinerary tips."
 date: "2026-10-30"
 slug: "cebu-kawasan-falls-oslob"
@@ -27,7 +27,9 @@ tags:
 
 Cebu is more than a gateway city. Head down the island's southwestern coast and you will find jade-green canyon pools, cliff jumps, and one of the Visayas' best reef dives, all within a few hours of the airport.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [Malapascua](/articles/malapascua-island) or [Bohol's Chocolate Hills](/articles/chocolate-hills-bohol).
+
+## Cebu Quick Facts
 
 - Region: Central Visayas (southern Cebu)
 - Best Time to Visit: December to May (dry season)
@@ -35,7 +37,7 @@ Cebu is more than a gateway city. Head down the island's southwestern coast and 
 - Ideal Stay: 3–4 days
 - Notable For: Kawasan Falls, canyoneering, sardine runs, and island hopping
 
-## Summary
+## Cebu at a Glance
 
 - Adventure hub with waterfalls, canyons, and reef diving
 - Easy to reach from a major international airport
@@ -43,7 +45,7 @@ Cebu is more than a gateway city. Head down the island's southwestern coast and 
 - Budget-friendly with plenty of homestays and hostels
 - Pairs well with Bohol or Siquijor by ferry
 
-## Top Attractions:
+## Top Attractions in Cebu
 
 1. Kawasan Falls (Badian) – Three-tier waterfall with striking turquoise pools.
 2. Canyoneering in Badian – Guided river trek with jumps, slides, and swims.
@@ -53,39 +55,39 @@ Cebu is more than a gateway city. Head down the island's southwestern coast and 
 6. Tumalog Falls (Oslob) – A thin veil of water dropping into a forest pool.
 7. Sumilon Island – Sandbar and clear shallows off Oslob.
 
-## How to Get There:
+## How to Get to Cebu
 
 - Fly into Mactan-Cebu International Airport.
 - Take a South Bus Terminal bus from Cebu City to Badian or Moalboal (3–4 hours).
 - Private vans or hired cars are faster and good for groups.
 - Motorbikes and tricycles cover short local hops.
 
-## Best Time to Visit:
+## Best Time to Visit Cebu
 
 December to May brings dry weather and calm seas, ideal for canyoneering and diving. Heavy rain can close canyon routes, so check conditions with your guide before booking.
 
-## Where to Stay:
+## Where to Stay in Cebu
 
 - Panagsama Beach, Moalboal – Cluster of guesthouses and dive shops steps from the water.
 - Badian homestays – Simple, affordable stays close to the canyon.
 - Resorts in Oslob and Dalaguete – Quieter seafront options.
 - Cebu City hotels – Convenient for early or late flights.
 
-## Where to eat:
+## Where to Eat in Cebu
 
 - Panagsama Beach cafés – Fresh grilled fish and smoothie bowls.
 - Local carinderias in Badian – Budget Filipino meals after a long day outdoors.
 - Lechon spots in Cebu City – Try Cebu's famous roast pig before you head south.
 - Mango and dried-mango stalls – Cebu's sweet roadside souvenir.
 
-## Tips & Local Hacks:
+## Cebu Travel Tips & Local Hacks
 
 - Book canyoneering through a registered guide and bring water shoes.
 - Go to Kawasan early to beat the tour buses.
 - Respect marine life in Moalboal: no touching or chasing the sardines.
 - Carry cash; ATMs are limited outside the towns.
 
-## 3-Day Suggested Itinerary:
+## 3-Day Cebu Itinerary
 
 - Day 1: Fly to Cebu, travel to Moalboal, and snorkel the sardine run at sunset.
 - Day 2: Morning canyoneering in Badian, then relax at Kawasan Falls.

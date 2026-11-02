@@ -23,6 +23,7 @@ export interface ArticleSummary {
   title: string;
   description: string;
   date: string;
+  updated: string;
   slug: string;
   region: string;
   category: string;
@@ -32,6 +33,9 @@ export interface ArticleSummary {
   tags: string[];
   alt: string;
   image: string;
+  imageSmall: string;
+  imageOg: string;
+  wordCount: number;
   readingTime: number;
   faq: FAQItem[];
 }
@@ -61,6 +65,17 @@ function readArticleFile(filename: string) {
   if (!fs.existsSync(path.join(imagesDir, `${expectedSlug}.jpg`))) {
     problems.push(`missing image public/images/${expectedSlug}.jpg`);
   }
+  for (const img of [`${expectedSlug}-800.jpg`, `${expectedSlug}-og.jpg`]) {
+    if (!fs.existsSync(path.join(imagesDir, img))) problems.push(`missing image public/images/${img} (run npm run images)`);
+  }
+  // Soft SEO checks: warn, never fail the build.
+  const warnings: string[] = [];
+  if (String(data.title ?? "").length > 60) warnings.push(`title is ${data.title.length} chars (aim for 60 or fewer)`);
+  const descLen = String(data.description ?? "").length;
+  if (descLen < 120 || descLen > 160) warnings.push(`description is ${descLen} chars (aim for 120-160)`);
+  if (!data.alt) warnings.push("missing alt text");
+  if (/\b20\d\d\b/.test(`${data.title} ${data.description}`)) warnings.push("title/description hardcodes a year");
+  if (warnings.length > 0) console.warn(`[seo] src/content/${filename}: ${warnings.join("; ")}`);
   if (problems.length > 0) {
     throw new Error(`src/content/${filename}: ${problems.join("; ")}`);
   }
@@ -71,6 +86,7 @@ function readArticleFile(filename: string) {
     title: data.title,
     description: data.description,
     date: data.date,
+    updated: data.updated || data.date,
     slug: expectedSlug,
     region: data.region,
     category: category!.slug,
@@ -80,6 +96,9 @@ function readArticleFile(filename: string) {
     tags: data.tags || [],
     alt: data.alt || data.title,
     image: `/images/${expectedSlug}.jpg`,
+    imageSmall: `/images/${expectedSlug}-800.jpg`,
+    imageOg: `/images/${expectedSlug}-og.jpg`,
+    wordCount: words,
     readingTime: Math.max(1, Math.round(words / 200)),
     faq: data.faq || [],
   };

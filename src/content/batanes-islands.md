@@ -1,7 +1,7 @@
 ---
 id: 15
-title: "Batanes: Windswept Hills and Stone Houses at the Edge of the Philippines"
-description: "Explore Batanes' rolling green hills, traditional Ivatan stone houses, lighthouses, and cliffs, with travel tips for the country's northernmost province."
+title: "Batanes Travel Guide: Stone Houses & Rolling Green Hills"
+description: "Explore Batanes' rolling green hills, traditional Ivatan stone houses, lighthouses, and cliffs, with tips for the northernmost province."
 date: "2026-10-30"
 slug: "batanes-islands"
 region: "Cagayan Valley"
@@ -27,7 +27,9 @@ tags:
 
 Batanes feels like a different country: rolling emerald hills, stone houses with thick cogon roofs, and dramatic cliffs facing the open sea. It is remote, uncrowded, and deeply tied to Ivatan culture.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Mount Pulag](/articles/mount-pulag-benguet).
+
+## Batanes Quick Facts
 
 - Region: Cagayan Valley (Batanes Province)
 - Best Time to Visit: March to June
@@ -35,7 +37,7 @@ Batanes feels like a different country: rolling emerald hills, stone houses with
 - Ideal Stay: 4 days
 - Notable For: Ivatan stone houses, lighthouses, green pastures, and ocean views
 
-## Summary
+## Batanes at a Glance
 
 - One of the Philippines' most distinctive landscapes
 - Strong preserved Ivatan culture and architecture
@@ -43,7 +45,7 @@ Batanes feels like a different country: rolling emerald hills, stone houses with
 - Weather-dependent, so plan buffer days
 - Day trips to Sabtang by boat
 
-## Top Attractions:
+## Top Attractions in Batanes
 
 1. Basco Lighthouse (Naidi Hills) – Panoramic ridge views.
 2. Valugan Boulder Beach – Black volcanic stones along the coast.
@@ -53,37 +55,37 @@ Batanes feels like a different country: rolling emerald hills, stone houses with
 6. Honesty Coffee Shop – Self-service shop run on trust.
 7. Tukon Church – Chapel on a hilltop, popular for weddings.
 
-## How to Get There:
+## How to Get to Batanes
 
 - Fly from Manila or Tuguegarao to Basco (about 1.5–2 hours).
 - Take a short boat ride from Ivana to Sabtang Island.
 - On Batan, hire a tricycle or van with a driver.
 
-## Best Time to Visit:
+## Best Time to Visit Batanes
 
 March to June offers the calmest weather and best chance of on-time flights. From July to November, typhoons are more frequent and can strand travelers.
 
-## Where to Stay:
+## Where to Stay in Batanes
 
 - Basco guesthouses – Central and good for first-timers.
 - Seafront inns – Ocean views and sunrise from your window.
 - Sabtang homestays – Quiet village stays in stone houses.
 
-## Where to eat:
+## Where to Eat in Batanes
 
 - Local inns and cafés – Try Ivatan dishes such as uvud balls and luñis.
 - Seafood stalls – Fresh fish and coconut crab (check regulations).
 - Honesty Coffee Shop – Coffee, snacks, and an honor-system box.
 - Small bakeries in Basco – Cassava and root-crop treats.
 
-## Tips & Local Hacks:
+## Batanes Travel Tips & Local Hacks
 
 - Book flights early and leave extra days for weather delays.
 - Bring a windbreaker, even in summer.
 - Respect farmland, livestock, and heritage houses.
 - Carry cash; signal and ATMs can be limited.
 
-## 3-Day Suggested Itinerary:
+## 3-Day Batanes Itinerary
 
 - Day 1: Arrive, visit Basco Lighthouse and Chawa View Deck.
 - Day 2: Valugan Boulder Beach, Marlboro Country, and Honesty Coffee Shop.

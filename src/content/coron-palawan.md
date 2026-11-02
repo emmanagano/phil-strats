@@ -1,7 +1,7 @@
 ---
 id: 3
-title: "Coron Palawan Travel: Best Lakes, Wreck Dives & Island Adventures"
-description: "Coron Palawan Travel Guide 2025 — Discover Kayangan Lake, Twin Lagoon, and the best wreck diving spots in one of the Philippines’ most stunning island destinations."
+title: "Coron Palawan Travel Guide: Lakes, Wrecks & Island Hopping"
+description: "Discover Kayangan Lake, Twin Lagoon, and the best wreck diving in Coron, Palawan, with tips on when to go, where to stay, and a 3-day itinerary."
 date: "2025-10-14"
 slug: "coron-palawan"
 region: "Palawan"
@@ -27,21 +27,23 @@ tags:
 
 Coron is where adventure meets serenity, a stunning mix of limestone cliffs, turquoise lagoons, and crystal lakes that feel untouched by time. Located on Busuanga Island in northern Palawan, Coron is a paradise for divers, nature lovers, and anyone looking for raw island beauty. From snorkeling WWII shipwrecks to exploring hidden lakes surrounded by cliffs, Coron offers an unforgettable slice of the Philippines.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [El Nido](/articles/el-nido-palawan) or [the Puerto Princesa Underground River](/articles/puerto-princesa-palawan).
+
+## Coron Quick Facts
 
 - Region: Palawan (Busuanga area)
 - Best Time to Visit: December to May (dry season)
 - How to Get There: Fly directly to Busuanga (Coron) Airport from Manila or Cebu
 - Ideal Stay: 3–5 days
 
-## Summary
+## Coron at a Glance
 
 - Known for world-famous Kayangan Lake and Twin Lagoon
 - Top diving destination with WWII shipwrecks and coral gardens
 - Accessible via Busuanga Airport
 - Perfect for eco-tourism, photography, and adventure seekers
 
-## Top Attractions:
+## Top Attractions in Coron
 
 1. Kayangan Lake — Known as the cleanest lake in Asia, surrounded by limestone walls and accessible via a short hike.
 2. Twin Lagoon — Two lagoons separated by limestone cliffs; swim through a small opening or climb over for a surreal experience.
@@ -51,31 +53,31 @@ Coron is where adventure meets serenity, a stunning mix of limestone cliffs, tur
 6. Mt. Tapyas Viewpoint — Climb 700 steps for a panoramic view of Coron town and the islands beyond.
 7. Maquinit Hot Springs — Natural saltwater hot springs perfect for relaxation after a day of island hopping.
 
-## How to Get There:
+## How to Get to Coron
 
 - By Air: Fly to Busuanga Airport (Francisco B. Reyes Airport) from Manila (approx. 1 hour) or Cebu.
 - By Sea: Ferries operate from Manila or El Nido to Coron (6–8 hours).
 - Getting Around: Tricycles are the main transport in town, and island-hopping tours can be booked easily from local operators.
 
-## Best Time to Visit:
+## Best Time to Visit Coron
 
 - Dry months from December to May offer calm waters, clear skies, and ideal visibility for diving and snorkeling.
 - The rainy season (June–October) is still manageable but expect some afternoon showers and occasional tour cancellations.
 
-## Where to Stay:
+## Where to Stay in Coron
 
 - Two Seasons Coron Island Resort & Spa — luxury stay with private beachfront
 - The Funny Lion — boutique hotel with a rooftop jacuzzi and bay views
 - Hop Hostel — budget-friendly with a lively rooftop bar
 
-## Where to eat:
+## Where to Eat in Coron
 
 - KT’s Sinugba Sa Balay — local Filipino favorites
 - Altrove Coron — pizza and pasta from a wood-fired oven
 - Brujita — vegetarian and vegan-friendly dishes
 - Levine’s Café — perfect breakfast spot with a view
 
-## Tips & Local Hacks:
+## Coron Travel Tips & Local Hacks
 
 - Bring cash, as some tours and restaurants don’t accept cards.
 - Book island-hopping packages (Coron Ultimate Tour or Super Ultimate Tour) — they include the best highlights.
@@ -83,7 +85,7 @@ Coron is where adventure meets serenity, a stunning mix of limestone cliffs, tur
 - Visit Kayangan Lake early morning to avoid crowds.
 - Rent snorkeling gear instead of buying — easy to find in town.
 
-## 3-Day Suggested Itinerary:
+## 3-Day Coron Itinerary
 
 - Day 1: Arrive → Mt. Tapyas hike → Sunset at the viewpoint → Dinner in town
 - Day 2: Coron Ultimate Tour (Kayangan Lake, Twin Lagoon, Siete Pecados) → Maquinit Hot Springs

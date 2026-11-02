@@ -3,7 +3,26 @@ import { Fraunces, Inter } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Layout from "./components/Layout";
-import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL, SOCIALS } from "@/lib/site";
+
+const siteJsonLd = [
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: SITE_NAME,
+    url: SITE_URL,
+    description: SITE_DESCRIPTION,
+    inLanguage: "en",
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: SITE_NAME,
+    url: SITE_URL,
+    logo: `${SITE_URL}/images/logo.png`,
+    sameAs: Object.values(SOCIALS),
+  },
+];
 
 const inter = Inter({
   variable: "--font-inter",
@@ -78,6 +97,10 @@ export default function RootLayout({
         </Script>
       </head>
       <body>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(siteJsonLd).replace(/</g, "\\u003c") }}
+        />
         <noscript>
           <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-T7DPHNJK"

@@ -1,6 +1,6 @@
 ---
 id: 12
-title: "Sagada, Mountain Province: Hanging Coffins, Caves and Pine Forests"
+title: "Sagada Travel Guide: Hanging Coffins, Caves & Pine Forests"
 description: "Explore Sagada's hanging coffins, Sumaguing Cave, and sunrise sea of clouds with tips on transport, weather, and respectful travel."
 date: "2026-10-30"
 slug: "sagada-mountain-province"
@@ -27,7 +27,9 @@ tags:
 
 High in the Cordillera, Sagada is a cool, misty town where Igorot traditions meet limestone caves and pine-scented ridges. It rewards travelers who like early mornings, long walks, and strong local coffee.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [Mount Pulag](/articles/mount-pulag-benguet) or [Banaue](/articles/banaue-rice-terraces-ifugao).
+
+## Sagada Quick Facts
 
 - Region: Cordillera Administrative Region (Mountain Province)
 - Best Time to Visit: November to May
@@ -35,7 +37,7 @@ High in the Cordillera, Sagada is a cool, misty town where Igorot traditions mee
 - Ideal Stay: 3 days
 - Notable For: Hanging coffins, caves, rice terraces, and sunrise views
 
-## Summary
+## Sagada at a Glance
 
 - Cool-climate alternative to the beach circuit
 - Cave exploration, waterfalls, and short treks
@@ -43,7 +45,7 @@ High in the Cordillera, Sagada is a cool, misty town where Igorot traditions mee
 - Great coffee, weaving, and local food
 - Best experienced slowly
 
-## Top Attractions:
+## Top Attractions in Sagada
 
 1. Hanging Coffins at Echo Valley – Centuries-old burial tradition.
 2. Sumaguing Cave – Large cave system with rimstone pools.
@@ -53,37 +55,37 @@ High in the Cordillera, Sagada is a cool, misty town where Igorot traditions mee
 6. Sagada Weaving and Pottery – Take-home local crafts.
 7. Marlboro Country – Rolling hills for sunset walks.
 
-## How to Get There:
+## How to Get to Sagada
 
 - Take a Manila–Baguio bus, then a Baguio–Sagada bus (about 5–6 hours).
 - Alternatively, take a night bus to Bontoc and transfer to a jeepney.
 - Local guides and tricycles handle transport within town.
 
-## Best Time to Visit:
+## Best Time to Visit Sagada
 
 November to May is cool and mostly dry, with the clearest sunrise views. Typhoon season, from roughly July to October, can bring landslides and road closures.
 
-## Where to Stay:
+## Where to Stay in Sagada
 
 - Family-run inns in the town center – Simple, warm, and walkable.
 - Hillside lodges – Mountain views and quiet evenings.
 - Homestays – A good way to meet locals.
 
-## Where to eat:
+## Where to Eat in Sagada
 
 - Sagada Lemon Pie House – Famous for lemon pie and hearty breakfasts.
 - Yoghurt House – Yogurt, granola, and local fruit.
 - Gaia Cafe – Organic, vegetarian-friendly meals.
 - Sagada Brew – Highland coffee.
 
-## Tips & Local Hacks:
+## Sagada Travel Tips & Local Hacks
 
 - Register at the tourism office; guides are required for caves.
 - Bring a light rain jacket and a warm layer.
 - Book transport back to Manila a day ahead.
 - Be respectful at burial sites and sacred places.
 
-## 3-Day Suggested Itinerary:
+## 3-Day Sagada Itinerary
 
 - Day 1: Arrive, visit the hanging coffins, and walk Echo Valley.
 - Day 2: Cave connection tour, then pottery and weaving shops.

@@ -1,7 +1,7 @@
 ---
 id: 19
-title: "Malapascua: Thresher Sharks and Quiet Beaches in Northern Cebu"
-description: "Plan a Malapascua trip for thresher shark dives, snorkeling, and slow beach days, with ferry directions from Maya Port."
+title: "Malapascua Travel Guide: Thresher Sharks & Quiet Beaches"
+description: "Plan a Malapascua trip in northern Cebu for thresher shark dives, snorkeling, and slow beach days, with ferry directions from Maya Port."
 date: "2026-10-30"
 slug: "malapascua-island"
 region: "Central Visayas"
@@ -27,7 +27,9 @@ tags:
 
 Malapascua is a small island off the northern tip of Cebu, known for diving with thresher sharks at dawn. Above water it is all slow beach days, simple resorts, and sunsets on Bounty Beach.
 
-## Quick Facts:
+Planning more than one stop? See our guides to [Cebu's Kawasan Falls and Oslob](/articles/cebu-kawasan-falls-oslob) or [Boracay](/articles/boracay-aklan).
+
+## Malapascua Quick Facts
 
 - Region: Central Visayas (Cebu)
 - Best Time to Visit: November to May
@@ -35,7 +37,7 @@ Malapascua is a small island off the northern tip of Cebu, known for diving with
 - Ideal Stay: 3 days
 - Notable For: Thresher shark dives, quiet beaches, and island hopping
 
-## Summary
+## Malapascua at a Glance
 
 - Small, relaxed island with a dive-town atmosphere
 - Rare thresher shark and manta encounters
@@ -43,7 +45,7 @@ Malapascua is a small island off the northern tip of Cebu, known for diving with
 - Fewer crowds than larger resort islands
 - Good base for day trips to Gato Island
 
-## Top Attractions:
+## Top Attractions in Malapascua
 
 1. Monad Shoal – Early-morning thresher shark dives.
 2. Bounty Beach – The main stretch of white sand.
@@ -52,36 +54,36 @@ Malapascua is a small island off the northern tip of Cebu, known for diving with
 5. Logon Beach – Quieter swimming and sunsets.
 6. Kalanggaman Island (nearby) – A sandbar day trip.
 
-## How to Get There:
+## How to Get to Malapascua
 
 - Take a bus from Cebu North Bus Terminal to Maya Port (about 4 hours).
 - Take a public or chartered boat to Malapascua (30 minutes).
 - Walk or use a motorbike taxi on the island.
 
-## Best Time to Visit:
+## Best Time to Visit Malapascua
 
 November to May is dry and calm. Typhoon-season swells can cancel boats, so keep a buffer day.
 
-## Where to Stay:
+## Where to Stay in Malapascua
 
 - Bounty Beach resorts – Beachfront with dive shops nearby.
 - Logon Beach guesthouses – Quieter and cheaper.
 - Dive lodges – Convenient for pre-dawn departures.
 
-## Where to eat:
+## Where to Eat in Malapascua
 
 - Beach restaurants – Fresh seafood and barbecue.
 - Cafés on Bounty Beach – Smoothies and brunch.
 - Local eateries – Cheap Filipino meals.
 
-## Tips & Local Hacks:
+## Malapascua Travel Tips & Local Hacks
 
 - Book thresher dives ahead; they depart before sunrise.
 - Bring cash for boats and small shops.
 - Pack reef-safe sunscreen.
 - Check weather conditions before crossing from Maya Port.
 
-## 3-Day Suggested Itinerary:
+## 3-Day Malapascua Itinerary
 
 - Day 1: Travel from Cebu City to Malapascua and relax on Bounty Beach.
 - Day 2: Pre-dawn thresher dive or a Gato Island snorkel trip.

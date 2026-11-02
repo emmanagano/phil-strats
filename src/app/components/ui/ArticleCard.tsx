@@ -14,7 +14,12 @@ export default function ArticleCard({
     <article className="group relative flex h-full flex-col overflow-hidden rounded-3xl bg-white shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-card-hover">
       <div className="relative aspect-[4/3] overflow-hidden">
         <img
-          src={article.image}
+          src={article.imageSmall}
+          srcSet={`${article.imageSmall} 800w, ${article.image} 1600w`}
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          width={800}
+          height={600}
+          decoding="async"
           alt={article.alt}
           loading={priority ? "eager" : "lazy"}
           className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"

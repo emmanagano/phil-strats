@@ -1,8 +1,12 @@
 ---
 id: 10
+# SEO: title <= 60 chars, lead with the destination keyword, no year
 title: ""
+# SEO: 120-160 chars, no year
 description: ""
 date: "2025-10-14"
+# Optional: set when you meaningfully revise the guide (drives dateModified + sitemap)
+# updated: "2026-01-01"
 # Must match the filename (src/content/<slug>.md) and the hero image (public/images/<slug>.jpg)
 slug: ""
 # Display location, e.g. "Western Visayas"
@@ -19,22 +23,22 @@ tags:
   -
 ---
 
-Intro / Hook
+Intro / Hook (mention the destination name in the first sentence; link to 2-3 related guides with [descriptive text](/articles/<slug>))
 
-## Quick Facts:
+## <Destination> Quick Facts
 
-## Summary
+## <Destination> at a Glance
 
-## Top Attractions:
+## Top Attractions in <Destination>
 
-## How to Get There:
+## How to Get to <Destination>
 
-## Best Time to Visit:
+## Best Time to Visit <Destination>
 
-## Where to Stay:
+## Where to Stay in <Destination>
 
-## Where to eat:
+## Where to Eat in <Destination>
 
-## Tips & Local Hacks:
+## <Destination> Travel Tips & Local Hacks
 
-## 3-Day Suggested Itinerary:
+## 3-Day <Destination> Itinerary
