@@ -6,7 +6,7 @@ import { getAllShowbiz, getShowbizBySlug, showbizTopicLabel } from "@/data/showb
 import Container from "@/app/components/ui/Container";
 import { formatNewsDate } from "@/lib/newsTone";
 import { SHOWBIZ_TONE } from "@/lib/showbizTone";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { SITE_NAME, SITE_URL, pageTitle } from "@/lib/site";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -19,10 +19,17 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const story = getShowbizBySlug(slug);
   if (!story) return { title: "Story not found" };
   return {
-    title: story.title,
+    title: pageTitle(story.title),
     description: story.dek,
     alternates: { canonical: `/showbiz/${story.slug}` },
-    openGraph: { type: "article", title: story.title, description: story.dek, publishedTime: story.date, images: [story.image.src] },
+    openGraph: {
+      type: "article",
+      title: story.title,
+      description: story.dek,
+      url: `/showbiz/${story.slug}`,
+      publishedTime: story.date,
+      images: [story.image.src],
+    },
   };
 }
 

@@ -11,7 +11,7 @@ import {
 } from "react-icons/fa6";
 import { getAllArticles, getArticleBySlug, type ArticleSummary, type ImageCredit } from "@/data/articles";
 import { formatDate } from "@/lib/format";
-import { AUTHOR, SITE_NAME, SITE_URL, SOCIALS } from "@/lib/site";
+import { AUTHOR, SITE_NAME, SITE_URL, SOCIALS, pageTitle } from "@/lib/site";
 import FAQ from "@/app/components/FAQ";
 import DestinationGuide from "@/app/components/guide/DestinationGuide";
 import { categoryTone } from "@/lib/categoryTone";
@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   if (!article) return { title: "Guide not found" };
 
   return {
-    title: article.title,
+    title: pageTitle(article.title),
     description: article.description,
     authors: [{ name: AUTHOR }],
     keywords: article.tags,

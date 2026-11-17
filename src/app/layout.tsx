@@ -3,7 +3,7 @@ import { Inter, Source_Serif_4 } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Layout from "./components/Layout";
-import { SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL, SOCIALS } from "@/lib/site";
+import { DEFAULT_OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE, SITE_URL, SOCIALS } from "@/lib/site";
 
 const siteJsonLd = [
   {
@@ -48,14 +48,13 @@ export const metadata: Metadata = {
     siteName: SITE_NAME,
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    url: "/",
-    images: [{ url: "/images/el-nido-palawan.jpg", width: 1200, height: 630 }],
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
-    images: ["/images/el-nido-palawan.jpg"],
+    images: [DEFAULT_OG_IMAGE],
   },
   verification: {
     // Search Console: older property + https://philippinestrategies.netlify.app/ (URL prefix)

@@ -5,7 +5,7 @@ import { FaArrowLeft, FaArrowRight, FaArrowUpRightFromSquare, FaSuitcaseRolling 
 import { getAllNews, getNewsBySlug, topicLabel } from "@/data/news";
 import Container from "@/app/components/ui/Container";
 import { NEWS_TONE, formatNewsDate } from "@/lib/newsTone";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
+import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL, pageTitle } from "@/lib/site";
 
 type Params = { params: Promise<{ slug: string }> };
 
@@ -18,10 +18,17 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const brief = getNewsBySlug(slug);
   if (!brief) return { title: "Brief not found" };
   return {
-    title: brief.title,
+    title: pageTitle(brief.title),
     description: brief.summary,
     alternates: { canonical: `/news/${brief.slug}` },
-    openGraph: { type: "article", title: brief.title, description: brief.summary, publishedTime: brief.date },
+    openGraph: {
+      type: "article",
+      title: brief.title,
+      description: brief.summary,
+      url: `/news/${brief.slug}`,
+      publishedTime: brief.date,
+      images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
+    },
   };
 }
 

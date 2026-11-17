@@ -1,2 +1,15 @@
 # Removed sections
-/blurbs   /articles   301
+/blurbs           /articles  301
+/blurbs/*         /articles  301
+/articles/page/*  /articles  301
+
+# Old policy/consulting pages (no replacement): tell crawlers they're gone for good
+/consulting          /404.html  410
+/hire-us             /404.html  410
+/fellows             /404.html  410
+/fellows/*           /404.html  410
+/foreign-investment  /404.html  410
+/military            /404.html  410
+/oidp                /404.html  410
+/politics            /404.html  410
+/security            /404.html  410

@@ -1,8 +1,9 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { getAllArticles } from "@/data/articles";
 import { CATEGORIES, ISLAND_GROUPS } from "@/data/taxonomy";
-import { SITE_NAME } from "@/lib/site";
+import { DEFAULT_OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 import ArticleCard from "./components/ui/ArticleCard";
 import Badge from "./components/ui/Badge";
 import { categoryTone } from "@/lib/categoryTone";
@@ -10,6 +11,19 @@ import Button from "./components/ui/Button";
 import Container from "./components/ui/Container";
 import NewsletterForm from "./components/ui/NewsletterForm";
 import SectionHeading from "./components/ui/SectionHeading";
+
+export const metadata: Metadata = {
+  alternates: { canonical: "/" },
+  // A page-level openGraph replaces the root one, so restate the shared fields.
+  openGraph: {
+    type: "website",
+    siteName: SITE_NAME,
+    title: SITE_NAME,
+    description: SITE_DESCRIPTION,
+    url: "/",
+    images: [{ url: DEFAULT_OG_IMAGE, width: 1200, height: 630 }],
+  },
+};
 
 export default function Home() {
   const articles = getAllArticles();
@@ -23,6 +37,7 @@ export default function Home() {
       {/* Hero */}
       {featured && (
         <section className="-mt-18">
+          <h1 className="sr-only">{`${SITE_NAME}: Philippines travel guides. ${SITE_TAGLINE}`}</h1>
           <div className="relative isolate flex min-h-[calc(min(80vh,48rem)+4.5rem)] items-end overflow-hidden bg-ocean-900">
             <img
               src={featured.image}
@@ -39,7 +54,7 @@ export default function Home() {
                     {featured.categoryLabel}
                   </span>
                 </div>
-                <h1 className="text-3xl font-semibold leading-[1.08] sm:text-5xl">{featured.title}</h1>
+                <h2 className="text-3xl font-semibold leading-[1.08] sm:text-5xl">{featured.title}</h2>
                 <p className="mt-4 max-w-xl text-base text-white/85 sm:text-lg">{featured.description}</p>
                 <div className="mt-7 flex flex-wrap gap-3">
                   <Button href={`/articles/${featured.slug}`} variant="light" arrow>

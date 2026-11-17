@@ -4,6 +4,12 @@ export const SITE_TAGLINE = "Discover the Philippines, one island at a time";
 export const SITE_DESCRIPTION =
   "Your travel and culture guide to the Philippines — hidden islands, heritage towns, and authentic local experiences.";
 export const AUTHOR = "Emma Nagano";
+export const DEFAULT_OG_IMAGE = "/images/el-nido-palawan-og.jpg";
+
+/** Search results cut titles off near 60 characters; drop the brand suffix when it would push a title past that. */
+export function pageTitle(title: string): string | { absolute: string } {
+  return `${title} | ${SITE_NAME}`.length > 60 ? { absolute: title } : title;
+}
 
 export const SOCIALS = {
   instagram: "https://www.instagram.com/xxo.emmy",
