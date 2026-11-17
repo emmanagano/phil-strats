@@ -1,6 +1,6 @@
 ---
 id: 18
-title: "Pagudpud Travel Guide: Saud Beach & Ilocos Norte Coast"
+title: "Pagudpud Beach Guide: Saud Beach & the Ilocos Norte Coast"
 description: "Pagudpud beach guide: Saud Beach, Blue Lagoon, the Patapat Viaduct and Bangui windmills, with tips for road-tripping the Ilocos Norte coast."
 date: "2026-10-30"
 updated: "2026-11-18"
@@ -105,6 +105,22 @@ tags:
   - road-trip
 ---
 
-At the northern tip of Luzon, Pagudpud trades heritage streets for powdery white sand, rolling surf, and a road lined with wind turbines. Its best-known beach, Saud Beach, is often compared to Boracay before the crowds: a long curve of fine sand and clear water backed by coconut palms. Blue Lagoon draws surfers, and the drive up from Laoag passes the Bangui windmills and Kapurpurawan's white rock formations. It makes a natural beach finish to an Ilocos road trip.
+At the northern tip of Luzon, Pagudpud in Ilocos Norte trades heritage streets for powdery white sand, rolling surf, and a road lined with wind turbines. Its best-known beach, Saud Beach, is often compared to Boracay before the crowds: a long curve of fine sand and clear water backed by coconut palms. Blue Lagoon draws surfers, and the drive up from Laoag passes the Bangui windmills and Kapurpurawan's white rock formations. It makes a natural beach finish to an Ilocos road trip, and a Pagudpud beach day in Ilocos Norte is worth the long drive north. For more on the beach itself, read our [Saud Beach guide](/articles/saud-beach-pagudpud).
+
+### Pagudpud beaches compared
+
+**Saud Beach** is the classic: calm water in the dry season, fine sand and palm shade, best for swimming and slow days. **Blue Lagoon (Maira-ira)** has brighter blue water, more resorts and surf in the cooler months. **Pansian Beach**, farther east, is remote and nearly empty. If one beach is rough, another is often calmer the same day, so ask your resort in the morning.
+
+### The coastal road from Laoag
+
+The drive north is half the experience. South of Pagudpud, the Bangui windmills, a line of 20 turbines along the shore, were among the first wind farms in Southeast Asia. In Burgos, the white limestone of Kapurpurawan Rock Formation has been carved by wind and waves, and Cape Bojeador Lighthouse, built in the Spanish era, watches over the sea. Past Pagudpud, the Patapat Viaduct curves along the cliffs above the water, one of the most scenic stretches of road in the country.
+
+### Ilocano food along the way
+
+Pagudpud is a good place to eat like an Ilocano. Order bagnet (crispy fried pork belly) with KBL sauce, pinakbet (vegetable stew with fermented fish paste) and grilled seafood at beachfront eateries. In Laoag, try empanada stuffed with longganisa, egg and green papaya, a regional favorite.
+
+### Pairing Pagudpud with Vigan and Batanes
+
+Most travelers combine Pagudpud with the heritage town of Vigan and the city of Laoag in a four- or five-day Ilocos road trip. If you are heading to Batanes, note that flights to Basco leave from Manila, Clark or Tuguegarao rather than Laoag, so many travelers do the Ilocos coast and the islands as two linked far-north trips.
 
 Planning more than one stop? See our guides to [Vigan and Laoag](/articles/vigan-and-laoag-ilocos) or [Batanes](/articles/batanes-islands).

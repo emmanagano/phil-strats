@@ -105,6 +105,6 @@ tags:
   - mountains
 ---
 
-High in the Cordillera, Sagada is a cool, misty town where Igorot traditions meet limestone caves and pine-scented ridges. Its caves are among the most famous in the Philippines: Sumaguing's rimstone pools and giant formations, and Lumiang's burial chamber, joined underground by the cave connection. Above ground, coffins still hang from the cliffs of Echo Valley. Sagada rewards travelers who like early mornings, long walks, and strong local coffee.
+High in the Cordillera, Sagada is a cool, misty town where Igorot traditions meet limestone caves and pine-scented ridges. Its caves are among the most famous in the Philippines: Sumaguing's rimstone pools and giant formations, and Lumiang's burial chamber, joined underground by the cave connection. Above ground, coffins still hang from the cliffs of Echo Valley. Sagada rewards travelers who like early mornings, long walks, and strong local coffee. Choosing a cave? Read our [Sagada caves guide](/articles/sagada-caves-sumaguing-lumiang).
 
 Planning more than one stop? See our guides to [Mount Pulag](/articles/mount-pulag-benguet) or [Banaue](/articles/banaue-rice-terraces-ifugao).

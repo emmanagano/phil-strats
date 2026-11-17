@@ -3,7 +3,7 @@ id: 16
 title: "Hundred Islands Pangasinan Guide: Island Hopping Near Manila"
 description: "Plan a Hundred Islands National Park trip from Alaminos, with island hopping, snorkeling, and zipline tips plus an easy weekend itinerary."
 date: "2026-10-30"
-updated: "2026-11-17"
+updated: "2026-11-18"
 slug: "hundred-islands-pangasinan"
 region: "Ilocos Region"
 category: "beaches-islands"
@@ -99,6 +99,22 @@ tags:
   - luzon
 ---
 
-Hundred Islands is a scatter of small, mushroom-shaped limestone islets just off Alaminos. It is one of the closest island-hopping destinations to Manila, which makes it a classic weekend escape.
+Hundred Islands is a scatter of small, mushroom-shaped limestone islets in the Lingayen Gulf, just off Alaminos. Protected since 1940 as Hundred Islands National Park, the area counts 124 islands at low tide, from Governor's Island with its viewpoint to Pilgrimage Island and its tall statue of Christ the Savior. It is one of the closest island-hopping destinations to Manila, which makes it a classic weekend escape.
+
+### The main islands
+
+Three islands have the most facilities. **Governor's Island** has a viewpoint over the whole park and the start of the zipline. **Quezon Island** is the busiest, with shelters, toilets and a swimming area. **Children's Island** has calm, shallow water for families. Other popular stops include Marcos Island, where visitors jump from the rocks into the water, and Pilgrimage Island, with its large statue of Christ the Savior and a hilltop viewpoint.
+
+### Caves, clams and snorkeling
+
+The islands are worn limestone, and many have small caves and overhangs carved by the sea. Boat tours often stop at Cuenco Cave and Imelda Cave. Around the islands, snorkeling spots and a giant clam sanctuary show the work done to restore marine life in the Lingayen Gulf. Visibility varies with the weather, so go on a calm, sunny morning.
+
+### How island hopping works
+
+Tours leave from Lucap Wharf in Alaminos. Register at the tourism office, pay the environmental fee and choose a boat by size; the price is per boat, so groups pay less per person. Choose a set tour of three or four islands or hire a boat for the day and pick your stops. Bring food and water, since shops are limited on the islands.
+
+### Pairing with Bolinao and Pangasinan
+
+Hundred Islands fits in a weekend from Manila, but you can extend it with Bolinao's beaches, caves and lighthouse to the west, or stop in Lingayen and Dagupan for bangus (milkfish) and Pangasinan food on the way back.
 
 Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Vigan](/articles/vigan-and-laoag-ilocos).

@@ -49,7 +49,7 @@ guide:
   experiences:
     - {name: "North Batan tour", tags: ["nature", "road trip"], blurb: "Marlboro Country hills, Valugan Boulder Beach and Basco Lighthouse.", cost: "≈ ₱1,500–2,500 per tricycle", time: "Full day"}
     - {name: "South Batan tour", tags: ["culture", "road trip"], blurb: "Honesty Coffee Shop, the stone houses of Ivana and the Mahatao church.", cost: "≈ ₱1,500–2,500 per tricycle", time: "Full day"}
-    - {name: "Sabtang Island", tags: ["culture", "island hopping"], blurb: "Traditional Ivatan villages of stone and cogon grass, reached by falowa boat.", cost: "≈ ₱100 boat + ₱2,000 tour", time: "Full day", tip: "The boat runs early morning only and stops in rough seas."}
+    - {name: "Sabtang Island", tags: ["culture", "island hopping"], blurb: "Traditional Ivatan villages of stone and cogon grass, plus the white sand of Morong Beach, reached by falowa boat.", cost: "≈ ₱100 boat + ₱2,000 tour", time: "Full day", tip: "The boat runs early morning only and stops in rough seas."}
     - {name: "Rakuh-a-Payaman (Marlboro Hills)", tags: ["nature"], blurb: "Grazing cows on rolling hills above the Pacific.", cost: "Free", time: "1–2 hrs"}
     - {name: "Honesty Coffee Shop", tags: ["culture", "food"], blurb: "No staff: pick your snack and leave payment in the box.", cost: "₱50–150", time: "30 min"}
     - {name: "Biking around Basco", tags: ["road trip", "chill"], blurb: "Quiet roads and sea views by bicycle.", cost: "₱300–500/day", time: "Half day"}
@@ -77,7 +77,7 @@ guide:
     - {mode: "Bicycle", cost: "₱300–500/day"}
   fees:
     - {name: "Batanes tourism fee", amount: "≈ ₱300–500"}
-    - {name: "Sabtang environmental fee", amount: "≈ ₱200"}
+    - {name: "Sabtang environmental fee", amount: "≈ ₱200–350"}
     - {name: "Falowa boat to Sabtang", amount: "≈ ₱100"}
   essentials:
     - {title: "Buffer days", body: "Weather cancels flights and the Sabtang boat. Don't book tight onward connections."}
@@ -106,6 +106,22 @@ tags:
   - luzon
 ---
 
-Batanes feels like a different country: rolling emerald hills, stone houses with thick cogon roofs, and dramatic cliffs facing the open sea. The Philippines' northernmost province is a small group of islands closer to Taiwan than to Manila, reached by a short flight to Basco. It is remote, uncrowded, and deeply tied to Ivatan culture, from the honesty coffee shop in Ivana to the stone villages of Sabtang. Weather decides everything here, so build in a spare day.
+Batanes feels like a different country: rolling emerald hills, stone houses with thick cogon roofs, and dramatic cliffs facing the open sea. The Philippines' northernmost province is a small group of islands closer to Taiwan than to Manila, reached by a short flight to Basco. It is remote, uncrowded, and deeply tied to Ivatan culture, from the honesty coffee shop in Ivana to the stone villages of Sabtang (see our [Sabtang Island guide](/articles/sabtang-island-batanes)). Weather decides everything here, so build in a spare day.
+
+### The Ivatan way of life
+
+The Ivatan have adapted to some of the strongest typhoons in the Philippines for centuries. Their traditional houses have walls of limestone and coral up to a meter thick and roofs of tightly packed cogon grass that shed wind and rain. In the fields, farmers wear the vakul, a head cover woven from palm fiber that protects against sun and drizzle. Many families still farm root crops and garlic on small plots bordered by hedgerows that break the wind. Visitors notice the honesty, too: the famous Honesty Coffee Shop in Ivana has no staff, just a list of prices and a box for payment.
+
+### Batan, Sabtang and Itbayat
+
+Batanes has ten islands, but only three are inhabited. **Batan** is the main island, home to the capital, Basco, the airport and most places to stay. Its north and south loops cover Basco Lighthouse, the Rakuh-a-Payaman pasture (nicknamed Marlboro Hills), Valugan Boulder Beach and the stone churches of Mahatao and Ivana. **Sabtang**, a short boat ride away, has the best-preserved stone villages and the white sand of Morong Beach. **Itbayat**, the largest and most remote, is reached by a long, rough boat crossing or a small plane, and rewards adventurous travelers with cliffs, caves and almost no tourists.
+
+### Protected landscapes and seascapes
+
+Much of the province is protected as the Batanes Protected Landscapes and Seascapes, and the islands sit on the UNESCO World Heritage tentative list. The rules are simple and strict: stay on paths, don't take stones or shells, and never buy coconut crab, which is protected. Batanes stays green and clean because visitors and locals take this seriously.
+
+### Food to try
+
+Ivatan cooking makes the most of what grows on the islands. Look for uvud balls (made from the pith of the banana plant), lunis (pork cooked slowly in its own fat), flying fish and turmeric rice. Meals are simple, fresh and often shared at small family-run eateries in Basco.
 
 Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Mount Pulag](/articles/mount-pulag-benguet).
