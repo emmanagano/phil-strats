@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { FaArrowRight, FaArrowUpRightFromSquare } from "react-icons/fa6";
+import { FaArrowRight } from "react-icons/fa6";
 import { getAllArticles } from "@/data/articles";
-import { getLatestBlurb } from "@/data/blurbs";
 import { CATEGORIES, ISLAND_GROUPS } from "@/data/taxonomy";
 import { SITE_NAME } from "@/lib/site";
 import ArticleCard from "./components/ui/ArticleCard";
 import Badge from "./components/ui/Badge";
+import { categoryTone } from "@/lib/categoryTone";
 import Button from "./components/ui/Button";
 import Container from "./components/ui/Container";
 import NewsletterForm from "./components/ui/NewsletterForm";
@@ -15,7 +15,6 @@ export default function Home() {
   const articles = getAllArticles();
   const [featured, ...rest] = articles;
   const latest = rest.slice(0, 6);
-  const blurb = getLatestBlurb();
   const countBy = (key: "category" | "islandGroup", slug: string) =>
     articles.filter((a) => a[key] === slug).length;
 
@@ -23,51 +22,51 @@ export default function Home() {
     <>
       {/* Hero */}
       {featured && (
-        <section className="px-2 pt-2 sm:px-4">
-          <div className="relative isolate flex min-h-[min(80vh,48rem)] items-end overflow-hidden rounded-[2rem] bg-ocean-900 sm:rounded-[2.5rem]">
+        <section className="-mt-18">
+          <div className="relative isolate flex min-h-[calc(min(80vh,48rem)+4.5rem)] items-end overflow-hidden bg-ocean-900">
             <img
               src={featured.image}
               alt={featured.alt}
               fetchPriority="high"
-              className="animate-hero-zoom absolute inset-0 -z-10 h-full w-full object-cover"
+              className="photo-pop absolute inset-0 -z-10 h-full w-full object-cover"
             />
-            <div
-              aria-hidden
-              className="absolute inset-0 -z-10 bg-gradient-to-t from-ocean-950/90 via-ocean-950/40 to-ocean-950/10"
-            />
-            <Container className="pb-12 pt-32 sm:pb-16">
-              <div className="max-w-3xl">
+            <Container className="pt-32">
+              {/* Solid caption panel: the photo stays full color, the text stays readable. */}
+              <div className="max-w-2xl bg-ocean-900 p-6 text-white sm:p-10">
                 <div className="mb-5 flex flex-wrap gap-2">
                   <Badge tone="mango">Latest guide</Badge>
-                  <Badge tone="glass">{featured.categoryLabel}</Badge>
+                  <span className={`px-2.5 py-1 text-xs font-semibold tracking-wide ${categoryTone(featured.category).tag}`}>
+                    {featured.categoryLabel}
+                  </span>
                 </div>
-                <h1 className="text-4xl font-semibold leading-[1.05] text-white sm:text-6xl lg:text-7xl">
-                  {featured.title}
-                </h1>
-                <p className="mt-5 max-w-2xl text-lg text-white/85 sm:text-xl">
-                  {featured.description}
-                </p>
-                <div className="mt-8 flex flex-wrap gap-3">
+                <h1 className="text-3xl font-semibold leading-[1.08] sm:text-5xl">{featured.title}</h1>
+                <p className="mt-4 max-w-xl text-base text-white/85 sm:text-lg">{featured.description}</p>
+                <div className="mt-7 flex flex-wrap gap-3">
                   <Button href={`/articles/${featured.slug}`} variant="light" arrow>
                     Read the guide
                   </Button>
                   <Link
                     href="/articles"
-                    className="inline-flex items-center rounded-full px-6 py-3 text-sm font-semibold text-white ring-1 ring-white/40 backdrop-blur transition hover:bg-white/10"
+                    className="inline-flex min-h-11 items-center rounded-control px-5 py-3 text-sm font-semibold text-white ring-1 ring-inset ring-white/50 transition hover:bg-white/10"
                   >
                     Browse all destinations
                   </Link>
                 </div>
               </div>
-              <dl className="mt-12 grid max-w-xl grid-cols-3 gap-6 rounded-2xl border border-white/25 bg-white/10 p-6 text-white shadow-[0_8px_32px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.3)] backdrop-blur-xl backdrop-saturate-150">
+            </Container>
+          </div>
+          {/* Color block: stats strip */}
+          <div className="bg-mango-400 text-ocean-950">
+            <Container>
+              <dl className="grid grid-cols-3 divide-x divide-ocean-950/15">
                 {[
                   [articles.length, "Travel guides"],
                   [ISLAND_GROUPS.length, "Island groups"],
                   [CATEGORIES.length, "Experiences"],
                 ].map(([value, label]) => (
-                  <div key={label}>
-                    <dt className="text-xs uppercase tracking-widest text-white/70">{label}</dt>
-                    <dd className="mt-1 font-display text-3xl font-semibold">{value}</dd>
+                  <div key={label} className="flex flex-col-reverse px-4 py-5 first:pl-0 sm:flex-row-reverse sm:items-baseline sm:justify-end sm:gap-3 sm:px-8">
+                    <dt className="text-xs font-bold uppercase tracking-widest text-ocean-950/75">{label}</dt>
+                    <dd className="font-display text-3xl font-semibold sm:text-4xl">{value}</dd>
                   </div>
                 ))}
               </dl>
@@ -77,44 +76,40 @@ export default function Home() {
       )}
 
       {/* Experiences */}
-      <Container as="section" className="reveal py-20 sm:py-28">
+      <section className="bg-ocean-900 py-20 sm:py-28">
+      <Container>
         <SectionHeading
+          tone="dark"
           eyebrow="Find your kind of trip"
           title="Explore by experience"
           description="Island hopping, wild landscapes, or centuries-old streets — start with what you love."
         />
-        <div className="grid gap-5 md:grid-cols-3">
+        <div className="grid gap-1.5 md:grid-cols-3">
           {CATEGORIES.map((category) => (
             <Link
               key={category.slug}
               href={`/articles?category=${category.slug}`}
-              className="group relative isolate flex aspect-[4/5] items-end overflow-hidden rounded-3xl p-3 shadow-card transition-shadow hover:shadow-card-hover md:aspect-[3/4]"
+              className="group relative isolate flex aspect-[4/3] items-end overflow-hidden focus-visible:outline-offset-[-4px] focus-visible:outline-white sm:aspect-[16/10] md:aspect-[3/4]"
             >
               <img
                 src={category.image}
                 alt=""
                 loading="lazy"
-                className="absolute inset-0 -z-10 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
+                className="photo-pop absolute inset-0 -z-10 h-full w-full object-cover"
               />
-              <div
-                aria-hidden
-                className="absolute inset-0 -z-10 bg-gradient-to-t from-ocean-950/85 via-ocean-950/20 to-transparent"
-              />
-              <div className="w-full rounded-2xl border border-transparent p-4 text-white transition duration-300 group-hover:border-white/25 group-hover:bg-white/10 group-hover:shadow-[0_8px_32px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.3)] group-hover:backdrop-blur-xl group-hover:backdrop-saturate-150 group-focus-visible:border-white/25 group-focus-visible:bg-white/10 group-focus-visible:backdrop-blur-xl">
-                <p className="text-xs font-semibold uppercase tracking-widest text-mango-400">
+              <div className={`w-full p-6 transition-colors duration-150 group-hover:bg-coral-500 group-hover:text-white lg:p-8 ${categoryTone(category.slug).block}`}>
+                <p className="text-xs font-semibold uppercase tracking-widest opacity-80">
                   {countBy("category", category.slug)} guides
                 </p>
                 <h3 className="mt-2 text-3xl font-semibold">
-                  <span className="box-decoration-clone bg-gradient-to-r from-mango-400/50 to-mango-400/50 bg-[length:0%_38%] bg-[position:0_90%] bg-no-repeat px-1 -mx-1 transition-[background-size] duration-500 ease-out group-hover:bg-[length:100%_38%] group-focus-visible:bg-[length:100%_38%] motion-reduce:transition-none">
-                    {category.label}
-                  </span>
+                  {category.label}
                 </h3>
-                <p className="mt-2 text-white/80">{category.blurb}</p>
-                <span className="mt-5 inline-flex items-center gap-2 text-sm font-semibold">
+                <p className="mt-2 max-w-sm opacity-85">{category.blurb}</p>
+                <span className="mt-5 inline-flex items-center gap-2 border-t border-current/25 pt-4 text-sm font-semibold">
                   Explore
                   <FaArrowRight
                     aria-hidden
-                    className="h-3 w-3 transition-transform group-hover:translate-x-1"
+                    className="h-3 w-3"
                   />
                 </span>
               </div>
@@ -122,15 +117,11 @@ export default function Home() {
           ))}
         </div>
       </Container>
+      </section>
 
       {/* Latest guides */}
-      <section className="relative isolate overflow-hidden bg-gradient-to-br from-lagoon-100 via-lagoon-50 to-mango-100 py-20 sm:py-28">
-        <div aria-hidden className="pointer-events-none absolute inset-0 -z-10">
-          <div className="absolute -left-24 top-10 h-96 w-96 rounded-full bg-lagoon-300/60 blur-3xl" />
-          <div className="absolute right-0 top-1/3 h-[28rem] w-[28rem] rounded-full bg-coral-400/25 blur-3xl" />
-          <div className="absolute -bottom-24 left-1/3 h-80 w-80 rounded-full bg-mango-400/35 blur-3xl" />
-        </div>
-        <Container className="reveal">
+      <section className="border-y border-sand-200 bg-sand-100 py-20 sm:py-28">
+        <Container>
           <SectionHeading
             eyebrow="Fresh from the road"
             title="Latest travel guides"
@@ -148,112 +139,131 @@ export default function Home() {
         </Container>
       </section>
 
-      {/* Regions */}
-      <Container as="section" className="reveal py-20 sm:py-28">
-        <SectionHeading
-          eyebrow="7,641 islands, four ways in"
-          title="Browse by region"
-          align="center"
-        />
-        <div className="grid grid-cols-2 gap-4 lg:grid-cols-4">
-          {ISLAND_GROUPS.map((group) => (
-            <Link
-              key={group.slug}
-              href={`/articles?region=${group.slug}`}
-              className="group relative isolate flex aspect-square items-end overflow-hidden rounded-3xl p-5 sm:p-6"
-            >
-              <img
-                src={group.image}
-                alt=""
-                loading="lazy"
-                className="absolute inset-0 -z-10 h-full w-full object-cover transition-transform duration-700 group-hover:scale-110"
-              />
-              <div
-                aria-hidden
-                className="absolute inset-0 -z-10 bg-gradient-to-t from-ocean-950/80 to-transparent transition-colors group-hover:from-lagoon-700/90"
-              />
-              <div className="text-white">
-                <h3 className="text-2xl font-semibold sm:text-3xl">{group.label}</h3>
-                <p className="text-sm text-white/80">
-                  {countBy("islandGroup", group.slug)} guides
-                </p>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </Container>
+      {/* Regions: bento on a sun-yellow band */}
+      <section className="bg-mango-400 py-20 sm:py-28">
+        <Container>
+          <SectionHeading eyebrow="7,641 islands, four ways in" title="Browse by region" />
+          <div className="grid gap-2 sm:grid-cols-2 lg:h-[42rem] lg:grid-cols-4 lg:grid-rows-2">
+            {ISLAND_GROUPS.map((group, i) => {
+              const picks = articles.filter((a) => a.islandGroup === group.slug).slice(0, i === 0 ? 4 : 3);
+              const layout = [
+                "lg:col-span-2 lg:row-span-2",
+                "lg:col-span-2",
+                "",
+                "",
+              ][i];
+              return (
+                <div
+                  key={group.slug}
+                  className={`group relative isolate flex min-h-80 flex-col justify-between overflow-hidden rounded-card ${layout}`}
+                >
+                  <img
+                    src={group.image}
+                    alt=""
+                    loading="lazy"
+                    className="photo-pop absolute inset-0 -z-10 h-full w-full object-cover"
+                  />
+                  <ul className="relative z-20 flex flex-wrap gap-1.5 p-3 sm:p-4">
+                    {picks.map((a) => (
+                      <li key={a.slug}>
+                        <Link
+                          href={`/articles/${a.slug}`}
+                          className="block rounded-control bg-white px-2.5 py-1 text-xs font-semibold text-ocean-900 transition-colors duration-150 hover:bg-coral-500 hover:text-white"
+                        >
+                          {a.place}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="flex items-end justify-between gap-4 bg-ocean-900 p-4 text-white transition-colors duration-150 group-hover:bg-coral-500 sm:p-6">
+                    <h3 className={`font-semibold leading-none ${i === 0 ? "text-5xl sm:text-7xl" : "text-3xl sm:text-4xl"}`}>
+                      {/* Stretched link: the whole tile opens the region. */}
+                      <Link
+                        href={`/articles?region=${group.slug}`}
+                        className="after:absolute after:inset-0 after:z-10 after:content-[''] focus-visible:outline-none focus-visible:after:outline-4 focus-visible:after:outline-offset-[-4px] focus-visible:after:outline-white"
+                      >
+                        {group.label}
+                      </Link>
+                    </h3>
+                    <p className="shrink-0 text-right">
+                      <span className="block font-display text-3xl font-semibold leading-none text-mango-300 group-hover:text-white">
+                        {countBy("islandGroup", group.slug)}
+                      </span>
+                      <span className="text-xs font-bold uppercase tracking-widest text-white/70">guides</span>
+                    </p>
+                  </div>
+                </div>
+              );
+            })}
+          </div>
+        </Container>
+      </section>
 
-      {/* About + latest blurb */}
-      <Container as="section" className="reveal pb-20 sm:pb-28">
-        <div className="grid gap-6 lg:grid-cols-5">
-          <div className="rounded-3xl bg-lagoon-700 p-8 text-white sm:p-12 lg:col-span-3">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-mango-400">
+      {/* About + planning tools */}
+      <Container as="section" className="pb-20 sm:pb-28">
+        <div className="grid gap-12 border-t-2 border-ocean-900 pt-10 lg:grid-cols-12 lg:gap-16">
+          <div className="lg:col-span-6">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
               About {SITE_NAME}
             </p>
-            <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
+            <h2 className="mt-4 text-3xl font-semibold text-ocean-900 sm:text-5xl">
               Travel the Philippines like a local.
             </h2>
-            <p className="mt-4 max-w-xl text-lg text-lagoon-50/90">
+            <p className="mt-5 max-w-xl text-lg leading-relaxed text-ocean-800">
               From hidden beaches and mountain escapes to heritage towns and street food, every
               guide comes with practical tips, honest takes, and a ready-made itinerary.
             </p>
-            <Button href="/contact" variant="light" arrow className="mt-8">
-              Say hello
-            </Button>
+            <div className="mt-8 flex flex-wrap gap-3">
+              <Button href="/articles" arrow>
+                Choose a destination
+              </Button>
+              <Button href="/contact" variant="secondary">
+                Say hello
+              </Button>
+            </div>
           </div>
-          {blurb && (
-            <a
-              href={blurb.article_link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="group flex flex-col justify-between rounded-3xl bg-mango-100 p-8 transition hover:bg-mango-400 sm:p-10 lg:col-span-2"
-            >
-              <div>
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
-                  Worth reading · {blurb.source}
-                </p>
-                <h3 className="mt-4 text-2xl font-semibold text-ocean-900">
-                  {blurb.article_title}
-                </h3>
-                <p className="mt-3 text-ocean-800">{blurb.commentary}</p>
-              </div>
-              <span className="mt-8 inline-flex items-center gap-2 text-sm font-semibold text-ocean-900">
-                Read on {blurb.source}
-                <FaArrowUpRightFromSquare aria-hidden className="h-3 w-3" />
-              </span>
-            </a>
-          )}
+          <div className="lg:col-span-5 lg:col-start-8">
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-lagoon-700">
+              Every guide is a trip planner
+            </p>
+            <ol className="mt-4 divide-y divide-sand-200 border-y border-sand-200">
+              {[
+                ["Pick your month", "See which months are best for weather and sea."],
+                ["Set a budget", "Get a rough total for your style and group size."],
+                ["Save the spots you love", "Build a must-do list as you read."],
+                ["Pack and go", "Tick off a checklist, then copy your plan."],
+              ].map(([title, text], i) => (
+                <li key={title} className="flex gap-5 py-4">
+                  <span className="w-6 shrink-0 font-display text-2xl font-semibold leading-none text-coral-600">
+                    {i + 1}
+                  </span>
+                  <div>
+                    <p className="font-semibold text-ocean-900">{title}</p>
+                    <p className="mt-0.5 text-sm text-muted">{text}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
+          </div>
         </div>
       </Container>
 
       {/* Newsletter */}
-      <section className="px-2 pb-2 sm:px-4">
-        <div className="relative isolate overflow-hidden rounded-[2rem] bg-ocean-900 px-4 py-16 text-center sm:rounded-[2.5rem] sm:px-6 sm:py-24">
-          <div
-            aria-hidden
-            className="absolute left-[8%] top-[-4rem] -z-10 h-80 w-80 rounded-full bg-lagoon-500/60 blur-3xl"
-          />
-          <div
-            aria-hidden
-            className="absolute bottom-[-5rem] right-[10%] -z-10 h-80 w-80 rounded-full bg-coral-500/50 blur-3xl"
-          />
-          <div
-            aria-hidden
-            className="absolute right-[28%] top-[8%] -z-10 h-56 w-56 rounded-full bg-mango-400/40 blur-3xl"
-          />
-          <div className="mx-auto max-w-3xl rounded-3xl border border-white/25 bg-white/10 px-6 py-12 shadow-[0_8px_32px_rgba(0,0,0,0.25),inset_0_1px_0_rgba(255,255,255,0.3)] backdrop-blur-xl backdrop-saturate-150 sm:px-12">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-mango-400">
+      <section className="bg-ocean-900 py-16 sm:py-24">
+        <Container className="grid items-end gap-8 lg:grid-cols-2 lg:gap-16">
+          <div>
+            <p className="text-xs font-bold uppercase tracking-[0.2em] text-mango-300">
               The weekly postcard
             </p>
-            <h2 className="mx-auto mt-4 max-w-2xl text-3xl font-semibold text-white sm:text-5xl">
+            <h2 className="mt-4 max-w-xl text-3xl font-semibold text-white sm:text-5xl">
               New islands in your inbox, every week.
             </h2>
-            <p className="mx-auto mt-4 max-w-xl text-white/80">
+            <p className="mt-4 max-w-lg text-white/80">
               Fresh guides, seasonal picks, and hidden gems. No spam — unsubscribe anytime.
             </p>
-            <NewsletterForm id="home-newsletter" tone="dark" className="mx-auto mt-8 max-w-lg" />
           </div>
-        </div>
+          <NewsletterForm id="home-newsletter" tone="dark" className="max-w-xl lg:justify-self-end" />
+        </Container>
       </section>
     </>
   );

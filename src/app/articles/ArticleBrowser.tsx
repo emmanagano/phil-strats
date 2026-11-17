@@ -47,11 +47,11 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
 
   return (
     <div>
-      <div className="mb-10 space-y-5 rounded-3xl bg-white p-5 shadow-card sm:p-6">
+      <div className="mb-10 space-y-5 border-y border-sand-200 py-6">
         <div className="relative">
           <FaMagnifyingGlass
             aria-hidden
-            className="pointer-events-none absolute left-5 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"
+            className="pointer-events-none absolute left-4 top-1/2 h-4 w-4 -translate-y-1/2 text-muted"
           />
           <label htmlFor="article-search" className="sr-only">
             Search guides
@@ -65,7 +65,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
               updateParams({ q: e.target.value });
             }}
             placeholder="Search beaches, towns, activities…"
-            className="w-full rounded-full bg-sand-50 py-3.5 pl-12 pr-5 text-base text-ocean-900 outline-none ring-1 ring-sand-200 transition placeholder:text-muted focus:ring-2 focus:ring-lagoon-600"
+            className="min-h-12 w-full rounded-control bg-white py-3 pl-11 pr-4 text-base text-ocean-900 outline-none ring-1 ring-sand-300 transition placeholder:text-muted focus:ring-2 focus:ring-lagoon-600"
           />
         </div>
         <FilterGroup
@@ -94,7 +94,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
               setQuery("");
               updateParams({ category: "", region: "", q: "" });
             }}
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-lagoon-700 hover:text-ocean-900"
+            className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-lagoon-700 hover:text-ocean-900"
           >
             <FaXmark aria-hidden /> Clear all
           </button>
@@ -104,7 +104,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
       {results.length > 0 ? (
         <ArticleGrid articles={results.slice(0, visible)} />
       ) : (
-        <div className="rounded-3xl border-2 border-dashed border-sand-300 px-6 py-16 text-center">
+        <div className="rounded-card border-2 border-dashed border-sand-300 px-6 py-16 text-center">
           <p className="font-display text-2xl text-ocean-900">No guides found</p>
           <p className="mt-2 text-muted">Try a different search or clear the filters.</p>
         </div>
@@ -115,7 +115,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
           <button
             type="button"
             onClick={() => setVisible((v) => v + PAGE_SIZE)}
-            className="rounded-full border border-ocean-900/20 bg-white px-8 py-3 text-sm font-semibold text-ocean-900 transition hover:border-ocean-900 hover:bg-ocean-900 hover:text-white"
+            className="min-h-11 rounded-control border border-ocean-900/20 bg-white px-8 py-3 text-sm font-semibold text-ocean-900 transition hover:border-ocean-900 hover:bg-ocean-900 hover:text-white"
           >
             Load more guides
           </button>
@@ -147,16 +147,16 @@ function FilterGroup({
   onChange: (value: string) => void;
 }) {
   const chip = (active: boolean) =>
-    `rounded-full px-4 py-2 text-sm font-medium transition ${
+    `min-h-11 rounded-control border px-3.5 text-sm font-medium transition sm:min-h-10 ${
       active
-        ? "bg-ocean-900 text-white"
-        : "bg-sand-100 text-ocean-800 hover:bg-lagoon-100 hover:text-lagoon-700"
+        ? "border-ocean-900 bg-ocean-900 text-white"
+        : "border-sand-300 bg-white text-ocean-800 hover:border-lagoon-600 hover:text-lagoon-700"
     }`;
 
   return (
     <fieldset className="flex flex-wrap items-center gap-2">
       <legend className="sr-only">{label}</legend>
-      <span aria-hidden className="mr-2 w-24 text-xs font-bold uppercase tracking-widest text-muted">
+      <span aria-hidden className="w-full text-xs font-bold uppercase tracking-widest text-muted sm:mr-2 sm:w-24">
         {label}
       </span>
       <button type="button" aria-pressed={!value} onClick={() => onChange("")} className={chip(!value)}>

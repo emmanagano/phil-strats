@@ -16,7 +16,8 @@ export const NEWSLETTER_ACTION =
 export const NAV = [
   { label: "Home", href: "/" },
   { label: "Destinations", href: "/articles" },
-  { label: "Blurbs", href: "/blurbs" },
+  { label: "News", href: "/news" },
+  { label: "Showbiz", href: "/showbiz" },
   { label: "Newsletter", href: "/newsletter" },
   { label: "Contact", href: "/contact" },
 ] as const;

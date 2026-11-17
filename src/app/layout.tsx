@@ -1,5 +1,5 @@
 import type { Metadata, Viewport } from "next";
-import { Fraunces, Inter } from "next/font/google";
+import { Inter, Source_Serif_4 } from "next/font/google";
 import Script from "next/script";
 import "./globals.css";
 import Layout from "./components/Layout";
@@ -29,10 +29,10 @@ const inter = Inter({
   subsets: ["latin"],
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
+const sourceSerif = Source_Serif_4({
+  variable: "--font-source-serif",
   subsets: ["latin"],
-  axes: ["opsz", "SOFT"],
+  axes: ["opsz"],
 });
 
 export const metadata: Metadata = {
@@ -58,12 +58,13 @@ export const metadata: Metadata = {
     images: ["/images/el-nido-palawan.jpg"],
   },
   verification: {
-    google: "EQqhGxhaHmSfsa0YO7JPHF_HL3EFa2h--C74nSnRbaI",
+    // Search Console: older property + https://philippinestrategies.netlify.app/ (URL prefix)
+    google: ["EQqhGxhaHmSfsa0YO7JPHF_HL3EFa2h--C74nSnRbaI", "PRisyGB5mifmKKP3O6nfAvs5yinfK9aWWmV8lthdIQo"],
   },
 };
 
 export const viewport: Viewport = {
-  themeColor: "#fdfaf4",
+  themeColor: "#fffdf8",
 };
 
 export default function RootLayout({
@@ -72,7 +73,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" className={`${inter.variable} ${fraunces.variable}`}>
+    <html lang="en" className={`${inter.variable} ${sourceSerif.variable}`}>
       <head>
         <Script id="gtm-head" strategy="beforeInteractive">
           {`

@@ -1,5 +1,7 @@
 import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/data/articles";
+import { getAllNews } from "@/data/news";
+import { getAllShowbiz } from "@/data/showbiz";
 import { NAV, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -21,5 +23,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.7,
   }));
 
-  return [...pages, ...articles];
+  const news = getAllNews().map((brief) => ({
+    url: `${SITE_URL}/news/${brief.slug}`,
+    lastModified: brief.date,
+    changeFrequency: "yearly" as const,
+    priority: 0.5,
+  }));
+
+  const showbiz = getAllShowbiz().map((story) => ({
+    url: `${SITE_URL}/showbiz/${story.slug}`,
+    lastModified: story.date,
+    changeFrequency: "yearly" as const,
+    priority: 0.5,
+  }));
+
+  return [...pages, ...articles, ...news, ...showbiz];
 }

@@ -3,11 +3,85 @@ id: 16
 title: "Hundred Islands Pangasinan Guide: Island Hopping Near Manila"
 description: "Plan a Hundred Islands National Park trip from Alaminos, with island hopping, snorkeling, and zipline tips plus an easy weekend itinerary."
 date: "2026-10-30"
+updated: "2026-11-17"
 slug: "hundred-islands-pangasinan"
 region: "Ilocos Region"
 category: "beaches-islands"
 islandGroup: "luzon"
 alt: "Forested Romulo Island in Hundred Islands National Park with tour boats moored on a small beach."
+guide:
+  place: "Hundred Islands"
+  verified: "Nov 2026"
+  verdict: "A national park of 124 limestone islets, reachable by bus from Manila. Ideal for a budget weekend of island hopping, kayaking and ziplines. It's not a white-sand paradise, though: expect rocky islands and busy weekends."
+  bestFor: ["Weekend trips", "Families", "Groups", "Budget travelers"]
+  quickFacts:
+    - {label: "Get there", value: "Bus from Manila to Alaminos (5–6 hrs)"}
+    - {label: "Ideal stay", value: "1–2 days"}
+    - {label: "Daily budget", value: "₱1,500–3,500 per person"}
+    - {label: "Best months", value: "Dec–May"}
+    - {label: "Boats", value: "Rented per group at Lucap Wharf"}
+    - {label: "Tip", value: "Visit on a weekday to avoid crowds"}
+  months:
+    - {rating: "great", note: "Cool, dry and calm."}
+    - {rating: "great", note: "Dry and clear."}
+    - {rating: "great", note: "Warm and calm; great for kayaking."}
+    - {rating: "great", note: "Peak summer; very busy at Holy Week."}
+    - {rating: "good", note: "Hot; storms late in the month."}
+    - {rating: "mixed", note: "Rainy season begins."}
+    - {rating: "avoid", note: "Heavy rain; boats may be suspended."}
+    - {rating: "avoid", note: "Wettest month; typhoon risk."}
+    - {rating: "avoid", note: "Stormy."}
+    - {rating: "mixed", note: "Rain easing."}
+    - {rating: "good", note: "Drier days return."}
+    - {rating: "good", note: "Cool and dry; busy over the holidays."}
+  routes:
+    - from: "Manila by bus"
+      steps: ["Five Star or Victory Liner bus from Cubao or Pasay to Alaminos (5–6 hrs)", "Tricycle to Lucap Wharf (10 min)"]
+      time: "5–6 hrs"
+      cost: "₱500–700"
+      tip: "Take the first bus so you have the full day on the water."
+    - from: "By car"
+      steps: ["Drive via NLEX, SCTEX and TPLEX to Alaminos (4–5 hrs)"]
+      time: "4–5 hrs"
+      cost: "Tolls ≈ ₱800–1,000"
+  budget:
+    usdRate: 58
+    styles:
+      backpacker: {stay: 800, food: 400, transport: 300, activities: 500}
+      midrange: {stay: 2000, food: 800, transport: 500, activities: 900}
+      comfort: {stay: 4500, food: 1500, transport: 1500, activities: 1500}
+  experiences:
+    - {name: "Island hopping", tags: ["island hopping"], blurb: "Governor's, Quezon and Children's islands for viewpoints, swimming and picnics.", cost: "≈ ₱1,500–2,000 per small boat", time: "Half to full day"}
+    - {name: "Governor's Island viewpoint", tags: ["nature"], blurb: "Climb up for a panorama of the whole archipelago.", cost: "Included", time: "30 min"}
+    - {name: "Zipline over the islands", tags: ["adventure"], blurb: "A long zipline between Governor's and Virgin islands.", cost: "≈ ₱300–500", time: "15 min"}
+    - {name: "Kayaking & snorkeling", tags: ["adventure", "snorkel"], blurb: "Paddle between islets and snorkel near Quezon Island.", cost: "≈ ₱200–400 rental", time: "1–2 hrs"}
+    - {name: "Bolinao side trip", tags: ["beach", "nature"], blurb: "Patar Beach, a lighthouse and the Enchanted Cave, one hour away.", cost: "≈ ₱100–200 fees", time: "Full day"}
+  itineraries:
+    1:
+      - {title: "Day trip", items: ["Early bus to Alaminos", "Island hopping: Governor's, Quezon and Children's islands", "Zipline, then bus home"]}
+    2:
+      - {title: "Islands", items: ["Bus to Alaminos", "Island hopping and zipline", "Seafood dinner at Lucap"]}
+      - {title: "Bolinao & go", items: ["Enchanted Cave swim", "Patar Beach and Cape Bolinao Lighthouse", "Bus back to Manila"]}
+  stays:
+    - {area: "Lucap", vibe: "Guesthouses by the wharf for early starts.", bestFor: "Island hoppers", price: "₱1,000–3,500/night"}
+    - {area: "Bolinao", vibe: "Beach resorts an hour away.", bestFor: "Beach time", price: "₱1,500–5,000/night"}
+  eats:
+    - {name: "Pigar-pigar", order: "Stir-fried beef with onions, Pangasinan street food", price: "₱100–200"}
+    - {name: "Bangus", order: "Grilled Dagupan milkfish", price: "₱150–300"}
+    - {name: "Puto Calasiao", order: "Small steamed rice cakes", price: "₱50–100"}
+  getAround:
+    - {mode: "Tricycle", cost: "₱15–100"}
+    - {mode: "Boat rental", cost: "≈ ₱1,500–2,500", note: "Per boat, by size"}
+  fees:
+    - {name: "Environmental fee (day tour)", amount: "≈ ₱80"}
+    - {name: "Overnight island stay fee", amount: "≈ ₱150–200"}
+    - {name: "Zipline", amount: "≈ ₱300–500"}
+  essentials:
+    - {title: "Weekends", body: "Crowded on weekends and holidays. Go on weekdays for quieter islands."}
+    - {title: "Bring supplies", body: "Few or no shops on the islands. Pack water, food and sunscreen."}
+    - {title: "Money", body: "ATMs in Alaminos town; cash for boats and fees."}
+    - {title: "Weather", body: "Boats are suspended during storms. Check before you travel."}
+  packing: ["Sunscreen", "Water and snacks", "Swimwear", "Hat", "Cash", "Dry bag", "Water shoes"]
 faq:
   - question: "How do I get to Hundred Islands from Manila?"
     answer: "Take a bus to Alaminos, Pangasinan, which takes roughly five to six hours, then a tricycle to the Lucap Wharf where island-hopping boats depart."
@@ -28,64 +102,3 @@ tags:
 Hundred Islands is a scatter of small, mushroom-shaped limestone islets just off Alaminos. It is one of the closest island-hopping destinations to Manila, which makes it a classic weekend escape.
 
 Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Vigan](/articles/vigan-and-laoag-ilocos).
-
-## Hundred Islands Quick Facts
-
-- Region: Ilocos Region (Pangasinan)
-- Best Time to Visit: November to May
-- How to Get There: Bus from Manila to Alaminos, then a tricycle to Lucap Wharf
-- Ideal Stay: 2 days
-- Notable For: Island hopping, snorkeling, ziplining, and sunset views
-
-## Hundred Islands at a Glance
-
-- Easy weekend trip from Manila
-- Dozens of small islands to explore by boat
-- Good for families, groups, and first-time island hoppers
-- Snorkeling, kayaking, and camping available
-- Budget-friendly with simple accommodations
-
-## Top Attractions in Hundred Islands
-
-1. Governor's Island – Viewdeck climb and the park's famous zipline.
-2. Quezon Island – Beaches, picnic areas, and calm swimming.
-3. Children's Island – Shallow, family-friendly swimming spots.
-4. Marcos Island – Cliff-jumping and a small cave.
-5. Cuenco Island – Snorkeling and hidden coves.
-6. Lucap Wharf – Boat rentals and seafood grills.
-7. Bolo Beach and Patar Beach – Quiet beach stops nearby.
-
-## How to Get to Hundred Islands
-
-- Take a Victory Liner or Five Star bus from Manila to Alaminos (about 5–6 hours).
-- Take a tricycle from the Alaminos terminal to Lucap Wharf.
-- Book an island-hopping boat at the tourism office.
-
-## Best Time to Visit Hundred Islands
-
-November to May offers clear skies and calm seas. Avoid the typhoon months of July to October, when boat trips are often suspended.
-
-## Where to Stay in Hundred Islands
-
-- Lucap seafront inns – Steps from the wharf.
-- Resorts in Alaminos – A little more comfort and pools.
-- Camping on Governor's or Quezon Island – For a night under the stars.
-
-## Where to Eat in Hundred Islands
-
-- Lucap grills – Freshly grilled fish, squid, and shrimp.
-- Alaminos eateries – Try bagoong and local specialties.
-- Island picnic spots – Pack lunch before heading out.
-
-## Hundred Islands Travel Tips & Local Hacks
-
-- Go on a weekday to avoid the crowds.
-- Bring sunscreen, water shoes, and cash.
-- Pack out all trash; the islands are protected.
-- Book your boat early on weekends and holidays.
-
-## 3-Day Hundred Islands Itinerary
-
-- Day 1: Bus to Alaminos, check in at Lucap, and watch the sunset on the pier.
-- Day 2: Island hop to Governor's, Quezon, and Children's Islands; snorkel and try the zipline.
-- Day 3: Optional beach morning at Patar, then return to Manila.

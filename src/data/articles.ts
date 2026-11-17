@@ -8,6 +8,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { getCategory, getIslandGroup } from "./taxonomy";
+import { bestMonthsLabel, type Guide } from "@/lib/guide";
 
 const articlesDir = path.join(process.cwd(), "src/content");
 const imagesDir = path.join(process.cwd(), "public/images");
@@ -38,6 +39,11 @@ export interface ArticleSummary {
   wordCount: number;
   readingTime: number;
   faq: FAQItem[];
+  // Card facts pulled from the guide block (empty for classic articles).
+  place: string;
+  bestMonths: string;
+  budgetFrom: number;
+  idealStay: string;
 }
 
 export interface TocItem {
@@ -48,6 +54,18 @@ export interface TocItem {
 export interface Article extends ArticleSummary {
   content: string;
   toc: TocItem[];
+  // Optional structured guide; when present the article renders the interactive layout.
+  // Kept off ArticleSummary so listing pages don't ship it to the browser.
+  guide: Guide | null;
+  // Required for CC BY / CC BY-SA photos: shown as a caption on the hero.
+  imageCredit: ImageCredit | null;
+}
+
+export interface ImageCredit {
+  author: string;
+  license: string;
+  source: string;
+  licenseUrl?: string;
 }
 
 function readArticleFile(filename: string) {
@@ -62,12 +80,17 @@ function readArticleFile(filename: string) {
   if (!category) problems.push(`unknown category "${data.category}"`);
   const islandGroup = getIslandGroup(data.islandGroup);
   if (!islandGroup) problems.push(`unknown islandGroup "${data.islandGroup}"`);
+  // Missing images fail the production build but only warn in dev, so one article
+  // saved before its photo doesn't take down every page while you're working.
+  const imageProblems: string[] = [];
   if (!fs.existsSync(path.join(imagesDir, `${expectedSlug}.jpg`))) {
-    problems.push(`missing image public/images/${expectedSlug}.jpg`);
+    imageProblems.push(`missing image public/images/${expectedSlug}.jpg`);
   }
   for (const img of [`${expectedSlug}-800.jpg`, `${expectedSlug}-og.jpg`]) {
-    if (!fs.existsSync(path.join(imagesDir, img))) problems.push(`missing image public/images/${img} (run npm run images)`);
+    if (!fs.existsSync(path.join(imagesDir, img))) imageProblems.push(`missing image public/images/${img} (run npm run images)`);
   }
+  if (process.env.NODE_ENV === "production") problems.push(...imageProblems);
+  else if (imageProblems.length > 0) console.warn(`[images] src/content/${filename}: ${imageProblems.join("; ")}`);
   // Soft SEO checks: warn, never fail the build.
   const warnings: string[] = [];
   if (String(data.title ?? "").length > 60) warnings.push(`title is ${data.title.length} chars (aim for 60 or fewer)`);
@@ -76,6 +99,7 @@ function readArticleFile(filename: string) {
   if (!data.alt) warnings.push("missing alt text");
   if (/\b20\d\d\b/.test(`${data.title} ${data.description}`)) warnings.push("title/description hardcodes a year");
   if (warnings.length > 0) console.warn(`[seo] src/content/${filename}: ${warnings.join("; ")}`);
+  if (data.guide) problems.push(...validateGuide(data.guide));
   if (problems.length > 0) {
     throw new Error(`src/content/${filename}: ${problems.join("; ")}`);
   }
@@ -101,8 +125,46 @@ function readArticleFile(filename: string) {
     wordCount: words,
     readingTime: Math.max(1, Math.round(words / 200)),
     faq: data.faq || [],
+    ...cardFacts(data.guide as Guide | undefined, data.title),
   };
-  return { summary, content };
+  return {
+    summary,
+    content,
+    guide: (data.guide ?? null) as Guide | null,
+    imageCredit: (data.imageCredit ?? null) as ImageCredit | null,
+  };
+}
+
+function cardFacts(g: Guide | undefined, title: string) {
+  const b = g?.budget?.styles?.backpacker;
+  return {
+    place: g?.place ?? String(title).split(/:| Travel Guide| Guide/)[0].trim(),
+    bestMonths: g?.months?.length === 12 ? bestMonthsLabel(g.months) : "",
+    // Backpacker spend per person per day, with the room shared by two.
+    budgetFrom: b ? Math.round((b.stay / 2 + b.food + b.transport + b.activities) / 100) * 100 : 0,
+    idealStay: g?.quickFacts?.find((f) => /ideal stay/i.test(f.label))?.value ?? "",
+  };
+}
+
+// Catches typos in the guide block at build time so the interactive page never breaks.
+function validateGuide(g: Partial<Guide>): string[] {
+  const p: string[] = [];
+  const required: (keyof Guide)[] = [
+    "verified", "verdict", "bestFor", "quickFacts", "months", "routes", "budget", "experiences",
+    "itineraries", "stays", "eats", "getAround", "fees", "essentials", "packing",
+  ];
+  for (const key of required) if (g[key] === undefined) p.push(`guide.${key} is missing`);
+  if (g.months && g.months.length !== 12) p.push(`guide.months needs 12 entries (has ${g.months.length})`);
+  for (const m of g.months ?? []) {
+    if (!["great", "good", "mixed", "avoid"].includes(m.rating)) p.push(`guide.months rating "${m.rating}" is invalid`);
+  }
+  for (const style of ["backpacker", "midrange", "comfort"] as const) {
+    if (g.budget && !g.budget.styles?.[style]) p.push(`guide.budget.styles.${style} is missing`);
+  }
+  if (g.itineraries && Object.keys(g.itineraries).some((k) => !/^\d+$/.test(k))) {
+    p.push("guide.itineraries keys must be day counts like 3, 5, 7");
+  }
+  return p;
 }
 
 function markdownFiles() {
@@ -144,7 +206,7 @@ export async function getArticleBySlug(slug: string): Promise<Article | null> {
   const filename = `${slug}.md`;
   if (!fs.existsSync(path.join(articlesDir, filename))) return null;
 
-  const { summary, content } = readArticleFile(filename);
+  const { summary, content, guide, imageCredit } = readArticleFile(filename);
   const toc: TocItem[] = [];
   const html = await unified()
     .use(remarkParse)
@@ -155,5 +217,5 @@ export async function getArticleBySlug(slug: string): Promise<Article | null> {
     .use(rehypeStringify)
     .process(content);
 
-  return { ...summary, content: String(html), toc };
+  return { ...summary, content: String(html), toc, guide, imageCredit };
 }

@@ -3,11 +3,89 @@ id: 11
 title: "Siquijor Travel Guide: Waterfalls & White Sand Beaches"
 description: "Discover Siquijor's Cambugahay Falls, Salagdoong Beach, and old-growth balete trees, with practical tips for a laid-back island getaway."
 date: "2026-10-30"
+updated: "2026-11-17"
 slug: "siquijor-island"
 region: "Central Visayas"
 category: "beaches-islands"
 islandGroup: "visayas"
 alt: "Quiet white sand beach on Siquijor island with palm trees and clear shallow water."
+guide:
+  place: "Siquijor"
+  verified: "Nov 2026"
+  verdict: "Siquijor is small, friendly and full of waterfalls, empty beaches and folk-healing legends. It's easy to loop by scooter in a day. Perfect for a slow, budget-friendly escape. Skip it if you want big resorts and nightlife."
+  bestFor: ["Slow travel", "Budget travelers", "Couples", "Scooter trips"]
+  quickFacts:
+    - {label: "Get there", value: "Fly to Dumaguete (DGT), then 1–1.5 hr ferry"}
+    - {label: "Ideal stay", value: "3 days"}
+    - {label: "Daily budget", value: "₱1,800–4,500 per person"}
+    - {label: "Best months", value: "Feb–May"}
+    - {label: "Getting around", value: "Scooter, ₱300–400/day, 72 km coastal loop"}
+    - {label: "Must-do", value: "Cambugahay Falls rope swing"}
+  months:
+    - {rating: "good", note: "Some rain, but mostly pleasant."}
+    - {rating: "great", note: "Dry and breezy; great for scooter loops."}
+    - {rating: "great", note: "Sunny with calm seas."}
+    - {rating: "great", note: "Peak season; Holy Week brings the healing festival."}
+    - {rating: "great", note: "Hot and dry."}
+    - {rating: "good", note: "Showers return, but quiet and green."}
+    - {rating: "mixed", note: "Rainy spells; waterfalls get muddy after storms."}
+    - {rating: "mixed", note: "Unsettled weather."}
+    - {rating: "mixed", note: "Showers; ferries may pause on rough days."}
+    - {rating: "mixed", note: "Typhoon risk."}
+    - {rating: "mixed", note: "Rainy; fewer visitors."}
+    - {rating: "good", note: "Drier and festive."}
+  routes:
+    - from: "Dumaguete"
+      steps: ["Tricycle to Dumaguete port", "Fast ferry to Siquijor or Larena (1–1.5 hrs)", "Tricycle to your stay"]
+      time: "2 hrs"
+      cost: "₱250–400 ferry"
+      tip: "Fly into Dumaguete from Manila or Cebu."
+    - from: "Cebu or Bohol"
+      steps: ["Fast ferry from Cebu or Tagbilaran to Siquijor (about 4–5 hrs, some via Dumaguete)"]
+      time: "4–5 hrs"
+      cost: "₱1,000–1,800"
+      tip: "Schedules change often; check the day before."
+  budget:
+    usdRate: 58
+    styles:
+      backpacker: {stay: 800, food: 500, transport: 350, activities: 300}
+      midrange: {stay: 2500, food: 1000, transport: 400, activities: 600}
+      comfort: {stay: 6000, food: 2000, transport: 1500, activities: 1200}
+  experiences:
+    - {name: "Cambugahay Falls", tags: ["nature", "adventure"], blurb: "Three turquoise tiers with rope swings and bamboo rafts.", cost: "≈ ₱50–100", time: "2 hrs", tip: "Arrive by 9am before the tour vans."}
+    - {name: "Salagdoong Beach", tags: ["beach", "adventure"], blurb: "Cliff jumping from 10 m and 5 m platforms into clear water.", cost: "≈ ₱50", time: "2 hrs"}
+    - {name: "Paliton Beach sunset", tags: ["beach", "chill"], blurb: "A small white beach with some of the island's best sunsets.", cost: "Free", time: "Late afternoon"}
+    - {name: "Old Enchanted Balete Tree", tags: ["culture"], blurb: "A 400-year-old tree with a fish spa at its roots.", cost: "≈ ₱20", time: "30 min"}
+    - {name: "Lazi Church & Convent", tags: ["culture"], blurb: "A 19th-century coral-stone church and one of Asia's largest convents.", cost: "Donation", time: "45 min"}
+    - {name: "Apo Island day trip", tags: ["snorkel", "wildlife"], blurb: "Swim with sea turtles on a protected island.", cost: "≈ ₱2,500–3,500 pp", time: "Full day"}
+  itineraries:
+    2:
+      - {title: "Arrive & west coast", items: ["Ferry from Dumaguete", "Rent a scooter", "Paliton Beach sunset"]}
+      - {title: "Island loop & go", items: ["Cambugahay Falls early", "Lazi Church and Balete Tree", "Ferry back"]}
+    3:
+      - {title: "Arrive & west coast", items: ["Ferry from Dumaguete", "Rent a scooter", "Paliton Beach sunset"]}
+      - {title: "Island loop", items: ["Cambugahay Falls early", "Lazi Church and the Balete Tree", "Salagdoong cliff jumping"]}
+      - {title: "Slow morning & go", items: ["Coffee in San Juan", "Snorkel at Tubod Marine Sanctuary", "Ferry back"]}
+  stays:
+    - {area: "San Juan", vibe: "The main beach strip with cafés and most guesthouses.", bestFor: "First-timers", price: "₱1,000–6,000/night"}
+    - {area: "Maria / Salagdoong", vibe: "Quiet east coast, near the cliff-jumping beach.", bestFor: "Switching off", price: "₱1,000–4,000/night"}
+  eats:
+    - {name: "Seafood shacks", order: "Grilled fish by the beach in San Juan", price: "₱250–500"}
+    - {name: "Torta", order: "Siquijor's fluffy local sponge cake", price: "₱20–50"}
+    - {name: "Café brunch", order: "Smoothie bowls and Filipino coffee", price: "₱200–400"}
+  getAround:
+    - {mode: "Scooter rental", cost: "₱300–400/day", note: "The best way to loop the island"}
+    - {mode: "Tricycle tour", cost: "₱1,200–1,500/day", note: "For non-riders"}
+  fees:
+    - {name: "Environmental fee (on arrival)", amount: "≈ ₱50–100"}
+    - {name: "Cambugahay Falls", amount: "≈ ₱50–100"}
+    - {name: "Salagdoong Beach", amount: "≈ ₱50"}
+  essentials:
+    - {title: "Money", body: "A few ATMs in Siquijor town and Larena; withdraw before heading out."}
+    - {title: "Healers", body: "Folk healing is a living tradition. Ask before photographing rituals or healers."}
+    - {title: "Entry", body: "30 days visa-free for most passports. Register free at etravel.gov.ph."}
+    - {title: "Ride safe", body: "Wear a helmet; roads are good but dark at night."}
+  packing: ["Driver's license", "Sunscreen", "Swimwear", "Water shoes", "Cash", "Dry bag", "Insect repellent", "Headlamp"]
 faq:
   - question: "Why is Siquijor called the Island of Fire?"
     answer: "Spanish sailors saw swarms of fireflies lighting the island at night and named it Isla del Fuego. The island is also known in folklore for traditional healers and herbal remedies."
@@ -28,64 +106,3 @@ tags:
 Siquijor is small, quiet, and a little mysterious. Its reputation for folk healing and legends sits alongside very real attractions: a turquoise multi-tier waterfall, quiet beaches, and a ring road that feels made for a slow motorbike loop.
 
 Planning more than one stop? See our guides to [Bohol](/articles/chocolate-hills-bohol) or [Camiguin](/articles/camiguin-island).
-
-## Siquijor Quick Facts
-
-- Region: Central Visayas (Siquijor Province)
-- Best Time to Visit: November to May
-- How to Get There: Ferry from Dumaguete, Bohol, or Cebu
-- Ideal Stay: 2–3 days
-- Notable For: Cambugahay Falls, Salagdoong Beach, and a relaxed island pace
-
-## Siquijor at a Glance
-
-- Compact island with a single easy ring road
-- Beach days, waterfalls, and cliff jumping in one trip
-- Affordable stays and low crowds
-- Easy add-on to Dumaguete or Bohol
-- Best explored by scooter
-
-## Top Attractions in Siquijor
-
-1. Cambugahay Falls (Lazi) – Three tiers of blue water with a rope swing.
-2. Salagdoong Beach (Maria) – White sand with cliff-diving platforms.
-3. Century-Old Balete Tree (Lazi) – A giant banyan with a natural spring pool.
-4. San Isidro Labrador Church and Convent (Lazi) – One of the largest convents in the country.
-5. Paliton Beach (San Juan) – Known for sunset views.
-6. Mt. Bandilaan – Viewpoint at the island's highest point.
-7. Lugnason Falls – A quieter option away from the crowds.
-
-## How to Get to Siquijor
-
-- Fly to Dumaguete, then take a fast ferry to Siquijor port (about 1.5 hours).
-- Ferries also run from Tagbilaran (Bohol) and Cebu.
-- On the island, rent a scooter or hire a tricycle for the day.
-
-## Best Time to Visit Siquijor
-
-November to May offers dry weather and calm crossings. Rough seas can delay ferries during the rainy season, so leave some buffer in your schedule.
-
-## Where to Stay in Siquijor
-
-- Paliton and San Juan beachfront resorts – Sunset views and easy swimming.
-- Lazi guesthouses – Close to Cambugahay Falls and the old church.
-- Siquijor town hostels – Budget-friendly and near the port.
-
-## Where to Eat in Siquijor
-
-- Beach cafés in San Juan – Fresh seafood and relaxed sunset dinners.
-- Local carinderias – Simple, cheap, and filling.
-- Bakeries and juice stands – Good for road-trip snacks.
-
-## Siquijor Travel Tips & Local Hacks
-
-- Fill your scooter's tank before leaving town; stations are sparse.
-- Bring cash and reef-safe sunscreen.
-- Visit Cambugahay early for photos without the crowds.
-- Respect local customs and sacred sites, and ask before photographing people.
-
-## 3-Day Siquijor Itinerary
-
-- Day 1: Ferry from Dumaguete, check in, and watch the sunset at Paliton Beach.
-- Day 2: Ride the ring road to Cambugahay Falls, the Balete Tree, and Lazi Church.
-- Day 3: Swim and cliff-jump at Salagdoong, then catch an afternoon ferry out.

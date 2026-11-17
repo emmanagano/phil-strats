@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 type Status = "idle" | "sending" | "sent" | "error";
 
 const fieldClass =
-  "mt-2 w-full rounded-2xl bg-sand-50 px-4 py-3 text-ocean-900 outline-none ring-1 ring-sand-200 transition placeholder:text-muted focus:ring-2 focus:ring-lagoon-600";
+  "mt-2 min-h-12 w-full rounded-control bg-white px-4 py-3 text-base font-normal text-ocean-900 outline-none ring-1 ring-sand-300 transition placeholder:text-muted focus:ring-2 focus:ring-lagoon-600";
 
 export default function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
@@ -30,7 +30,7 @@ export default function ContactForm() {
   };
 
   return (
-    <form ref={form} onSubmit={sendEmail} className="space-y-5 rounded-3xl bg-white p-6 shadow-card sm:p-10">
+    <form ref={form} onSubmit={sendEmail} className="space-y-5 rounded-card border border-sand-200 bg-sand-100/60 p-5 sm:p-8">
       <div className="grid gap-5 sm:grid-cols-2">
         <label className="block text-sm font-semibold text-ocean-900">
           Name
@@ -54,7 +54,7 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="w-full rounded-full bg-lagoon-700 px-6 py-3.5 text-sm font-semibold text-white transition hover:bg-ocean-900 disabled:opacity-60"
+        className="min-h-12 w-full rounded-control bg-coral-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-ocean-900 disabled:opacity-60"
       >
         {status === "sending" ? "Sending…" : "Send message"}
       </button>

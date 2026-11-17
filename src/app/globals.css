@@ -1,37 +1,52 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
 
-/* "Tropical modern" palette: ocean for ink and chrome, lagoon for actions,
-   sand for surfaces, coral and mango for accents. */
+/* "Jeepney" palette, after the flag and painted jeepneys: ocean = deep navy ink and
+   dark bands, mango = sun yellow (signature accent), coral = jeepney red (second
+   accent, CTAs), sand = warm white surfaces, lagoon = links and small UI only. */
 @theme {
   --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
-  --font-display: var(--font-fraunces), ui-serif, Georgia, serif;
+  --font-display: var(--font-source-serif), ui-serif, Georgia, serif;
 
-  --color-ocean-950: #061f28;
-  --color-ocean-900: #0b2e3a;
-  --color-ocean-800: #12414f;
-  --color-ocean-700: #1d5666;
-  --color-muted: #4d6872;
+  --color-ocean-950: #060b1a;
+  --color-ocean-900: #0c1a3a;
+  --color-ocean-800: #1a2a50;
+  --color-ocean-700: #2a3b68;
+  --color-muted: #525c72;
 
   --color-lagoon-50: #eefaf8;
   --color-lagoon-100: #d3f1ed;
+  --color-lagoon-200: #a9e4de;
   --color-lagoon-300: #7fd3cc;
   --color-lagoon-500: #16a3a3;
   --color-lagoon-600: #0e7f86;
   --color-lagoon-700: #0a6870;
+  --color-lagoon-800: #0a5259;
 
-  --color-sand-50: #fdfaf4;
-  --color-sand-100: #f7f0e3;
-  --color-sand-200: #ecdfc8;
-  --color-sand-300: #dcc9a6;
+  --color-sand-50: #fffdf8;
+  --color-sand-100: #faf5ea;
+  --color-sand-200: #efe5d1;
+  --color-sand-300: #dfd0b2;
 
-  --color-coral-100: #fde4db;
-  --color-coral-400: #f4876c;
-  --color-coral-500: #ee6a4d;
-  --color-coral-700: #b8432b;
+  --color-coral-100: #fde3e0;
+  --color-coral-200: #f8bab3;
+  --color-coral-400: #ec5a4b;
+  --color-coral-500: #d62a24;
+  --color-coral-600: #b8211d;
+  --color-coral-700: #951b18;
 
-  --color-mango-100: #fdf1c9;
-  --color-mango-400: #f6c445;
+  --color-mango-100: #fff5c7;
+  --color-mango-200: #ffe88f;
+  --color-mango-300: #ffd84a;
+  --color-mango-400: #fcc419;
+
+  /* Radius system: keep it restrained.
+     control = buttons, inputs, tabs, segmented controls (4px)
+     card    = cards, panels, media thumbnails (8px)
+     rounded-full is reserved for small badges, tags and icon-only buttons.
+     Heroes, full-width bands and image tiles stay square. */
+  --radius-control: 0.25rem;
+  --radius-card: 0.5rem;
 
   --shadow-card: 0 1px 2px rgb(11 46 58 / 0.06), 0 8px 24px -8px rgb(11 46 58 / 0.18);
   --shadow-card-hover: 0 2px 4px rgb(11 46 58 / 0.08), 0 20px 40px -12px rgb(11 46 58 / 0.28);
@@ -57,6 +72,18 @@
     @apply outline-2 outline-offset-2 outline-lagoon-600;
   }
 
+  /* Segmented controls clip their children, so draw focus inside the button. */
+  .seg :focus-visible {
+    outline-offset: -4px;
+  }
+
+  .seg [aria-selected="true"]:focus-visible,
+  .seg [aria-checked="true"]:focus-visible,
+  .seg [aria-pressed="true"]:focus-visible,
+  .seg-dark :focus-visible {
+    outline-color: var(--color-mango-300);
+  }
+
   ::selection {
     @apply bg-mango-100 text-ocean-900;
   }
@@ -75,40 +102,7 @@
   }
 }
 
-/* Scroll-driven fade-up. Browsers without view timelines just show content. */
-@keyframes reveal {
-  from {
-    opacity: 0;
-    transform: translateY(24px);
-  }
-  to {
-    opacity: 1;
-    transform: none;
-  }
-}
 
-@supports (animation-timeline: view()) {
-  @media (prefers-reduced-motion: no-preference) {
-    .reveal {
-      animation: reveal linear both;
-      animation-timeline: view();
-      animation-range: entry 0% cover 20%;
-    }
-  }
-}
-
-@keyframes hero-zoom {
-  from {
-    transform: scale(1.08);
-  }
-  to {
-    transform: scale(1);
-  }
-}
-
-.animate-hero-zoom {
-  animation: hero-zoom 1.6s cubic-bezier(0.2, 0.7, 0.2, 1) both;
-}
 
 /* Article body typography, on top of @tailwindcss/typography. */
 .prose-brand {
@@ -135,4 +129,22 @@
 
 .prose-brand table {
   @apply block overflow-x-auto;
+}
+
+.prose-brand img {
+  @apply rounded-card;
+}
+
+/* Horizontal chip rails: scroll without a visible bar. */
+.no-scrollbar {
+  scrollbar-width: none;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+/* Livelier photos without overlays: a touch more color and punch. */
+.photo-pop {
+  filter: saturate(1.18) contrast(1.06);
 }

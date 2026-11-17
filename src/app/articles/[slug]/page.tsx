@@ -9,12 +9,13 @@ import {
   FaRegCalendar,
   FaRegClock,
 } from "react-icons/fa6";
-import { getAllArticles, getArticleBySlug, type ArticleSummary } from "@/data/articles";
+import { getAllArticles, getArticleBySlug, type ArticleSummary, type ImageCredit } from "@/data/articles";
 import { formatDate } from "@/lib/format";
 import { AUTHOR, SITE_NAME, SITE_URL, SOCIALS } from "@/lib/site";
 import FAQ from "@/app/components/FAQ";
+import DestinationGuide from "@/app/components/guide/DestinationGuide";
+import { categoryTone } from "@/lib/categoryTone";
 import ArticleCard from "@/app/components/ui/ArticleCard";
-import Badge from "@/app/components/ui/Badge";
 import Container from "@/app/components/ui/Container";
 import SectionHeading from "@/app/components/ui/SectionHeading";
 
@@ -131,22 +132,20 @@ export default async function ArticlePage({ params }: Params) {
       />
 
       {/* Hero */}
-      <section className="px-2 pt-2 sm:px-4">
-        <div className="relative isolate flex min-h-[min(70vh,40rem)] items-end overflow-hidden rounded-[2rem] bg-ocean-900 sm:rounded-[2.5rem]">
+      <section className="-mt-18">
+        <div className="relative isolate flex min-h-[calc(min(70vh,40rem)+4.5rem)] items-end overflow-hidden bg-ocean-900">
           <img
             src={article.image}
             alt={article.alt}
             width={1600}
             height={1200}
             fetchPriority="high"
-            className="animate-hero-zoom absolute inset-0 -z-10 h-full w-full object-cover"
+            className="photo-pop absolute inset-0 -z-10 h-full w-full object-cover"
           />
-          <div
-            aria-hidden
-            className="absolute inset-0 -z-10 bg-gradient-to-t from-ocean-950/90 via-ocean-950/35 to-ocean-950/20"
-          />
-          <Container className="pb-10 pt-28 sm:pb-14">
-            <nav aria-label="Breadcrumb" className="mb-6">
+          <Container className="pt-28">
+            {/* Solid caption panel: the photo stays full color, the text stays readable. */}
+            <div className="max-w-3xl bg-ocean-900 p-6 sm:p-10">
+            <nav aria-label="Breadcrumb" className="mb-5">
               <ol className="flex flex-wrap items-center gap-2 text-sm text-white/80">
                 <Crumb href="/">Home</Crumb>
                 <Crumb href="/articles">Destinations</Crumb>
@@ -155,11 +154,13 @@ export default async function ArticlePage({ params }: Params) {
                 </Crumb>
               </ol>
             </nav>
-            <h1 className="max-w-4xl text-4xl font-semibold leading-[1.05] text-white sm:text-6xl">
+            <h1 className="text-3xl font-semibold leading-[1.08] text-white sm:text-5xl">
               {article.title}
             </h1>
-            <div className="mt-6 flex flex-wrap items-center gap-x-6 gap-y-3 text-sm text-white/85">
-              <Badge tone="mango">{article.categoryLabel}</Badge>
+            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-white/85">
+              <span className={`px-2.5 py-1 text-xs font-semibold tracking-wide ${categoryTone(article.category).tag}`}>
+                {article.categoryLabel}
+              </span>
               <span className="inline-flex items-center gap-2">
                 <FaLocationDot aria-hidden className="text-coral-400" />
                 {article.region}
@@ -170,7 +171,7 @@ export default async function ArticlePage({ params }: Params) {
               </span>
               <span className="inline-flex items-center gap-2">
                 <FaRegClock aria-hidden className="text-lagoon-300" />
-                {article.readingTime} min read
+                {article.guide ? `Checked ${article.guide.verified}` : `${article.readingTime} min read`}
               </span>
               {article.updated !== article.date && (
                 <span>
@@ -179,21 +180,53 @@ export default async function ArticlePage({ params }: Params) {
               )}
               <span>By {AUTHOR}</span>
             </div>
+            </div>
           </Container>
+          {article.imageCredit && <PhotoCredit credit={article.imageCredit} />}
         </div>
       </section>
 
-      {/* Body */}
+      {/* Interactive one-stop guide */}
+      {article.guide && (
+        <Container className="pb-14 sm:pb-20">
+          <DestinationGuide guide={article.guide} slug={article.slug} place={article.guide.place ?? placeName(article.title)} />
+          <div className="mx-auto mt-20 max-w-3xl sm:mt-28">
+            {article.content.trim() && (
+              <section aria-labelledby="story-title" className="border-t-2 border-ocean-900 pt-10">
+                <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">Why we love it</p>
+                <h2 id="story-title" className="mt-2 text-3xl font-semibold text-ocean-900 sm:text-4xl">
+                  The story behind the guide
+                </h2>
+                <article
+                  className="prose prose-lg prose-brand mt-6 max-w-none"
+                  dangerouslySetInnerHTML={{ __html: article.content }}
+                />
+              </section>
+            )}
+            {article.faq.length > 0 && (
+              <div className="mt-16">
+                <FAQ faq={article.faq} />
+              </div>
+            )}
+            <TagList tags={article.tags} />
+          </div>
+        </Container>
+      )}
+
+      {/* Classic article body (guides without a guide block) */}
+      {!article.guide && (
       <Container className="py-14 sm:py-20">
         <div className="grid gap-12 lg:grid-cols-[16rem_minmax(0,1fr)] xl:gap-20">
           <aside className="lg:sticky lg:top-24 lg:self-start">
-            <details className="group rounded-3xl bg-white p-5 shadow-card lg:hidden">
-              <summary className="cursor-pointer list-none font-semibold text-ocean-900 [&::-webkit-details-marker]:hidden">
+            <details className="group rounded-card border border-sand-200 bg-white lg:hidden">
+              <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between px-5 font-semibold text-ocean-900 [&::-webkit-details-marker]:hidden">
                 On this page
-                <span className="float-right text-lagoon-700 group-open:hidden">Show</span>
-                <span className="float-right hidden text-lagoon-700 group-open:inline">Hide</span>
+                <span className="text-sm text-lagoon-700 group-open:hidden">Show</span>
+                <span className="hidden text-sm text-lagoon-700 group-open:inline">Hide</span>
               </summary>
-              <TocList toc={article.toc} />
+              <div className="px-5 pb-4">
+                <TocList toc={article.toc} />
+              </div>
             </details>
             <nav aria-label="On this page" className="hidden lg:block">
               <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
@@ -211,21 +244,8 @@ export default async function ArticlePage({ params }: Params) {
               className="prose prose-lg prose-brand mt-8 max-w-none"
               dangerouslySetInnerHTML={{ __html: article.content }}
             />
-            {article.tags.length > 0 && (
-              <ul className="mt-12 flex flex-wrap gap-2" aria-label="Tags">
-                {article.tags.map((tag) => (
-                  <li key={tag}>
-                    <Link
-                      href={`/articles?q=${encodeURIComponent(tag)}`}
-                      className="rounded-full bg-sand-100 px-3 py-1.5 text-sm text-ocean-800 transition hover:bg-lagoon-100 hover:text-lagoon-700"
-                    >
-                      #{tag}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
-            )}
-            <nav aria-label="Plan your trip" className="mt-12 rounded-3xl bg-sand-100 p-6">
+            <TagList tags={article.tags} />
+            <nav aria-label="Plan your trip" className="mt-12 border-l-4 border-coral-500 py-1 pl-6">
               <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">Plan your trip</p>
               <ul className="mt-3 space-y-2 text-ocean-900">
                 <li>
@@ -248,19 +268,20 @@ export default async function ArticlePage({ params }: Params) {
           </div>
         </div>
       </Container>
+      )}
 
       {/* Prev / next */}
       {(newer || older) && (
         <Container className="pb-16">
-          <div className="grid gap-4 sm:grid-cols-2">
-            {older ? <PagerCard article={older} direction="prev" /> : <div />}
+          <div className="grid border-y border-sand-200 sm:grid-cols-2 sm:divide-x sm:divide-sand-200">
+            {older ? <PagerCard article={older} direction="prev" /> : <div className="hidden sm:block" />}
             {newer && <PagerCard article={newer} direction="next" />}
           </div>
         </Container>
       )}
 
       {/* Related */}
-      <section className="bg-sand-100 py-20">
+      <section className="bg-sand-100 py-16 sm:py-20">
         <Container>
           <SectionHeading eyebrow="Keep exploring" title="You might also like" />
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
@@ -271,6 +292,48 @@ export default async function ArticlePage({ params }: Params) {
         </Container>
       </section>
     </>
+  );
+}
+
+function PhotoCredit({ credit }: { credit: ImageCredit }) {
+  return (
+    <p className="absolute bottom-0 right-0 bg-ocean-950/75 px-2.5 py-1 text-[0.7rem] text-white/80">
+      Photo:{" "}
+      <a href={credit.source} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+        {credit.author}
+      </a>
+      ,{" "}
+      {credit.licenseUrl ? (
+        <a href={credit.licenseUrl} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
+          {credit.license}
+        </a>
+      ) : (
+        credit.license
+      )}
+    </p>
+  );
+}
+
+// "Siargao Travel Guide: Surfing Capital…" -> "Siargao"
+function placeName(title: string) {
+  return title.split(/:| Travel Guide| Guide/)[0].trim();
+}
+
+function TagList({ tags }: { tags: string[] }) {
+  if (tags.length === 0) return null;
+  return (
+    <ul className="mt-12 flex flex-wrap gap-2" aria-label="Tags">
+      {tags.map((tag) => (
+        <li key={tag}>
+          <Link
+            href={`/articles?q=${encodeURIComponent(tag)}`}
+            className="inline-block rounded-full border border-sand-300 px-3 py-1.5 text-sm text-ocean-800 transition hover:border-lagoon-600 hover:text-lagoon-700"
+          >
+            #{tag}
+          </Link>
+        </li>
+      ))}
+    </ul>
   );
 }
 
@@ -307,20 +370,20 @@ function PagerCard({ article, direction }: { article: ArticleSummary; direction:
   return (
     <Link
       href={`/articles/${article.slug}`}
-      className={`group flex items-center gap-5 rounded-3xl bg-white p-4 shadow-card transition hover:-translate-y-0.5 hover:shadow-card-hover ${
-        next ? "flex-row-reverse text-right" : ""
+      className={`group flex items-center gap-5 py-5 transition-colors hover:bg-sand-100 sm:px-5 ${
+        next ? "flex-row-reverse border-t border-sand-200 text-right sm:border-t-0" : ""
       }`}
     >
-      <img src={article.imageSmall} alt="" width={96} height={96} loading="lazy" decoding="async" className="h-20 w-20 shrink-0 rounded-2xl object-cover sm:h-24 sm:w-24" />
+      <img src={article.imageSmall} alt="" width={96} height={96} loading="lazy" decoding="async" className="h-20 w-20 shrink-0 rounded-card object-cover sm:h-24 sm:w-24" />
       <div className="min-w-0">
         <p className={`flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-coral-700 ${next ? "justify-end" : ""}`}>
           {next ? (
             <>
-              Newer guide <FaArrowRight aria-hidden className="transition-transform group-hover:translate-x-1" />
+              Newer guide <FaArrowRight aria-hidden />
             </>
           ) : (
             <>
-              <FaArrowLeft aria-hidden className="transition-transform group-hover:-translate-x-1" /> Older guide
+              <FaArrowLeft aria-hidden /> Older guide
             </>
           )}
         </p>

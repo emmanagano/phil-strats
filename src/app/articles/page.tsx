@@ -34,11 +34,20 @@ export default function ArticlesPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(itemList).replace(/</g, "\\u003c") }}
       />
       <PageHero
+        tone="mango"
         eyebrow="Destinations"
         title="Where to next?"
-        description="Filter by the kind of trip you want or the island group you're heading to — or just search."
+        description="Pick the kind of trip you want or the island group you're heading to, or just search."
+        images={["el-nido-palawan", "siargao-surfing-capital", "banaue-rice-terraces-ifugao"].map((s, i) => ({
+          src: i === 0 ? `/images/${s}.jpg` : `/images/${s}-800.jpg`,
+        }))}
+        stats={[
+          { value: articles.length, label: "Guides" },
+          { value: 4, label: "Island groups" },
+          { value: 3, label: "Kinds of trip" },
+        ]}
       />
-      <Container className="pb-24">
+      <Container className="pb-24 pt-12 sm:pt-16">
         {/* The static HTML shows the full list; filters take over once JS loads. */}
         <Suspense fallback={<ArticleGrid articles={articles} />}>
           <ArticleBrowser articles={articles} />

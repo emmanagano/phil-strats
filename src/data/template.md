@@ -16,6 +16,9 @@ category: ""
 # One of: luzon | visayas | mindanao | palawan
 islandGroup: ""
 alt: ""
+# Interactive guide: copy the full guide: block from src/content/siargao-surfing-capital.md
+# (types in src/lib/guide.ts; the build validates every field). Add imageCredit for CC BY/BY-SA photos.
+guide:
 faq:
   - question: ""
     answer: ""
@@ -23,22 +26,4 @@ tags:
   -
 ---
 
-Intro / Hook (mention the destination name in the first sentence; link to 2-3 related guides with [descriptive text](/articles/<slug>))
-
-## <Destination> Quick Facts
-
-## <Destination> at a Glance
-
-## Top Attractions in <Destination>
-
-## How to Get to <Destination>
-
-## Best Time to Visit <Destination>
-
-## Where to Stay in <Destination>
-
-## Where to Eat in <Destination>
-
-## <Destination> Travel Tips & Local Hacks
-
-## 3-Day <Destination> Itinerary
+One short intro paragraph (mention the destination in the first sentence), then a line linking 2 related guides with [descriptive text](/articles/<slug>).

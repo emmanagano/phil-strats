@@ -3,11 +3,87 @@ id: 5
 title: "Intramuros Manila Guide: Exploring the Walled City"
 description: "Explore Intramuros, Manila's Walled City: Fort Santiago, San Agustin Church, and Spanish colonial streets, with tips for a walking or calesa tour."
 date: "2025-10-14"
+updated: "2026-11-17"
 slug: "intramuros-manila"
 region: "Metro Manila"
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "View of Manila Cathedral inside Intramuros with its iconic dome and clock tower, surrounded by colonial architecture and historic charm."
+guide:
+  place: "Intramuros"
+  verified: "Nov 2026"
+  verdict: "Manila's 16th-century walled city: cobbled streets, stone churches and a fort, all walkable in a day. It's the best way to spend a Manila layover. Skip midday in April and May; it's very hot."
+  bestFor: ["History buffs", "Layovers", "Families", "Photographers"]
+  quickFacts:
+    - {label: "Get there", value: "Grab or taxi; 30–60 min from the airport depending on traffic"}
+    - {label: "Ideal stay", value: "Half day to 1 day"}
+    - {label: "Daily budget", value: "₱1,500–4,000 per person"}
+    - {label: "Best months", value: "Dec–Feb (cooler and dry)"}
+    - {label: "Must-see", value: "Fort Santiago and San Agustin Church (UNESCO)"}
+    - {label: "Closed", value: "Many museums close on Mondays"}
+  months:
+    - {rating: "great", note: "Cool and dry; best walking weather."}
+    - {rating: "great", note: "Dry and comfortable."}
+    - {rating: "good", note: "Warming up but dry."}
+    - {rating: "mixed", note: "Very hot; go early or late."}
+    - {rating: "mixed", note: "Hottest month; showers late."}
+    - {rating: "mixed", note: "Rainy season begins; carry an umbrella."}
+    - {rating: "avoid", note: "Heavy rain and flooding in parts of Manila."}
+    - {rating: "avoid", note: "Wettest month; typhoon risk."}
+    - {rating: "mixed", note: "Rain easing."}
+    - {rating: "good", note: "Fewer storms."}
+    - {rating: "good", note: "Pleasant."}
+    - {rating: "great", note: "Cool and festive."}
+  routes:
+    - from: "NAIA airport"
+      steps: ["Grab or metered taxi to Intramuros (30–60 min)"]
+      time: "30–60 min"
+      cost: "₱300–600"
+      tip: "Use Grab or the official airport taxi queue. Avoid touts offering fixed fares."
+    - from: "By train"
+      steps: ["LRT-1 to Central Terminal station", "Walk 10 min to the walls"]
+      time: "Varies"
+      cost: "₱20–35"
+  budget:
+    usdRate: 58
+    styles:
+      backpacker: {stay: 1200, food: 500, transport: 200, activities: 300}
+      midrange: {stay: 4000, food: 1200, transport: 500, activities: 1000}
+      comfort: {stay: 10000, food: 2500, transport: 1200, activities: 2000}
+  experiences:
+    - {name: "Fort Santiago", tags: ["culture"], blurb: "The fort where national hero José Rizal was held before his execution in 1896.", cost: "≈ ₱75", time: "1–1.5 hrs"}
+    - {name: "San Agustin Church & Museum", tags: ["culture"], blurb: "The oldest stone church in the country (1607), part of a UNESCO World Heritage Site.", cost: "≈ ₱200 museum", time: "1 hr"}
+    - {name: "Bambike tour", tags: ["culture", "adventure"], blurb: "A guided ride around the walls on bamboo bicycles.", cost: "≈ ₱1,200–1,500", time: "2 hrs"}
+    - {name: "Casa Manila", tags: ["culture"], blurb: "A reconstructed Spanish-era mansion full of period furniture.", cost: "≈ ₱75", time: "45 min"}
+    - {name: "Walk the walls", tags: ["chill"], blurb: "Stroll the ramparts at sunset for views over the old city and Manila.", cost: "Free", time: "1 hr"}
+    - {name: "Kalesa ride", tags: ["chill"], blurb: "Horse-drawn carriage loop through the cobbled streets.", cost: "≈ ₱300–500 per 30 min", time: "30 min", tip: "Agree on the price and route before you hop on."}
+  itineraries:
+    1:
+      - {title: "Walled city in a day", items: ["Fort Santiago at opening time", "Manila Cathedral and San Agustin Church", "Casa Manila", "Sunset on the walls"]}
+    2:
+      - {title: "Walled city", items: ["Fort Santiago at opening time", "Manila Cathedral and San Agustin Church", "Sunset on the walls"]}
+      - {title: "Bikes & Binondo", items: ["Bambike tour", "Casa Manila", "Walk or ride to Binondo, the world's oldest Chinatown, for food"]}
+  stays:
+    - {area: "Intramuros", vibe: "Heritage hotels inside the walls.", bestFor: "History lovers", price: "₱3,000–8,000/night"}
+    - {area: "Ermita / Malate", vibe: "Budget and mid-range hotels near Manila Bay.", bestFor: "Budget travelers", price: "₱1,200–4,000/night"}
+  eats:
+    - {name: "Barbara's or Ilustrado", order: "Classic Filipino-Spanish dishes in heritage rooms", price: "₱500–1,000"}
+    - {name: "Binondo food crawl", order: "Dumplings, hopia and fried siopao", price: "₱300–600"}
+    - {name: "Halo-halo", order: "Shaved ice with sweet beans, fruit and leche flan", price: "₱100–200"}
+  getAround:
+    - {mode: "Walking", cost: "Free", note: "Intramuros is compact"}
+    - {mode: "Bambike or pedicab", cost: "₱100–300"}
+    - {mode: "Grab", cost: "₱150–400", note: "To other parts of Manila"}
+  fees:
+    - {name: "Fort Santiago", amount: "≈ ₱75"}
+    - {name: "San Agustin Museum", amount: "≈ ₱200"}
+    - {name: "Casa Manila", amount: "≈ ₱75"}
+  essentials:
+    - {title: "Heat", body: "Midday can be scorching. Start early, take a café break, and finish at sunset."}
+    - {title: "Scams", body: "Ignore unofficial 'guides' and fixed-price taxi offers. Use Grab or meters."}
+    - {title: "Mondays", body: "Several museums close on Mondays; churches stay open."}
+    - {title: "Dress code", body: "Cover shoulders and knees inside churches."}
+  packing: ["Comfortable walking shoes", "Hat", "Sunscreen", "Water bottle", "Umbrella", "Light scarf (for churches)", "Small cash"]
 faq:
   - question: "Is Intramuros safe to visit?"
     answer: "Yes. It’s well-patrolled, especially around main attractions. Exercise usual city awareness."
@@ -27,68 +103,3 @@ tags:
 Step back in time inside Intramuros, the walled city of Manila that once served as the political and religious center of Spanish colonial rule. Cobblestone streets, centuries-old churches, and horse-drawn carriages bring history to life in this well-preserved district. From Fort Santiago to San Agustin Church, Intramuros offers a rare glimpse into the Philippines’ colonial past — a must-visit for culture, architecture, and history lovers alike.
 
 Planning more than one stop? See our guides to [Vigan](/articles/vigan-and-laoag-ilocos) or [Hundred Islands](/articles/hundred-islands-pangasinan).
-
-## Intramuros Quick Facts
-
-- Region Metro Manila
-- Best Time to Visit November to February (cooler and less humid)
-- How to Get There Located in central Manila; accessible via taxi, Grab, or LRT (Central or United Nations station)
-- Ideal Stay Half-day to 1 full day
-
-## Intramuros at a Glance
-
-- Historical core of old Manila, surrounded by 16th-century stone walls
-- Home to Fort Santiago, San Agustin Church, and Manila Cathedral
-- Great for heritage walks, museums, and photography
-- Easily accessible and perfect for day trips within the city
-
-## Top Attractions in Intramuros
-
-1. Fort Santiago — Explore the citadel that once served as a defense fortress and prison; visit the Rizal Shrine Museum inside.
-2. San Agustin Church — The oldest stone church in the Philippines, a UNESCO World Heritage Site.
-3. Manila Cathedral — A majestic structure rebuilt several times since the 1500s, now the seat of the Roman Catholic Archdiocese of Manila.
-4. Casa Manila — A recreated colonial home showcasing Spanish-era furniture, art, and lifestyle.
-5. Baluarte de San Diego — A circular bastion offering panoramic views of the walls and surrounding city.
-6. Bamboo Bicycle Tour — A fun and eco-friendly way to explore Intramuros on handcrafted bamboo bikes.
-7. Plaza San Luis Complex — A cluster of colonial-style buildings filled with cafés, shops, and cultural exhibits.
-
-## How to Get to Intramuros
-
-Intramuros is located in central Manila, near Rizal Park (Luneta).
-
-- By Car / Grab: 15–30 minutes from most parts of Metro Manila, depending on traffic.
-- By Public Transport: Take the LRT-1 to Central Terminal or United Nations Avenue Station, then walk or ride a tricycle to Intramuros.
-- By Tour: Heritage walking and bicycle tours are available daily.
-
-## Best Time to Visit Intramuros
-
-- Visit in the morning or late afternoon for cooler weather and softer light for photos.
-- Avoid noon hours due to heat and humidity.
-- Evening tours offer a romantic, lantern-lit view of the walled city.
-
-## Where to Stay in Intramuros
-
-- The Bayleaf Intramuros — modern hotel with rooftop views of Manila skyline
-- White Knight Hotel — colonial-themed rooms inside Intramuros
-- Hotel H2O (nearby) — unique ocean-themed hotel near Rizal Park
-
-## Where to Eat in Intramuros
-
-- Barbara’s Heritage Restaurant — traditional Filipino cuisine with cultural performances
-- Ilustrado Restaurant — Filipino-Spanish fine dining in a heritage setting
-- Ristorante Delle Mitre — cozy café across San Agustin Church
-- Belfry Café — new spot located inside the old Manila Cathedral belfry
-
-## Intramuros Travel Tips & Local Hacks
-
-- Wear light, breathable clothing — Manila can be hot and humid.
-- Join a guided walking or bamboo bike tour to learn the historical context.
-- Bring a camera — every corner is photo-worthy.
-- Combine Intramuros with Rizal Park and National Museum for a full-day heritage trip.
-- Visit on Sunday mornings when streets are quieter and more atmospheric.
-
-## 3-Day Intramuros Itinerary
-
-- Day 1: Arrive in Manila → Explore Intramuros (Fort Santiago, San Agustin Church) → Dinner at Barbara’s
-- Day 2: Visit National Museum → Luneta Park → Escolta heritage walk
-- Day 3: Binondo food crawl → Manila Bay sunset → Departure

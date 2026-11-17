@@ -4,7 +4,7 @@ import { CATEGORIES, ISLAND_GROUPS } from "@/data/taxonomy";
 import { NAV, SITE_NAME, SITE_TAGLINE, SOCIALS } from "@/lib/site";
 import NewsletterForm from "./ui/NewsletterForm";
 
-const linkClass = "text-sand-200 transition-colors hover:text-mango-400";
+const linkClass = "inline-block py-1 text-sand-200 transition-colors hover:text-mango-400";
 
 export default function SiteFooter() {
   return (
@@ -62,7 +62,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="rounded-full bg-white/10 p-2.5 transition hover:bg-mango-400 hover:text-ocean-900"
+              className="grid h-11 w-11 place-items-center rounded-full bg-white/10 transition hover:bg-mango-400 hover:text-ocean-900"
             >
               <FaInstagram className="h-4 w-4" />
             </a>
@@ -71,7 +71,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
-              className="rounded-full bg-white/10 p-2.5 transition hover:bg-mango-400 hover:text-ocean-900"
+              className="grid h-11 w-11 place-items-center rounded-full bg-white/10 transition hover:bg-mango-400 hover:text-ocean-900"
             >
               <FaXTwitter className="h-4 w-4" />
             </a>
@@ -88,7 +88,7 @@ function FooterColumn({ title, children }: { title: string; children: React.Reac
       <h2 className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.2em] text-mango-400">
         {title}
       </h2>
-      <ul className="space-y-3 text-sm">{children}</ul>
+      <ul className="space-y-1.5 text-sm">{children}</ul>
     </div>
   );
 }

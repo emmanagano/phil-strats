@@ -31,12 +31,18 @@ export default function SiteHeader() {
     };
   }, [menuOpen]);
 
+  // Pages with a full-screen image hero (home and articles) float the header over it until you scroll.
+  const hasImageHero = pathname === "/" || pathname.startsWith("/articles/");
+  const overHero = hasImageHero && !scrolled && !menuOpen;
+
   return (
     <header
-      className={`sticky top-0 z-50 transition-all duration-300 ${
+      className={`sticky top-0 z-50 transition-colors duration-150 ${
         scrolled || menuOpen
           ? "bg-sand-50/90 shadow-[0_1px_0_rgb(11_46_58/0.08)] backdrop-blur-lg"
-          : "bg-sand-50/0"
+          : overHero
+            ? "bg-ocean-950/35 backdrop-blur-md"
+            : "bg-sand-50/0"
       }`}
     >
       <nav
@@ -49,9 +55,13 @@ export default function SiteHeader() {
             alt=""
             width={40}
             height={40}
-            className="h-10 w-10 transition-transform duration-300 group-hover:rotate-6"
+            className="h-10 w-10"
           />
-          <span className="font-display text-xl font-semibold text-ocean-900">
+          <span
+            className={`font-display text-xl font-semibold transition-colors ${
+              overHero ? "text-white" : "text-ocean-900"
+            }`}
+          >
             {SITE_NAME}
           </span>
         </Link>
@@ -64,10 +74,14 @@ export default function SiteHeader() {
                 <Link
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
+                  className={`relative block px-3.5 py-2.5 text-sm font-medium transition-colors after:absolute after:inset-x-3.5 after:bottom-1 after:h-0.5 after:transition-colors ${
                     active
-                      ? "bg-ocean-900 text-white"
-                      : "text-ocean-800 hover:bg-lagoon-100 hover:text-lagoon-700"
+                      ? overHero
+                        ? "text-white after:bg-mango-400"
+                        : "text-ocean-900 after:bg-coral-500"
+                      : overHero
+                        ? "text-white/85 after:bg-transparent hover:text-white hover:after:bg-white/50"
+                        : "text-ocean-800 after:bg-transparent hover:text-lagoon-700 hover:after:bg-lagoon-300"
                   }`}
                 >
                   {item.label}
@@ -83,7 +97,9 @@ export default function SiteHeader() {
           aria-expanded={menuOpen}
           aria-controls="mobile-menu"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
-          className="rounded-full p-2.5 text-ocean-900 transition hover:bg-lagoon-100 lg:hidden"
+          className={`-mr-2 grid h-11 w-11 place-items-center rounded-full transition lg:hidden ${
+            overHero ? "text-white hover:bg-white/15" : "text-ocean-900 hover:bg-lagoon-100"
+          }`}
         >
           {menuOpen ? <FaXmark className="h-5 w-5" /> : <FaBars className="h-5 w-5" />}
         </button>
@@ -94,7 +110,7 @@ export default function SiteHeader() {
         hidden={!menuOpen}
         className="h-[calc(100dvh-4.5rem)] overflow-y-auto border-t border-sand-200 bg-sand-50 lg:hidden"
       >
-        <ul className="flex flex-col gap-1 px-4 py-6">
+        <ul className="flex flex-col divide-y divide-sand-200 px-4 py-4 sm:px-6">
           {NAV.map((item) => {
             const active = isActivePath(pathname, item.href);
             return (
@@ -102,8 +118,8 @@ export default function SiteHeader() {
                 <Link
                   href={item.href}
                   aria-current={active ? "page" : undefined}
-                  className={`block rounded-2xl px-5 py-4 font-display text-2xl transition-colors ${
-                    active ? "bg-ocean-900 text-white" : "text-ocean-900 hover:bg-lagoon-100"
+                  className={`-mx-4 block border-l-4 px-4 py-4 font-display text-2xl transition-colors sm:-mx-6 sm:px-6 ${
+                    active ? "border-coral-500 bg-sand-100 text-ocean-900" : "border-transparent text-ocean-900 hover:bg-sand-100"
                   }`}
                 >
                   {item.label}
