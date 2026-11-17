@@ -1,9 +1,9 @@
 ---
 id: 15
 title: "Batanes Travel Guide: Stone Houses & Rolling Green Hills"
-description: "Explore Batanes' rolling green hills, traditional Ivatan stone houses, lighthouses, and cliffs, with tips for the northernmost province."
+description: "Plan a Batanes trip: rolling green hills, Ivatan stone houses, Sabtang Island and Basco Lighthouse, with flights, budgets and the best months to go."
 date: "2026-10-30"
-updated: "2026-11-17"
+updated: "2026-11-18"
 slug: "batanes-islands"
 region: "Cagayan Valley"
 category: "heritage-culture"
@@ -94,6 +94,10 @@ faq:
     answer: "Hire a tricycle or van with a driver for the day, or rent a bicycle or scooter for shorter routes."
   - question: "How many days do I need?"
     answer: "Four days lets you cover Batan Island, with Sabtang as a day trip and a buffer for weather."
+  - question: "Is Batanes expensive?"
+    answer: "It's one of the pricier places to visit in the Philippines because flights are limited and most goods are shipped in. Budget about ₱3,500–7,000 per person per day, plus airfare."
+  - question: "Do I need a tour in Batanes?"
+    answer: "Not necessarily. Many visitors hire a tricycle with a driver for the North and South Batan loops, and Sabtang needs a boat plus a local tricycle tour."
 tags:
   - batanes
   - ivatan
@@ -102,6 +106,6 @@ tags:
   - luzon
 ---
 
-Batanes feels like a different country: rolling emerald hills, stone houses with thick cogon roofs, and dramatic cliffs facing the open sea. It is remote, uncrowded, and deeply tied to Ivatan culture.
+Batanes feels like a different country: rolling emerald hills, stone houses with thick cogon roofs, and dramatic cliffs facing the open sea. The Philippines' northernmost province is a small group of islands closer to Taiwan than to Manila, reached by a short flight to Basco. It is remote, uncrowded, and deeply tied to Ivatan culture, from the honesty coffee shop in Ivana to the stone villages of Sabtang. Weather decides everything here, so build in a spare day.
 
 Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Mount Pulag](/articles/mount-pulag-benguet).

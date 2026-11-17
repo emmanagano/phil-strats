@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FaArrowLeft, FaArrowRight, FaArrowUpRightFromSquare, FaSuitcaseRolling } from "react-icons/fa6";
-import { getAllNews, getNewsBySlug, topicLabel } from "@/data/news";
+import { getAllArticles } from "@/data/articles";
+import { getAllNews, getNewsBySlug, getRelatedNews, topicLabel } from "@/data/news";
 import Container from "@/app/components/ui/Container";
 import { NEWS_TONE, formatNewsDate } from "@/lib/newsTone";
 import { DEFAULT_OG_IMAGE, SITE_NAME, SITE_URL, pageTitle } from "@/lib/site";
@@ -41,6 +42,13 @@ export default async function NewsBriefPage({ params }: Params) {
   const i = all.findIndex((n) => n.slug === slug);
   const newer = all[i - 1] ?? null;
   const older = all[i + 1] ?? null;
+  const related = getRelatedNews(brief, 3, [newer?.slug, older?.slug].filter((s): s is string => !!s));
+  const articles = getAllArticles();
+  const guides = (brief.guides ?? []).map((g) => {
+    const article = articles.find((a) => a.slug === g);
+    if (!article) throw new Error(`news/${brief.slug}: unknown guide "${g}" in guides`);
+    return article;
+  });
 
   const jsonLd = {
     "@context": "https://schema.org",
@@ -91,6 +99,30 @@ export default async function NewsBriefPage({ params }: Params) {
             </aside>
           )}
 
+          {guides.length > 0 && (
+            <section aria-labelledby="plan-trip" className="mt-10">
+              <h2 id="plan-trip" className="font-sans text-xs font-bold uppercase tracking-widest text-muted">
+                Plan your trip
+              </h2>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-2">
+                {guides.map((a) => (
+                  <li key={a.slug}>
+                    <Link
+                      href={`/articles/${a.slug}`}
+                      className="flex items-center gap-4 rounded-card border border-sand-200 bg-white p-3 transition-colors duration-150 hover:border-ocean-900"
+                    >
+                      <img src={a.imageSmall} alt="" loading="lazy" className="photo-pop h-16 w-16 shrink-0 rounded-control object-cover" />
+                      <span className="min-w-0">
+                        <span className="block text-xs font-bold uppercase tracking-widest text-coral-700">{a.place} guide</span>
+                        <span className="mt-1 line-clamp-2 block font-semibold text-ocean-900">{a.title}</span>
+                      </span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
           <section aria-labelledby="sources" className="mt-10">
             <h2 id="sources" className="font-sans text-xs font-bold uppercase tracking-widest text-muted">
               Sources
@@ -112,7 +144,27 @@ export default async function NewsBriefPage({ params }: Params) {
             </ul>
           </section>
 
-          <nav aria-label="More news" className="mt-12 grid gap-px overflow-hidden rounded-card border border-sand-200 bg-sand-200 sm:grid-cols-2">
+          {related.length > 0 && (
+            <section aria-labelledby="related-news" className="mt-12">
+              <h2 id="related-news" className="font-sans text-xs font-bold uppercase tracking-widest text-muted">
+                Related news
+              </h2>
+              <ul className="mt-3 divide-y divide-sand-200 border-y border-sand-200">
+                {related.map((n) => (
+                  <li key={n.slug}>
+                    <Link href={`/news/${n.slug}`} className="block py-3 transition-colors duration-150 hover:text-lagoon-700">
+                      <span className="text-xs font-semibold text-muted">
+                        {topicLabel(n.topic)} · {formatNewsDate(n.date, "short")}
+                      </span>
+                      <span className="mt-0.5 block font-semibold text-ocean-900">{n.title}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          <nav aria-label="Earlier and later news" className="mt-12 grid gap-px overflow-hidden rounded-card border border-sand-200 bg-sand-200 sm:grid-cols-2">
             {older ? <Pager brief={older} label="Earlier" /> : <div className="bg-white" />}
             {newer && <Pager brief={newer} label="Later" next />}
           </nav>

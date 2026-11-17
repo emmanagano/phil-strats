@@ -1,9 +1,9 @@
 ---
 id: 18
 title: "Pagudpud Travel Guide: Saud Beach & Ilocos Norte Coast"
-description: "Visit Pagudpud's Saud Beach, Patapat Viaduct, and Bangui windmills, with tips for road-tripping the scenic Ilocos Norte coast from Laoag."
+description: "Pagudpud beach guide: Saud Beach, Blue Lagoon, the Patapat Viaduct and Bangui windmills, with tips for road-tripping the Ilocos Norte coast."
 date: "2026-10-30"
-updated: "2026-11-17"
+updated: "2026-11-18"
 slug: "pagudpud-ilocos-norte"
 region: "Ilocos Region"
 category: "beaches-islands"
@@ -93,6 +93,10 @@ faq:
     answer: "November to May is best for calm seas and dry weather. Surf can be strong from June to October."
   - question: "Can I combine Pagudpud with Vigan and Laoag?"
     answer: "Yes, it fits well as the northern end of an Ilocos road trip."
+  - question: "What is the best beach in Pagudpud?"
+    answer: "Saud Beach, for its powdery white sand, calm water and palm shade. Blue Lagoon (Maira-ira) is livelier and better for surfing in the cooler months."
+  - question: "Is Saud Beach free to visit?"
+    answer: "The beach itself is public, but some resorts charge about ₱50–100 to use their stretch of sand, cottages or showers."
 tags:
   - pagudpud
   - saud-beach
@@ -101,6 +105,6 @@ tags:
   - road-trip
 ---
 
-At the northern tip of Luzon, Pagudpud trades heritage streets for powdery white sand, rolling surf, and a road lined with wind turbines. It makes a natural beach finish to an Ilocos road trip.
+At the northern tip of Luzon, Pagudpud trades heritage streets for powdery white sand, rolling surf, and a road lined with wind turbines. Its best-known beach, Saud Beach, is often compared to Boracay before the crowds: a long curve of fine sand and clear water backed by coconut palms. Blue Lagoon draws surfers, and the drive up from Laoag passes the Bangui windmills and Kapurpurawan's white rock formations. It makes a natural beach finish to an Ilocos road trip.
 
 Planning more than one stop? See our guides to [Vigan and Laoag](/articles/vigan-and-laoag-ilocos) or [Batanes](/articles/batanes-islands).

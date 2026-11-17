@@ -1,9 +1,9 @@
 ---
 id: 9
 title: "Banaue Rice Terraces Guide: Ifugao's Hand-Carved Wonder"
-description: "Visit the 2,000-year-old Banaue Rice Terraces in Ifugao, a UNESCO site, with viewpoints, treks to Batad, best months to go, and transport tips."
+description: "Visit the Banaue Rice Terraces and UNESCO-listed Batad in Ifugao: viewpoints, treks, the best months to go, and how to get there from Manila."
 date: "2025-10-14"
-updated: "2026-11-17"
+updated: "2026-11-18"
 slug: "banaue-rice-terraces-ifugao"
 region: "Cordillera Administrative Region (Ifugao Province)"
 category: "heritage-culture"
@@ -88,7 +88,11 @@ guide:
   packing: ["Hiking shoes with grip", "Warm layer", "Rain jacket", "Cash", "Headlamp", "Refillable water bottle", "Sunscreen", "Small daypack"]
 faq:
   - question: "How old are the Banaue Rice Terraces?"
-    answer: "Over 2,000 years old — they were carved by hand by the ancestors of the Ifugao people using simple tools."
+    answer: "They're traditionally said to be about 2,000 years old. Recent archaeological dating suggests many were built a few hundred years ago, but either way they were carved by hand by the Ifugao people and are still farmed today."
+  - question: "Is it worth visiting the Banaue Rice Terraces?"
+    answer: "Yes, especially if you add a trek to Batad's amphitheater terraces. The Banaue viewpoint alone takes an hour, so the trip pays off when you stay at least two nights."
+  - question: "When is the best time to visit the Banaue Rice Terraces?"
+    answer: "March to May, when trails are driest. June is still good and lush; from July to September heavy rain makes treks muddy and roads slippery."
   - question: "Are the Banaue Rice Terraces part of the UNESCO World Heritage list?"
     answer: "Yes — while the main Banaue terraces are recognized nationally, the nearby Batad, Bangaan, Hungduan, and Mayoyao terraces are officially UNESCO-listed."
   - question: "How do I get to Batad from Banaue?"
@@ -107,6 +111,6 @@ tags:
   - heritage philippines
 ---
 
-The Banaue Rice Terraces, often called the Eighth Wonder of the World, are living testaments to ancient Filipino ingenuity. Carved by hand into the mountains of Ifugao over 2,000 years ago, these emerald-green terraces represent both natural beauty and the rich cultural traditions of the Cordillera people. Beyond breathtaking views, Banaue invites visitors to experience indigenous heritage, cool mountain air, and a peaceful escape from city life.
+The Banaue Rice Terraces, often called the Eighth Wonder of the World, are living testaments to Filipino ingenuity. Carved by hand into the mountains of Ifugao over centuries, these emerald-green terraces represent both natural beauty and the rich cultural traditions of the Cordillera people. Beyond breathtaking views, Banaue invites visitors to experience indigenous heritage, cool mountain air, and a peaceful escape from city life.
 
 Planning more than one stop? See our guides to [Sagada](/articles/sagada-mountain-province) or [Mount Pulag](/articles/mount-pulag-benguet).

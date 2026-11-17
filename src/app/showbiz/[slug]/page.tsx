@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { FaArrowLeft, FaArrowRight, FaArrowUpRightFromSquare, FaStar } from "react-icons/fa6";
-import { getAllShowbiz, getShowbizBySlug, showbizTopicLabel } from "@/data/showbiz";
+import { getAllShowbiz, getShowbizBySlug, showbizTopicLabel, getRelatedShowbiz } from "@/data/showbiz";
 import Container from "@/app/components/ui/Container";
 import { formatNewsDate } from "@/lib/newsTone";
 import { SHOWBIZ_TONE } from "@/lib/showbizTone";
@@ -42,6 +42,7 @@ export default async function ShowbizStoryPage({ params }: Params) {
   const i = all.findIndex((s) => s.slug === slug);
   const newer = all[i - 1] ?? null;
   const older = all[i + 1] ?? null;
+  const related = getRelatedShowbiz(story, 3, [newer?.slug, older?.slug].filter((s): s is string => !!s));
   const img = story.image;
 
   const jsonLd = {
@@ -137,7 +138,25 @@ export default async function ShowbizStoryPage({ params }: Params) {
             </ul>
           </section>
 
-          <nav aria-label="More stories" className="mt-12 grid gap-4 sm:grid-cols-2">
+          {related.length > 0 && (
+            <section aria-labelledby="related-stories" className="mt-12">
+              <h2 id="related-stories" className="font-sans text-xs font-bold uppercase tracking-widest text-muted">
+                More stories
+              </h2>
+              <ul className="mt-3 grid gap-3 sm:grid-cols-3">
+                {related.map((r) => (
+                  <li key={r.slug}>
+                    <Link href={`/showbiz/${r.slug}`} className="group block">
+                      <img src={r.image.src} alt="" loading="lazy" className="photo-pop aspect-[4/3] w-full rounded-card object-cover" />
+                      <span className="mt-2 line-clamp-2 block font-semibold text-ocean-900 group-hover:text-lagoon-700">{r.title}</span>
+                    </Link>
+                  </li>
+                ))}
+              </ul>
+            </section>
+          )}
+
+          <nav aria-label="Earlier and later stories" className="mt-12 grid gap-4 sm:grid-cols-2">
             {older ? <Pager story={older} label="Earlier" /> : <div />}
             {newer && <Pager story={newer} label="Later" next />}
           </nav>

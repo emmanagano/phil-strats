@@ -10,7 +10,9 @@ import {
   FaRegClock,
 } from "react-icons/fa6";
 import { getAllArticles, getArticleBySlug, type ArticleSummary, type ImageCredit } from "@/data/articles";
+import { getNewsForGuide } from "@/data/news";
 import { formatDate } from "@/lib/format";
+import { formatNewsDate } from "@/lib/newsTone";
 import { AUTHOR, SITE_NAME, SITE_URL, SOCIALS, pageTitle } from "@/lib/site";
 import FAQ from "@/app/components/FAQ";
 import DestinationGuide from "@/app/components/guide/DestinationGuide";
@@ -66,6 +68,7 @@ export default async function ArticlePage({ params }: Params) {
   const index = all.findIndex((a) => a.slug === slug);
   const newer = all[index - 1] ?? null;
   const older = all[index + 1] ?? null;
+  const news = getNewsForGuide(article.slug);
   const others = all.filter((a) => a.slug !== slug);
   // Same category first, then same region, so there are always three suggestions.
   const related = [
@@ -268,6 +271,28 @@ export default async function ArticlePage({ params }: Params) {
           </div>
         </div>
       </Container>
+      )}
+
+      {news.length > 0 && (
+        <Container className="pb-12">
+          <section aria-labelledby="in-the-news" className="mx-auto max-w-3xl border-l-4 border-mango-400 py-1 pl-6">
+            <h2 id="in-the-news" className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
+              {(article.guide?.place ?? placeName(article.title))} in the news
+            </h2>
+            <ul className="mt-3 space-y-3">
+              {news.map((n) => (
+                <li key={n.slug}>
+                  <Link href={`/news/${n.slug}`} className="group block">
+                    <time dateTime={n.date} className="text-xs font-semibold text-muted">{formatNewsDate(n.date, "short")}</time>
+                    <span className="block font-semibold text-ocean-900 underline decoration-lagoon-300 underline-offset-4 group-hover:text-lagoon-700">
+                      {n.title}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </Container>
       )}
 
       {/* Prev / next */}

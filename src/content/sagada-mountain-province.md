@@ -1,9 +1,9 @@
 ---
 id: 12
 title: "Sagada Travel Guide: Hanging Coffins, Caves & Pine Forests"
-description: "Explore Sagada's hanging coffins, Sumaguing Cave, and sunrise sea of clouds with tips on transport, weather, and respectful travel."
+description: "Explore Sagada's caves (Sumaguing, Lumiang and the cave connection), the hanging coffins and Kiltepan's sea of clouds, with transport and guide tips."
 date: "2026-10-30"
-updated: "2026-11-17"
+updated: "2026-11-18"
 slug: "sagada-mountain-province"
 region: "Cordillera"
 category: "nature-adventure"
@@ -89,6 +89,8 @@ guide:
 faq:
   - question: "How do I get to Sagada from Manila?"
     answer: "Take an overnight bus to Baguio or Bontoc, then a jeepney or van to Sagada. The full journey takes roughly 10 to 12 hours."
+  - question: "Which caves can you visit in Sagada?"
+    answer: "Sumaguing (the Big Cave) is the most popular. Lumiang is a burial cave with stacked coffins at its mouth, and the cave connection links the two in about four hours. All need a registered local guide."
   - question: "Is Sumaguing Cave difficult?"
     answer: "It involves wet scrambling, narrow passages, and slippery rock, but guides are required and routes suit most reasonably fit travelers."
   - question: "What should I wear in Sagada?"
@@ -103,6 +105,6 @@ tags:
   - mountains
 ---
 
-High in the Cordillera, Sagada is a cool, misty town where Igorot traditions meet limestone caves and pine-scented ridges. It rewards travelers who like early mornings, long walks, and strong local coffee.
+High in the Cordillera, Sagada is a cool, misty town where Igorot traditions meet limestone caves and pine-scented ridges. Its caves are among the most famous in the Philippines: Sumaguing's rimstone pools and giant formations, and Lumiang's burial chamber, joined underground by the cave connection. Above ground, coffins still hang from the cliffs of Echo Valley. Sagada rewards travelers who like early mornings, long walks, and strong local coffee.
 
 Planning more than one stop? See our guides to [Mount Pulag](/articles/mount-pulag-benguet) or [Banaue](/articles/banaue-rice-terraces-ifugao).

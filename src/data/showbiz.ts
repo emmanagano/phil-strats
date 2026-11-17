@@ -366,7 +366,7 @@ const STORIES: ShowbizStory[] = [
     slug: "binibining-pilipinas-2026",
     date: "2026-07-18",
     topic: "pageants",
-    title: "Baguio's Gwendoline Soriano wins Binibining Pilipinas International",
+    title: "Gwendoline Soriano wins Binibining Pilipinas International",
     dek: "Four years after withdrawing, she came back to take the crown and five special awards at the Araneta Coliseum.",
     body: [
       "Soriano also won Best in Swimsuit and Best in Evening Gown. Tarlac's Sasha-Juli Belle Lacuna was crowned Binibining Pilipinas Globe.",
@@ -467,6 +467,18 @@ const STORIES: ShowbizStory[] = [
 
 export function getAllShowbiz(): ShowbizStory[] {
   return [...STORIES].sort((a, b) => b.date.localeCompare(a.date));
+}
+
+// Stories on the same topic first, then the closest in date. `exclude` skips slugs already linked (the pager).
+export function getRelatedShowbiz(story: ShowbizStory, count = 3, exclude: string[] = []): ShowbizStory[] {
+  const t = Date.parse(story.date);
+  return STORIES.filter((s) => s.slug !== story.slug && !exclude.includes(s.slug))
+    .sort(
+      (a, b) =>
+        Number(b.topic === story.topic) - Number(a.topic === story.topic) ||
+        Math.abs(Date.parse(a.date) - t) - Math.abs(Date.parse(b.date) - t),
+    )
+    .slice(0, count);
 }
 
 export function getShowbizBySlug(slug: string) {

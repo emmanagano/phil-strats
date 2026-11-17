@@ -20,12 +20,16 @@ export interface NewsBrief {
   summary: string;
   body: string[];
   travelNote?: string;
+  // Destination guides (article slugs) this brief affects. Shown as "Plan your trip" links on
+  // the brief and as "In the news" on each guide. The build fails on an unknown slug.
+  guides?: string[];
   sources: { name: string; url: string }[];
 }
 
 const NEWS: NewsBrief[] = [
   {
     slug: "asean-summit-manila-november",
+    guides: ["intramuros-manila"],
     date: "2026-11-16",
     topic: "politics",
     title: "Manila hosts the 49th ASEAN Summit",
@@ -45,7 +49,7 @@ const NEWS: NewsBrief[] = [
     slug: "el-nino-water-calamity-declarations",
     date: "2026-11-11",
     topic: "weather",
-    title: "El Niño dry spell: no nationwide calamity, but 100+ local declarations",
+    title: "El Niño: 100+ local calamity declarations, but none nationwide",
     summary:
       "Malacañang ruled out a nationwide state of calamity for now, as more than 100 areas have declared their own over drought and water shortages.",
     body: [
@@ -95,6 +99,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "mayon-alert-level-3-october",
+    guides: ["albay-mayon-volcano"],
     date: "2026-10-30",
     topic: "weather",
     title: "Mayon Volcano back at Alert Level 3 after explosive eruption",
@@ -112,9 +117,10 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "michelin-guide-2027-philippines",
+    guides: ["intramuros-manila"],
     date: "2026-10-29",
     topic: "culture",
-    title: "Michelin Guide's 2027 list: 10 starred restaurants in Manila and Cebu",
+    title: "Michelin Guide 2027: 10 starred restaurants in Manila and Cebu",
     summary:
       "Helm keeps the country's only two stars, Flow earns a new star, and 127 places make the second Philippine edition.",
     body: [
@@ -129,6 +135,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "maligcong-rice-terraces-cultural-treasure",
+    guides: ["sagada-mountain-province", "banaue-rice-terraces-ifugao"],
     date: "2026-10-19",
     topic: "culture",
     title: "Maligcong Rice Terraces named a National Cultural Treasure",
@@ -145,6 +152,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "coron-ferry-fire-june-aster",
+    guides: ["coron-palawan"],
     date: "2026-09-09",
     topic: "travel",
     title: "Deadly fire on a passenger ferry off Coron, Palawan",
@@ -162,6 +170,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "habagat-floods-august",
+    guides: ["baguio-city-benguet", "vigan-and-laoag-ilocos"],
     date: "2026-08-20",
     topic: "weather",
     title: "Monsoon rains and four storms flood Luzon in August",
@@ -179,6 +188,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "kiyapo-landfall-calayan",
+    guides: ["batanes-islands", "pagudpud-ilocos-norte"],
     date: "2026-07-24",
     topic: "weather",
     title: "Storm Kiyapo makes landfall in Calayan, Cagayan",
@@ -214,7 +224,7 @@ const NEWS: NewsBrief[] = [
     slug: "sara-duterte-impeachment-trial",
     date: "2026-07-06",
     topic: "politics",
-    title: "Senate opens the impeachment trial of Vice President Sara Duterte",
+    title: "Senate opens Vice President Sara Duterte's impeachment trial",
     summary:
       "The House impeached the vice president for a second time on May 11. Conviction needs 16 of 24 senators and would bar her from the 2028 race.",
     body: [
@@ -244,6 +254,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "sarangani-earthquake-magnitude-7-8",
+    guides: ["lake-sebu-south-cotabato", "davao-city-mindanao"],
     date: "2026-06-08",
     topic: "weather",
     title: "Magnitude 7.8 earthquake strikes off Sarangani",
@@ -260,6 +271,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "palawan-power-outage-may",
+    guides: ["el-nido-palawan", "port-barton-palawan"],
     date: "2026-05-22",
     topic: "travel",
     title: "Grid failure blacks out 240 km of Palawan for 13 hours",
@@ -277,6 +289,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "asean-summit-cebu-may",
+    guides: ["cebu-kawasan-falls-oslob"],
     date: "2026-05-08",
     topic: "politics",
     title: "Cebu hosts the 48th ASEAN Summit",
@@ -309,6 +322,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "el-nido-manila-direct-flights-end",
+    guides: ["el-nido-palawan"],
     date: "2026-03-29",
     topic: "travel",
     title: "No more direct Manila–El Nido flights",
@@ -341,6 +355,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "cebu-bus-rapid-transit-opens",
+    guides: ["cebu-kawasan-falls-oslob"],
     date: "2026-03-13",
     topic: "travel",
     title: "Cebu's Bus Rapid Transit finally starts running",
@@ -358,6 +373,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "basilan-ferry-sinking",
+    guides: ["zamboanga-city-mindanao"],
     date: "2026-01-26",
     topic: "travel",
     title: "Ferry carrying over 350 people sinks off Basilan",
@@ -376,7 +392,7 @@ const NEWS: NewsBrief[] = [
     slug: "philippines-uae-free-trade-deal",
     date: "2026-01-13",
     topic: "economy",
-    title: "Philippines signs its first Middle East free trade deal, with the UAE",
+    title: "Philippines signs its first Middle East trade deal, with the UAE",
     summary:
       "The partnership agreement gives about 95% of Philippine products preferential access to the UAE, home to a large Filipino community.",
     body: [
@@ -390,6 +406,7 @@ const NEWS: NewsBrief[] = [
   },
   {
     slug: "mayon-alert-level-3-january",
+    guides: ["albay-mayon-volcano"],
     date: "2026-01-06",
     topic: "weather",
     title: "Mayon Volcano raised to Alert Level 3 as the year begins",
@@ -408,6 +425,22 @@ const NEWS: NewsBrief[] = [
 
 export function getAllNews(): NewsBrief[] {
   return [...NEWS].sort((a, b) => b.date.localeCompare(a.date));
+}
+
+// Briefs on the same topic first, then the closest in date. `exclude` skips slugs already linked (the pager).
+export function getRelatedNews(brief: NewsBrief, count = 3, exclude: string[] = []): NewsBrief[] {
+  const t = Date.parse(brief.date);
+  return NEWS.filter((n) => n.slug !== brief.slug && !exclude.includes(n.slug))
+    .sort(
+      (a, b) =>
+        Number(b.topic === brief.topic) - Number(a.topic === brief.topic) ||
+        Math.abs(Date.parse(a.date) - t) - Math.abs(Date.parse(b.date) - t),
+    )
+    .slice(0, count);
+}
+
+export function getNewsForGuide(slug: string): NewsBrief[] {
+  return getAllNews().filter((n) => n.guides?.includes(slug));
 }
 
 export function getNewsBySlug(slug: string) {
