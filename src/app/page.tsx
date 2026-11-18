@@ -2,6 +2,14 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa6";
 import { getAllArticles } from "@/data/articles";
+import { getAllNews, topicLabel } from "@/data/news";
+import { getAllShowbiz, showbizTopicLabel } from "@/data/showbiz";
+import { getAllSports, sportsTopicLabel } from "@/data/sports";
+import { getAllBooks } from "@/data/books";
+import { SHOWBIZ_TONE } from "@/lib/showbizTone";
+import { SPORTS_TONE } from "@/lib/sportsTone";
+import BookCover from "./components/ui/BookCover";
+import StoryTile, { MiniHeadline } from "./components/ui/StoryTile";
 import { CATEGORIES, ISLAND_GROUPS } from "@/data/taxonomy";
 import { DEFAULT_OG_IMAGE, SITE_DESCRIPTION, SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 import ArticleCard from "./components/ui/ArticleCard";
@@ -29,6 +37,14 @@ export default function Home() {
   const articles = getAllArticles();
   const [featured, ...rest] = articles;
   const latest = rest.slice(0, 6);
+  const news = getAllNews().slice(0, 5);
+  const showbiz = getAllShowbiz().slice(0, 3);
+  const sports = getAllSports().slice(0, 3);
+  // Shelf preview: books with a real cover, ones set in places we cover first.
+  const books = getAllBooks()
+    .filter((b) => b.coverImage)
+    .sort((a, b) => Number(Boolean(b.setIn?.length)) - Number(Boolean(a.setIn?.length)))
+    .slice(0, 6);
   const countBy = (key: "category" | "islandGroup", slug: string) =>
     articles.filter((a) => a[key] === slug).length;
 
@@ -214,8 +230,88 @@ export default function Home() {
         </Container>
       </section>
 
+      {/* News, Showbiz and Sports at a glance */}
+      <section className="py-20 sm:py-28">
+        <Container>
+          <SectionHeading eyebrow="Beyond the guides" title="What's happening in the Philippines" />
+          <div className="grid gap-12 lg:grid-cols-3 lg:gap-10">
+            <HomeColumn title="News" href="/news" cta="All news">
+              <ul className="divide-y divide-sand-200 border-y border-sand-200">
+                {news.map((n) => (
+                  <MiniHeadline key={n.slug} href={`/news/${n.slug}`} date={n.date} title={n.title} tag={topicLabel(n.topic)} />
+                ))}
+              </ul>
+            </HomeColumn>
+            <HomeColumn title="Showbiz" href="/showbiz" cta="All showbiz">
+              {showbiz[0] && (
+                <StoryTile
+                  href={`/showbiz/${showbiz[0].slug}`}
+                  image={showbiz[0].image}
+                  tag={showbizTopicLabel(showbiz[0].topic)}
+                  tagTone={SHOWBIZ_TONE[showbiz[0].topic]}
+                  date={showbiz[0].date}
+                  title={showbiz[0].title}
+                />
+              )}
+              <ul className="mt-4 divide-y divide-sand-200 border-t border-sand-200">
+                {showbiz.slice(1).map((st) => (
+                  <MiniHeadline key={st.slug} href={`/showbiz/${st.slug}`} date={st.date} title={st.title} />
+                ))}
+              </ul>
+            </HomeColumn>
+            <HomeColumn title="Sports" href="/sports" cta="All sports">
+              {sports[0] && (
+                <StoryTile
+                  href={`/sports/${sports[0].slug}`}
+                  image={sports[0].image}
+                  tag={sportsTopicLabel(sports[0].topic)}
+                  tagTone={SPORTS_TONE[sports[0].topic]}
+                  date={sports[0].date}
+                  title={sports[0].title}
+                />
+              )}
+              <ul className="mt-4 divide-y divide-sand-200 border-t border-sand-200">
+                {sports.slice(1).map((st) => (
+                  <MiniHeadline key={st.slug} href={`/sports/${st.slug}`} date={st.date} title={st.title} />
+                ))}
+              </ul>
+            </HomeColumn>
+          </div>
+        </Container>
+      </section>
+
+      {/* Books shelf preview */}
+      <section className="border-y border-sand-200 bg-sand-100 py-20 sm:py-28">
+        <Container>
+          <SectionHeading
+            eyebrow="Read before you go"
+            title="Books by Filipino authors"
+            description="Novels, memoirs and stories, many set in places you can visit."
+            action={
+              <Button href="/books" variant="secondary" arrow>
+                Browse the shelf
+              </Button>
+            }
+          />
+          <ul className="grid grid-cols-2 gap-x-5 gap-y-8 sm:grid-cols-3 lg:grid-cols-6">
+            {books.map((b) => (
+              <li key={b.slug}>
+                <Link href={`/books/${b.slug}`} className="group block focus-visible:outline-none">
+                  <BookCover
+                    book={b}
+                    className="transition-shadow duration-150 group-hover:shadow-card-hover group-focus-visible:outline-2 group-focus-visible:outline-offset-4 group-focus-visible:outline-ink"
+                  />
+                  <p className="mt-3 font-display text-lg font-semibold leading-snug text-ocean-900 group-hover:underline">{b.title}</p>
+                  <p className="mt-0.5 text-sm text-muted">{b.author}</p>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </Container>
+      </section>
+
       {/* About + planning tools */}
-      <Container as="section" className="pb-20 sm:pb-28">
+      <Container as="section" className="py-20 sm:py-28">
         <div className="grid gap-12 border-t-2 border-ocean-900 pt-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">
             <p className="eyebrow">
@@ -281,5 +377,20 @@ export default function Home() {
         </Container>
       </section>
     </>
+  );
+}
+
+// One column of the "What's happening" block: a section label with its own "All …" link.
+function HomeColumn({ title, href, cta, children }: { title: string; href: string; cta: string; children: React.ReactNode }) {
+  return (
+    <div>
+      <div className="mb-4 flex items-baseline justify-between gap-4 border-t-2 border-ocean-900 pt-4">
+        <h3 className="text-2xl font-semibold text-ocean-900">{title}</h3>
+        <Link href={href} className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold link">
+          {cta} <FaArrowRight aria-hidden className="h-3 w-3" />
+        </Link>
+      </div>
+      {children}
+    </div>
   );
 }
