@@ -10,4 +10,5 @@ export const SPORTS_TONE: Record<SportsTopic, string> = {
   golf: "bg-palm-600 text-white",
   weightlifting: "bg-ocean-950 text-mango-300",
   skateboarding: "bg-white text-ocean-950",
+  surfing: "bg-lagoon-600 text-white",
 };

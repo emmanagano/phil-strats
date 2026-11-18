@@ -1077,4 +1077,27 @@ export const MORE_BOOKS: Book[] = [
     openLibrary: "OL25446540W",
     sources: [wiki("Miguel_Syjuco")],
   },
+  {
+    slug: "yniga",
+    title: "Yñiga",
+    author: "Glenn Diaz",
+    authorNote: "Filipino novelist whose first book, The Quiet Ones, won the Palanca Grand Prize and a Philippine National Book Award.",
+    year: 2022,
+    language: "English",
+    genre: "Novel",
+    era: "modern",
+    summary:
+      "After her neighborhood is destroyed, a woman returns to the fishing town where she grew up, and finds that the country's violent past has followed her home.",
+    body: [
+      "The story begins when a former army general, wanted for abuses against farmers and activists, is arrested near the woman's home. What follows pushes her back to her childhood town on the coast.",
+      "Diaz writes about memory, power and the hold that history keeps on ordinary lives. A UK edition from Tilted Axis Press came out on November 17, 2026.",
+    ],
+    why: "It won Best Novel in English at the 41st Philippine National Book Awards and was shortlisted in manuscript for the 2020 Fitzcarraldo, New Directions and Giramondo Novel Prize.",
+    cover: "lagoon",
+    sources: [
+      { name: "Tilted Axis Press", url: "https://www.tiltedaxispress.com/yiga/" },
+      { name: "Rappler: Winners of the 41st National Book Awards", url: "https://www.rappler.com/life-and-style/literature/winners-41st-national-book-awards/" },
+      { name: "New Books Network", url: "https://newbooksnetwork.com/glenn-diaz-yñiga-a-novel-ateneo-de-manila-up-2022" },
+    ],
+  },
 ];

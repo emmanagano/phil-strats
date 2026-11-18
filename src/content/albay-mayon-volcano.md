@@ -37,7 +37,7 @@ guide:
     - label: "Base"
       value: "Legazpi City or Daraga"
     - label: "Volcano status"
-      value: "Check PHIVOLCS; the 6 km danger zone is always off-limits"
+      value: "Alert Level 3 (as of Nov 19, 2026); 6 km danger zone closed"
   months:
     - rating: "avoid"
       note: "Wet and windy. Mayon is often hidden by cloud, but whale shark season is starting in Donsol."
@@ -124,7 +124,7 @@ guide:
       blurb: "Ride an ATV across old lava flows and river beds toward the foot of Mayon."
       cost: "≈ ₱1,000–4,000 depending on trail"
       time: "1–3 hrs"
-      tip: "Rides stop when the alert level rises. Ask the operator about current routes."
+      tip: "Routes inside the 6 km danger zone are closed while Mayon is at Alert Level 3. Ask the operator which trails are open."
     - name: "Lignon Hill"
       tags: ["nature", "adventure"]
       blurb: "A hilltop viewpoint in Legazpi with views of Mayon, the city and Albay Gulf, plus a zipline."
@@ -221,7 +221,7 @@ guide:
       amount: "≈ ₱3,500–4,500"
   essentials:
     - title: "Volcano safety"
-      body: "Mayon is one of the most active volcanoes in the Philippines. Check the PHIVOLCS alert level before you go. The 6 km Permanent Danger Zone is off-limits, and ATV routes and treks close when the alert is raised."
+      body: "Mayon has been at Alert Level 3 since a moderately explosive eruption on October 30, 2026, and was still at Level 3 on November 19. The 6 km Permanent Danger Zone is closed, along with flights near the summit; Level 4 would widen it to 8 km. Check PHIVOLCS before you go."
     - title: "Cash & cards"
       body: "Legazpi has plenty of ATMs and card-friendly malls. Carry cash for Donsol, Camalig and tricycles."
     - title: "Best views"
@@ -246,7 +246,7 @@ guide:
     - "Sunglasses"
 faq:
   - question: "Can you climb Mayon Volcano?"
-    answer: "Not to the summit. Mayon is active and the 6 km Permanent Danger Zone is closed. ATV rides and viewpoints let you get close safely."
+    answer: "No. Mayon has been at Alert Level 3 since October 30, 2026, and the 6 km Permanent Danger Zone is closed. Viewpoints such as Cagsawa and Lignon Hill let you see it safely."
   - question: "When is the best time to see Mayon Volcano?"
     answer: "February to May, in the early morning. Clouds often cover the summit by late morning and during the rainy months."
   - question: "When is whale shark season in Donsol?"

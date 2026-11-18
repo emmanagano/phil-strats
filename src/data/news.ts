@@ -28,6 +28,75 @@ export interface NewsBrief {
 
 const NEWS: NewsBrief[] = [
   {
+    slug: "us-trade-deal-announced-not-signed",
+    date: "2026-11-18",
+    topic: "politics",
+    title: "Trump announces a US–Philippines trade deal; nothing signed yet",
+    summary:
+      "US President Donald Trump spoke of a \"very big\" trade deal during his Manila visit, but Philippine officials said no agreement has been signed.",
+    body: [
+      "Trump made the claim on November 18 after a meeting and state lunch with President Ferdinand Marcos Jr. in Manila, before flying to China for the APEC summit. No terms were released.",
+      "Ambassador Jose Manuel Romualdez said nothing had been signed, and the Palace described the outcome as an understanding on economic cooperation rather than a trade deal.",
+    ],
+    sources: [
+      { name: "Manila Times", url: "https://www.manilatimes.net/2026/11/19/news/trump-us-ph-forge-very-big-trade-deal/2473330" },
+      { name: "ABC News 4", url: "https://abcnews4.com/news/nation-world/no-deal-signed-yet-philippine-officials-temper-trumps-claim-of-very-big-trade-pact" },
+    ],
+  },
+  {
+    slug: "fuel-price-rollbacks-november",
+    date: "2026-11-17",
+    topic: "economy",
+    title: "Fuel prices fall two weeks running",
+    summary:
+      "Gasoline dropped ₱16.80 a liter on November 10 and another ₱1.50 on November 17 as global oil prices eased.",
+    body: [
+      "Diesel fell ₱4.10 and then ₱3.80 a liter, and kerosene ₱3.70 and then ₱5.80. The cuts followed hopes of US–Iran talks easing Middle East supply fears; a weaker peso offset part of the relief.",
+      "The country is still under the national energy emergency declared earlier this year, and the Department of Energy required the cuts to be passed on in full.",
+    ],
+    travelNote: "Jeepney, bus and ferry fares are set separately, so they won't drop automatically. Taxi and ride-hailing surcharges may ease first.",
+    sources: [
+      { name: "Philstar", url: "https://www.philstar.com/business/2026/11/16/2570473/fuel-prices-fall-again-nov-17" },
+      { name: "Philstar", url: "https://www.philstar.com/business/2026/11/09/2568958/major-fuel-price-rollbacks-set-nov-10-gasoline-seen-fall-p168" },
+      { name: "Daily Tribune", url: "https://tribune.net.ph/2026/11/17/metro-manila-gas-prices-seen-as-low-as-p6020" },
+    ],
+  },
+  {
+    slug: "kanlaon-ash-november",
+    guides: ["bacolod-negros-occidental"],
+    date: "2026-11-16",
+    topic: "weather",
+    title: "Kanlaon Volcano emits ash again; Alert Level 2 stays",
+    summary:
+      "Kanlaon on Negros sent up ash plumes from November 14 to 16, with light ashfall in La Carlota and nearby towns.",
+    body: [
+      "PHIVOLCS kept the volcano at Alert Level 2, with entry into the 4 km Permanent Danger Zone prohibited.",
+      "Plumes rose up to about 1,000 m above the crater during the three days of emissions.",
+    ],
+    travelNote: "Bacolod and the city's food and heritage spots are outside the danger zone. Check PHIVOLCS before heading toward the Kanlaon slopes.",
+    sources: [
+      { name: "PNA", url: "https://www.pna.gov.ph/article/kanlaon-volcano-spews-ash-anew-alert-level-2-stays" },
+      { name: "Inquirer", url: "https://newsinfo.inquirer.net/2342128/kanlaon-volcano-emits-ash-anew-on-nov-16-alert-level-2-remains" },
+    ],
+  },
+  {
+    slug: "five-million-visitor-arrivals",
+    date: "2026-11-11",
+    topic: "travel",
+    title: "The Philippines passes 5 million visitor arrivals for 2026",
+    summary:
+      "About 5 million visitors arrived from January 1 to November 4, up 3.74% on last year, with the US the top market.",
+    body: [
+      "The US sent 986,343 visitors, ahead of South Korea and Japan. Arrivals from China rose about 70% under the 14-day visa-free entry that began in January and runs to January 15, 2027.",
+      "The Department of Tourism is aiming for 6.7 million foreign arrivals this year, the target in the 2026 national budget.",
+    ],
+    travelNote: "Popular islands are busier than last year. Book December and Holy Week trips early.",
+    sources: [
+      { name: "BusinessMirror", url: "https://businessmirror.com.ph/2026/11/11/phl-logs-5-million-arrivals-as-dot-pushes-to-retain-visa-free-china-policy/" },
+      { name: "Context.ph", url: "https://context.ph/2026/11/05/tourist-arrivals-top-5m-as-us-leads-china-surges/" },
+    ],
+  },
+  {
     slug: "asean-summit-manila-november",
     guides: ["intramuros-manila"],
     date: "2026-11-16",
@@ -37,12 +106,14 @@ const NEWS: NewsBrief[] = [
       "Southeast Asian leaders met in Pasay for the second ASEAN summit of the Philippines' 2026 chairmanship, with tight security around the PICC.",
     body: [
       "The 49th ASEAN Summit and related meetings were held in mid-November around the Philippine International Convention Center in Pasay. It follows the first summit of the year in Cebu in May.",
-      "Pasay set a security zone around the PICC and Cultural Center complex, and public events such as fun runs and motorcades in several Metro Manila cities were suspended until November 20.",
+      "The summit closed on November 18 with more than 100 outcome documents, including plans for an ASEAN Center of Excellence for Creative Industries in Manila. Myanmar and a South China Sea Code of Conduct were left unresolved, and the Philippines handed the 2027 chairmanship to Singapore.",
     ],
-    travelNote: "Expect reroutes near Roxas Boulevard and the CCP complex until November 20; leave extra time for NAIA.",
+    travelNote: "Security zones around the PICC and CCP complex were set until November 20; traffic in Pasay should be back to normal after that.",
     sources: [
       { name: "Daily Tribune", url: "https://tribune.net.ph/2026/11/09/pasay-announces-road-closures-for-49th-asean-summit" },
       { name: "Philstar Life", url: "https://philstarlife.com/news-and-views/886611-asean-traffic-advisories-road-closures" },
+      { name: "Manila Times", url: "https://www.manilatimes.net/2026/11/17/news/philippines-hands-over-asean-2027-chairmanship-to-singapore/2471815" },
+      { name: "Rappler", url: "https://www.rappler.com/philippines/myanmar-south-china-sea-coc-unsolved-asean-summit-november-2026/" },
     ],
   },
   {
@@ -54,13 +125,14 @@ const NEWS: NewsBrief[] = [
       "Malacañang ruled out a nationwide state of calamity for now, as more than 100 areas have declared their own over drought and water shortages.",
     body: [
       "The 2026–2027 El Niño is expected to peak in November and December and could last into the first half of 2027, threatening water levels at Angat Dam, Metro Manila's main supply.",
-      "The Office of Civil Defense counted 109 local calamity declarations by mid-October. Puerto Galera declared one over water shortages as early as June.",
+      "The Office of Civil Defense counted 109 local calamity declarations by mid-October. On November 9, 20 senators backed Senate Resolution 765 urging a national declaration for the hardest-hit areas.",
     ],
     travelNote: "Island resorts may ration water. Ask your accommodation, and expect greener scenery to look brown in drought-hit areas.",
     sources: [
       { name: "Asia News Network", url: "https://asianews.network/?p=314006" },
       { name: "The Star", url: "https://www.thestar.com.my/aseanplus/aseanplus-news/2026/11/03/el-nino-alert-how-a-strong-event-could-threaten-metro-manilas-water-supply" },
       { name: "Daily Tribune", url: "https://tribune.net.ph/2026/06/21/puerto-galera-under-calamity-state" },
+      { name: "Rappler", url: "https://www.rappler.com/philippines/senators-urge-marcos-jr-declare-state-calamity-super-el-nino-affected-areas/" },
     ],
   },
   {
@@ -229,11 +301,13 @@ const NEWS: NewsBrief[] = [
       "The House impeached the vice president for a second time on May 11. Conviction needs 16 of 24 senators and would bar her from the 2028 race.",
     body: [
       "The House vote was 257–25. The Supreme Court had earlier ruled the first, 2025 impeachment unconstitutional.",
-      "A verdict is not expected before mid-December, and the process could run into 2027.",
+      "As of November 19 the trial is in the defense phase, which began November 9. Only Article II remains after the prosecution withdrew three articles, and there is no verdict yet.",
     ],
     sources: [
       { name: "Inquirer", url: "https://newsinfo.inquirer.net/2257487/sara-duterte-impeachment-trial-everything-you-need-to-know" },
       { name: "Khaleej Times", url: "https://www.khaleejtimes.com/world/asia/explained-philippine-vp-sara-duterte-impeached-again-whats-next-at-senate-trial" },
+      { name: "Manila Bulletin", url: "https://mb.com.ph/2026/11/07/vp-saras-defense-to-present-witnesses-as-impeachment-trial-resumes-nov-9" },
+      { name: "Daily Tribune", url: "https://tribune.net.ph/2026/11/16/sara-defense-taps-4-witnesses" },
     ],
   },
   {

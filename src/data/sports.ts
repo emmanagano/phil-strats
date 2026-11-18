@@ -12,6 +12,7 @@ export const SPORTS_TOPICS = [
   { slug: "golf", label: "Golf" },
   { slug: "weightlifting", label: "Weightlifting" },
   { slug: "skateboarding", label: "Skateboarding" },
+  { slug: "surfing", label: "Surfing" },
 ] as const;
 
 export type SportsTopic = (typeof SPORTS_TOPICS)[number]["slug"];
@@ -33,6 +34,56 @@ export interface SportsStory {
 const PD = "Public domain";
 
 const STORIES: SportsStory[] = [
+  {
+    slug: "pedro-taduran-retains-ibf-title",
+    date: "2026-11-08",
+    topic: "boxing",
+    title: "Pedro Taduran keeps his IBF world title in Albuquerque",
+    dek: "The minimumweight champion beat unbeaten mandatory challenger Brandon Moreno by unanimous decision.",
+    body: [
+      "The judges scored the fight 120-108, 115-113 and 115-113 at the Kiva Auditorium in Albuquerque, New Mexico, on Sunday morning Philippine time. It was Moreno's first professional loss.",
+      "GMA News counts it as Taduran's fourth straight successful IBF defense. His record is now 21-4-1.",
+    ],
+    why: "Taduran is one of the Philippines' reigning world boxing champions, and he kept the belt against a mandatory challenger on the road.",
+    image: {
+      src: "/images/sports/taduran.jpg",
+      alt: "Boxers seated behind three red IBF championship belts at a press conference",
+      caption: "Pedro Taduran and other fighters at a Manila press conference, October 2025.",
+      author: "FilBox101",
+      license: "CC BY 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+      source: "https://commons.wikimedia.org/wiki/File:Taduran_vs_Balunan_2025_Thrilla_in_countdown_press_conference.jpg",
+    },
+    sources: [
+      { name: "GMA News", url: "https://www.gmanetwork.com/news/sports/boxing/1008709/pedro-taduran-retains-ibf-title-hands-brandon-moreno-first-career-loss/story/" },
+      { name: "Philstar", url: "https://www.philstar.com/sports/2026/11/09/2568829/taduran-still-king" },
+    ],
+  },
+  {
+    slug: "john-mark-tokong-first-filipino-ct-heat-win",
+    date: "2026-11-01",
+    topic: "surfing",
+    title: "John Mark Tokong wins the first Championship Tour heat for a Filipino",
+    dek: "At the first World Surf League Championship Tour event in the Philippines, the Siargao wildcard beat Brazil's Samuel Pupo at Cloud 9.",
+    body: [
+      "Tokong, known as \"Marama\", won his opening heat 16.60 to 11.00 against Pupo, ranked tenth in the world, to reach the second round of the WSL Philippines Pro.",
+      "Fellow wildcard Jayuard Alciso also won his heat, upsetting Olympic champion Kauli Vaast of France.",
+    ],
+    why: "It was the first Championship Tour event held in the Philippines, and a home surfer won a heat at the sport's top level for the first time.",
+    image: {
+      src: "/images/sports/tokong.jpg",
+      alt: "John Mark Tokong in a blue Philippines jersey making a shaka sign by the water",
+      caption: "John Mark Tokong after his heat win at Cloud 9, Siargao, November 1, 2026.",
+      author: "Philippine Sports Commission",
+      license: PD,
+      licenseUrl: "",
+      source: "https://commons.wikimedia.org/wiki/File:John_Mark_Tokong.jpg",
+    },
+    sources: [
+      { name: "Philstar", url: "https://www.philstar.com/palaro/2026/11/02/2567180/tokong-alciso-crash-ct-party" },
+      { name: "Philippine Times", url: "https://philtimes.com.au/filipino-surfers-tokong-alciso-historic-siargao-wins-2026/" },
+    ],
+  },
   {
     slug: "carlos-yulo-asian-games-double-gold",
     featured: true,

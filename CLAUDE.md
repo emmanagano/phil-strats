@@ -8,6 +8,10 @@ Phil Strats is a **mock** Philippines travel site. The site's priorities are a c
 
 Sections: **Destinations** (`/articles`, interactive one-stop guides), **News** (`/news`, short sourced briefs on the Philippines this year), **Showbiz** (`/showbiz`, photo-led Filipino pop culture stories), **Sports** (`/sports`, photo-led news about Filipino athletes), **Books** (`/books`, well-known books by Filipino authors), **Newsletter** and **Contact**. The old Blurbs section was removed; `public/_redirects` sends `/blurbs` to `/articles`.
 
+## Content log
+
+**Read `CONTENT_LOG.md` before any content change and update it after.** It tracks each section's item count, newest item date and last refresh, a dated log of what was added, the topic mix, and a watchlist of follow-ups (alert levels, verdicts, scheduled events). Research only what is newer than the last item date.
+
 ## Commands
 
 ```bash

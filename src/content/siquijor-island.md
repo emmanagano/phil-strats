@@ -78,7 +78,7 @@ guide:
     - {mode: "Scooter rental", cost: "₱300–400/day", note: "The best way to loop the island"}
     - {mode: "Tricycle tour", cost: "₱1,200–1,500/day", note: "For non-riders"}
   fees:
-    - {name: "Environmental fee (on arrival)", amount: "≈ ₱50–100"}
+    - {name: "Tourism ecological fee (on arrival)", amount: "≈ ₱50"}
     - {name: "Cambugahay Falls", amount: "≈ ₱50–100"}
     - {name: "Salagdoong Beach", amount: "≈ ₱50"}
   essentials:
