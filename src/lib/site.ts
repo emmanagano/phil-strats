@@ -19,7 +19,8 @@ export const SOCIALS = {
 export const NEWSLETTER_ACTION =
   "https://buttondown.email/api/emails/embed-subscribe/philippinestrategies";
 
-export const NAV = [
+// Every main page, in order. The footer's "Explore" column and the sitemap read this list.
+export const PAGES = [
   { label: "Home", href: "/" },
   { label: "Destinations", href: "/articles" },
   { label: "News", href: "/news" },
@@ -29,6 +30,26 @@ export const NAV = [
   { label: "Newsletter", href: "/newsletter" },
   { label: "Contact", href: "/contact" },
 ] as const;
+
+export type NavLink = { label: string; href: string };
+export type NavItem = NavLink | { label: string; children: NavLink[] };
+
+// Header navigation: a short top level, with the story sections grouped under "Stories".
+// The logo links home; Newsletter is the Subscribe button (NAV_CTA); Contact lives in the footer.
+export const NAV: NavItem[] = [
+  { label: "Destinations", href: "/articles" },
+  {
+    label: "Stories",
+    children: [
+      { label: "News", href: "/news" },
+      { label: "Showbiz", href: "/showbiz" },
+      { label: "Sports", href: "/sports" },
+    ],
+  },
+  { label: "Books", href: "/books" },
+];
+
+export const NAV_CTA: NavLink = { label: "Subscribe", href: "/newsletter" };
 
 export function isActivePath(pathname: string, href: string) {
   return href === "/" ? pathname === "/" : pathname.startsWith(href);

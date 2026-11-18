@@ -4,14 +4,14 @@ import { getAllNews } from "@/data/news";
 import { getAllShowbiz } from "@/data/showbiz";
 import { getAllBooks } from "@/data/books";
 import { getAllSports } from "@/data/sports";
-import { NAV, SITE_URL } from "@/lib/site";
+import { PAGES, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const all = getAllArticles();
   const latest = all.map((a) => a.updated).sort().at(-1);
-  const pages = NAV.map((item) => ({
+  const pages = PAGES.map((item) => ({
     ...(item.href === "/" || item.href === "/articles" ? { lastModified: latest } : {}),
     url: `${SITE_URL}${item.href === "/" ? "" : item.href}`,
     changeFrequency: "weekly" as const,

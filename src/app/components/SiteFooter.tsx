@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { CATEGORIES, ISLAND_GROUPS } from "@/data/taxonomy";
-import { NAV, SITE_NAME, SITE_TAGLINE, SOCIALS } from "@/lib/site";
+import { PAGES, SITE_NAME, SITE_TAGLINE, SOCIALS } from "@/lib/site";
 import NewsletterForm from "./ui/NewsletterForm";
 
 const linkClass = "inline-block py-1 text-sand-200 underline-offset-4 transition-colors hover:text-white hover:underline";
@@ -24,7 +24,7 @@ export default function SiteFooter() {
 
         <div className="grid grid-cols-2 gap-10 sm:grid-cols-3 lg:col-span-6 lg:col-start-7">
           <FooterColumn title="Explore">
-            {NAV.map((item) => (
+            {PAGES.map((item) => (
               <li key={item.href}>
                 <Link href={item.href} className={linkClass}>
                   {item.label}
