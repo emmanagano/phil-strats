@@ -1,8 +1,10 @@
 // "Books": well-known books by Filipino and Filipino-heritage authors. Client-safe (no fs).
 // Rules: original summaries only (no copied blurbs, no spoilers past the setup), every "why it
 // matters" claim backed by `sources`, and `setIn` slugs must match a destination guide
-// (the build fails otherwise). Covers are typographic (see BookCover) unless `image` holds a
-// freely licensed scan or photo with credit fields.
+// (the build fails otherwise). `coverImage` is a small cover thumbnail from Open Library, used to
+// identify the book and credited on its page; without one, BookCover draws a typographic cover.
+
+import { MORE_BOOKS } from "./books-more";
 
 export const BOOK_ERAS = [
   { slug: "classic", label: "Classics", blurb: "Spanish and American-era books every Filipino knows." },
@@ -50,12 +52,17 @@ export interface Book {
   settingNote?: string;
   cover: CoverTone;
   image?: BookImage;
+  // Open Library work ID (e.g. "OL1622748W"): credit link for the cover and an extra source.
+  openLibrary?: string;
+  // Cover thumbnail in public/images/books/<slug>.jpg, checked by eye before adding.
+  coverImage?: string;
   sources: { name: string; url: string }[];
 }
 
-const BOOKS: Book[] = [
+const BASE_BOOKS: Book[] = [
   {
     slug: "noli-me-tangere",
+    openLibrary: "OL1622789W",
     title: "Noli Me Tángere",
     originalTitle: "Noli Me Tángere",
     author: "José Rizal",
@@ -83,6 +90,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "el-filibusterismo",
+    openLibrary: "OL1622748W",
+    coverImage: "/images/books/el-filibusterismo.jpg",
     title: "El Filibusterismo",
     author: "José Rizal",
     authorNote:
@@ -109,6 +118,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "florante-at-laura",
+    openLibrary: "OL15794139W",
+    coverImage: "/images/books/florante-at-laura.jpg",
     title: "Florante at Laura",
     author: "Francisco Balagtas",
     authorNote:
@@ -134,6 +145,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "banaag-at-sikat",
+    openLibrary: "OL5305523W",
+    coverImage: "/images/books/banaag-at-sikat.jpg",
     title: "Banaag at Sikat",
     author: "Lope K. Santos",
     authorNote: "Tagalog novelist, poet and labor journalist who first serialized the novel in his workers' weekly.",
@@ -154,6 +167,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "how-my-brother-leon-brought-home-a-wife",
+    openLibrary: "OL2330137W",
+    coverImage: "/images/books/how-my-brother-leon-brought-home-a-wife.jpg",
     title: "How My Brother Leon Brought Home a Wife",
     author: "Manuel Arguilla",
     authorNote: "Ilocano writer from La Union (1911–1944), executed by Japanese forces during World War II.",
@@ -180,6 +195,7 @@ const BOOKS: Book[] = [
   },
   {
     slug: "have-come-am-here",
+    openLibrary: "OL518758W",
     title: "Have Come, Am Here",
     author: "José Garcia Villa",
     authorNote: "Manila-born poet (1908–1997) who lived in New York from 1930; National Artist for Literature, 1973.",
@@ -204,6 +220,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "america-is-in-the-heart",
+    openLibrary: "OL1622940W",
+    coverImage: "/images/books/america-is-in-the-heart.jpg",
     title: "America Is in the Heart",
     author: "Carlos Bulosan",
     authorNote: "Born in Pangasinan, he emigrated to the US in 1930 and worked the farms and canneries of the West Coast before becoming a writer.",
@@ -230,6 +248,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "without-seeing-the-dawn",
+    openLibrary: "OL7699106W",
+    coverImage: "/images/books/without-seeing-the-dawn.jpg",
     title: "Without Seeing the Dawn",
     author: "Stevan Javellana",
     authorNote: "Writer from Panay whose war novel was published in Boston in 1947.",
@@ -255,6 +275,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "the-woman-who-had-two-navels",
+    openLibrary: "OL345149W",
+    coverImage: "/images/books/the-woman-who-had-two-navels.jpg",
     title: "The Woman Who Had Two Navels",
     author: "Nick Joaquin",
     authorNote: "Manila-born writer of fiction, plays and journalism (1917–2004); National Artist for Literature, 1976.",
@@ -280,6 +302,7 @@ const BOOKS: Book[] = [
   },
   {
     slug: "the-pretenders",
+    openLibrary: "OL110977W",
     title: "The Pretenders",
     author: "F. Sionil José",
     authorNote: "Novelist from Rosales, Pangasinan (1924–2022); National Artist for Literature (2001) and Ramon Magsaysay awardee (1980).",
@@ -306,6 +329,7 @@ const BOOKS: Book[] = [
   },
   {
     slug: "sa-mga-kuko-ng-liwanag",
+    openLibrary: "OL949669W",
     title: "Sa mga Kuko ng Liwanag",
     author: "Edgardo M. Reyes",
     authorNote: "Tagalog novelist and screenwriter whose fiction first ran in the weekly magazine Liwayway.",
@@ -328,6 +352,7 @@ const BOOKS: Book[] = [
   },
   {
     slug: "mga-ibong-mandaragit",
+    openLibrary: "OL1783933W",
     title: "Mga Ibong Mandaragit",
     author: "Amado V. Hernandez",
     authorNote: "Poet, novelist and labor leader (1903–1970), jailed in the 1950s and named National Artist for Literature in 1973.",
@@ -352,6 +377,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "dekada-70",
+    openLibrary: "OL2330253W",
+    coverImage: "/images/books/dekada-70.jpg",
     title: "Dekada '70",
     author: "Lualhati Bautista",
     authorNote: "Novelist and activist (1945–2023) and a three-time Palanca grand-prize winner for the novel.",
@@ -377,6 +404,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "dogeaters",
+    openLibrary: "OL7972127W",
+    coverImage: "/images/books/dogeaters.jpg",
     title: "Dogeaters",
     author: "Jessica Hagedorn",
     authorNote: "Manila-born novelist, poet and performer based in the United States.",
@@ -403,6 +432,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "abnkkbsnplako",
+    openLibrary: "OL25434254W",
+    coverImage: "/images/books/abnkkbsnplako.jpg",
     title: "ABNKKBSNPLAko?!",
     author: "Bob Ong",
     authorNote: "Pseudonymous writer of humor and fiction whose real identity has never been confirmed; one of the bestselling authors in the Philippines.",
@@ -426,6 +457,7 @@ const BOOKS: Book[] = [
   },
   {
     slug: "para-kay-b",
+    openLibrary: "OL1033754W",
     title: "Para kay B",
     author: "Ricky Lee",
     authorNote: "Screenwriter and novelist (born 1948), named National Artist for Film and Broadcast Arts in 2022.",
@@ -450,6 +482,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "ilustrado",
+    openLibrary: "OL15348317W",
+    coverImage: "/images/books/ilustrado.jpg",
     title: "Ilustrado",
     author: "Miguel Syjuco",
     authorNote: "Manila-born novelist whose debut won the Man Asian Literary Prize while still in manuscript.",
@@ -499,6 +533,7 @@ const BOOKS: Book[] = [
   },
   {
     slug: "isle-of-the-lost",
+    openLibrary: "OL17125669W",
     title: "Isle of the Lost",
     author: "Melissa de la Cruz",
     authorNote: "Manila-born Filipina American author of bestselling young-adult series, including Blue Bloods and Disney's Descendants novels.",
@@ -522,6 +557,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "in-the-country",
+    openLibrary: "OL20003054W",
+    coverImage: "/images/books/in-the-country.jpg",
     title: "In the Country",
     author: "Mia Alvar",
     authorNote: "Filipino American writer whose debut story collection won the PEN/Bingham Prize.",
@@ -546,6 +583,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "hello-universe",
+    openLibrary: "OL17851394W",
+    coverImage: "/images/books/hello-universe.jpg",
     title: "Hello, Universe",
     author: "Erin Entrada Kelly",
     authorNote: "Filipino American children's author and two-time Newbery Medal winner.",
@@ -570,6 +609,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "insurrecto",
+    openLibrary: "OL19762925W",
+    coverImage: "/images/books/insurrecto.jpg",
     title: "Insurrecto",
     author: "Gina Apostol",
     authorNote: "Filipino novelist whose earlier book, Gun Dealers' Daughter, won the 2013 PEN/Open Book Award.",
@@ -592,6 +633,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "america-is-not-the-heart",
+    openLibrary: "OL19738160W",
+    coverImage: "/images/books/america-is-not-the-heart.jpg",
     title: "America Is Not the Heart",
     author: "Elaine Castillo",
     authorNote: "Filipino American novelist from the San Francisco Bay Area.",
@@ -615,6 +658,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "patron-saints-of-nothing",
+    openLibrary: "OL20082448W",
+    coverImage: "/images/books/patron-saints-of-nothing.jpg",
     title: "Patron Saints of Nothing",
     author: "Randy Ribay",
     authorNote: "Filipino American author of young-adult novels.",
@@ -638,6 +683,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "arsenic-and-adobo",
+    openLibrary: "OL24340224W",
+    coverImage: "/images/books/arsenic-and-adobo.jpg",
     title: "Arsenic and Adobo",
     author: "Mia P. Manansala",
     authorNote: "Filipino American author of the Tita Rosie's Kitchen mysteries.",
@@ -660,6 +707,7 @@ const BOOKS: Book[] = [
   },
   {
     slug: "some-people-need-killing",
+    openLibrary: "OL35771902W",
     title: "Some People Need Killing",
     author: "Patricia Evangelista",
     authorNote: "Manila-based journalist who reported on the drug war for years; named a 2026 World Press Freedom Hero by the International Press Institute.",
@@ -689,6 +737,8 @@ const BOOKS: Book[] = [
   },
   {
     slug: "the-hurricane-wars",
+    openLibrary: "OL34023561W",
+    coverImage: "/images/books/the-hurricane-wars.jpg",
     title: "The Hurricane Wars",
     author: "Thea Guanzon",
     authorNote: "Fantasy author from Bacolod, Negros Occidental, whose debut became a New York Times bestseller.",
@@ -711,6 +761,8 @@ const BOOKS: Book[] = [
     ],
   },
 ];
+
+const BOOKS: Book[] = [...BASE_BOOKS, ...MORE_BOOKS];
 
 // Oldest first within the whole list, so the shelf reads as a timeline.
 export function getAllBooks(): Book[] {
@@ -735,6 +787,33 @@ export function getRelatedBooks(book: Book, count = 4): Book[] {
         Math.abs(a.year - book.year) - Math.abs(b.year - book.year),
     )
     .slice(0, count);
+}
+
+// Broad types for the shelf filter, derived from each book's free-text `genre`.
+export const BOOK_KINDS = [
+  { slug: "fiction", label: "Novels & fiction" },
+  { slug: "stories", label: "Short stories" },
+  { slug: "poetry", label: "Poetry" },
+  { slug: "nonfiction", label: "Nonfiction" },
+  { slug: "young", label: "Young readers" },
+] as const;
+
+export type BookKind = (typeof BOOK_KINDS)[number]["slug"];
+
+export function bookKind(genre: string): BookKind {
+  const g = genre.toLowerCase();
+  if (/young adult|children/.test(g)) return "young";
+  if (/short stories/.test(g)) return "stories";
+  if (/poe(m|try)/.test(g)) return "poetry";
+  if (/memoir|essay|history|letters|reportage/.test(g)) return "nonfiction";
+  return "fiction";
+}
+
+// "N. V. M. Gonzalez" -> "Gonzalez"; "Budjette Tan and Kajo Baldisimo" -> "Tan"; "Melissa de la Cruz" -> "de la Cruz".
+export function authorSortKey(author: string): string {
+  const first = author.split(/\s+and\s+/)[0].trim();
+  const m = first.match(/\b((?:de la|de los|del|dela|de)\s+\S+)$/i);
+  return (m ? m[1] : first.split(/\s+/).at(-1) ?? first).toLowerCase();
 }
 
 export function eraLabel(slug: BookEra) {

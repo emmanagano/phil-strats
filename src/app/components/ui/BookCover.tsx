@@ -8,7 +8,7 @@ export default function BookCover({
   size = "md",
   className = "",
 }: {
-  book: Pick<Book, "title" | "author" | "year" | "cover" | "image">;
+  book: Pick<Book, "title" | "author" | "year" | "cover" | "image" | "coverImage">;
   size?: "sm" | "md" | "lg";
   className?: string;
 }) {
@@ -20,10 +20,19 @@ export default function BookCover({
     : { sm: "text-base", md: "text-xl sm:text-2xl", lg: "text-3xl sm:text-4xl" }[size];
   const pad = { sm: "p-3", md: "p-4 sm:p-5", lg: "p-6 sm:p-8" }[size];
 
-  if (book.image) {
+  const src = book.coverImage ?? book.image?.src;
+  if (src) {
     return (
       <div className={`relative aspect-[2/3] overflow-hidden rounded-control bg-sand-200 shadow-card ${className}`}>
-        <img src={book.image.src} alt={book.image.alt} loading="lazy" className="h-full w-full object-cover" />
+        <img
+          src={src}
+          alt={book.image?.alt ?? `Cover of ${book.title} by ${book.author}`}
+          loading="lazy"
+          decoding="async"
+          width={400}
+          height={600}
+          className="h-full w-full object-cover"
+        />
       </div>
     );
   }

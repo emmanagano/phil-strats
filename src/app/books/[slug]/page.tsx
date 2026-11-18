@@ -74,7 +74,15 @@ export default async function BookPage({ params }: Params) {
         <div className="mt-8 grid gap-10 md:grid-cols-[16rem_minmax(0,1fr)] lg:grid-cols-[18rem_minmax(0,1fr)] lg:gap-16">
           <div className="mx-auto w-48 md:mx-0 md:w-full">
             <BookCover book={book} size="lg" />
-            {book.image && (
+            {book.coverImage && book.openLibrary && (
+              <p className="mt-2 text-xs text-muted">
+                Cover via{" "}
+                <a href={`https://openlibrary.org/works/${book.openLibrary}`} className="underline" target="_blank" rel="noopener noreferrer">
+                  Open Library
+                </a>
+              </p>
+            )}
+            {!book.coverImage && book.image && (
               <p className="mt-2 text-xs text-muted">
                 {book.image.caption}{" "}
                 <a href={book.image.source} className="underline" target="_blank" rel="noopener noreferrer">
@@ -169,7 +177,7 @@ export default async function BookPage({ params }: Params) {
             <section aria-labelledby="sources" className="mt-10">
               <h2 id="sources" className="font-sans text-xs font-bold uppercase tracking-widest text-muted">Sources</h2>
               <ul className="mt-3 divide-y divide-sand-200 border-y border-sand-200">
-                {book.sources.map((s) => (
+                {[...book.sources, ...(book.openLibrary ? [{ name: "Open Library: editions and details", url: `https://openlibrary.org/works/${book.openLibrary}` }] : [])].map((s) => (
                   <li key={s.url}>
                     <a
                       href={s.url}

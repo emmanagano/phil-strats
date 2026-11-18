@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
+import { Suspense } from "react";
 import Link from "next/link";
 import { BOOK_ERAS, getAllBooks } from "@/data/books";
 import PageHero from "@/app/components/PageHero";
 import Container from "@/app/components/ui/Container";
 import BookCover from "@/app/components/ui/BookCover";
 import { SITE_URL } from "@/lib/site";
-import BookShelf from "./BookShelf";
+import BookShelf, { BookGrid } from "./BookShelf";
 
 export const metadata: Metadata = {
   title: "Books by Filipino Authors",
@@ -27,7 +28,11 @@ export default function BooksPage() {
       name: `${b.title} by ${b.author}`,
     })),
   };
-  const featured = books.slice(0, 3);
+  // Hero shelf: three books with strong covers, one per era feel (falls back to the oldest).
+  const featured = ["el-filibusterismo", "dekada-70", "trese"]
+    .map((slug) => books.find((b) => b.slug === slug))
+    .filter((b): b is (typeof books)[number] => Boolean(b));
+  if (featured.length < 3) featured.push(...books.slice(0, 3 - featured.length));
 
   return (
     <>
@@ -56,7 +61,9 @@ export default function BooksPage() {
         }
       />
       <Container className="pb-20 pt-12 sm:pb-28 sm:pt-16">
-        <BookShelf books={books} />
+        <Suspense fallback={<BookGrid books={books} />}>
+          <BookShelf books={books} />
+        </Suspense>
         <div className="mt-16 grid gap-6 border-t border-sand-200 pt-8 sm:grid-cols-3">
           {BOOK_ERAS.map((e) => (
             <div key={e.slug}>
