@@ -9,7 +9,7 @@ import ArticleBrowser, { ArticleGrid } from "./ArticleBrowser";
 export const metadata: Metadata = {
   title: "Destinations",
   description:
-    "Every Phil Strats travel guide — beaches, nature escapes, and heritage towns across Luzon, Visayas, Mindanao, and Palawan.",
+    "Every Phil Strats travel guide: beaches, nature escapes, and heritage towns across Luzon, Visayas, Mindanao, and Palawan.",
   alternates: { canonical: "/articles" },
 };
 

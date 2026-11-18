@@ -64,6 +64,7 @@ guide:
       note: "Heavy rain and storms. Flights and roads can be disrupted."
   routes:
     - from: "Manila"
+      flight: {from: "MNL", to: "DRP"}
       steps:
         - "Fly Manila → Bicol International Airport (DRP), about 1 hr"
         - "Van, taxi or Grab to Legazpi (30–40 min) or Daraga (15–20 min)"
@@ -78,6 +79,7 @@ guide:
       cost: "≈ ₱1,000–1,800"
       tip: "Sleeper and deluxe buses are worth the extra on this long route."
     - from: "Cebu"
+      flight: {from: "CEB", to: "DRP"}
       steps:
         - "Fly Cebu → Bicol International Airport (DRP), about 1 hr 15 min"
         - "Transfer to Legazpi or Daraga"

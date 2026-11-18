@@ -1,7 +1,7 @@
 ---
 id: 15
 title: "Batanes Travel Guide: Stone Houses & Rolling Green Hills"
-description: "Plan a Batanes trip: rolling green hills, Ivatan stone houses, Sabtang Island and Basco Lighthouse, with flights, budgets and the best months to go."
+description: "Plan a Batanes trip: rolling green hills, Ivatan stone houses, Sabtang Island, and Basco Lighthouse, with flights, budgets, and the best months to go."
 date: "2026-10-30"
 updated: "2026-11-18"
 slug: "batanes-islands"
@@ -36,6 +36,7 @@ guide:
     - {rating: "mixed", note: "Cold and windy."}
   routes:
     - from: "Manila or Clark"
+      flight: {from: "MNL", to: "BSO"}
       steps: ["Fly to Basco (BSO), about 1 hr 30 min", "Tricycle or hotel pick-up (5–10 min)"]
       time: "2–3 hrs door to door"
       cost: "₱6,000–15,000 round trip"
@@ -49,7 +50,7 @@ guide:
   experiences:
     - {name: "North Batan tour", tags: ["nature", "road trip"], blurb: "Marlboro Country hills, Valugan Boulder Beach and Basco Lighthouse.", cost: "≈ ₱1,500–2,500 per tricycle", time: "Full day"}
     - {name: "South Batan tour", tags: ["culture", "road trip"], blurb: "Honesty Coffee Shop, the stone houses of Ivana and the Mahatao church.", cost: "≈ ₱1,500–2,500 per tricycle", time: "Full day"}
-    - {name: "Sabtang Island", tags: ["culture", "island hopping"], blurb: "Traditional Ivatan villages of stone and cogon grass, plus the white sand of Morong Beach, reached by falowa boat.", cost: "≈ ₱100 boat + ₱2,000 tour", time: "Full day", tip: "The boat runs early morning only and stops in rough seas."}
+    - {name: "Sabtang Island", tags: ["culture", "island hopping"], blurb: "Traditional Ivatan villages of stone and cogon grass, plus the white sand of Morong Beach, reached by faluwa boat.", cost: "≈ ₱100 boat + ₱2,000 tour", time: "Full day", tip: "The boat runs early morning only and stops in rough seas."}
     - {name: "Rakuh-a-Payaman (Marlboro Hills)", tags: ["nature"], blurb: "Grazing cows on rolling hills above the Pacific.", cost: "Free", time: "1–2 hrs"}
     - {name: "Honesty Coffee Shop", tags: ["culture", "food"], blurb: "No staff: pick your snack and leave payment in the box.", cost: "₱50–150", time: "30 min"}
     - {name: "Biking around Basco", tags: ["road trip", "chill"], blurb: "Quiet roads and sea views by bicycle.", cost: "₱300–500/day", time: "Half day"}
@@ -62,7 +63,7 @@ guide:
       - {title: "Arrive & Basco", items: ["Pay the tourism fee", "Basco Lighthouse at sunset", "Ivatan dinner"]}
       - {title: "North Batan", items: ["Marlboro Hills", "Valugan Boulder Beach", "Vayang Rolling Hills"]}
       - {title: "South Batan", items: ["Honesty Coffee Shop", "Ivana stone houses", "Mahatao church"]}
-      - {title: "Sabtang Island", items: ["Early falowa from Ivana", "Chavayan stone village", "Morong Beach arch"]}
+      - {title: "Sabtang Island", items: ["Early faluwa from Ivana", "Chavayan stone village", "Morong Beach arch"]}
       - {title: "Buffer & go", items: ["Bike around Basco", "Souvenir shopping", "Flight out"]}
   stays:
     - {area: "Basco", vibe: "The capital, with most inns and restaurants.", bestFor: "First-timers", price: "₱1,500–8,000/night"}
@@ -78,7 +79,7 @@ guide:
   fees:
     - {name: "Batanes tourism fee", amount: "≈ ₱300–500"}
     - {name: "Sabtang environmental fee", amount: "≈ ₱200–350"}
-    - {name: "Falowa boat to Sabtang", amount: "≈ ₱100"}
+    - {name: "Faluwa boat to Sabtang", amount: "≈ ₱100"}
   essentials:
     - {title: "Buffer days", body: "Weather cancels flights and the Sabtang boat. Don't book tight onward connections."}
     - {title: "Cash", body: "Basco has a few ATMs; many places are cash only."}
@@ -118,10 +119,10 @@ Batanes has ten islands, but only three are inhabited. **Batan** is the main isl
 
 ### Protected landscapes and seascapes
 
-Much of the province is protected as the Batanes Protected Landscapes and Seascapes, and the islands sit on the UNESCO World Heritage tentative list. The rules are simple and strict: stay on paths, don't take stones or shells, and never buy coconut crab, which is protected. Batanes stays green and clean because visitors and locals take this seriously.
+Much of the province is protected as the Batanes Protected Landscapes and Seascapes, and the islands sit on the UNESCO World Heritage tentative list. The rules are simple: stay on paths, don't take stones or shells, and only eat coconut crab where local rules allow it (ask, or skip it). Batanes stays green and clean because visitors and locals take this seriously.
 
 ### Food to try
 
-Ivatan cooking makes the most of what grows on the islands. Look for uvud balls (made from the pith of the banana plant), lunis (pork cooked slowly in its own fat), flying fish and turmeric rice. Meals are simple, fresh and often shared at small family-run eateries in Basco.
+Ivatan cooking makes the most of what grows on the islands. Look for uvud balls (made from the pith of the banana plant), lunis (Ivatan-style salted pork, cooked like adobo), flying fish and turmeric rice. Meals are simple, fresh and often shared at small family-run eateries in Basco.
 
 Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Mount Pulag](/articles/mount-pulag-benguet).

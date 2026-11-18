@@ -36,6 +36,7 @@ guide:
     - {rating: "great", note: "Cool and festive."}
   routes:
     - from: "Manila by air"
+      flight: {from: "MNL", to: "LAO"}
       steps: ["Fly to Laoag (LAO), about 1 hr 10 min", "Van or bus to Vigan (1.5–2 hrs)"]
       time: "3–4 hrs to Vigan"
       cost: "₱2,500–6,000 flight + ₱200–300 bus"
@@ -103,6 +104,6 @@ tags:
   - travel
 ---
 
-Vigan and Laoag capture the timeless charm of the Philippines’ Spanish colonial past, where cobblestone streets, ancestral houses, and centuries-old churches tell stories of a bygone era. These twin destinations in the Ilocos Region combine culture, history, and adventure — from walking along Calle Crisologo in Vigan to exploring the sand dunes and coastal sights of Laoag.
+Vigan and Laoag capture the timeless charm of the Philippines’ Spanish colonial past, where cobblestone streets, ancestral houses, and centuries-old churches tell stories of a bygone era. These twin destinations in the Ilocos Region combine culture, history, and adventure, from walking along Calle Crisologo in Vigan to exploring the sand dunes and coastal sights of Laoag.
 
 Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Intramuros](/articles/intramuros-manila).

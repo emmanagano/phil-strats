@@ -91,7 +91,7 @@ const STORIES: ShowbizStory[] = [
       "Sixteen housemates entered on launch night, mixing actors such as Winwyn Marquez and Mikee Quintos with content creators and first-timers picked from worldwide auditions.",
       "The show airs on GMA, Kapuso Stream and ABS-CBN's YouTube channel, continuing the rival networks' unlikely partnership that began in 2025.",
     ],
-    why: "PBB is still the country's biggest reality-TV conversation; expect housemates to dominate social feeds through the holidays.",
+    why: "PBB is one of the country's longest-running reality shows, and this edition airs through the holiday season.",
     image: {
       src: "/images/showbiz/pbb-collab-3.jpg",
       alt: "Exterior of the new Pinoy Big Brother house in Quezon City, October 2026",
@@ -295,7 +295,7 @@ const STORIES: ShowbizStory[] = [
       "The critics' awards gave Best Actor jointly to Carlo Aquino (\"Bar Boys: After School\") and Jericho Rosales (\"Quezon\"), and Best Actress to Maris Racal (\"Sunshine\") and Odette Khan (\"Bar Boys: After School\").",
       "Director Laurice Guillen received the Natatanging Gawad Urian for her lifetime contribution to Filipino cinema.",
     ],
-    why: "The Urian is chosen by film critics, so it's the year's best guide to Filipino films worth seeking out.",
+    why: "The Urian is chosen by film critics, so its winners are a reliable guide to Filipino films worth seeking out.",
     image: {
       src: "/images/showbiz/gawad-urian-2026.jpg",
       alt: "Portrait of actress Maris Racal",

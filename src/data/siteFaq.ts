@@ -13,7 +13,7 @@ export const siteFaq = [
   {
     question: "What sort of topics do we cover?",
     answer:
-      "We cover travel guides, itineraries, food spots, cultural insights, and off-the-beaten-path adventures from all over the Philippines — from iconic islands to hidden gems.",
+      "We cover travel guides, itineraries, food spots, cultural insights, and off-the-beaten-path adventures from all over the Philippines, from famous islands to lesser-known spots.",
   },
   {
     question: "Is the content based on facts, opinions, or both?",
@@ -38,7 +38,7 @@ export const siteFaq = [
   {
     question: "How often is the site updated with new content?",
     answer:
-      "We update our site regularly with new destination guides, seasonal picks, and travel insights — usually every week or two.",
+      "We update our site regularly with new destination guides, seasonal picks, and travel insights whenever we have something worth sharing.",
   },
   {
     question: "How can I contact you directly?",

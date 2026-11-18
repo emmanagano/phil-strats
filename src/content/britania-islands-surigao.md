@@ -64,6 +64,7 @@ guide:
       note: "One of the wettest months. Typhoons and long rainy spells are common."
   routes:
     - from: "Manila or Cebu"
+      flight: {from: "MNL", to: "BXU"}
       steps:
         - "Fly to Butuan (BXU), about 1 hr 30 min from Manila or 1 hr from Cebu"
         - "Bus or van south via San Francisco, Agusan del Sur"

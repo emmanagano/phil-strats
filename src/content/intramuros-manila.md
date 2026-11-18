@@ -88,11 +88,11 @@ faq:
   - question: "Is Intramuros safe to visit?"
     answer: "Yes. It’s well-patrolled, especially around main attractions. Exercise usual city awareness."
   - question: "Can you explore Intramuros on your own?"
-    answer: "Absolutely — it’s walkable and easy to navigate, but guided tours offer deeper insights."
+    answer: "Absolutely. It’s walkable and easy to navigate, but guided tours offer deeper insights."
   - question: "How long does it take to explore?"
     answer: "Half a day is enough to see the highlights, though history lovers may spend a full day exploring."
   - question: "What should I wear?"
-    answer: "Light clothing, comfortable shoes, and a hat — the area gets sunny and warm."
+    answer: "Light clothing, comfortable shoes, and a hat; the area gets sunny and warm."
 tags:
   - "intramuros manila travel guide"
   - "old manila attractions"
@@ -100,6 +100,6 @@ tags:
   - "historical sites philippines"
 ---
 
-Step back in time inside Intramuros, the walled city of Manila that once served as the political and religious center of Spanish colonial rule. Cobblestone streets, centuries-old churches, and horse-drawn carriages bring history to life in this well-preserved district. From Fort Santiago to San Agustin Church, Intramuros offers a rare glimpse into the Philippines’ colonial past — a must-visit for culture, architecture, and history lovers alike.
+Step back in time inside Intramuros, the walled city of Manila that once served as the political and religious center of Spanish colonial rule. Cobblestone streets, centuries-old churches, and horse-drawn carriages bring history to life in this well-preserved district. From Fort Santiago to San Agustin Church, Intramuros offers a rare glimpse into the Philippines’ colonial past, and a must-visit for lovers of culture, architecture, and history.
 
 Planning more than one stop? See our guides to [Vigan](/articles/vigan-and-laoag-ilocos) or [Hundred Islands](/articles/hundred-islands-pangasinan).

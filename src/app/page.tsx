@@ -97,7 +97,7 @@ export default function Home() {
           tone="dark"
           eyebrow="Find your kind of trip"
           title="Explore by experience"
-          description="Island hopping, wild landscapes, or centuries-old streets — start with what you love."
+          description="Island hopping, wild landscapes, or centuries-old streets: start with what you love."
         />
         <div className="grid gap-1.5 md:grid-cols-3">
           {CATEGORIES.map((category) => (
@@ -268,13 +268,13 @@ export default function Home() {
         <Container className="grid items-end gap-8 lg:grid-cols-2 lg:gap-16">
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-mango-300">
-              The weekly postcard
+              The island postcard
             </p>
             <h2 className="mt-4 max-w-xl text-3xl font-semibold text-white sm:text-5xl">
-              New islands in your inbox, every week.
+              New islands in your inbox, whenever we find them.
             </h2>
             <p className="mt-4 max-w-lg text-white/80">
-              Fresh guides, seasonal picks, and hidden gems. No spam — unsubscribe anytime.
+              Fresh guides, seasonal picks, and lesser-known spots. No spam. Unsubscribe anytime.
             </p>
           </div>
           <NewsletterForm id="home-newsletter" tone="dark" className="max-w-xl lg:justify-self-end" />

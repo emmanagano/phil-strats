@@ -1,7 +1,7 @@
 ---
 id: 34
 title: "Puerto Galera Guide: White Beach, Diving & Hidden Coves"
-description: "Plan a Puerto Galera trip from Manila: ferries from Batangas, White Beach, Sabang diving, quiet coves and Tamaraw Falls, with fees and budgets."
+description: "Plan a Puerto Galera trip from Manila: ferries from Batangas, White Beach, Sabang diving, quiet coves, and Tamaraw Falls, with fees and budgets."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "puerto-galera-mindoro"
@@ -70,7 +70,7 @@ guide:
   experiences:
     - name: "Fun dive in Sabang"
       tags: ["dive"]
-      blurb: "The Verde Island Passage has some of the world's richest marine life. Expect reefs, wrecks and nudibranchs a few minutes offshore."
+      blurb: "The Verde Island Passage, ranked by marine scientists among the richest reef areas on Earth, puts reefs, wrecks and nudibranchs a few minutes offshore."
       cost: "≈ ₱1,900–2,500 per dive"
       time: "Half day"
       tip: "First time? A Discover Scuba session or a PADI Open Water course takes 3–4 days here."
@@ -109,7 +109,7 @@ guide:
       time: "2 hrs"
     - name: "Sunset on Muelle Bay"
       tags: ["chill"]
-      blurb: "The old town pier, sailboats and one of the world's most beautiful bays at golden hour."
+      blurb: "The old town pier and sailboats on Puerto Galera Bay at golden hour."
       cost: "Free"
       time: "1 hr"
   itineraries:
@@ -179,7 +179,7 @@ faq:
   - question: "How much is the Puerto Galera environmental fee?"
     answer: "About ₱120 per person. Pay it online through the PG-Pass registration, or at Balatero Pier on arrival."
   - question: "Is Puerto Galera good for diving?"
-    answer: "Yes. It sits on the Verde Island Passage, one of the richest marine areas in the world, and Sabang has dozens of dive shops."
+    answer: "Yes. It sits on the Verde Island Passage, known for exceptional marine biodiversity, and Sabang has dozens of dive shops."
   - question: "Which beach should I stay on?"
     answer: "White Beach for nightlife, Sabang for diving, and Aninuan or Talipanan for quiet and calm water."
   - question: "When is the best time to visit Puerto Galera?"
@@ -192,6 +192,6 @@ tags:
   - "batangas to puerto galera ferry"
 ---
 
-Just across the Verde Island Passage from Batangas, Puerto Galera has been Manila's go-to beach escape for decades. Its bay is listed among the world's most beautiful, and the reefs offshore are among the richest anywhere. You can party on White Beach, dive from Sabang, or hide away in a quiet cove, all within a few tricycle rides.
+Just across the Verde Island Passage from Batangas, Puerto Galera has been Manila's go-to beach escape for decades. Its bay is a member of the Most Beautiful Bays in the World club, and the Verde Island Passage offshore is ranked by marine scientists among the richest reef areas on Earth. You can party on White Beach, dive from Sabang, or hide away in a quiet cove, all within a few tricycle rides.
 
 Want more islands? See our guides to [Boracay](/articles/boracay-aklan) and [El Nido](/articles/el-nido-palawan).

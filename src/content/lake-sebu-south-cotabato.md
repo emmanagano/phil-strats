@@ -64,6 +64,7 @@ guide:
       note: "Cooler and drier, with a festive local mood."
   routes:
     - from: "General Santos"
+      flight: {from: "MNL", to: "GES"}
       steps:
         - "Fly to General Santos (GES) from Manila, Cebu or Clark"
         - "Van or bus to Koronadal (about 1 hr), then on to Surallah"

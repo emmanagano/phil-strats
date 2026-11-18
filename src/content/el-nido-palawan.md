@@ -8,7 +8,7 @@ slug: "el-nido-palawan"
 region: "Palawan"
 category: "beaches-islands"
 islandGroup: "palawan"
-alt: "Aerial view of El Nido’s Big Lagoon in Palawan, featuring turquoise waters, limestone cliffs, and a secluded white sand beach — a signature sight from the island-hopping tours."
+alt: "Aerial view of El Nido’s Big Lagoon in Palawan, featuring turquoise waters, limestone cliffs, and a secluded white sand beach, a signature sight from the island-hopping tours."
 guide:
   place: "El Nido"
   verified: "Nov 2026"
@@ -36,11 +36,13 @@ guide:
     - {rating: "good", note: "Mostly dry, but Christmas week is busy and pricey."}
   routes:
     - from: "Clark or Cebu"
+      flight: {from: "CRK", to: "ENI"}
       steps: ["Fly to Lio Airport (ENI), about 1 hr 30 min", "Tricycle or shuttle to town (15–20 min)"]
       time: "2–3 hrs door to door"
       cost: "₱5,000–12,000 flight"
       tip: "Direct Manila–El Nido flights ended on 29 March 2026. From Manila, connect via Clark or Cebu."
     - from: "Puerto Princesa"
+      flight: {from: "MNL", to: "PPS"}
       steps: ["Fly to Puerto Princesa (PPS)", "Shared van to El Nido (5–6 hrs)"]
       time: "7–8 hrs total"
       cost: "₱2,000–5,000 flight + ₱600–800 van"
@@ -113,6 +115,6 @@ tags:
   - "things to do in el nido"
 ---
 
-El Nido, nestled on the northern tip of Palawan, is the Philippines’ ultimate island-hopping paradise. With its towering limestone cliffs, hidden lagoons, and emerald waters, it’s no wonder travelers call it one of the most beautiful places on Earth. Once a quiet fishing town, El Nido has evolved into a world-class destination that perfectly balances raw nature with tropical comfort.
+El Nido, nestled on the northern tip of Palawan, is one of the Philippines’ best-known island-hopping bases. With its towering limestone cliffs, hidden lagoons, and emerald waters, it’s easy to see why it tops so many travelers’ lists. Once a quiet fishing town, El Nido has grown into a busy destination that balances raw nature with tropical comfort.
 
 Planning more than one stop? See our guides to [Coron](/articles/coron-palawan) or [Puerto Princesa](/articles/puerto-princesa-palawan).

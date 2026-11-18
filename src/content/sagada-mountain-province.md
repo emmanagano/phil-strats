@@ -1,7 +1,7 @@
 ---
 id: 12
 title: "Sagada Travel Guide: Hanging Coffins, Caves & Pine Forests"
-description: "Explore Sagada's caves (Sumaguing, Lumiang and the cave connection), the hanging coffins and Kiltepan's sea of clouds, with transport and guide tips."
+description: "Explore Sagada's caves (Sumaguing, Lumiang, and the cave connection), the hanging coffins, and Kiltepan's sea of clouds, with transport and guide tips."
 date: "2026-10-30"
 updated: "2026-11-18"
 slug: "sagada-mountain-province"

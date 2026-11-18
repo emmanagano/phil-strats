@@ -36,6 +36,7 @@ guide:
     - {rating: "good", note: "Drier and festive."}
   routes:
     - from: "Manila"
+      flight: {from: "MNL", to: "TAG"}
       steps: ["Fly to Bohol-Panglao (TAG), about 1 hr 20 min", "Taxi or van to Panglao hotels (15–20 min)"]
       time: "2–3 hrs door to door"
       cost: "₱2,000–6,000 flight"
@@ -105,6 +106,6 @@ tags:
   - "natural wonders philippines"
 ---
 
-Imagine standing before a sea of over 1,200 perfectly rounded hills that turn a rich chocolate brown during summer — that’s the legendary Chocolate Hills of Bohol. This geological wonder has become a symbol of the Philippines, drawing travelers for its unique beauty and panoramic views. Whether you’re exploring the viewpoint in Carmen, riding an ATV across the hills, or uncovering the myths behind their formation, Chocolate Hills offers a landscape you won’t see anywhere else in the world.
+Imagine standing before a sea of over 1,200 perfectly rounded hills that turn a rich chocolate brown during summer: that’s the legendary Chocolate Hills of Bohol. This geological wonder has become a symbol of the Philippines, drawing travelers for its unique beauty and panoramic views. Whether you’re exploring the viewpoint in Carmen, riding an ATV across the hills, or uncovering the myths behind their formation, Chocolate Hills offers a landscape you won’t see anywhere else in the world.
 
 Planning more than one stop? See our guides to [Cebu](/articles/cebu-kawasan-falls-oslob) or [Siquijor](/articles/siquijor-island).

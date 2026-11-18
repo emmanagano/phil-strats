@@ -64,6 +64,7 @@ guide:
       note: "Dry season starts. Busy over Christmas, so book early."
   routes:
     - from: "Puerto Princesa"
+      flight: {from: "MNL", to: "PPS"}
       steps:
         - "Fly into Puerto Princesa (PPS) from Manila, Cebu or Clark"
         - "Shared van from the airport or San Jose terminal to Port Barton (3–4 hrs)"

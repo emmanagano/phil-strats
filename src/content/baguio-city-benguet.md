@@ -1,7 +1,7 @@
 ---
 id: 31
 title: "Baguio Travel Guide: Pine Air, Art Villages & Night Markets"
-description: "Plan a Baguio trip: cool mountain weather, Burnham Park, BenCab Museum, strawberry farms and the night market, plus buses, budgets and itineraries."
+description: "Plan a Baguio trip: cool mountain weather, Burnham Park, BenCab Museum, strawberry farms, and the night market, plus buses, budgets, and itineraries."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "baguio-city-benguet"

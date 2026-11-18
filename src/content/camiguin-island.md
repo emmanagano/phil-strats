@@ -36,11 +36,13 @@ guide:
     - {rating: "mixed", note: "Wet, but festive."}
   routes:
     - from: "Cagayan de Oro"
+      flight: {from: "MNL", to: "CGY"}
       steps: ["Fly to Laguindingan (CGY)", "Van or bus to Balingoan port (2–2.5 hrs)", "Ferry to Benoni, Camiguin (about 1 hr)"]
       time: "4–5 hrs"
       cost: "₱300–500 bus + ₱200–250 ferry"
       tip: "Ferries run roughly hourly by day. Aim to arrive before late afternoon."
     - from: "Direct flight"
+      flight: {from: "CEB", to: "CGM"}
       steps: ["Small flights to Camiguin Airport (CGM) from Cebu, when operating"]
       time: "About 1 hr"
       cost: "₱2,500–5,000"

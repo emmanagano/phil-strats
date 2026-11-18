@@ -36,6 +36,7 @@ guide:
     - {rating: "good", note: "Mostly dry; busy at Christmas."}
   routes:
     - from: "Manila or Clark"
+      flight: {from: "MNL", to: "USU"}
       steps: ["Fly to Busuanga (USU), about 1 hr", "Shared van to Coron town (30–40 min)"]
       time: "2–3 hrs door to door"
       cost: "₱2,500–7,000 flight + ₱150–200 van"
@@ -96,7 +97,7 @@ guide:
   packing: ["Reef-safe sunscreen", "Dry bag", "Snorkel mask", "Water shoes", "Cash in small bills", "Rash guard", "Power bank", "Dive certification card", "Motion-sickness tablets"]
 faq:
   - question: "Is Coron better than El Nido?"
-    answer: "Both are stunning — El Nido is famous for its lagoons, while Coron is ideal for diving, lakes, and less-crowded islands."
+    answer: "Both are stunning. El Nido is famous for its lagoons, while Coron is ideal for diving, lakes, and less-crowded islands."
   - question: "How many days do you need in Coron?"
     answer: "3–5 days is perfect to cover major attractions and one rest day for relaxation."
   - question: "Can beginners try wreck diving?"
@@ -111,6 +112,6 @@ tags:
   - "kayangan lake"
 ---
 
-Coron is where adventure meets serenity, a stunning mix of limestone cliffs, turquoise lagoons, and crystal lakes that feel untouched by time. Located on Busuanga Island in northern Palawan, Coron is a paradise for divers, nature lovers, and anyone looking for raw island beauty. From snorkeling WWII shipwrecks to exploring hidden lakes surrounded by cliffs, Coron offers an unforgettable slice of the Philippines.
+Coron is where adventure meets serenity, a stunning mix of limestone cliffs, turquoise lagoons, and crystal lakes that feel untouched by time. Located on Busuanga Island in northern Palawan, Coron is a favorite of divers, nature lovers, and anyone looking for raw island beauty. From snorkeling WWII shipwrecks to exploring hidden lakes surrounded by cliffs, Coron offers an unforgettable slice of the Philippines.
 
 Planning more than one stop? See our guides to [El Nido](/articles/el-nido-palawan) or [the Puerto Princesa Underground River](/articles/puerto-princesa-palawan).

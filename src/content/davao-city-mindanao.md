@@ -36,11 +36,13 @@ guide:
     - {rating: "mixed", note: "Rainy, but festive lights downtown."}
   routes:
     - from: "Manila or Cebu"
+      flight: {from: "MNL", to: "DVO"}
       steps: ["Fly to Davao (DVO), about 1 hr 50 min from Manila or 1 hr from Cebu", "Taxi or Grab downtown (20–30 min)"]
       time: "3 hrs door to door"
       cost: "₱2,500–7,000 flight"
       tip: "Grab works here, which is rare in Mindanao."
     - from: "Siargao"
+      flight: {from: "IAO", to: "DVO"}
       steps: ["Direct flight Siargao → Davao, when operating (about 1 hr)"]
       time: "1–2 hrs"
       cost: "₱2,500–5,000"

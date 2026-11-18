@@ -16,8 +16,8 @@ export default function SiteFooter() {
             <span className="font-display text-2xl font-semibold text-white">{SITE_NAME}</span>
           </Link>
           <p className="mt-4 max-w-sm text-sand-200">
-            {SITE_TAGLINE}. Island guides, heritage walks, and honest travel tips — new
-            stories every week.
+            {SITE_TAGLINE}. Island guides, heritage walks, and honest travel tips, with new
+            stories as we travel.
           </p>
           <NewsletterForm id="footer-newsletter" tone="dark" className="mt-6 max-w-md" />
         </div>

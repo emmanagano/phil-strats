@@ -36,6 +36,7 @@ guide:
     - {rating: "good", note: "Mostly dry; busy at Christmas."}
   routes:
     - from: "Manila, Clark or Cebu"
+      flight: {from: "MNL", to: "PPS"}
       steps: ["Fly to Puerto Princesa (PPS), about 1 hr 20 min", "Tricycle to your hotel (10–15 min)"]
       time: "2 hrs door to door"
       cost: "₱2,000–6,000 flight"
@@ -91,7 +92,7 @@ faq:
   - question: "How long is the Underground River tour?"
     answer: "The standard boat tour covers about 1.5 kilometers and takes 45–60 minutes."
   - question: "Is it suitable for kids and seniors?"
-    answer: "Yes — the tour is calm and beginner-friendly, with safety gear provided."
+    answer: "Yes. The tour is calm and beginner-friendly, with safety gear provided."
 tags:
   - "puerto princesa travel guide"
   - "underground river palawan"

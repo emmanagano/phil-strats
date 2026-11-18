@@ -1,6 +1,6 @@
 ---
 id: 9
-title: "Visit the Banaue Rice Terraces: Batad, Treks & Travel Tips"
+title: "Visit Banaue Rice Terraces: Batad, Treks & Travel Tips"
 description: "Visit the Banaue Rice Terraces and UNESCO-listed Batad in Ifugao: viewpoints, treks, the best months to go, and how to get there from Manila."
 date: "2025-10-14"
 updated: "2026-11-18"
@@ -94,13 +94,13 @@ faq:
   - question: "When is the best time to visit the Banaue Rice Terraces?"
     answer: "March to May, when trails are driest. June is still good and lush; from July to September heavy rain makes treks muddy and roads slippery."
   - question: "Are the Banaue Rice Terraces part of the UNESCO World Heritage list?"
-    answer: "Yes — while the main Banaue terraces are recognized nationally, the nearby Batad, Bangaan, Hungduan, and Mayoyao terraces are officially UNESCO-listed."
+    answer: "Partly. The terraces around Banaue town are a National Cultural Treasure, while five nearby clusters (Batad, Bangaan, Hungduan, Mayoyao, and Nagacadan) are inscribed by UNESCO as the Rice Terraces of the Philippine Cordilleras."
   - question: "How do I get to Batad from Banaue?"
     answer: "Take a jeepney or tricycle from Banaue Town to the Batad Saddle Point, then hike for about 30 minutes to reach the village."
   - question: "Do I need a guide for trekking?"
-    answer: "Yes — hiring a local guide is highly recommended for safety, navigation, and cultural insight."
+    answer: "Yes. A local guide is highly recommended for safety, navigation, and cultural insight."
   - question: "Is it cold in Banaue?"
-    answer: "Yes, especially at night. Bring a jacket — temperatures can drop to 15°C or lower during the dry season."
+    answer: "Yes, especially at night. Bring a jacket: temperatures can drop to 15°C or lower during the dry season."
 tags:
   - banaue
   - ifugao
@@ -113,7 +113,7 @@ tags:
 
 The Banaue Rice Terraces, often called the Eighth Wonder of the World, are living testaments to Filipino ingenuity. Carved by hand into the mountains of Ifugao over centuries, these emerald-green terraces represent both natural beauty and the rich cultural traditions of the Cordillera people. Beyond breathtaking views, Banaue invites visitors to experience indigenous heritage, cool mountain air, and a peaceful escape from city life.
 
-To visit the Banaue Rice Terraces from Manila, most travelers take an overnight bus (Ohayami and Coda Lines run Manila to Banaue in 9–10 hours) and arrive early in the morning, just as mist lifts off the valley. Spend your first day at the viewpoints, then trek to the Batad Rice Terraces, part of the UNESCO-listed Rice Terraces of the Philippine Cordilleras; our [Batad trek guide](/articles/batad-rice-terraces-trek) covers the route. Many visitors continue to Sagada for its hanging coffins and caves.
+If you want to visit Banaue Rice Terraces from Manila, the easiest way is the overnight bus to Banaue: the bus companies Ohayami and Coda Lines run Manila to Banaue in 9–10 hours, arriving early in the morning, just as mist lifts off the valley. Spend your first day at the viewpoints, then trek to the Batad Rice Terraces, part of the UNESCO-listed Rice Terraces of the Philippine Cordilleras; our [Batad trek guide](/articles/batad-rice-terraces-trek) covers the route. Many visitors continue to Sagada for its hanging coffins and caves.
 
 ### How the terraces work
 

@@ -9,7 +9,7 @@ import ContactForm from "./ContactForm";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Questions, destination tips, or collaboration ideas — get in touch with Phil Strats.",
+  description: "Questions, destination tips, or collaboration ideas? Get in touch with Phil Strats.",
   alternates: { canonical: "/contact" },
 };
 
@@ -23,7 +23,7 @@ export default function ContactPage() {
         }))}
         eyebrow="Contact"
         title="Let's talk travel"
-        description="Got a question, a hidden gem we should know about, or an idea for a story? Send us a message."
+        description="Got a question, a lesser-known spot we should know about, or an idea for a story? Send us a message."
       />
       <Container className="pb-20 pt-12 sm:pt-16">
         <div className="grid gap-10 lg:grid-cols-5">

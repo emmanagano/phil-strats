@@ -64,12 +64,14 @@ guide:
       note: "Mostly dry and festive, with Christmas lights in the plazas."
   routes:
     - from: "Manila"
+      flight: {from: "MNL", to: "ILO"}
       steps:
         - "Fly Manila → Iloilo (ILO), about 1 hr 10 min, many flights daily"
         - "Shuttle van, taxi or Grab to the city (30–45 min)"
       time: "2.5–3.5 hrs door to door"
       cost: "≈ ₱2,000–6,000 flight + ₱100–600 transfer"
     - from: "Cebu"
+      flight: {from: "CEB", to: "ILO"}
       steps:
         - "Fly Cebu → Iloilo (ILO), about 1 hr"
         - "Shuttle van, taxi or Grab to the city (30–45 min)"

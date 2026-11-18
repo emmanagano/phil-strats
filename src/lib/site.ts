@@ -2,7 +2,7 @@ export const SITE_URL = "https://philippinestrategies.netlify.app";
 export const SITE_NAME = "Phil Strats";
 export const SITE_TAGLINE = "Discover the Philippines, one island at a time";
 export const SITE_DESCRIPTION =
-  "Your travel and culture guide to the Philippines — hidden islands, heritage towns, and authentic local experiences.";
+  "Interactive travel guides to the Philippines: when to go, how to get there, and what it really costs, one island at a time.";
 export const AUTHOR = "Emma Nagano";
 export const DEFAULT_OG_IMAGE = "/images/el-nido-palawan-og.jpg";
 

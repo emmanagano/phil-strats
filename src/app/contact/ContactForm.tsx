@@ -60,7 +60,7 @@ export default function ContactForm() {
       </button>
       <p role="status" className="min-h-6 text-center text-sm">
         {status === "sent" && (
-          <span className="text-lagoon-700">Thanks! Your message is on its way — we&apos;ll reply soon.</span>
+          <span className="text-lagoon-700">Thanks! Your message is on its way. We&apos;ll reply soon.</span>
         )}
         {status === "error" && (
           <span className="text-coral-700">Something went wrong. Please try again in a moment.</span>

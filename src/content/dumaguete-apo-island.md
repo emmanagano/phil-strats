@@ -64,6 +64,7 @@ guide:
       note: "Storms possible early on; drier toward the holidays."
   routes:
     - from: "Manila"
+      flight: {from: "MNL", to: "DGT"}
       steps:
         - "Fly Manila → Dumaguete (DGT), about 1 hr 20 min"
         - "Tricycle or taxi to town (15 min)"

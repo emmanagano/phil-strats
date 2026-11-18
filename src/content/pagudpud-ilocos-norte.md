@@ -1,7 +1,7 @@
 ---
 id: 18
-title: "Pagudpud Beach Guide: Saud Beach & the Ilocos Norte Coast"
-description: "Pagudpud beach guide: Saud Beach, Blue Lagoon, the Patapat Viaduct and Bangui windmills, with tips for road-tripping the Ilocos Norte coast."
+title: "Pagudpud Beach, Ilocos Norte: Saud Beach & Coast Guide"
+description: "Pagudpud beach guide: Saud Beach, Blue Lagoon, the Patapat Viaduct, and Bangui windmills, with tips for road-tripping the Ilocos Norte coast."
 date: "2026-10-30"
 updated: "2026-11-18"
 slug: "pagudpud-ilocos-norte"
@@ -36,6 +36,7 @@ guide:
     - {rating: "good", note: "Cool and windy; quiet beaches."}
   routes:
     - from: "Laoag"
+      flight: {from: "MNL", to: "LAO"}
       steps: ["Fly to Laoag (LAO)", "Van or bus to Pagudpud (1.5–2 hrs)"]
       time: "2 hrs from Laoag"
       cost: "₱100–200 bus or ₱2,500–3,500 private van"
@@ -105,7 +106,7 @@ tags:
   - road-trip
 ---
 
-At the northern tip of Luzon, Pagudpud in Ilocos Norte trades heritage streets for powdery white sand, rolling surf, and a road lined with wind turbines. Its best-known beach, Saud Beach, is often compared to Boracay before the crowds: a long curve of fine sand and clear water backed by coconut palms. Blue Lagoon draws surfers, and the drive up from Laoag passes the Bangui windmills and Kapurpurawan's white rock formations. It makes a natural beach finish to an Ilocos road trip, and a Pagudpud beach day in Ilocos Norte is worth the long drive north. For more on the beach itself, read our [Saud Beach guide](/articles/saud-beach-pagudpud).
+At the northern tip of Luzon, Pagudpud in Ilocos Norte trades heritage streets for powdery white sand, rolling surf, and a road lined with wind turbines. Its best-known beach, Saud Beach, is often compared to Boracay before the crowds: a long curve of fine sand and clear water backed by coconut palms. Blue Lagoon draws surfers, and the drive up from Laoag passes the Bangui windmills and Kapurpurawan's white rock formations. It makes a natural beach finish to an Ilocos road trip, and a day on a Pagudpud beach, Ilocos Norte's finest, is worth the long drive north. For more on the beach itself, read our [Saud Beach guide](/articles/saud-beach-pagudpud).
 
 ### Pagudpud beaches compared
 

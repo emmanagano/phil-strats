@@ -36,6 +36,7 @@ guide:
     - {rating: "good", note: "Festive and fairly dry."}
   routes:
     - from: "Manila or Cebu"
+      flight: {from: "MNL", to: "ZAM"}
       steps: ["Fly to Zamboanga (ZAM), about 1 hr 45 min from Manila", "Taxi or tricycle downtown (10 min)"]
       time: "2–3 hrs door to door"
       cost: "₱2,500–6,000 flight"

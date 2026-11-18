@@ -41,12 +41,14 @@ guide:
     - {rating: "mixed", note: "Holiday crowds and occasional heavy rain. Floods are possible late in the year."}
   routes:
     - from: "Manila"
+      flight: {from: "MNL", to: "CGY"}
       steps:
         - "Fly Manila → Laguindingan (CGY), about 1 hr 30 min"
         - "Airport shuttle bus or taxi to the city center (about 1 hr)"
       time: "3–4 hrs door to door"
       cost: "₱2,500–7,000 flight + ≈ ₱200–1,000 transfer"
     - from: "Cebu"
+      flight: {from: "CEB", to: "CGY"}
       steps:
         - "Fly Cebu → Laguindingan, about 50 min"
         - "Or take an overnight ferry Cebu → Cagayan de Oro port (10–12 hrs)"
@@ -193,6 +195,6 @@ tags:
   - "cagayan de oro to camiguin"
 ---
 
-Cagayan de Oro sits where the Cagayan River meets Macajalar Bay, and the river is the reason most visitors come: its rapids start barely 20 minutes from downtown. Up the road, the Bukidnon plateau swaps tropical heat for pine forests, pineapple fields and some of the longest ziplines in Asia. It's also the most convenient jumping-off point for Camiguin.
+Cagayan de Oro sits where the Cagayan River meets Macajalar Bay, and the river is the reason most visitors come: its rapids start barely 20 minutes from downtown. Up the road, the Bukidnon plateau swaps tropical heat for pine forests, pineapple fields, and dual 840-meter ziplines over the treetops. It's also the most convenient jumping-off point for Camiguin.
 
 Continue to [Camiguin](/articles/camiguin-island), or read our [Siargao](/articles/siargao-surfing-capital) guide for another Mindanao island exempt from the UK warning.

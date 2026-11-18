@@ -8,7 +8,7 @@ slug: "boracay-aklan"
 region: "Western Visayas"
 category: "beaches-islands"
 islandGroup: "visayas"
-alt: "Sandcastle sculpture reading “I ❤️ Boracay” on White Beach, with people swimming and sailboats on turquoise water in the background — a classic scene from Boracay Island, Aklan."
+alt: "Sandcastle sculpture reading “I ❤️ Boracay” on White Beach, with people swimming and sailboats on turquoise water in the background, a classic scene on Boracay Island, Aklan."
 guide:
   place: "Boracay"
   verified: "Nov 2026"
@@ -36,11 +36,13 @@ guide:
     - {rating: "good", note: "Sunny, but Christmas to New Year is packed."}
   routes:
     - from: "Manila or Cebu"
+      flight: {from: "MNL", to: "MPH"}
       steps: ["Fly to Caticlan (MPH), about 1 hr", "Tricycle to Caticlan jetty port (5 min)", "Boat to Cagban port (15 min)", "E-trike to your hotel"]
       time: "2–3 hrs door to door"
       cost: "₱2,500–7,000 flight + ≈ ₱600 in port fees"
       tip: "Caticlan is the quickest gateway. Have your hotel booking ready to show at the port."
     - from: "Via Kalibo"
+      flight: {from: "MNL", to: "KLO"}
       steps: ["Fly to Kalibo (KLO)", "Bus or van to Caticlan jetty (1.5–2 hrs)", "Boat to Boracay (15 min)"]
       time: "3–4 hrs door to door"
       cost: "Cheaper flights + ₱300–500 transfer"
@@ -98,7 +100,7 @@ faq:
   - question: "Can I swim anywhere along White Beach?"
     answer: "Yes, the entire stretch is swimmable, but Station 1 has the finest sand and calmest waters."
   - question: "What’s new since the rehabilitation?"
-    answer: "Cleaner waters, organized beachfront zones, better waste management, and a ban on beach parties — making it more peaceful and eco-focused."
+    answer: "Cleaner waters, organized beachfront zones, better waste management, and a ban on beach parties, making it more peaceful and eco-focused."
 tags:
   - "boracay travel guide"
   - "things to do in boracay"
@@ -106,6 +108,6 @@ tags:
   - "philippines travel"
 ---
 
-Boracay is more than just a beach — it’s a tropical escape. With its powdery white sand, crystal-clear waters, and epic sunsets, this Aklan island ranks among the Philippines’ top vacation destinations. After its 2018 rehabilitation, Boracay has reinvented itself as a model of sustainable tourism and laid-back luxury. Whether you’re chasing sunrises, island hopping, or barefoot dinners by the shore, Boracay delivers unforgettable moments.
+Boracay is more than just a beach: it’s a tropical escape. With its powdery white sand, crystal-clear waters, and epic sunsets, this Aklan island ranks among the Philippines’ top vacation destinations. After its 2018 rehabilitation, Boracay has reinvented itself as a model of sustainable tourism and laid-back luxury. Whether you’re chasing sunrises, island hopping, or barefoot dinners by the shore, Boracay delivers unforgettable moments.
 
 Planning more than one stop? See our guides to [Malapascua](/articles/malapascua-island) or [Siquijor](/articles/siquijor-island).

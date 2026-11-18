@@ -8,7 +8,7 @@ slug: "siargao-surfing-capital"
 region: "Surigao del Norte, Mindanao"
 category: "beaches-islands"
 islandGroup: "mindanao"
-alt: "A winding coastal road surrounded by palm trees and morning mist in Siargao Island, Philippines — a serene tropical landscape known for surfing and island-hopping."
+alt: "A winding coastal road surrounded by palm trees and morning mist in Siargao Island, Philippines, a serene tropical landscape known for surfing and island-hopping."
 guide:
   verified: "Nov 2026"
   verdict: "Go for the surf, stay for the slow island pace. Siargao suits surfers, beach-hoppers and remote workers who don't mind cash-only shops and patchy signal. Skip it if you want resort polish or guaranteed sunshine from December to February."
@@ -58,6 +58,7 @@ guide:
       note: "Rainy season begins and holiday crowds push prices up."
   routes:
     - from: "Manila"
+      flight: {from: "MNL", to: "IAO"}
       steps:
         - "Fly Manila → Siargao (IAO), about 1 hr 45 min, when direct flights are running"
         - "If not, connect through Cebu or Clark"
@@ -66,6 +67,7 @@ guide:
       cost: "₱3,000–8,000 flight + ₱300–500 van"
       tip: "Direct Manila flights have been cut back. Check current schedules before you book, and allow a buffer day before any international flight."
     - from: "Cebu"
+      flight: {from: "CEB", to: "IAO"}
       steps:
         - "Fly Cebu → Siargao (IAO), about 1 hr, several flights daily"
         - "Shared van to General Luna (45–60 min)"
@@ -73,6 +75,7 @@ guide:
       cost: "₱2,000–5,000 flight + ₱300–500 van"
       tip: "Cebu has the most flights. It's the easiest hub if you're coming from abroad."
     - from: "Clark"
+      flight: {from: "CRK", to: "IAO"}
       steps:
         - "Fly Clark → Siargao (IAO), about 2 hrs"
         - "Shared van to General Luna (45–60 min)"

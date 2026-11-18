@@ -1,7 +1,7 @@
 ---
 id: 32
 title: "Bacolod Travel Guide: The Ruins, Silay & Chicken Inasal"
-description: "Plan a Bacolod trip: The Ruins at sunset, Silay's heritage houses, MassKara and chicken inasal, plus ferries from Iloilo, budgets and itineraries."
+description: "Plan a Bacolod trip: The Ruins at sunset, Silay's heritage houses, MassKara, and chicken inasal, plus ferries from Iloilo, budgets, and itineraries."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "bacolod-negros-occidental"
@@ -17,7 +17,7 @@ imageCredit:
 guide:
   place: "Bacolod"
   verified: "Nov 2026"
-  verdict: "Sugar-baron mansions, the best chicken inasal in the country and the October MassKara festival make Bacolod a food-and-heritage weekend. It pairs perfectly with Iloilo, an hour away by fastcraft. Don't expect beaches in the city: those are a long day trip away."
+  verdict: "Sugar-baron mansions, the home of chicken inasal, and the October MassKara festival make Bacolod a food-and-heritage weekend. It pairs perfectly with Iloilo, an hour away by fastcraft. Don't expect beaches in the city: those are a long day trip away."
   bestFor: ["Food trips", "Heritage", "Festivals", "Weekend breaks", "Pairing with Iloilo"]
   quickFacts:
     - {label: "Fly into", value: "Bacolod-Silay Airport (BCD), 30–40 min from the city"}
@@ -41,6 +41,7 @@ guide:
     - {rating: "great", note: "Dry season returns, with Christmas lights at the Capitol Lagoon."}
   routes:
     - from: "Manila"
+      flight: {from: "MNL", to: "BCD"}
       steps:
         - "Fly Manila → Bacolod-Silay (BCD), about 1 hr 15 min"
         - "Airport shuttle, taxi or Grab to the city (30–40 min)"
@@ -54,6 +55,7 @@ guide:
       cost: "≈ ₱500–750"
       tip: "Fastcraft run several times a day, but rough seas can cancel them. Check the morning schedule."
     - from: "Cebu"
+      flight: {from: "CEB", to: "BCD"}
       steps:
         - "Fly Cebu → Bacolod-Silay, about 45 min"
         - "Or bus across Negros via Dumaguete or San Carlos (6–8 hrs)"
