@@ -69,7 +69,7 @@ export default async function NewsBriefPage({ params }: Params) {
       />
       <Container className="py-12 sm:py-16">
         <article className="mx-auto max-w-2xl">
-          <Link href="/news" className="inline-flex items-center gap-2 text-sm font-semibold text-lagoon-700 hover:underline">
+          <Link href="/news" className="inline-flex items-center gap-2 text-sm font-semibold link">
             <FaArrowLeft aria-hidden className="h-3 w-3" /> All news
           </Link>
           <div className="mt-8 flex flex-wrap items-center gap-3">
@@ -90,10 +90,10 @@ export default async function NewsBriefPage({ params }: Params) {
           </div>
 
           {brief.travelNote && (
-            <aside className="mt-10 grid overflow-hidden rounded-card bg-mango-400 text-ocean-950 sm:grid-cols-[6rem_minmax(0,1fr)]">
-              <div className="flex items-center gap-3 bg-ocean-900 px-5 py-3 text-mango-300 sm:flex-col sm:justify-center sm:gap-2 sm:py-6">
+            <aside className="mt-10 grid overflow-hidden rounded-card bg-tip text-ocean-950 sm:grid-cols-[6rem_minmax(0,1fr)]">
+              <div className="flex items-center gap-3 bg-ocean-900 px-5 py-3 text-tip sm:flex-col sm:justify-center sm:gap-2 sm:py-6">
                 <FaSuitcaseRolling aria-hidden className="h-6 w-6 sm:h-8 sm:w-8" />
-                <span className="text-[0.65rem] font-bold uppercase tracking-widest text-white sm:text-center">For your trip</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-white sm:text-center">For your trip</span>
               </div>
               <p className="p-5 font-display text-xl font-semibold leading-snug sm:p-7 sm:text-2xl">{brief.travelNote}</p>
             </aside>
@@ -113,7 +113,7 @@ export default async function NewsBriefPage({ params }: Params) {
                     >
                       <img src={a.imageSmall} alt="" loading="lazy" className="photo-pop h-16 w-16 shrink-0 rounded-control object-cover" />
                       <span className="min-w-0">
-                        <span className="block text-xs font-bold uppercase tracking-widest text-coral-700">{a.place} guide</span>
+                        <span className="block eyebrow">{a.place} guide</span>
                         <span className="mt-1 line-clamp-2 block font-semibold text-ocean-900">{a.title}</span>
                       </span>
                     </Link>
@@ -134,7 +134,7 @@ export default async function NewsBriefPage({ params }: Params) {
                     href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex min-h-11 items-center justify-between gap-4 py-3 text-ocean-900 hover:text-lagoon-700"
+                    className="flex min-h-11 items-center justify-between gap-4 py-3 text-ocean-900 hover:underline"
                   >
                     {s.name}
                     <FaArrowUpRightFromSquare aria-hidden className="h-3 w-3 shrink-0 text-muted" />
@@ -152,8 +152,8 @@ export default async function NewsBriefPage({ params }: Params) {
               <ul className="mt-3 divide-y divide-sand-200 border-y border-sand-200">
                 {related.map((n) => (
                   <li key={n.slug}>
-                    <Link href={`/news/${n.slug}`} className="block py-3 transition-colors duration-150 hover:text-lagoon-700">
-                      <span className="text-xs font-semibold text-muted">
+                    <Link href={`/news/${n.slug}`} className="block py-3 hover:underline">
+                      <span className="text-sm font-semibold text-muted">
                         {topicLabel(n.topic)} · {formatNewsDate(n.date, "short")}
                       </span>
                       <span className="mt-0.5 block font-semibold text-ocean-900">{n.title}</span>
@@ -177,7 +177,7 @@ export default async function NewsBriefPage({ params }: Params) {
 function Pager({ brief, label, next = false }: { brief: { slug: string; title: string; date: string }; label: string; next?: boolean }) {
   return (
     <Link href={`/news/${brief.slug}`} className={`block bg-white p-5 transition-colors duration-150 hover:bg-sand-50 ${next ? "sm:text-right" : ""}`}>
-      <span className={`flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-coral-700 ${next ? "sm:justify-end" : ""}`}>
+      <span className={`flex items-center gap-2 eyebrow ${next ? "sm:justify-end" : ""}`}>
         {!next && <FaArrowLeft aria-hidden className="h-3 w-3" />}
         {label} · {formatNewsDate(brief.date, "short")}
         {next && <FaArrowRight aria-hidden className="h-3 w-3" />}

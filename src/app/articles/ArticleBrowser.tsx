@@ -65,7 +65,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
               updateParams({ q: e.target.value });
             }}
             placeholder="Search beaches, towns, activities…"
-            className="min-h-12 w-full rounded-control bg-white py-3 pl-11 pr-4 text-base text-ocean-900 outline-none ring-1 ring-sand-300 transition placeholder:text-muted focus:ring-2 focus:ring-lagoon-600"
+            className="min-h-12 w-full rounded-control bg-white py-3 pl-11 pr-4 text-base text-ocean-900 outline-none ring-1 ring-sand-300 transition placeholder:text-muted focus:ring-2 focus:ring-ink"
           />
         </div>
         <FilterGroup
@@ -94,7 +94,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
               setQuery("");
               updateParams({ category: "", region: "", q: "" });
             }}
-            className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-lagoon-700 hover:text-ocean-900"
+            className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold link"
           >
             <FaXmark aria-hidden /> Clear all
           </button>
@@ -150,7 +150,7 @@ function FilterGroup({
     `min-h-11 rounded-control border px-3.5 text-sm font-medium transition sm:min-h-10 ${
       active
         ? "border-ocean-900 bg-ocean-900 text-white"
-        : "border-sand-300 bg-white text-ocean-800 hover:border-lagoon-600 hover:text-lagoon-700"
+        : "border-sand-300 bg-white text-ocean-800 hover:border-ocean-900"
     }`;
 
   return (

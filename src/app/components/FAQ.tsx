@@ -15,9 +15,9 @@ export default function FAQ({ faq, title = "Frequently asked questions" }: { faq
       <div className="divide-y divide-sand-200 border-b border-sand-200">
         {faq.map((item) => (
           <details key={item.question} className="group">
-            <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 font-semibold text-ocean-900 marker:hidden hover:text-lagoon-700 [&::-webkit-details-marker]:hidden">
+            <summary className="flex min-h-14 cursor-pointer list-none items-center justify-between gap-6 py-4 font-semibold text-ocean-900 marker:hidden hover:underline [&::-webkit-details-marker]:hidden">
               {item.question}
-              <span className="grid h-8 w-8 shrink-0 place-items-center text-lagoon-700 transition-transform duration-150 group-open:rotate-45">
+              <span className="grid h-8 w-8 shrink-0 place-items-center text-ink-soft transition-transform duration-150 group-open:rotate-45">
                 <FaPlus aria-hidden className="h-3.5 w-3.5" />
               </span>
             </summary>

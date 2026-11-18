@@ -4,7 +4,7 @@ import { CATEGORIES, ISLAND_GROUPS } from "@/data/taxonomy";
 import { NAV, SITE_NAME, SITE_TAGLINE, SOCIALS } from "@/lib/site";
 import NewsletterForm from "./ui/NewsletterForm";
 
-const linkClass = "inline-block py-1 text-sand-200 transition-colors hover:text-mango-400";
+const linkClass = "inline-block py-1 text-sand-200 underline-offset-4 transition-colors hover:text-white hover:underline";
 
 export default function SiteFooter() {
   return (
@@ -62,7 +62,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="Instagram"
-              className="grid h-11 w-11 place-items-center rounded-full bg-white/10 transition hover:bg-mango-400 hover:text-ocean-900"
+              className="grid h-11 w-11 place-items-center rounded-full bg-white/10 transition hover:bg-white/20"
             >
               <FaInstagram className="h-4 w-4" />
             </a>
@@ -71,7 +71,7 @@ export default function SiteFooter() {
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X (Twitter)"
-              className="grid h-11 w-11 place-items-center rounded-full bg-white/10 transition hover:bg-mango-400 hover:text-ocean-900"
+              className="grid h-11 w-11 place-items-center rounded-full bg-white/10 transition hover:bg-white/20"
             >
               <FaXTwitter className="h-4 w-4" />
             </a>
@@ -85,7 +85,7 @@ export default function SiteFooter() {
 function FooterColumn({ title, children }: { title: string; children: React.ReactNode }) {
   return (
     <div>
-      <h2 className="mb-4 font-sans text-xs font-bold uppercase tracking-[0.2em] text-mango-400">
+      <h2 className="mb-4 font-sans eyebrow-on-dark">
         {title}
       </h2>
       <ul className="space-y-1.5 text-sm">{children}</ul>

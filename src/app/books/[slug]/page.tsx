@@ -67,7 +67,7 @@ export default async function BookPage({ params }: Params) {
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }} />
       <Container className="py-12 sm:py-16">
-        <Link href="/books" className="inline-flex items-center gap-2 text-sm font-semibold text-lagoon-700 hover:underline">
+        <Link href="/books" className="inline-flex items-center gap-2 text-sm font-semibold link">
           <FaArrowLeft aria-hidden className="h-3 w-3" /> All books
         </Link>
 
@@ -75,7 +75,7 @@ export default async function BookPage({ params }: Params) {
           <div className="mx-auto w-48 md:mx-0 md:w-full">
             <BookCover book={book} size="lg" />
             {book.coverImage && book.openLibrary && (
-              <p className="mt-2 text-xs text-muted">
+              <p className="mt-2 text-sm text-muted">
                 Cover via{" "}
                 <a href={`https://openlibrary.org/works/${book.openLibrary}`} className="underline" target="_blank" rel="noopener noreferrer">
                   Open Library
@@ -83,7 +83,7 @@ export default async function BookPage({ params }: Params) {
               </p>
             )}
             {!book.coverImage && book.image && (
-              <p className="mt-2 text-xs text-muted">
+              <p className="mt-2 text-sm text-muted">
                 {book.image.caption}{" "}
                 <a href={book.image.source} className="underline" target="_blank" rel="noopener noreferrer">
                   {book.image.author}
@@ -97,7 +97,7 @@ export default async function BookPage({ params }: Params) {
           </div>
 
           <article className="min-w-0 max-w-2xl">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">{eraLabel(book.era)}</p>
+            <p className="eyebrow">{eraLabel(book.era)}</p>
             <h1 className="mt-3 text-4xl font-semibold leading-tight text-ocean-900 sm:text-5xl">{book.title}</h1>
             <p className="mt-3 text-xl text-ocean-800">
               by <span className="font-semibold text-ocean-900">{book.author}</span>
@@ -109,7 +109,7 @@ export default async function BookPage({ params }: Params) {
                 ["Type", book.genre],
               ].map(([k, v]) => (
                 <div key={k}>
-                  <dt className="text-[0.65rem] font-bold uppercase tracking-widest text-muted">{k}</dt>
+                  <dt className="text-xs font-bold uppercase tracking-widest text-muted">{k}</dt>
                   <dd className="mt-0.5 font-semibold text-ocean-900">{v}</dd>
                 </div>
               ))}
@@ -122,10 +122,10 @@ export default async function BookPage({ params }: Params) {
               ))}
             </div>
 
-            <aside className="mt-10 grid overflow-hidden rounded-card bg-mango-400 text-ocean-950 sm:grid-cols-[6rem_minmax(0,1fr)]">
-              <div className="flex items-center gap-3 bg-ocean-900 px-5 py-3 text-mango-300 sm:flex-col sm:justify-center sm:gap-2 sm:py-6">
+            <aside className="mt-10 grid overflow-hidden rounded-card border border-sand-200 bg-sand-100 text-ocean-900 sm:grid-cols-[6rem_minmax(0,1fr)]">
+              <div className="flex items-center gap-3 bg-ocean-900 px-5 py-3 text-white sm:flex-col sm:justify-center sm:gap-2 sm:py-6">
                 <FaBookOpen aria-hidden className="h-6 w-6 sm:h-8 sm:w-8" />
-                <span className="text-[0.65rem] font-bold uppercase tracking-widest text-white sm:text-center">Why it matters</span>
+                <span className="text-xs font-bold uppercase tracking-widest text-white sm:text-center">Why it matters</span>
               </div>
               <p className="p-5 font-display text-xl font-semibold leading-snug sm:p-7">{book.why}</p>
             </aside>
@@ -136,7 +136,7 @@ export default async function BookPage({ params }: Params) {
                 <ul className="mt-3 space-y-2 text-ocean-900">
                   {book.awards.map((a) => (
                     <li key={a} className="flex gap-3">
-                      <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-coral-500" />
+                      <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-ink-soft" />
                       {a}
                     </li>
                   ))}
@@ -157,7 +157,7 @@ export default async function BookPage({ params }: Params) {
                       >
                         <img src={a.imageSmall} alt="" loading="lazy" className="photo-pop h-16 w-16 shrink-0 rounded-control object-cover" />
                         <span className="min-w-0">
-                          <span className="block text-xs font-bold uppercase tracking-widest text-coral-700">{a.cardTitle} guide</span>
+                          <span className="block eyebrow">{a.cardTitle} guide</span>
                           <span className="mt-1 line-clamp-2 block font-semibold text-ocean-900">{a.card}</span>
                         </span>
                       </Link>
@@ -167,7 +167,7 @@ export default async function BookPage({ params }: Params) {
               </section>
             )}
 
-            <section aria-labelledby="author" className="mt-10 border-l-4 border-lagoon-600 pl-5">
+            <section aria-labelledby="author" className="mt-10 border-l-4 border-sand-300 pl-5">
               <h2 id="author" className="font-sans text-xs font-bold uppercase tracking-widest text-muted">About the author</h2>
               <p className="mt-2 text-ocean-900">
                 <span className="font-semibold">{book.author}:</span> {book.authorNote}
@@ -183,7 +183,7 @@ export default async function BookPage({ params }: Params) {
                       href={s.url}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex min-h-11 items-center justify-between gap-4 py-3 text-ocean-900 hover:text-lagoon-700"
+                      className="flex min-h-11 items-center justify-between gap-4 py-3 text-ocean-900 hover:underline"
                     >
                       {s.name}
                       <FaArrowUpRightFromSquare aria-hidden className="h-3 w-3 shrink-0 text-muted" />
@@ -203,7 +203,7 @@ export default async function BookPage({ params }: Params) {
                 <li key={b.slug}>
                   <Link href={`/books/${b.slug}`} className="group block">
                     <BookCover book={b} size="sm" className="transition-shadow duration-150 group-hover:shadow-card-hover" />
-                    <p className="mt-2 font-semibold leading-snug text-ocean-900 group-hover:text-lagoon-700">{b.title}</p>
+                    <p className="mt-2 font-semibold leading-snug text-ocean-900 group-hover:underline">{b.title}</p>
                     <p className="text-sm text-ocean-800">{b.author}</p>
                   </Link>
                 </li>

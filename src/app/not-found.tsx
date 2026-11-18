@@ -12,7 +12,7 @@ export default function NotFound() {
   return (
     <Container className="py-20 sm:py-28">
       <div className="mx-auto max-w-2xl text-center">
-        <p className="font-display text-8xl font-semibold text-lagoon-600 sm:text-9xl">404</p>
+        <p className="font-display text-8xl font-semibold text-ink sm:text-9xl">404</p>
         <h1 className="mt-4 text-3xl font-semibold text-ocean-900 sm:text-5xl">
           This island isn&apos;t on our map
         </h1>

@@ -26,14 +26,14 @@ export default function SectionHeading({
     >
       <div className="max-w-2xl">
         {eyebrow && (
-          <p className={`mb-3 text-xs font-bold uppercase tracking-[0.2em] ${dark ? "text-mango-300" : "text-coral-700"}`}>
+          <p className={`mb-3 ${dark ? "eyebrow-on-dark" : "eyebrow"}`}>
             {eyebrow}
           </p>
         )}
         <h2 id={id} className={`text-3xl font-semibold sm:text-4xl ${dark ? "text-white" : "text-ocean-900"}`}>
           {title}
         </h2>
-        {description && <p className={`mt-3 text-lg ${dark ? "text-lagoon-50/85" : "text-muted"}`}>{description}</p>}
+        {description && <p className={`mt-3 text-lg ${dark ? "text-white/80" : "text-muted"}`}>{description}</p>}
       </div>
       {action && <div className="shrink-0">{action}</div>}
     </div>

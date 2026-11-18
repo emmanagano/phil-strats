@@ -139,7 +139,8 @@ export default async function ArticlePage({ params }: Params) {
 
       {/* Hero */}
       <section className="-mt-18">
-        <div className="relative isolate flex min-h-[calc(min(70vh,40rem)+4.5rem)] items-end overflow-hidden bg-ocean-900">
+        {/* Phones: about half a screen, so the guide starts above the fold. Desktop keeps the tall hero. */}
+        <div className="relative isolate flex min-h-[50svh] items-end overflow-hidden bg-ocean-900 md:min-h-[calc(min(70vh,40rem)+4.5rem)]">
           <img
             src={article.image}
             alt={article.alt}
@@ -148,10 +149,10 @@ export default async function ArticlePage({ params }: Params) {
             fetchPriority="high"
             className="photo-pop absolute inset-0 -z-10 h-full w-full object-cover"
           />
-          <Container className="pt-28">
+          <Container className="pt-24 md:pt-28">
             {/* Solid caption panel: the photo stays full color, the text stays readable. */}
-            <div className="max-w-3xl bg-ocean-900 p-6 sm:p-10">
-            <nav aria-label="Breadcrumb" className="mb-5">
+            <div className="-mx-4 max-w-3xl bg-ocean-900 px-4 py-5 sm:mx-0 sm:p-10">
+            <nav aria-label="Breadcrumb" className="mb-3 md:mb-5">
               <ol className="flex flex-wrap items-center gap-2 text-sm text-white/80">
                 <Crumb href="/">Home</Crumb>
                 <Crumb href="/articles">Destinations</Crumb>
@@ -160,31 +161,32 @@ export default async function ArticlePage({ params }: Params) {
                 </Crumb>
               </ol>
             </nav>
-            <h1 className="text-3xl font-semibold leading-[1.08] text-white sm:text-5xl">
+            <h1 className="text-[1.75rem] font-semibold leading-[1.1] text-white sm:text-5xl">
               {article.title}
             </h1>
-            <div className="mt-6 flex flex-wrap items-center gap-x-5 gap-y-3 text-sm text-white/85">
-              <span className={`px-2.5 py-1 text-xs font-semibold tracking-wide ${categoryTone(article.category).tag}`}>
+            <div className="mt-4 flex flex-wrap items-center gap-x-5 gap-y-2 text-sm text-white/85 md:mt-6 md:gap-y-3">
+              <span className={`px-2.5 py-1 text-sm font-semibold tracking-wide ${categoryTone(article.category).tag}`}>
                 {article.categoryLabel}
               </span>
               <span className="inline-flex items-center gap-2">
-                <FaLocationDot aria-hidden className="text-coral-400" />
+                <FaLocationDot aria-hidden className="text-white/85" />
                 {article.region}
               </span>
-              <span className="inline-flex items-center gap-2">
-                <FaRegCalendar aria-hidden className="text-lagoon-300" />
+              {/* Date and byline are secondary; on phones they'd push the guide below the fold. */}
+              <span className="hidden items-center gap-2 md:inline-flex">
+                <FaRegCalendar aria-hidden className="text-white/85" />
                 <time dateTime={article.date}>{formatDate(article.date)}</time>
               </span>
               <span className="inline-flex items-center gap-2">
-                <FaRegClock aria-hidden className="text-lagoon-300" />
+                <FaRegClock aria-hidden className="text-white/85" />
                 {article.guide ? `Checked ${article.guide.verified}` : `${article.readingTime} min read`}
               </span>
               {article.updated !== article.date && (
-                <span>
+                <span className="hidden md:inline">
                   Updated <time dateTime={article.updated}>{formatDate(article.updated)}</time>
                 </span>
               )}
-              <span>By {AUTHOR}</span>
+              <span className="hidden md:inline">By {AUTHOR}</span>
             </div>
             </div>
           </Container>
@@ -199,7 +201,7 @@ export default async function ArticlePage({ params }: Params) {
           <div className="mx-auto mt-20 max-w-3xl sm:mt-28">
             {article.content.trim() && (
               <section aria-labelledby="story-title" className="border-t-2 border-ocean-900 pt-10">
-                <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">Why we love it</p>
+                <p className="eyebrow">Why we love it</p>
                 <h2 id="story-title" className="mt-2 text-3xl font-semibold text-ocean-900 sm:text-4xl">
                   The story behind the guide
                 </h2>
@@ -227,15 +229,15 @@ export default async function ArticlePage({ params }: Params) {
             <details className="group rounded-card border border-sand-200 bg-white lg:hidden">
               <summary className="flex min-h-12 cursor-pointer list-none items-center justify-between px-5 font-semibold text-ocean-900 [&::-webkit-details-marker]:hidden">
                 On this page
-                <span className="text-sm text-lagoon-700 group-open:hidden">Show</span>
-                <span className="hidden text-sm text-lagoon-700 group-open:inline">Hide</span>
+                <span className="text-sm text-ocean-900 underline underline-offset-4 group-open:hidden">Show</span>
+                <span className="hidden text-sm text-ocean-900 underline underline-offset-4 group-open:inline">Hide</span>
               </summary>
               <div className="px-5 pb-4">
                 <TocList toc={article.toc} />
               </div>
             </details>
             <nav aria-label="On this page" className="hidden lg:block">
-              <p className="mb-3 text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
+              <p className="mb-3 eyebrow">
                 On this page
               </p>
               <TocList toc={article.toc} />
@@ -251,16 +253,16 @@ export default async function ArticlePage({ params }: Params) {
               dangerouslySetInnerHTML={{ __html: article.content }}
             />
             <TagList tags={article.tags} />
-            <nav aria-label="Plan your trip" className="mt-12 border-l-4 border-coral-500 py-1 pl-6">
-              <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">Plan your trip</p>
+            <nav aria-label="Plan your trip" className="mt-12 border-l-4 border-sand-300 py-1 pl-6">
+              <p className="eyebrow">Plan your trip</p>
               <ul className="mt-3 space-y-2 text-ocean-900">
                 <li>
-                  <Link className="underline decoration-lagoon-300 underline-offset-4 hover:text-lagoon-700" href={`/articles?region=${article.islandGroup}`}>
+                  <Link className="link" href={`/articles?region=${article.islandGroup}`}>
                     More {article.islandGroupLabel} travel guides
                   </Link>
                 </li>
                 <li>
-                  <Link className="underline decoration-lagoon-300 underline-offset-4 hover:text-lagoon-700" href={`/articles?category=${article.category}`}>
+                  <Link className="link" href={`/articles?category=${article.category}`}>
                     More {article.categoryLabel.toLowerCase()} guides
                   </Link>
                 </li>
@@ -278,16 +280,16 @@ export default async function ArticlePage({ params }: Params) {
 
       {news.length > 0 && (
         <Container className="pb-12">
-          <section aria-labelledby="in-the-news" className="mx-auto max-w-3xl border-l-4 border-mango-400 py-1 pl-6">
-            <h2 id="in-the-news" className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
+          <section aria-labelledby="in-the-news" className="mx-auto max-w-3xl border-l-4 border-sand-300 py-1 pl-6">
+            <h2 id="in-the-news" className="font-sans eyebrow">
               {(article.guide?.place ?? placeName(article.title))} in the news
             </h2>
             <ul className="mt-3 space-y-3">
               {news.map((n) => (
                 <li key={n.slug}>
                   <Link href={`/news/${n.slug}`} className="group block">
-                    <time dateTime={n.date} className="text-xs font-semibold text-muted">{formatNewsDate(n.date, "short")}</time>
-                    <span className="block font-semibold text-ocean-900 underline decoration-lagoon-300 underline-offset-4 group-hover:text-lagoon-700">
+                    <time dateTime={n.date} className="text-sm font-semibold text-muted">{formatNewsDate(n.date, "short")}</time>
+                    <span className="block font-semibold text-ocean-900 underline decoration-sand-300 underline-offset-4 group-hover:decoration-ocean-900">
                       {n.title}
                     </span>
                   </Link>
@@ -301,7 +303,7 @@ export default async function ArticlePage({ params }: Params) {
       {books.length > 0 && (
         <Container className="pb-12">
           <section aria-labelledby="read-before-you-go" className="mx-auto max-w-3xl">
-            <h2 id="read-before-you-go" className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
+            <h2 id="read-before-you-go" className="font-sans eyebrow">
               Read before you go
             </h2>
             <ul className="mt-4 grid gap-4 sm:grid-cols-3">
@@ -310,7 +312,7 @@ export default async function ArticlePage({ params }: Params) {
                   <Link href={`/books/${b.slug}`} className="group flex gap-4 sm:block">
                     <BookCover book={b} size="sm" className="w-20 shrink-0 sm:w-28 transition-shadow duration-150 group-hover:shadow-card-hover" />
                     <span className="min-w-0 sm:mt-3 sm:block">
-                      <span className="block font-semibold leading-snug text-ocean-900 group-hover:text-lagoon-700">{b.title}</span>
+                      <span className="block font-semibold leading-snug text-ocean-900 group-hover:underline">{b.title}</span>
                       <span className="block text-sm text-ocean-800">{b.author}, {b.year}</span>
                       {b.settingNote && <span className="mt-1 block text-sm text-muted">{b.settingNote}</span>}
                     </span>
@@ -349,7 +351,7 @@ export default async function ArticlePage({ params }: Params) {
 
 function PhotoCredit({ credit }: { credit: ImageCredit }) {
   return (
-    <p className="absolute bottom-0 right-0 bg-ocean-950/75 px-2.5 py-1 text-[0.7rem] text-white/80">
+    <p className="absolute right-0 top-18 bg-ocean-950/75 md:bottom-0 md:top-auto px-2.5 py-1 text-sm text-white/80">
       Photo:{" "}
       <a href={credit.source} target="_blank" rel="noopener noreferrer" className="underline hover:text-white">
         {credit.author}
@@ -379,7 +381,7 @@ function TagList({ tags }: { tags: string[] }) {
         <li key={tag}>
           <Link
             href={`/articles?q=${encodeURIComponent(tag)}`}
-            className="inline-block rounded-full border border-sand-300 px-3 py-1.5 text-sm text-ocean-800 transition hover:border-lagoon-600 hover:text-lagoon-700"
+            className="inline-block rounded-full border border-sand-300 px-3 py-1.5 text-sm text-ocean-800 transition hover:border-ocean-900"
           >
             #{tag}
           </Link>
@@ -407,7 +409,7 @@ function TocList({ toc }: { toc: { id: string; text: string }[] }) {
         <li key={item.id}>
           <a
             href={`#${item.id}`}
-            className="-ml-0.5 block border-l-2 border-transparent py-1.5 pl-4 text-sm text-muted transition hover:border-coral-500 hover:text-ocean-900"
+            className="-ml-0.5 block border-l-2 border-transparent py-1.5 pl-4 text-sm text-muted transition hover:border-ocean-900 hover:text-ocean-900"
           >
             {item.text}
           </a>
@@ -428,7 +430,7 @@ function PagerCard({ article, direction }: { article: ArticleSummary; direction:
     >
       <img src={article.imageSmall} alt="" width={96} height={96} loading="lazy" decoding="async" className="h-20 w-20 shrink-0 rounded-card object-cover sm:h-24 sm:w-24" />
       <div className="min-w-0">
-        <p className={`flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-coral-700 ${next ? "justify-end" : ""}`}>
+        <p className={`flex items-center gap-2 eyebrow ${next ? "justify-end" : ""}`}>
           {next ? (
             <>
               Newer guide <FaArrowRight aria-hidden />
@@ -439,7 +441,7 @@ function PagerCard({ article, direction }: { article: ArticleSummary; direction:
             </>
           )}
         </p>
-        <p className="mt-1 line-clamp-2 font-display text-lg font-semibold text-ocean-900 group-hover:text-lagoon-700">
+        <p className="mt-1 line-clamp-2 font-display text-lg font-semibold text-ocean-900 group-hover:underline">
           {article.title}
         </p>
       </div>

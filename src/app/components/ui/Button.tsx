@@ -3,11 +3,11 @@ import { FaArrowRight } from "react-icons/fa6";
 
 const VARIANTS = {
   primary:
-    "bg-coral-500 text-white hover:bg-ocean-900",
+    "bg-action text-white hover:bg-action-strong",
   secondary:
     "border border-ocean-900/20 bg-white text-ocean-900 hover:border-ocean-900 hover:bg-ocean-900 hover:text-white",
-  light: "bg-white text-ocean-900 hover:bg-mango-300",
-  ghost: "min-h-0! px-0! py-0! text-lagoon-700 hover:text-ocean-900",
+  light: "bg-white text-ocean-900 hover:bg-sand-200",
+  ghost: "min-h-0! px-0! py-0! link",
 } as const;
 
 type ButtonProps = {

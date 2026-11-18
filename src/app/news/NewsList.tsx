@@ -59,15 +59,15 @@ export default function NewsList({ news }: { news: NewsBrief[] }) {
                       <time dateTime={n.date} className="font-display text-lg font-semibold text-ocean-900">
                         {formatNewsDate(n.date, "short")}
                       </time>
-                      <span className={`inline-block px-2 py-0.5 text-[0.65rem] font-bold uppercase tracking-widest sm:mt-2 ${NEWS_TONE[n.topic]}`}>
+                      <span className={`inline-block px-2 py-0.5 text-xs font-bold uppercase tracking-widest sm:mt-2 ${NEWS_TONE[n.topic]}`}>
                         {NEWS_TOPICS.find((t) => t.slug === n.topic)?.label}
                       </span>
                     </div>
                     <div className="max-w-3xl">
-                      <h3 className="text-xl font-semibold leading-snug text-ocean-900 transition-colors duration-150 group-hover:text-lagoon-700 sm:text-2xl">
+                      <h3 className="text-xl font-semibold leading-snug text-ocean-900 transition-colors duration-150 group-hover:underline sm:text-2xl">
                         <Link
                           href={`/news/${n.slug}`}
-                          className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none focus-visible:after:outline-2 focus-visible:after:outline-lagoon-600"
+                          className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none focus-visible:after:outline-2 focus-visible:after:outline-ink"
                         >
                           {n.title}
                         </Link>
@@ -75,13 +75,13 @@ export default function NewsList({ news }: { news: NewsBrief[] }) {
                       <p className="mt-2 leading-relaxed text-ocean-800">{n.summary}</p>
                       {n.travelNote && (
                         <p className="mt-4 flex items-stretch overflow-hidden rounded-control text-sm">
-                          <span className="flex shrink-0 items-center gap-1.5 bg-ocean-900 px-2.5 text-[0.65rem] font-bold uppercase tracking-widest text-mango-300">
+                          <span className="flex shrink-0 items-center gap-1.5 bg-ocean-900 px-2.5 text-xs font-bold uppercase tracking-widest text-tip">
                             <FaSuitcaseRolling aria-hidden className="h-3.5 w-3.5" /> Trip tip
                           </span>
-                          <span className="bg-mango-100 px-3 py-2 font-medium text-ocean-950">{n.travelNote}</span>
+                          <span className="bg-tip-soft px-3 py-2 font-medium text-ocean-950">{n.travelNote}</span>
                         </p>
                       )}
-                      <span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-lagoon-700">
+                      <span className="mt-3 inline-flex items-center gap-2 text-sm font-semibold text-ocean-900 underline decoration-sand-300 underline-offset-4">
                         Read the brief <FaArrowRight aria-hidden className="h-3 w-3" />
                       </span>
                     </div>

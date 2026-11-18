@@ -9,13 +9,29 @@ export default function SiteHeader() {
   const pathname = usePathname();
   const [menuOpen, setMenuOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
 
+  // On phones the logo bar slides away while scrolling down and comes back on scroll up.
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 12);
+    const phone = window.matchMedia("(max-width: 767px)");
+    let lastY = window.scrollY;
+    const onScroll = () => {
+      const y = window.scrollY;
+      setScrolled(y > 12);
+      if (Math.abs(y - lastY) < 6) return;
+      setHidden(phone.matches && y > lastY && y > 160);
+      lastY = y;
+    };
     onScroll();
     window.addEventListener("scroll", onScroll, { passive: true });
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
+
+  const headerHidden = hidden && !menuOpen;
+  // Lets other sticky bars follow the header (see --header-offset in globals.css).
+  useEffect(() => {
+    document.documentElement.toggleAttribute("data-header-hidden", headerHidden);
+  }, [headerHidden]);
 
   // Close the drawer whenever the route changes.
   useEffect(() => setMenuOpen(false), [pathname]);
@@ -37,7 +53,9 @@ export default function SiteHeader() {
 
   return (
     <header
-      className={`sticky top-0 z-50 transition-colors duration-150 ${
+      className={`sticky top-0 z-50 transition-[background-color,transform] duration-150 ${
+        headerHidden ? "-translate-y-full" : ""
+      } ${
         scrolled || menuOpen
           ? "bg-sand-50/90 shadow-[0_1px_0_rgb(11_46_58/0.08)] backdrop-blur-lg"
           : overHero
@@ -77,11 +95,11 @@ export default function SiteHeader() {
                   className={`relative block px-3.5 py-2.5 text-sm font-medium transition-colors after:absolute after:inset-x-3.5 after:bottom-1 after:h-0.5 after:transition-colors ${
                     active
                       ? overHero
-                        ? "text-white after:bg-mango-400"
-                        : "text-ocean-900 after:bg-coral-500"
+                        ? "text-white after:bg-action"
+                        : "text-ocean-900 after:bg-action"
                       : overHero
                         ? "text-white/85 after:bg-transparent hover:text-white hover:after:bg-white/50"
-                        : "text-ocean-800 after:bg-transparent hover:text-lagoon-700 hover:after:bg-lagoon-300"
+                        : "text-ocean-800 after:bg-transparent hover:text-ocean-900 hover:after:bg-sand-300"
                   }`}
                 >
                   {item.label}
@@ -98,7 +116,7 @@ export default function SiteHeader() {
           aria-controls="mobile-menu"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           className={`-mr-2 grid h-11 w-11 place-items-center rounded-full transition lg:hidden ${
-            overHero ? "text-white hover:bg-white/15" : "text-ocean-900 hover:bg-lagoon-100"
+            overHero ? "text-white hover:bg-white/15" : "text-ocean-900 hover:bg-sand-100"
           }`}
         >
           {menuOpen ? <FaXmark className="h-5 w-5" /> : <FaBars className="h-5 w-5" />}
@@ -119,7 +137,7 @@ export default function SiteHeader() {
                   href={item.href}
                   aria-current={active ? "page" : undefined}
                   className={`-mx-4 block border-l-4 px-4 py-4 font-display text-2xl transition-colors sm:-mx-6 sm:px-6 ${
-                    active ? "border-coral-500 bg-sand-100 text-ocean-900" : "border-transparent text-ocean-900 hover:bg-sand-100"
+                    active ? "border-action bg-sand-100 text-ocean-900" : "border-transparent text-ocean-900 hover:bg-sand-100"
                   }`}
                 >
                   {item.label}

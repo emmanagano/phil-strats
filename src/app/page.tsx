@@ -49,8 +49,8 @@ export default function Home() {
               {/* Solid caption panel: the photo stays full color, the text stays readable. */}
               <div className="max-w-2xl bg-ocean-900 p-6 text-white sm:p-10">
                 <div className="mb-5 flex flex-wrap gap-2">
-                  <Badge tone="mango">Latest guide</Badge>
-                  <span className={`px-2.5 py-1 text-xs font-semibold tracking-wide ${categoryTone(featured.category).tag}`}>
+                  <Badge tone="light">Latest guide</Badge>
+                  <span className={`px-2.5 py-1 text-sm font-semibold tracking-wide ${categoryTone(featured.category).tag}`}>
                     {featured.categoryLabel}
                   </span>
                 </div>
@@ -112,7 +112,7 @@ export default function Home() {
                 loading="lazy"
                 className="photo-pop absolute inset-0 -z-10 h-full w-full object-cover"
               />
-              <div className={`w-full p-6 transition-colors duration-150 group-hover:bg-coral-500 group-hover:text-white lg:p-8 ${categoryTone(category.slug).block}`}>
+              <div className={`w-full p-6 transition-colors duration-150 group-hover:bg-ocean-900 group-hover:text-white lg:p-8 ${categoryTone(category.slug).block}`}>
                 <p className="text-xs font-semibold uppercase tracking-widest opacity-80">
                   {countBy("category", category.slug)} guides
                 </p>
@@ -183,14 +183,14 @@ export default function Home() {
                       <li key={a.slug}>
                         <Link
                           href={`/articles/${a.slug}`}
-                          className="block rounded-control bg-white px-2.5 py-1 text-xs font-semibold text-ocean-900 transition-colors duration-150 hover:bg-coral-500 hover:text-white"
+                          className="block rounded-control bg-white px-2.5 py-1 text-sm font-semibold text-ocean-900 transition-colors duration-150 hover:bg-ocean-900 hover:text-white"
                         >
                           {a.place}
                         </Link>
                       </li>
                     ))}
                   </ul>
-                  <div className="flex items-end justify-between gap-4 bg-ocean-900 p-4 text-white transition-colors duration-150 group-hover:bg-coral-500 sm:p-6">
+                  <div className="flex items-end justify-between gap-4 bg-ocean-900 p-4 text-white transition-colors duration-150 group-hover:bg-ocean-700 sm:p-6">
                     <h3 className={`font-semibold leading-none ${i === 0 ? "text-5xl sm:text-7xl" : "text-3xl sm:text-4xl"}`}>
                       {/* Stretched link: the whole tile opens the region. */}
                       <Link
@@ -201,10 +201,10 @@ export default function Home() {
                       </Link>
                     </h3>
                     <p className="shrink-0 text-right">
-                      <span className="block font-display text-3xl font-semibold leading-none text-mango-300 group-hover:text-white">
+                      <span className="block font-display text-3xl font-semibold leading-none text-white">
                         {countBy("islandGroup", group.slug)}
                       </span>
-                      <span className="text-xs font-bold uppercase tracking-widest text-white/70">guides</span>
+                      <span className="text-xs font-bold uppercase tracking-widest text-white/85">guides</span>
                     </p>
                   </div>
                 </div>
@@ -218,7 +218,7 @@ export default function Home() {
       <Container as="section" className="pb-20 sm:pb-28">
         <div className="grid gap-12 border-t-2 border-ocean-900 pt-10 lg:grid-cols-12 lg:gap-16">
           <div className="lg:col-span-6">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
+            <p className="eyebrow">
               About {SITE_NAME}
             </p>
             <h2 className="mt-4 text-3xl font-semibold text-ocean-900 sm:text-5xl">
@@ -238,7 +238,7 @@ export default function Home() {
             </div>
           </div>
           <div className="lg:col-span-5 lg:col-start-8">
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-lagoon-700">
+            <p className="eyebrow">
               Every guide is a trip planner
             </p>
             <ol className="mt-4 divide-y divide-sand-200 border-y border-sand-200">
@@ -249,7 +249,7 @@ export default function Home() {
                 ["Pack and go", "Tick off a checklist, then copy your plan."],
               ].map(([title, text], i) => (
                 <li key={title} className="flex gap-5 py-4">
-                  <span className="w-6 shrink-0 font-display text-2xl font-semibold leading-none text-coral-600">
+                  <span className="w-6 shrink-0 font-display text-2xl font-semibold leading-none text-ink-soft">
                     {i + 1}
                   </span>
                   <div>
@@ -267,7 +267,7 @@ export default function Home() {
       <section className="bg-ocean-900 py-16 sm:py-24">
         <Container className="grid items-end gap-8 lg:grid-cols-2 lg:gap-16">
           <div>
-            <p className="text-xs font-bold uppercase tracking-[0.2em] text-mango-300">
+            <p className="eyebrow-on-dark">
               The island postcard
             </p>
             <h2 className="mt-4 max-w-xl text-3xl font-semibold text-white sm:text-5xl">

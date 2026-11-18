@@ -1,9 +1,9 @@
 import Container from "./ui/Container";
 
 const TONES = {
-  ocean: { band: "bg-ocean-900 text-white", eyebrow: "text-mango-300", body: "text-white/80", rule: "border-white/20", accent: "bg-coral-500" },
-  coral: { band: "bg-coral-600 text-white", eyebrow: "text-ocean-950", body: "text-white", rule: "border-white/30", accent: "bg-mango-400" },
-  mango: { band: "bg-mango-400 text-ocean-950", eyebrow: "text-coral-700", body: "text-ocean-900/85", rule: "border-ocean-950/20", accent: "bg-coral-500" },
+  ocean: { band: "bg-ocean-900 text-white", eyebrow: "text-white/85", body: "text-white/80", rule: "border-white/20", accent: "bg-white/40" },
+  coral: { band: "bg-coral-600 text-white", eyebrow: "text-ocean-950", body: "text-white", rule: "border-white/30", accent: "bg-ocean-950/40" },
+  mango: { band: "bg-mango-400 text-ocean-950", eyebrow: "text-ocean-900/80", body: "text-ocean-900/85", rule: "border-ocean-950/20", accent: "bg-ocean-950/40" },
 } as const;
 
 export type HeroTone = keyof typeof TONES;

@@ -5,7 +5,7 @@ import emailjs from "@emailjs/browser";
 type Status = "idle" | "sending" | "sent" | "error";
 
 const fieldClass =
-  "mt-2 min-h-12 w-full rounded-control bg-white px-4 py-3 text-base font-normal text-ocean-900 outline-none ring-1 ring-sand-300 transition placeholder:text-muted focus:ring-2 focus:ring-lagoon-600";
+  "mt-2 min-h-12 w-full rounded-control bg-white px-4 py-3 text-base font-normal text-ocean-900 outline-none ring-1 ring-sand-300 transition placeholder:text-muted focus:ring-2 focus:ring-ink";
 
 export default function ContactForm() {
   const form = useRef<HTMLFormElement>(null);
@@ -54,16 +54,16 @@ export default function ContactForm() {
       <button
         type="submit"
         disabled={status === "sending"}
-        className="min-h-12 w-full rounded-control bg-coral-500 px-6 py-3 text-sm font-semibold text-white transition hover:bg-ocean-900 disabled:opacity-60"
+        className="min-h-12 w-full rounded-control bg-action px-6 py-3 text-sm font-semibold text-white transition hover:bg-action-strong disabled:opacity-60"
       >
         {status === "sending" ? "Sending…" : "Send message"}
       </button>
       <p role="status" className="min-h-6 text-center text-sm">
         {status === "sent" && (
-          <span className="text-lagoon-700">Thanks! Your message is on its way. We&apos;ll reply soon.</span>
+          <span className="text-good">Thanks! Your message is on its way. We&apos;ll reply soon.</span>
         )}
         {status === "error" && (
-          <span className="text-coral-700">Something went wrong. Please try again in a moment.</span>
+          <span className="font-semibold text-ocean-900">Something went wrong. Please try again in a moment.</span>
         )}
       </p>
     </form>

@@ -30,14 +30,14 @@ export default function ArticleCard({
           className="photo-pop h-full w-full object-cover"
         />
         {stay && (
-          <span className="absolute left-3 top-3 rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-ocean-950 shadow-sm">
+          <span className="absolute left-3 top-3 rounded-full bg-white px-2.5 py-1 text-sm font-semibold text-ocean-950 shadow-sm">
             {stay}
           </span>
         )}
       </div>
 
       <div className="flex flex-1 flex-col p-5">
-        <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.7rem] font-bold uppercase tracking-widest text-muted">
+        <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-xs font-bold uppercase tracking-widest text-muted">
           <span aria-hidden className={`h-2 w-2 shrink-0 rounded-full ${tone.dot}`} />
           <span>{tone.short}</span>
           {article.area && (
@@ -47,29 +47,29 @@ export default function ArticleCard({
             </>
           )}
         </p>
-        <h3 className="mt-2 text-2xl font-semibold leading-tight text-ocean-900 transition-colors duration-150 group-hover:text-lagoon-700">
+        <h3 className="mt-2 text-2xl font-semibold leading-tight text-ocean-900 transition-colors duration-150 group-hover:underline">
           {/* The stretched link makes the whole card clickable. */}
           <Link
             href={`/articles/${article.slug}`}
-            className="after:absolute after:inset-0 after:z-10 after:content-[''] focus-visible:outline-none focus-visible:after:rounded-card focus-visible:after:outline-2 focus-visible:after:outline-offset-2 focus-visible:after:outline-lagoon-600"
+            className="after:absolute after:inset-0 after:z-10 after:content-[''] focus-visible:outline-none focus-visible:after:rounded-card focus-visible:after:outline-2 focus-visible:after:outline-offset-2 focus-visible:after:outline-ink"
           >
             {article.cardTitle}
           </Link>
         </h3>
-        <p className="mt-1.5 line-clamp-2 flex-1 text-[0.95rem] leading-relaxed text-ocean-800">{article.card}</p>
+        <p className="mt-1.5 line-clamp-2 flex-1 text-base leading-relaxed text-ocean-800">{article.card}</p>
         <p className="sr-only">{article.description}</p>
 
         {(article.bestMonths || article.budgetFrom > 0) && (
           <dl className="mt-4 flex items-end justify-between gap-4 border-t border-sand-200 pt-3">
             {article.bestMonths && (
               <div>
-                <dt className="text-[0.65rem] font-bold uppercase tracking-widest text-muted">Best time</dt>
+                <dt className="text-xs font-bold uppercase tracking-widest text-muted">Best time</dt>
                 <dd className="mt-0.5 font-semibold text-ocean-900">{article.bestMonths}</dd>
               </div>
             )}
             {article.budgetFrom > 0 && (
               <div className="ml-auto text-right">
-                <dt className="text-[0.65rem] font-bold uppercase tracking-widest text-muted">From</dt>
+                <dt className="text-xs font-bold uppercase tracking-widest text-muted">From</dt>
                 <dd className="mt-0.5 font-semibold text-ocean-900">
                   {peso(article.budgetFrom)} <span className="font-normal text-muted">/day</span>
                 </dd>

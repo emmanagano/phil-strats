@@ -45,12 +45,12 @@ export default function BookCover({
     >
       {/* Spine shadow: a flat darker strip, not a gradient. */}
       <span aria-hidden className="absolute inset-y-0 left-0 w-1.5 bg-black/15" />
-      <p className={`text-[0.65rem] font-bold uppercase tracking-[0.2em] ${t.muted}`}>{book.author}</p>
+      <p className={`text-xs font-bold uppercase tracking-[0.2em] ${t.muted}`}>{book.author}</p>
       <div>
         <span aria-hidden className={`mb-3 block h-1 w-8 ${t.rule}`} />
         <p className={`font-display font-semibold leading-[1.05] break-words ${title}`}>{book.title}</p>
       </div>
-      <p className={`text-[0.65rem] font-semibold tracking-widest ${t.muted}`}>{book.year}</p>
+      <p className={`text-xs font-semibold tracking-widest ${t.muted}`}>{book.year}</p>
     </div>
   );
 }

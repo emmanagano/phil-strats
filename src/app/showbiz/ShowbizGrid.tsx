@@ -55,7 +55,7 @@ export default function ShowbizGrid({ stories }: { stories: ShowbizStory[] }) {
 
 function TopicTag({ story }: { story: ShowbizStory }) {
   return (
-    <span className={`inline-block px-2.5 py-1 text-[0.65rem] font-bold uppercase tracking-widest ${SHOWBIZ_TONE[story.topic]}`}>
+    <span className={`inline-block px-2.5 py-1 text-xs font-bold uppercase tracking-widest ${SHOWBIZ_TONE[story.topic]}`}>
       {SHOWBIZ_TOPICS.find((t) => t.slug === story.topic)?.label}
     </span>
   );
@@ -70,18 +70,18 @@ function LeadStory({ story }: { story: ShowbizStory }) {
       <div className="flex flex-col justify-center p-6 sm:p-10">
         <div className="flex items-center gap-3">
           <TopicTag story={story} />
-          <span className="text-sm text-white/70">Featured · {formatNewsDate(story.date)}</span>
+          <span className="text-sm text-white/85">Featured · {formatNewsDate(story.date)}</span>
         </div>
         <h2 className="mt-5 text-3xl font-semibold leading-tight sm:text-4xl">
           <Link
             href={`/showbiz/${story.slug}`}
-            className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none focus-visible:after:outline-2 focus-visible:after:outline-mango-300"
+            className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none focus-visible:after:outline-2 focus-visible:after:outline-white"
           >
             {story.title}
           </Link>
         </h2>
         <p className="mt-4 text-lg leading-relaxed text-white/85">{story.dek}</p>
-        <span className="mt-6 inline-flex items-center gap-2 font-semibold text-mango-300">
+        <span className="mt-6 inline-flex items-center gap-2 font-semibold text-white underline decoration-white/40 underline-offset-4">
           Read the story <FaArrowRight aria-hidden className="h-3 w-3" />
         </span>
       </div>
@@ -99,7 +99,7 @@ function StoryCard({ story, big = false }: { story: ShowbizStory; big?: boolean 
       <div className={`absolute inset-x-3 bottom-3 rounded-control bg-white transition-colors duration-150 group-hover:bg-ocean-900 ${big ? "p-5 sm:p-7" : "p-4"}`}>
         <time
           dateTime={story.date}
-          className="text-[0.65rem] font-bold uppercase tracking-widest text-muted transition-colors duration-150 group-hover:text-white/70"
+          className="text-xs font-bold uppercase tracking-widest text-muted transition-colors duration-150 group-hover:text-white/85"
         >
           {formatNewsDate(story.date)}
         </time>
@@ -110,7 +110,7 @@ function StoryCard({ story, big = false }: { story: ShowbizStory; big?: boolean 
         >
           <Link
             href={`/showbiz/${story.slug}`}
-            className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none focus-visible:after:rounded-card focus-visible:after:outline-2 focus-visible:after:outline-offset-2 focus-visible:after:outline-lagoon-600"
+            className="after:absolute after:inset-0 after:content-[''] focus-visible:outline-none focus-visible:after:rounded-card focus-visible:after:outline-2 focus-visible:after:outline-offset-2 focus-visible:after:outline-ink"
           >
             {story.title}
           </Link>

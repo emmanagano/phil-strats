@@ -100,7 +100,7 @@ export default function BookShelf({ books }: { books: Book[] }) {
                 update({ q: e.target.value });
               }}
               placeholder="Search titles, authors, places…"
-              className="min-h-12 w-full rounded-control bg-white py-3 pl-11 pr-4 text-base text-ocean-900 outline-none ring-1 ring-sand-300 transition placeholder:text-muted focus:ring-2 focus:ring-lagoon-600"
+              className="min-h-12 w-full rounded-control bg-white py-3 pl-11 pr-4 text-base text-ocean-900 outline-none ring-1 ring-sand-300 transition placeholder:text-muted focus:ring-2 focus:ring-ink"
             />
           </div>
           <div className="flex items-center gap-2">
@@ -109,7 +109,7 @@ export default function BookShelf({ books }: { books: Book[] }) {
               id="book-sort"
               value={sort}
               onChange={(e) => update({ sort: e.target.value === "oldest" ? "" : e.target.value })}
-              className="min-h-12 rounded-control bg-white px-3 text-sm font-semibold text-ocean-900 outline-none ring-1 ring-sand-300 focus:ring-2 focus:ring-lagoon-600"
+              className="min-h-12 rounded-control bg-white px-3 text-sm font-semibold text-ocean-900 outline-none ring-1 ring-sand-300 focus:ring-2 focus:ring-ink"
             >
               {SORTS.map((s) => (
                 <option key={s.value} value={s.value}>{s.label}</option>
@@ -150,9 +150,9 @@ export default function BookShelf({ books }: { books: Book[] }) {
               place ? "border-ocean-900 bg-ocean-900 text-white" : "border-sand-300 bg-white text-ocean-800 hover:border-ocean-900"
             }`}
           >
-            <FaLocationDot aria-hidden className={place ? "text-mango-300" : "text-coral-500"} />
+            <FaLocationDot aria-hidden />
             Set in places you can visit
-            <span className={place ? "text-white/70" : "text-muted"}>{count("place", (b) => Boolean(b.setIn?.length))}</span>
+            <span className={place ? "text-white/85" : "text-muted"}>{count("place", (b) => Boolean(b.setIn?.length))}</span>
           </button>
         </div>
       </div>
@@ -171,7 +171,7 @@ export default function BookShelf({ books }: { books: Book[] }) {
                 if (c.key === "q") setQuery("");
                 update({ [c.key]: "" });
               }}
-              className="inline-flex min-h-8 items-center gap-1.5 rounded-full bg-sand-200 px-3 text-xs font-semibold text-ocean-900 transition-colors duration-150 hover:bg-sand-300"
+              className="inline-flex min-h-8 items-center gap-1.5 rounded-full bg-sand-200 px-3 text-sm font-semibold text-ocean-900 transition-colors duration-150 hover:bg-sand-300"
               aria-label={`Remove filter: ${c.label}`}
             >
               {c.label} <FaXmark aria-hidden className="h-3 w-3" />
@@ -179,7 +179,7 @@ export default function BookShelf({ books }: { books: Book[] }) {
           ))}
         </div>
         {chips.length > 0 && (
-          <button type="button" onClick={clearAll} className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold text-lagoon-700 hover:text-ocean-900">
+          <button type="button" onClick={clearAll} className="inline-flex min-h-11 items-center gap-1.5 text-sm font-semibold link">
             <FaXmark aria-hidden /> Clear all
           </button>
         )}
@@ -209,9 +209,9 @@ export function BookGrid({ books }: { books: Book[] }) {
           <Link href={`/books/${b.slug}`} className="group block focus-visible:outline-none">
             <BookCover
               book={b}
-              className="transition-shadow duration-150 group-hover:shadow-card-hover group-focus-visible:outline-2 group-focus-visible:outline-offset-4 group-focus-visible:outline-lagoon-600"
+              className="transition-shadow duration-150 group-hover:shadow-card-hover group-focus-visible:outline-2 group-focus-visible:outline-offset-4 group-focus-visible:outline-ink"
             />
-            <p className="mt-3 font-display text-lg font-semibold leading-snug text-ocean-900 transition-colors duration-150 group-hover:text-lagoon-700">
+            <p className="mt-3 font-display text-lg font-semibold leading-snug text-ocean-900 transition-colors duration-150 group-hover:underline">
               {b.title}
             </p>
             <p className="mt-0.5 text-sm text-ocean-800">{b.author}</p>
@@ -246,7 +246,7 @@ function FilterRow({
     <div role="group" aria-label={`Filter by ${label.toLowerCase()}`} className="flex flex-wrap items-center gap-2">
       <span className="w-24 text-xs font-bold uppercase tracking-widest text-muted">{label}</span>
       <button type="button" aria-pressed={!value} onClick={() => onChange("")} className={btn(!value)}>
-        All <span className={!value ? "text-white/70" : "text-muted"}>{all}</span>
+        All <span className={!value ? "text-white/85" : "text-muted"}>{all}</span>
       </button>
       {options.map((o) => {
         const on = value === o.value;
@@ -259,7 +259,7 @@ function FilterRow({
             onClick={() => onChange(on ? "" : o.value)}
             className={btn(on)}
           >
-            {o.label} <span className={on ? "text-white/70" : "text-muted"}>{o.n}</span>
+            {o.label} <span className={on ? "text-white/85" : "text-muted"}>{o.n}</span>
           </button>
         );
       })}

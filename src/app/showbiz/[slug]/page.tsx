@@ -64,7 +64,7 @@ export default async function ShowbizStoryPage({ params }: Params) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
       <Container className="py-10 sm:py-14">
-        <Link href="/showbiz" className="inline-flex items-center gap-2 text-sm font-semibold text-lagoon-700 hover:underline">
+        <Link href="/showbiz" className="inline-flex items-center gap-2 text-sm font-semibold link">
           <FaArrowLeft aria-hidden className="h-3 w-3" /> All showbiz
         </Link>
 
@@ -73,7 +73,7 @@ export default async function ShowbizStoryPage({ params }: Params) {
             <div className="aspect-[4/3] overflow-hidden rounded-card bg-sand-200">
               <img src={img.src} alt={img.alt} className="photo-pop h-full w-full object-cover" />
             </div>
-            <figcaption className="mt-2 text-xs text-muted">
+            <figcaption className="mt-2 text-sm text-muted">
               {img.caption} Photo:{" "}
               <a href={img.source} target="_blank" rel="noopener noreferrer" className="underline hover:text-ocean-900">
                 {img.author}
@@ -109,10 +109,10 @@ export default async function ShowbizStoryPage({ params }: Params) {
             ))}
           </div>
 
-          <aside className="mt-10 grid overflow-hidden rounded-card bg-coral-500 text-white sm:grid-cols-[6rem_minmax(0,1fr)]">
-            <div className="flex items-center gap-3 bg-ocean-900 px-5 py-3 text-mango-300 sm:flex-col sm:justify-center sm:gap-2 sm:py-6">
+          <aside className="mt-10 grid overflow-hidden rounded-card border border-sand-200 bg-sand-100 text-ocean-900 sm:grid-cols-[6rem_minmax(0,1fr)]">
+            <div className="flex items-center gap-3 bg-ocean-900 px-5 py-3 text-white sm:flex-col sm:justify-center sm:gap-2 sm:py-6">
               <FaStar aria-hidden className="h-6 w-6 sm:h-8 sm:w-8" />
-              <span className="text-[0.65rem] font-bold uppercase tracking-widest text-white sm:text-center">Why it matters</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-white sm:text-center">Why it matters</span>
             </div>
             <p className="p-5 font-display text-xl font-semibold leading-snug sm:p-7 sm:text-2xl">{story.why}</p>
           </aside>
@@ -128,7 +128,7 @@ export default async function ShowbizStoryPage({ params }: Params) {
                     href={s.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex min-h-11 items-center justify-between gap-4 py-3 text-ocean-900 hover:text-lagoon-700"
+                    className="flex min-h-11 items-center justify-between gap-4 py-3 text-ocean-900 hover:underline"
                   >
                     {s.name}
                     <FaArrowUpRightFromSquare aria-hidden className="h-3 w-3 shrink-0 text-muted" />
@@ -148,7 +148,7 @@ export default async function ShowbizStoryPage({ params }: Params) {
                   <li key={r.slug}>
                     <Link href={`/showbiz/${r.slug}`} className="group block">
                       <img src={r.image.src} alt="" loading="lazy" className="photo-pop aspect-[4/3] w-full rounded-card object-cover" />
-                      <span className="mt-2 line-clamp-2 block font-semibold text-ocean-900 group-hover:text-lagoon-700">{r.title}</span>
+                      <span className="mt-2 line-clamp-2 block font-semibold text-ocean-900 group-hover:underline">{r.title}</span>
                     </Link>
                   </li>
                 ))}
@@ -174,7 +174,7 @@ function Pager({ story, label, next = false }: { story: { slug: string; title: s
     >
       <img src={story.image.src} alt="" loading="lazy" className="photo-pop h-16 w-16 shrink-0 rounded-control object-cover" />
       <span className="min-w-0">
-        <span className={`flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-coral-700 ${next ? "justify-end" : ""}`}>
+        <span className={`flex items-center gap-2 eyebrow ${next ? "justify-end" : ""}`}>
           {!next && <FaArrowLeft aria-hidden className="h-3 w-3" />}
           {label}
           {next && <FaArrowRight aria-hidden className="h-3 w-3" />}

@@ -45,14 +45,14 @@ export default function NewsPage() {
         ]}
         aside={
           <div className="rounded-card bg-white text-ocean-900">
-            <p className="flex items-center justify-between border-b border-sand-200 px-5 py-3 text-xs font-bold uppercase tracking-widest text-coral-700">
+            <p className="flex items-center justify-between border-b border-sand-200 px-5 py-3 eyebrow">
               Latest headlines <span className="text-muted">{news.length} this year</span>
             </p>
             <ol className="divide-y divide-sand-200">
               {news.slice(0, 4).map((n) => (
                 <li key={n.slug}>
                   <Link href={`/news/${n.slug}`} className="grid grid-cols-[4.5rem_minmax(0,1fr)] gap-4 px-5 py-4 transition-colors duration-150 hover:bg-sand-50">
-                    <span className={`self-start px-2 py-1 text-center text-[0.65rem] font-bold uppercase tracking-widest ${NEWS_TONE[n.topic]}`}>
+                    <span className={`self-start px-2 py-1 text-center text-xs font-bold uppercase tracking-widest ${NEWS_TONE[n.topic]}`}>
                       {formatNewsDate(n.date, "short")}
                     </span>
                     <span className="font-display text-lg font-semibold leading-snug">{n.title}</span>

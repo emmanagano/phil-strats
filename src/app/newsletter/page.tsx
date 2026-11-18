@@ -35,7 +35,7 @@ export default function NewsletterPage() {
         <div className="grid gap-8 border-t-2 border-ocean-900 pt-8 md:grid-cols-3 md:gap-10">
           {PERKS.map(({ icon: Icon, title, text }) => (
             <div key={title}>
-              <Icon aria-hidden className="h-6 w-6 text-coral-600" />
+              <Icon aria-hidden className="h-6 w-6 text-ink-soft" />
               <h2 className="mt-4 text-xl font-semibold text-ocean-900">{title}</h2>
               <p className="mt-2 text-muted">{text}</p>
             </div>
