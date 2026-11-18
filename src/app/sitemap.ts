@@ -2,6 +2,7 @@ import type { MetadataRoute } from "next";
 import { getAllArticles } from "@/data/articles";
 import { getAllNews } from "@/data/news";
 import { getAllShowbiz } from "@/data/showbiz";
+import { getAllBooks } from "@/data/books";
 import { NAV, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -37,5 +38,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.5,
   }));
 
-  return [...pages, ...articles, ...news, ...showbiz];
+  const books = getAllBooks().map((book) => ({
+    url: `${SITE_URL}/books/${book.slug}`,
+    changeFrequency: "yearly" as const,
+    priority: 0.5,
+  }));
+
+  return [...pages, ...articles, ...news, ...showbiz, ...books];
 }

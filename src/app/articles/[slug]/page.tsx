@@ -11,6 +11,8 @@ import {
 } from "react-icons/fa6";
 import { getAllArticles, getArticleBySlug, type ArticleSummary, type ImageCredit } from "@/data/articles";
 import { getNewsForGuide } from "@/data/news";
+import { getBooksForGuide } from "@/data/books";
+import BookCover from "@/app/components/ui/BookCover";
 import { formatDate } from "@/lib/format";
 import { formatNewsDate } from "@/lib/newsTone";
 import { AUTHOR, SITE_NAME, SITE_URL, SOCIALS, pageTitle } from "@/lib/site";
@@ -69,6 +71,7 @@ export default async function ArticlePage({ params }: Params) {
   const newer = all[index - 1] ?? null;
   const older = all[index + 1] ?? null;
   const news = getNewsForGuide(article.slug);
+  const books = getBooksForGuide(article.slug).slice(0, 3);
   const others = all.filter((a) => a.slug !== slug);
   // Same category first, then same region, so there are always three suggestions.
   const related = [
@@ -286,6 +289,30 @@ export default async function ArticlePage({ params }: Params) {
                     <time dateTime={n.date} className="text-xs font-semibold text-muted">{formatNewsDate(n.date, "short")}</time>
                     <span className="block font-semibold text-ocean-900 underline decoration-lagoon-300 underline-offset-4 group-hover:text-lagoon-700">
                       {n.title}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        </Container>
+      )}
+
+      {books.length > 0 && (
+        <Container className="pb-12">
+          <section aria-labelledby="read-before-you-go" className="mx-auto max-w-3xl">
+            <h2 id="read-before-you-go" className="font-sans text-xs font-bold uppercase tracking-[0.2em] text-coral-700">
+              Read before you go
+            </h2>
+            <ul className="mt-4 grid gap-4 sm:grid-cols-3">
+              {books.map((b) => (
+                <li key={b.slug}>
+                  <Link href={`/books/${b.slug}`} className="group flex gap-4 sm:block">
+                    <BookCover book={b} size="sm" className="w-20 shrink-0 sm:w-28 transition-shadow duration-150 group-hover:shadow-card-hover" />
+                    <span className="min-w-0 sm:mt-3 sm:block">
+                      <span className="block font-semibold leading-snug text-ocean-900 group-hover:text-lagoon-700">{b.title}</span>
+                      <span className="block text-sm text-ocean-800">{b.author}, {b.year}</span>
+                      {b.settingNote && <span className="mt-1 block text-sm text-muted">{b.settingNote}</span>}
                     </span>
                   </Link>
                 </li>
