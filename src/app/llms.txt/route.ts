@@ -4,6 +4,7 @@ import { getAllArticles } from "@/data/articles";
 import { getAllNews } from "@/data/news";
 import { getAllShowbiz } from "@/data/showbiz";
 import { getAllBooks } from "@/data/books";
+import { getAllSports } from "@/data/sports";
 import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const dynamic = "force-static";
@@ -15,6 +16,7 @@ export function GET() {
     .map((a) => `- [${a.title}](${SITE_URL}/articles/${a.slug}): ${a.description}`);
   const news = getAllNews().map((n) => `- [${n.title}](${SITE_URL}/news/${n.slug}) (${n.date}): ${n.summary}`);
   const books = getAllBooks().map((b) => `- [${b.title} by ${b.author}](${SITE_URL}/books/${b.slug}) (${b.year}): ${b.summary}`);
+  const sports = getAllSports().map((s) => `- [${s.title}](${SITE_URL}/sports/${s.slug}) (${s.date}): ${s.dek}`);
   const showbiz = getAllShowbiz().map((s) => `- [${s.title}](${SITE_URL}/showbiz/${s.slug}) (${s.date}): ${s.dek}`);
 
   const body = [
@@ -35,6 +37,10 @@ export function GET() {
     "## Filipino showbiz and pop culture",
     "",
     ...showbiz,
+    "",
+    "## Filipino sports",
+    "",
+    ...sports,
     "",
     "## Books by Filipino authors",
     "",
