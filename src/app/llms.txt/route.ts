@@ -49,6 +49,7 @@ export function GET() {
     "## Optional",
     "",
     `- [All destinations](${SITE_URL}/articles): browse guides by experience or region`,
+    `- [What's new](${SITE_URL}/activity): everything added or updated lately, newest first`,
     `- [Contact and FAQ](${SITE_URL}/contact)`,
     "",
   ].join("\n");

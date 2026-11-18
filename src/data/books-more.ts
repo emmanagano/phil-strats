@@ -1079,6 +1079,7 @@ export const MORE_BOOKS: Book[] = [
   },
   {
     slug: "yniga",
+    added: "2026-11-19",
     title: "Yñiga",
     author: "Glenn Diaz",
     authorNote: "Filipino novelist whose first book, The Quiet Ones, won the Palanca Grand Prize and a Philippine National Book Award.",

@@ -27,6 +27,7 @@ export const PAGES = [
   { label: "Showbiz", href: "/showbiz" },
   { label: "Sports", href: "/sports" },
   { label: "Books", href: "/books" },
+  { label: "Activity", href: "/activity" },
   { label: "Newsletter", href: "/newsletter" },
   { label: "Contact", href: "/contact" },
 ] as const;

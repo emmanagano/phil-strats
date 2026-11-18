@@ -56,8 +56,13 @@ export interface Book {
   openLibrary?: string;
   // Cover thumbnail in public/images/books/<slug>.jpg, checked by eye before adding.
   coverImage?: string;
+  // Day the book joined the shelf (YYYY-MM-DD), shown on /activity. Defaults to BOOKS_LAUNCHED.
+  added?: string;
   sources: { name: string; url: string }[];
 }
+
+// The shelf launched with its first 76 books on this day; newer books set `added`.
+export const BOOKS_LAUNCHED = "2026-11-18";
 
 const BASE_BOOKS: Book[] = [
   {
