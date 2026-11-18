@@ -7,6 +7,7 @@ date: "2026-11-18"
 updated: "2026-11-18"
 slug: "sabtang-island-batanes"
 region: "Batanes, Cagayan Valley"
+coordinates: [20.329, 121.873]
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "A stone-paved lane in Chavayan Village on Sabtang Island, Batanes, lined with thick-walled Ivatan stone houses."

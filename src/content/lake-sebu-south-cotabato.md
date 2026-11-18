@@ -7,6 +7,7 @@ date: "2026-11-17"
 updated: "2026-11-17"
 slug: "lake-sebu-south-cotabato"
 region: "South Cotabato, Mindanao"
+coordinates: [6.2167, 124.7]
 category: "nature-adventure"
 islandGroup: "mindanao"
 imageCredit:

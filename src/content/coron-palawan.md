@@ -7,6 +7,7 @@ date: "2025-10-14"
 updated: "2026-11-17"
 slug: "coron-palawan"
 region: "Palawan, MIMAROPA"
+coordinates: [11.9986, 120.2043]
 category: "beaches-islands"
 islandGroup: "palawan"
 alt: "Aerial view of Coron Bay in Palawan, featuring limestone cliffs, turquoise reefs, and a traditional Filipino outrigger boat sailing through the clear blue water."

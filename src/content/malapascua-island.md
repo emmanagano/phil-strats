@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-17"
 slug: "malapascua-island"
 region: "Cebu, Central Visayas"
+coordinates: [11.33, 124.115]
 category: "beaches-islands"
 islandGroup: "visayas"
 alt: "Tropical beach on Malapascua Island with white sand, palm trees, and clear turquoise water."

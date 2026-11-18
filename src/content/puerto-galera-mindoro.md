@@ -7,6 +7,7 @@ date: "2026-11-18"
 updated: "2026-11-18"
 slug: "puerto-galera-mindoro"
 region: "Oriental Mindoro, MIMAROPA"
+coordinates: [13.5017, 120.955]
 category: "beaches-islands"
 islandGroup: "luzon"
 alt: "Wide white-sand beach at White Beach, Puerto Galera, with turquoise water, a green headland and distant mountains under a blue sky."

@@ -7,6 +7,7 @@ date: "2026-11-17"
 updated: "2026-11-17"
 slug: "britania-islands-surigao"
 region: "Surigao del Sur, Mindanao"
+coordinates: [8.76, 126.21]
 category: "beaches-islands"
 islandGroup: "mindanao"
 imageCredit:

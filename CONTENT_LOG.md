@@ -5,8 +5,9 @@ Read this before any content change (guides, News, Showbiz, Sports, Books) and u
 **How to use it**
 1. Before adding content, check **Status** (last item date per section) and **Watchlist** (follow-ups due).
 2. Research only what is newer than the last item date, and skip anything listed in **Log** or already in the data files.
-3. After the change, update **Status**, add a dated **Log** entry, and move resolved Watchlist items into the log.
-4. Rules stay in `CLAUDE.md` and `BRAND.md` (sources on every story, two outlets where possible, no rumors or predictions, freely licensed photos). This file is the "what and when", not the "how".
+3. New guides need `coordinates: [lat, lng]` for the map. New books need an `added:` date (YYYY-MM-DD) so they appear on `/activity`; guides need `updated:` bumped when edited. The rest of `/activity` builds itself from item dates.
+4. After the change, update **Status**, add a dated **Log** entry, and move resolved Watchlist items into the log.
+5. Rules stay in `CLAUDE.md` and `BRAND.md` (sources on every story, two outlets where possible, no rumors or predictions, freely licensed photos). This file is the "what and when", not the "how".
 
 ## Status
 
@@ -57,6 +58,12 @@ Follow-ups that can make existing items outdated, or scheduled events worth cove
 ## Log
 
 Newest first. One entry per content change: date, section, what was added or changed, and anything left to do.
+
+### 2026-11-19 (map)
+- **New:** interactive Philippines map on Destinations (`/articles?view=map`): pins for all 37 guides (new `coordinates` field), island groups filter and zoom. Home "Browse by region" links to it.
+
+### 2026-11-19 (activity page)
+- **New page:** `/activity` ("What's new") lists the latest additions and updates across all sections, built automatically from item dates. Linked from the footer and the home page.
 
 ### 2026-11-19 (content refresh)
 - **Fixed:** Showbiz analog TV story (switch-off moved to Jan 15, 2027; replaced wrong sources); News ASEAN brief (closed Nov 18, Singapore chairs 2027); impeachment brief (defense phase, only Article II, no verdict); El Niño brief (Senate Resolution 765); Mayon guide (Alert Level 3 since Oct 30 in quick facts, ATV tip, safety essentials, FAQ); Siquijor fee (≈ ₱50 tourism ecological fee).

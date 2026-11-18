@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-18"
 slug: "hundred-islands-pangasinan"
 region: "Pangasinan, Ilocos Region"
+coordinates: [16.201, 120.04]
 category: "beaches-islands"
 islandGroup: "luzon"
 alt: "Forested Romulo Island in Hundred Islands National Park with tour boats moored on a small beach."

@@ -7,6 +7,7 @@ date: "2025-10-14"
 updated: "2026-11-17"
 slug: "chocolate-hills-bohol"
 region: "Bohol, Central Visayas"
+coordinates: [9.8297, 124.1398]
 category: "nature-adventure"
 islandGroup: "visayas"
 alt: "Panoramic view of the Chocolate Hills in Bohol, Philippines, showing lush green mounds and tropical forest under a bright blue sky."

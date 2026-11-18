@@ -15,6 +15,7 @@ date: "2025-10-14"
 slug: ""
 # "Province, Region", e.g. "Batanes, Cagayan Valley" (cards show the part before the comma)
 region: ""
+coordinates: [0.0, 0.0] # [latitude, longitude] of the town/beach/landmark; shown as a pin on the Destinations map
 # One of: beaches-islands | nature-adventure | heritage-culture (see src/data/taxonomy.ts)
 category: ""
 # One of: luzon | visayas | mindanao | palawan

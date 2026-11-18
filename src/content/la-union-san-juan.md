@@ -7,6 +7,7 @@ date: "2026-11-17"
 updated: "2026-11-17"
 slug: "la-union-san-juan"
 region: "La Union, Ilocos Region"
+coordinates: [16.6719, 120.3373]
 category: "beaches-islands"
 islandGroup: "luzon"
 imageCredit:

@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-17"
 slug: "cebu-kawasan-falls-oslob"
 region: "Cebu, Central Visayas"
+coordinates: [9.8028, 123.3739]
 category: "nature-adventure"
 islandGroup: "visayas"
 alt: "Turquoise waters of Kawasan Falls in Badian, Cebu, surrounded by tropical forest."

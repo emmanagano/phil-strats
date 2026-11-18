@@ -7,6 +7,7 @@ date: "2025-10-14"
 updated: "2026-11-17"
 slug: "intramuros-manila"
 region: "Manila, Metro Manila"
+coordinates: [14.5906, 120.9747]
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "View of Manila Cathedral inside Intramuros with its iconic dome and clock tower, surrounded by colonial architecture and historic charm."

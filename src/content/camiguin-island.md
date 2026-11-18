@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-17"
 slug: "camiguin-island"
 region: "Camiguin, Northern Mindanao"
+coordinates: [9.173, 124.7295]
 category: "beaches-islands"
 islandGroup: "mindanao"
 alt: "White Island sandbar off Camiguin with Hibok-Hibok volcano in the background."

@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-18"
 slug: "sagada-mountain-province"
 region: "Mountain Province, Cordillera"
+coordinates: [17.0844, 120.9]
 category: "nature-adventure"
 islandGroup: "luzon"
 alt: "Sunlit rice terraces in the Sagada valley below forested Cordillera mountains."

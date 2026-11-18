@@ -7,6 +7,7 @@ date: "2026-11-18"
 updated: "2026-11-18"
 slug: "saud-beach-pagudpud"
 region: "Ilocos Norte, Ilocos Region"
+coordinates: [18.639, 120.823]
 category: "beaches-islands"
 islandGroup: "luzon"
 alt: "Saud Beach in Pagudpud: a long curve of pale sand and calm turquoise water, shaded by coconut palms, with a few swimmers in the distance."

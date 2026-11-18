@@ -8,6 +8,7 @@ date: "2026-11-18"
 updated: "2026-11-18"
 slug: "sagada-caves-sumaguing-lumiang"
 region: "Mountain Province, Cordillera"
+coordinates: [17.07, 120.91]
 category: "nature-adventure"
 islandGroup: "luzon"
 alt: "The wide limestone mouth of Sumaguing Cave in Sagada, with a railed stone path leading down into the darkness."

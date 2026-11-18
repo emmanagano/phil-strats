@@ -7,6 +7,7 @@ date: "2026-11-18"
 updated: "2026-11-18"
 slug: "bacolod-negros-occidental"
 region: "Negros Occidental, Visayas"
+coordinates: [10.6765, 122.9509]
 category: "heritage-culture"
 islandGroup: "visayas"
 alt: "The Ruins in Talisay, Negros Occidental: the arched shell of a two-story Italianate mansion framed by a tall pine and tropical gardens under a blue sky."

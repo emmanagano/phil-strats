@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-17"
 slug: "zamboanga-city-mindanao"
 region: "Zamboanga City, Zamboanga Peninsula"
+coordinates: [6.9214, 122.079]
 category: "heritage-culture"
 islandGroup: "mindanao"
 alt: "Stone walls and gate of Spanish-era Fort Pilar in Zamboanga City under festive blue and white bunting."

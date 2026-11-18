@@ -7,6 +7,7 @@ date: "2026-11-17"
 updated: "2026-11-17"
 slug: "iloilo-guimaras"
 region: "Iloilo & Guimaras, Western Visayas"
+coordinates: [10.7202, 122.5621]
 category: "heritage-culture"
 islandGroup: "visayas"
 imageCredit:

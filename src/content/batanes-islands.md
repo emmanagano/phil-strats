@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-18"
 slug: "batanes-islands"
 region: "Batanes, Cagayan Valley"
+coordinates: [20.4487, 121.9702]
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "Basco Lighthouse on a grassy hill at sunset beside an I Love Batanes sign."

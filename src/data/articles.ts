@@ -49,6 +49,8 @@ export interface ArticleSummary {
   bestMonths: string;
   budgetFrom: number;
   idealStay: string;
+  // [latitude, longitude] for the Destinations map pin; null only in dev when missing.
+  coordinates: [number, number] | null;
 }
 
 export interface TocItem {
@@ -107,6 +109,13 @@ function readArticleFile(filename: string) {
   if (cardLen === 0) problems.push("card is missing (a one-line blurb for destination cards, about 60–70 characters)");
   else if (cardLen > 80) warnings.push(`card is ${cardLen} chars (keep it under 80 so it fits two lines)`);
   if (data.guide) problems.push(...validateGuide(data.guide));
+  // Map pin: required like the images, so missing coordinates fail the build but only warn in dev.
+  const coordinates = parseCoordinates(data.coordinates);
+  if (!coordinates) {
+    const msg = "coordinates must be [latitude, longitude] inside the Philippines (lat 4–22, lng 116–127)";
+    if (process.env.NODE_ENV === "production") problems.push(msg);
+    else console.warn(`[map] src/content/${filename}: ${msg}`);
+  }
   if (warnings.length > 0) console.warn(`[seo] src/content/${filename}: ${warnings.join("; ")}`);
   if (problems.length > 0) {
     throw new Error(`src/content/${filename}: ${problems.join("; ")}`);
@@ -137,6 +146,7 @@ function readArticleFile(filename: string) {
     readingTime: Math.max(1, Math.round(words / 200)),
     faq: data.faq || [],
     ...cardFacts(data.guide as Guide | undefined, data.title),
+    coordinates,
   };
   summary.cardTitle = String(data.cardTitle ?? "").trim() || summary.place;
   return {
@@ -145,6 +155,14 @@ function readArticleFile(filename: string) {
     guide: (data.guide ?? null) as Guide | null,
     imageCredit: (data.imageCredit ?? null) as ImageCredit | null,
   };
+}
+
+function parseCoordinates(value: unknown): [number, number] | null {
+  if (!Array.isArray(value) || value.length !== 2) return null;
+  const [lat, lng] = value.map(Number);
+  if (!Number.isFinite(lat) || !Number.isFinite(lng)) return null;
+  if (lat < 4 || lat > 22 || lng < 116 || lng > 127) return null;
+  return [lat, lng];
 }
 
 function cardFacts(g: Guide | undefined, title: string) {

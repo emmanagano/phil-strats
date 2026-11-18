@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-17"
 slug: "davao-city-mindanao"
 region: "Davao del Sur, Davao Region"
+coordinates: [7.1907, 125.4553]
 category: "heritage-culture"
 islandGroup: "mindanao"
 alt: "Aerial view of green farmland and forested mountains in the Davao region of Mindanao."

@@ -7,6 +7,7 @@ date: "2025-10-14"
 updated: "2026-11-17"
 slug: "vigan-and-laoag-ilocos"
 region: "Ilocos Sur & Norte, Ilocos Region"
+coordinates: [17.5747, 120.3869]
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "Tourists walking along Calle Crisologo in Vigan, Ilocos Sur, surrounded by Spanish colonial houses and cobblestone streets."

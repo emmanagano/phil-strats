@@ -7,6 +7,7 @@ date: "2026-11-17"
 updated: "2026-11-17"
 slug: "dumaguete-apo-island"
 region: "Negros Oriental, Visayas"
+coordinates: [9.3068, 123.3054]
 category: "beaches-islands"
 islandGroup: "visayas"
 imageCredit:

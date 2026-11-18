@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-18"
 slug: "pagudpud-ilocos-norte"
 region: "Ilocos Norte, Ilocos Region"
+coordinates: [18.5617, 120.787]
 category: "beaches-islands"
 islandGroup: "luzon"
 alt: "Long white sand beach and turquoise water at Saud Beach in Pagudpud, Ilocos Norte."

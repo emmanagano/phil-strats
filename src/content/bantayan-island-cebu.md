@@ -7,6 +7,7 @@ date: "2026-11-17"
 updated: "2026-11-17"
 slug: "bantayan-island-cebu"
 region: "Cebu, Central Visayas"
+coordinates: [11.17, 123.73]
 category: "beaches-islands"
 islandGroup: "visayas"
 imageCredit:

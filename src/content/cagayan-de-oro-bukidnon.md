@@ -7,6 +7,7 @@ date: "2026-11-18"
 updated: "2026-11-18"
 slug: "cagayan-de-oro-bukidnon"
 region: "Misamis Oriental & Bukidnon, Mindanao"
+coordinates: [8.4542, 124.6319]
 category: "nature-adventure"
 islandGroup: "mindanao"
 alt: "Five red rafts paddling down the green Cagayan de Oro River beneath a forested limestone cliff."

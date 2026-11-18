@@ -173,7 +173,15 @@ export default function Home() {
       {/* Regions: bento on a sun-yellow band */}
       <section className="bg-mango-400 py-20 sm:py-28">
         <Container>
-          <SectionHeading eyebrow="7,641 islands, four ways in" title="Browse by region" />
+          <SectionHeading
+            eyebrow="7,641 islands, four ways in"
+            title="Browse by region"
+            action={
+              <Button href="/articles?view=map" variant="light" arrow>
+                See them on the map
+              </Button>
+            }
+          />
           <div className="grid gap-2 sm:grid-cols-2 lg:h-[42rem] lg:grid-cols-4 lg:grid-rows-2">
             {ISLAND_GROUPS.map((group, i) => {
               const picks = articles.filter((a) => a.islandGroup === group.slug).slice(0, i === 0 ? 4 : 3);
@@ -233,7 +241,15 @@ export default function Home() {
       {/* News, Showbiz and Sports at a glance */}
       <section className="py-20 sm:py-28">
         <Container>
-          <SectionHeading eyebrow="Beyond the guides" title="What's happening in the Philippines" />
+          <SectionHeading
+            eyebrow="Beyond the guides"
+            title="What's happening in the Philippines"
+            action={
+              <Button href="/activity" variant="secondary" arrow>
+                See what&apos;s new
+              </Button>
+            }
+          />
           <div className="grid gap-12 lg:grid-cols-3 lg:gap-10">
             <HomeColumn title="News" href="/news" cta="All news">
               <ul className="divide-y divide-sand-200 border-y border-sand-200">

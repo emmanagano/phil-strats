@@ -7,6 +7,7 @@ date: "2026-11-18"
 updated: "2026-11-18"
 slug: "baguio-city-benguet"
 region: "Benguet, Cordillera"
+coordinates: [16.4023, 120.596]
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "Swan pedal boats and rowboats on the lake at Burnham Park in Baguio City, with pine trees, a gazebo and hotels on the far shore."

@@ -7,6 +7,7 @@ date: "2026-11-17"
 updated: "2026-11-17"
 slug: "port-barton-palawan"
 region: "Palawan, MIMAROPA"
+coordinates: [10.405, 119.166]
 category: "beaches-islands"
 islandGroup: "palawan"
 imageCredit:

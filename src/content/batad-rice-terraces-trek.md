@@ -7,6 +7,7 @@ date: "2026-11-18"
 updated: "2026-11-18"
 slug: "batad-rice-terraces-trek"
 region: "Ifugao, Cordillera"
+coordinates: [16.93, 121.14]
 category: "nature-adventure"
 islandGroup: "luzon"
 alt: "The Batad Rice Terraces in Ifugao: flooded and green terraces climbing a mountain valley, with a cluster of village houses below steep peaks."

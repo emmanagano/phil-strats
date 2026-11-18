@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-17"
 slug: "siargao-surfing-capital"
 region: "Surigao del Norte, Mindanao"
+coordinates: [9.784, 126.158]
 category: "beaches-islands"
 islandGroup: "mindanao"
 alt: "A winding coastal road surrounded by palm trees and morning mist in Siargao Island, Philippines, a serene tropical landscape known for surfing and island-hopping."

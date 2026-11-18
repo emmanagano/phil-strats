@@ -1,14 +1,15 @@
 "use client";
 import { useMemo, useState } from "react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
-import { FaMagnifyingGlass, FaXmark } from "react-icons/fa6";
+import { FaMagnifyingGlass, FaMapLocationDot, FaTableCellsLarge, FaXmark } from "react-icons/fa6";
 import type { ArticleSummary } from "@/data/articles";
 import { CATEGORIES, ISLAND_GROUPS } from "@/data/taxonomy";
 import ArticleCard from "@/app/components/ui/ArticleCard";
+import DestinationMap from "@/app/components/DestinationMap";
 
 const PAGE_SIZE = 6;
 
-// Filters live in the query string (?category=&region=&q=) so they survive
+// Filters and the list/map view live in the query string (?category=&region=&q=&view=map) so they survive
 // reloads and can be linked to from the home page and footer.
 export default function ArticleBrowser({ articles }: { articles: ArticleSummary[] }) {
   const router = useRouter();
@@ -16,6 +17,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
   const params = useSearchParams();
   const category = params.get("category") ?? "";
   const region = params.get("region") ?? "";
+  const view = params.get("view") === "map" ? "map" : "list";
   const [query, setQuery] = useState(params.get("q") ?? "");
   const [visible, setVisible] = useState(PAGE_SIZE);
 
@@ -47,6 +49,38 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
 
   return (
     <div>
+      {/* View switch sits at the top so the map is easy to find. */}
+      <div className="mb-6 flex flex-wrap items-end justify-between gap-4">
+        <h2 className="text-3xl font-semibold text-ocean-900 sm:text-4xl">
+          Browse {articles.length} guides
+        </h2>
+        <div role="group" aria-label="View guides as" className="grid w-full grid-cols-2 gap-2 sm:flex sm:w-auto">
+          {(
+            [
+              { v: "list", label: "Cards", Icon: FaTableCellsLarge },
+              { v: "map", label: "Map", Icon: FaMapLocationDot },
+            ] as const
+          ).map(({ v, label, Icon }) => {
+            const on = view === v;
+            return (
+              <button
+                key={v}
+                type="button"
+                aria-pressed={on}
+                onClick={() => updateParams({ view: v === "map" ? "map" : "" })}
+                className={`inline-flex min-h-12 items-center justify-center gap-2.5 rounded-control border-2 px-6 text-base font-semibold transition-colors duration-150 ${
+                  on
+                    ? "border-ocean-900 bg-ocean-900 text-white"
+                    : "border-ocean-900 bg-white text-ocean-900 hover:bg-sand-100"
+                }`}
+              >
+                <Icon aria-hidden className="h-5 w-5" />
+                {label}
+              </button>
+            );
+          })}
+        </div>
+      </div>
       <div className="mb-10 space-y-5 border-y border-sand-200 py-6">
         <div className="relative">
           <FaMagnifyingGlass
@@ -82,7 +116,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
         />
       </div>
 
-      <div className="mb-6 flex items-center justify-between gap-4">
+      <div className="mb-6 flex flex-wrap items-center justify-between gap-4">
         <p aria-live="polite" className="text-sm font-medium text-muted">
           {results.length} {results.length === 1 ? "guide" : "guides"}
           {hasFilters ? " match your filters" : ""}
@@ -101,7 +135,9 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
         )}
       </div>
 
-      {results.length > 0 ? (
+      {results.length > 0 && view === "map" ? (
+        <DestinationMap articles={results} region={region} onRegion={(r) => updateParams({ region: r })} />
+      ) : results.length > 0 ? (
         <ArticleGrid articles={results.slice(0, visible)} />
       ) : (
         <div className="rounded-card border-2 border-dashed border-sand-300 px-6 py-16 text-center">
@@ -110,7 +146,7 @@ export default function ArticleBrowser({ articles }: { articles: ArticleSummary[
         </div>
       )}
 
-      {visible < results.length && (
+      {view === "list" && visible < results.length && (
         <div className="mt-12 flex justify-center">
           <button
             type="button"

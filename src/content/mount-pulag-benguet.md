@@ -7,6 +7,7 @@ date: "2026-10-30"
 updated: "2026-11-17"
 slug: "mount-pulag-benguet"
 region: "Benguet, Cordillera"
+coordinates: [16.5833, 120.8833]
 category: "nature-adventure"
 islandGroup: "luzon"
 alt: "Hikers silhouetted on the summit ridge of Mount Pulag at sunrise above a sea of clouds."

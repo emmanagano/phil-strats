@@ -7,6 +7,7 @@ date: "2025-10-14"
 updated: "2026-11-18"
 slug: "banaue-rice-terraces-ifugao"
 region: "Ifugao, Cordillera"
+coordinates: [16.9167, 121.0583]
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "Panoramic view of the Banaue Rice Terraces in Ifugao, Philippines, showing lush green terraces and traditional huts surrounded by mountain ranges."

@@ -7,6 +7,7 @@ date: "2025-10-14"
 updated: "2026-11-17"
 slug: "puerto-princesa-palawan"
 region: "Palawan, MIMAROPA"
+coordinates: [9.7392, 118.7353]
 category: "nature-adventure"
 islandGroup: "palawan"
 alt: "Tourists on a paddleboat entering the Puerto Princesa Underground River cave, surrounded by limestone cliffs and turquoise water in Palawan, Philippines."

@@ -7,6 +7,7 @@ date: "2025-10-13"
 updated: "2026-11-17"
 slug: "boracay-aklan"
 region: "Aklan, Western Visayas"
+coordinates: [11.9674, 121.9248]
 category: "beaches-islands"
 islandGroup: "visayas"
 alt: "Sandcastle sculpture reading “I ❤️ Boracay” on White Beach, with people swimming and sailboats on turquoise water in the background, a classic scene on Boracay Island, Aklan."

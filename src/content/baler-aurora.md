@@ -7,6 +7,7 @@ date: "2026-11-17"
 updated: "2026-11-17"
 slug: "baler-aurora"
 region: "Aurora, Central Luzon"
+coordinates: [15.7589, 121.5622]
 category: "beaches-islands"
 islandGroup: "luzon"
 imageCredit:

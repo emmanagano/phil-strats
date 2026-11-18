@@ -7,6 +7,7 @@ date: "2025-10-13"
 updated: "2026-11-17"
 slug: "el-nido-palawan"
 region: "Palawan, MIMAROPA"
+coordinates: [11.1949, 119.4013]
 category: "beaches-islands"
 islandGroup: "palawan"
 alt: "Aerial view of El Nido’s Big Lagoon in Palawan, featuring turquoise waters, limestone cliffs, and a secluded white sand beach, a signature sight from the island-hopping tours."
