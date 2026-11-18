@@ -13,6 +13,7 @@ import {
   FaMinus,
   FaMoneyBillWave,
   FaPassport,
+  FaArrowUpRightFromSquare,
   FaPlaneArrival,
   FaPlus,
   FaRegClock,
@@ -26,6 +27,7 @@ import {
 import {
   MONTHS,
   RATING_LABEL,
+  liveFaresUrl,
   STYLE_LABEL,
   peso,
   type BudgetStyleKey,
@@ -292,6 +294,25 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
                       <p className="mt-6 border-l-4 border-mango-400 bg-mango-100/70 px-4 py-3 text-sm leading-relaxed text-ocean-900">
                         <strong>Tip:</strong> {r.tip}
                       </p>
+                    )}
+                    {r.flight && (
+                      <div className="mt-6">
+                        <a
+                          href={liveFaresUrl(r.flight, month)}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex min-h-11 items-center gap-2 rounded-control bg-ocean-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-ocean-800"
+                        >
+                          <FaPlaneArrival aria-hidden />
+                          Check live fares {r.flight.from} → {r.flight.to}
+                          {month !== null && <span className="font-normal text-sand-200">· {MONTHS[month]}</span>}
+                          <FaArrowUpRightFromSquare aria-hidden className="h-3 w-3" />
+                          <span className="sr-only">(opens Google Flights in a new tab)</span>
+                        </a>
+                        <p className="mt-2 text-xs text-muted">
+                          {month === null ? "Pick a month above to search that month. " : ""}Prices are live on Google Flights and change often.
+                        </p>
+                      </div>
                     )}
                   </aside>
                 </div>

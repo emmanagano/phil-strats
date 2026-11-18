@@ -14,6 +14,8 @@ export interface GuideRoute {
   time: string;
   cost: string;
   tip?: string;
+  // IATA codes for the flight leg, e.g. {from: "MNL", to: "LAO"}. Adds a "Check live fares" link.
+  flight?: { from: string; to: string };
 }
 
 export interface GuideExperience {
@@ -83,6 +85,14 @@ export interface Guide {
 }
 
 export const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+const MONTH_NAMES = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+// Google Flights search for a route, in the chosen month when there is one. Prices are live on their side.
+export function liveFaresUrl(flight: { from: string; to: string }, month: number | null): string {
+  const when = month === null ? "" : ` in ${MONTH_NAMES[month]}`;
+  return `https://www.google.com/travel/flights?q=${encodeURIComponent(`Flights from ${flight.from} to ${flight.to}${when}`)}`;
+}
 
 export const RATING_LABEL: Record<MonthRating, string> = {
   great: "Best",

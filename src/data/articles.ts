@@ -161,6 +161,11 @@ function validateGuide(g: Partial<Guide>): string[] {
   for (const style of ["backpacker", "midrange", "comfort"] as const) {
     if (g.budget && !g.budget.styles?.[style]) p.push(`guide.budget.styles.${style} is missing`);
   }
+  for (const r of g.routes ?? []) {
+    if (r.flight && !(/^[A-Z]{3}$/.test(r.flight.from) && /^[A-Z]{3}$/.test(r.flight.to))) {
+      p.push(`guide.routes "${r.from}" flight needs 3-letter IATA codes`);
+    }
+  }
   if (g.itineraries && Object.keys(g.itineraries).some((k) => !/^\d+$/.test(k))) {
     p.push("guide.itineraries keys must be day counts like 3, 5, 7");
   }
