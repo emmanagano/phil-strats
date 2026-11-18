@@ -2,6 +2,8 @@
 id: 35
 title: "Sagada Caves Guide: Sumaguing, Lumiang & the Cave Connection"
 description: "Which Sagada cave to choose: Sumaguing's rimstone pools, Lumiang's burial coffins, or the four-hour cave connection, with guide fees, gear, and safety tips."
+card: "Rimstone pools, burial caves, and a four-hour underground crawl."
+cardTitle: "Sagada Caves"
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "sagada-caves-sumaguing-lumiang"

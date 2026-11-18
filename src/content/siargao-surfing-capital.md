@@ -2,6 +2,7 @@
 id: 21
 title: "Siargao Travel Guide: Surfing Capital of the Philippines"
 description: "Plan a Siargao trip: surf Cloud 9, hop to island lagoons, ride palm-lined roads, and find where to stay, eat, and when to go."
+card: "Cloud 9 surf, island lagoons, and palm-lined roads."
 date: "2026-10-30"
 updated: "2026-11-17"
 slug: "siargao-surfing-capital"

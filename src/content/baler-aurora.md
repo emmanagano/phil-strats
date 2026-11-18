@@ -2,6 +2,7 @@
 id: 23
 title: "Baler Travel Guide: Surf, Waterfalls and Heritage"
 description: "Plan a Baler trip: surf Sabang Beach, hike to Ditumabo Mother Falls, visit the old church and museum, and know when the Pacific coast is at its best."
+card: "Beginner surf, big waterfalls, and Pacific-coast history."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "baler-aurora"

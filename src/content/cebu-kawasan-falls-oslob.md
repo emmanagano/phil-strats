@@ -2,10 +2,11 @@
 id: 10
 title: "Cebu Travel Guide: Kawasan Falls, Canyoneering & Oslob"
 description: "Plan a Cebu adventure trip around Kawasan Falls canyoneering, Moalboal sardine runs, and Oslob, with transport, food, and itinerary tips."
+card: "Turquoise Kawasan Falls, canyoneering, and Moalboal's sardines."
 date: "2026-10-30"
 updated: "2026-11-17"
 slug: "cebu-kawasan-falls-oslob"
-region: "Central Visayas"
+region: "Cebu, Central Visayas"
 category: "nature-adventure"
 islandGroup: "visayas"
 alt: "Turquoise waters of Kawasan Falls in Badian, Cebu, surrounded by tropical forest."

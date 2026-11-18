@@ -2,10 +2,11 @@
 id: 17
 title: "Mount Pulag Guide: Sunrise Above the Sea of Clouds"
 description: "Plan a Mount Pulag climb in Benguet: trail options, permits, weather, and what to pack for the sunrise summit on Luzon's highest peak."
+card: "An overnight climb to a sunrise above the sea of clouds."
 date: "2026-10-30"
 updated: "2026-11-17"
 slug: "mount-pulag-benguet"
-region: "Cordillera"
+region: "Benguet, Cordillera"
 category: "nature-adventure"
 islandGroup: "luzon"
 alt: "Hikers silhouetted on the summit ridge of Mount Pulag at sunrise above a sea of clouds."

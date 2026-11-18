@@ -2,10 +2,11 @@
 id: 25
 title: "Bantayan Island Travel Guide: Sugar-White Beaches of Cebu"
 description: "Plan a Bantayan Island trip in northern Cebu: powdery beaches, Virgin Island, Ogtong Cave, and how to get there via Hagnaya Port."
+card: "Flat roads, white beaches, and slow island days off Cebu."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "bantayan-island-cebu"
-region: "Northern Cebu, Central Visayas"
+region: "Cebu, Central Visayas"
 category: "beaches-islands"
 islandGroup: "visayas"
 imageCredit:

@@ -2,10 +2,11 @@
 id: 16
 title: "Hundred Islands Pangasinan Guide: Island Hopping Near Manila"
 description: "Plan a Hundred Islands National Park trip from Alaminos, with island hopping, snorkeling, and zipline tips plus an easy weekend itinerary."
+card: "Island hopping among 124 limestone islets, a bus ride from Manila."
 date: "2026-10-30"
 updated: "2026-11-18"
 slug: "hundred-islands-pangasinan"
-region: "Ilocos Region"
+region: "Pangasinan, Ilocos Region"
 category: "beaches-islands"
 islandGroup: "luzon"
 alt: "Forested Romulo Island in Hundred Islands National Park with tour boats moored on a small beach."

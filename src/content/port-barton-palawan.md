@@ -2,10 +2,11 @@
 id: 28
 title: "Port Barton Travel Guide: Palawan's Laid-Back Beach Village"
 description: "Plan a Port Barton trip: island hopping to German Island, turtle snorkeling, jungle waterfalls, cheap beach stays, and when to go."
+card: "Quiet beaches and island hopping without the El Nido crowds."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "port-barton-palawan"
-region: "San Vicente, Palawan"
+region: "Palawan, MIMAROPA"
 category: "beaches-islands"
 islandGroup: "palawan"
 imageCredit:

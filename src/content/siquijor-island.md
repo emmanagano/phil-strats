@@ -2,10 +2,11 @@
 id: 11
 title: "Siquijor Travel Guide: Waterfalls & White Sand Beaches"
 description: "Discover Siquijor's Cambugahay Falls, Salagdoong Beach, and old-growth balete trees, with practical tips for a laid-back island getaway."
+card: "Waterfalls, an old balete tree, and slow loops around the island."
 date: "2026-10-30"
 updated: "2026-11-17"
 slug: "siquijor-island"
-region: "Central Visayas"
+region: "Siquijor, Visayas"
 category: "beaches-islands"
 islandGroup: "visayas"
 alt: "Quiet white sand beach on Siquijor island with palm trees and clear shallow water."

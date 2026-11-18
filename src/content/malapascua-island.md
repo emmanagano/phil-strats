@@ -2,10 +2,11 @@
 id: 19
 title: "Malapascua Travel Guide: Thresher Sharks & Quiet Beaches"
 description: "Plan a Malapascua trip in northern Cebu for thresher shark dives, snorkeling, and slow beach days, with ferry directions from Maya Port."
+card: "Dawn dives with thresher sharks and quiet white beaches."
 date: "2026-10-30"
 updated: "2026-11-17"
 slug: "malapascua-island"
-region: "Central Visayas"
+region: "Cebu, Central Visayas"
 category: "beaches-islands"
 islandGroup: "visayas"
 alt: "Tropical beach on Malapascua Island with white sand, palm trees, and clear turquoise water."

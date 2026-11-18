@@ -2,6 +2,7 @@
 id: 38
 title: "Sabtang Island, Batanes: Stone Villages Day-Trip Guide"
 description: "Plan a Sabtang Island day trip from Batan: the faluwa boat from Ivana, Chavayan's stone houses, Morong Beach's white sand, fees, and tricycle tours."
+card: "Ivatan stone houses and quiet coastal villages off Batan Island."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "sabtang-island-batanes"

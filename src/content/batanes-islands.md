@@ -2,10 +2,11 @@
 id: 15
 title: "Batanes Travel Guide: Stone Houses & Rolling Green Hills"
 description: "Plan a Batanes trip: rolling green hills, Ivatan stone houses, Sabtang Island, and Basco Lighthouse, with flights, budgets, and the best months to go."
+card: "Rolling green hills, stone houses, and wild northern cliffs."
 date: "2026-10-30"
 updated: "2026-11-18"
 slug: "batanes-islands"
-region: "Cagayan Valley"
+region: "Batanes, Cagayan Valley"
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "Basco Lighthouse on a grassy hill at sunset beside an I Love Batanes sign."

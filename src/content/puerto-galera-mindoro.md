@@ -2,6 +2,7 @@
 id: 34
 title: "Puerto Galera Guide: White Beach, Diving & Hidden Coves"
 description: "Plan a Puerto Galera trip from Manila: ferries from Batangas, White Beach, Sabang diving, quiet coves, and Tamaraw Falls, with fees and budgets."
+card: "Manila's closest beach-and-dive escape, with quiet coves nearby."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "puerto-galera-mindoro"

@@ -20,6 +20,8 @@
   --color-lagoon-300: #7fd3cc;
   --color-lagoon-500: #16a3a3;
   --color-lagoon-600: #0e7f86;
+  /* palm: only for the Nature category dot on cards */
+  --color-palm-600: #2f7d4a;
   --color-lagoon-700: #0a6870;
   --color-lagoon-800: #0a5259;
 

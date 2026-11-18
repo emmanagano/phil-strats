@@ -2,10 +2,11 @@
 id: 24
 title: "Albay Travel Guide: Mayon Volcano, Ruins and ATV Trails"
 description: "Plan an Albay trip: see Mayon Volcano from Cagsawa Ruins, ride an ATV over lava fields, eat spicy Bicol food, and swim with Donsol whale sharks."
+card: "Mayon's perfect cone, Cagsawa Ruins, and fiery Bicol cooking."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "albay-mayon-volcano"
-region: "Albay, Bicol Region, Luzon"
+region: "Albay, Bicol Region"
 category: "nature-adventure"
 islandGroup: "luzon"
 imageCredit:

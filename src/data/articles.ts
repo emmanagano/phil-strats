@@ -39,6 +39,11 @@ export interface ArticleSummary {
   wordCount: number;
   readingTime: number;
   faq: FAQItem[];
+  // One-line card blurb (frontmatter `card`) and the short area label, e.g. "Batanes" from "Batanes, Cagayan Valley".
+  card: string;
+  area: string;
+  // Name shown on cards: frontmatter `cardTitle`, else the guide's place.
+  cardTitle: string;
   // Card facts pulled from the guide block (empty for classic articles).
   place: string;
   bestMonths: string;
@@ -98,8 +103,11 @@ function readArticleFile(filename: string) {
   if (descLen < 120 || descLen > 160) warnings.push(`description is ${descLen} chars (aim for 120-160)`);
   if (!data.alt) warnings.push("missing alt text");
   if (/\b20\d\d\b/.test(`${data.title} ${data.description}`)) warnings.push("title/description hardcodes a year");
-  if (warnings.length > 0) console.warn(`[seo] src/content/${filename}: ${warnings.join("; ")}`);
+  const cardLen = String(data.card ?? "").trim().length;
+  if (cardLen === 0) problems.push("card is missing (a one-line blurb for destination cards, about 60–70 characters)");
+  else if (cardLen > 80) warnings.push(`card is ${cardLen} chars (keep it under 80 so it fits two lines)`);
   if (data.guide) problems.push(...validateGuide(data.guide));
+  if (warnings.length > 0) console.warn(`[seo] src/content/${filename}: ${warnings.join("; ")}`);
   if (problems.length > 0) {
     throw new Error(`src/content/${filename}: ${problems.join("; ")}`);
   }
@@ -113,6 +121,9 @@ function readArticleFile(filename: string) {
     updated: data.updated || data.date,
     slug: expectedSlug,
     region: data.region,
+    card: String(data.card ?? "").trim(),
+    area: String(data.region ?? "").split(",")[0].trim(),
+    cardTitle: "",
     category: category!.slug,
     categoryLabel: category!.label,
     islandGroup: islandGroup!.slug,
@@ -127,6 +138,7 @@ function readArticleFile(filename: string) {
     faq: data.faq || [],
     ...cardFacts(data.guide as Guide | undefined, data.title),
   };
+  summary.cardTitle = String(data.cardTitle ?? "").trim() || summary.place;
   return {
     summary,
     content,

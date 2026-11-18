@@ -2,10 +2,11 @@
 id: 14
 title: "Camiguin Travel Guide: Hot Springs & White Island"
 description: "Plan a trip to Camiguin, the volcanic island of hot springs, waterfalls, and the White Island sandbar, with transport and itinerary tips."
+card: "Volcanoes, hot and cold springs, and the White Island sandbar."
 date: "2026-10-30"
 updated: "2026-11-17"
 slug: "camiguin-island"
-region: "Northern Mindanao"
+region: "Camiguin, Northern Mindanao"
 category: "beaches-islands"
 islandGroup: "mindanao"
 alt: "White Island sandbar off Camiguin with Hibok-Hibok volcano in the background."

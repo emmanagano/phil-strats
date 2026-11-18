@@ -2,6 +2,7 @@
 id: 36
 title: "Saud Beach Guide: Pagudpud's White-Sand Beach in Ilocos Norte"
 description: "Everything about Saud Beach in Pagudpud: when the sea is calm, fees, where to stay, and how it compares with Blue Lagoon and Pagudpud's other beaches."
+card: "A long, calm stretch of white sand at the very top of Luzon."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "saud-beach-pagudpud"

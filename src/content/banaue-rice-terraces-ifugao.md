@@ -2,10 +2,11 @@
 id: 9
 title: "Visit Banaue Rice Terraces: Batad, Treks & Travel Tips"
 description: "Visit the Banaue Rice Terraces and UNESCO-listed Batad in Ifugao: viewpoints, treks, the best months to go, and how to get there from Manila."
+card: "Hand-carved rice terraces and Ifugao culture in the mountains."
 date: "2025-10-14"
 updated: "2026-11-18"
 slug: "banaue-rice-terraces-ifugao"
-region: "Cordillera Administrative Region (Ifugao Province)"
+region: "Ifugao, Cordillera"
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "Panoramic view of the Banaue Rice Terraces in Ifugao, Philippines, showing lush green terraces and traditional huts surrounded by mountain ranges."

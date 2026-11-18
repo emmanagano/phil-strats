@@ -2,10 +2,11 @@
 id: 29
 title: "Britania Islands Guide: Surigao del Sur's Hidden Islets"
 description: "Plan a Britania Islands trip: hop between 24 jungle islets, swim the Enchanted River, see Tinuy-an Falls, and check safety advice."
+card: "A scatter of limestone islets and clear water off Surigao."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "britania-islands-surigao"
-region: "San Agustin, Surigao del Sur, Mindanao"
+region: "Surigao del Sur, Mindanao"
 category: "beaches-islands"
 islandGroup: "mindanao"
 imageCredit:

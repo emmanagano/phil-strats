@@ -2,10 +2,11 @@
 id: 20
 title: "Zamboanga City Guide: Fort Pilar & Pink Sand Islands"
 description: "Explore Zamboanga City's Spanish-era Fort Pilar, Chavacano heritage, and Santa Cruz Island pink sand, with practical travel tips."
+card: "Fort Pilar, Chavacano culture, and pink-sand islands."
 date: "2026-10-30"
 updated: "2026-11-17"
 slug: "zamboanga-city-mindanao"
-region: "Zamboanga Peninsula"
+region: "Zamboanga City, Zamboanga Peninsula"
 category: "heritage-culture"
 islandGroup: "mindanao"
 alt: "Stone walls and gate of Spanish-era Fort Pilar in Zamboanga City under festive blue and white bunting."

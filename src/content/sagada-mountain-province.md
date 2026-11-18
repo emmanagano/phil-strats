@@ -2,10 +2,11 @@
 id: 12
 title: "Sagada Travel Guide: Hanging Coffins, Caves & Pine Forests"
 description: "Explore Sagada's caves (Sumaguing, Lumiang, and the cave connection), the hanging coffins, and Kiltepan's sea of clouds, with transport and guide tips."
+card: "Hanging coffins, pine ridges, and sunrise above the clouds."
 date: "2026-10-30"
 updated: "2026-11-18"
 slug: "sagada-mountain-province"
-region: "Cordillera"
+region: "Mountain Province, Cordillera"
 category: "nature-adventure"
 islandGroup: "luzon"
 alt: "Sunlit rice terraces in the Sagada valley below forested Cordillera mountains."

@@ -2,10 +2,11 @@
 id: 22
 title: "La Union Travel Guide: San Juan Surf Town and Beyond"
 description: "Plan a La Union trip: learn to surf in San Juan, chase Tangadan Falls, eat your way through Urbiztondo, and know when to go and where to stay."
+card: "Beginner surf, sunset bars, and a weekend drive from Manila."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "la-union-san-juan"
-region: "La Union, Ilocos Region, Luzon"
+region: "La Union, Ilocos Region"
 category: "beaches-islands"
 islandGroup: "luzon"
 imageCredit:

@@ -2,6 +2,7 @@
 id: 37
 title: "Batad Rice Terraces: How to Trek Ifugao's UNESCO Amphitheater"
 description: "Plan a visit to the Batad Rice Terraces from Banaue: getting to the saddle, the trek down, Tappiya Falls, guides, fees, and where to stay overnight."
+card: "Hike down into the amphitheater-shaped rice terraces of Ifugao."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "batad-rice-terraces-trek"

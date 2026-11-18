@@ -2,6 +2,7 @@
 id: 32
 title: "Bacolod Travel Guide: The Ruins, Silay & Chicken Inasal"
 description: "Plan a Bacolod trip: The Ruins at sunset, Silay's heritage houses, MassKara, and chicken inasal, plus ferries from Iloilo, budgets, and itineraries."
+card: "Sugar-era mansions, The Ruins at dusk, and chicken inasal."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "bacolod-negros-occidental"

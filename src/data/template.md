@@ -4,12 +4,16 @@ id: 10
 title: ""
 # SEO: 120-160 chars, no year
 description: ""
+# One line for destination cards, about 60–70 characters, e.g. "Ivatan stone houses and quiet coastal villages off Batan Island."
+card: ""
+# Optional: card name when the guide's place isn't specific enough, e.g. "Sagada Caves"
+# cardTitle: ""
 date: "2025-10-14"
 # Optional: set when you meaningfully revise the guide (drives dateModified + sitemap)
 # updated: "2026-01-01"
 # Must match the filename (src/content/<slug>.md) and the hero image (public/images/<slug>.jpg)
 slug: ""
-# Display location, e.g. "Western Visayas"
+# "Province, Region", e.g. "Batanes, Cagayan Valley" (cards show the part before the comma)
 region: ""
 # One of: beaches-islands | nature-adventure | heritage-culture (see src/data/taxonomy.ts)
 category: ""

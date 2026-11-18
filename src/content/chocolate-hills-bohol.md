@@ -2,6 +2,7 @@
 id: 6
 title: "Chocolate Hills Bohol Guide: Viewpoints & Day Trips"
 description: "See Bohol's 1,200+ cone-shaped Chocolate Hills, which turn brown in summer. Get viewpoints, tarsier stops, best time to visit, and getting there."
+card: "Over 1,200 rounded hills, tarsiers, and a Loboc river cruise."
 date: "2025-10-14"
 updated: "2026-11-17"
 slug: "chocolate-hills-bohol"

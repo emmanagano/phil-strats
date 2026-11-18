@@ -2,10 +2,11 @@
 id: 26
 title: "Dumaguete & Apo Island Guide: Turtles, Lakes & Falls"
 description: "Plan a Dumaguete trip: snorkel with sea turtles at Apo Island, hike Twin Lakes and Casaroro Falls, and find where to stay, eat, and when to go."
+card: "A laid-back university town and sea turtles at Apo Island."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "dumaguete-apo-island"
-region: "Negros Oriental, Central Visayas"
+region: "Negros Oriental, Visayas"
 category: "beaches-islands"
 islandGroup: "visayas"
 imageCredit:

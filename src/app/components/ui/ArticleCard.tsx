@@ -1,11 +1,10 @@
 import Link from "next/link";
-import { FaArrowRight, FaLocationDot } from "react-icons/fa6";
 import type { ArticleSummary } from "@/data/articles";
 import { peso } from "@/lib/guide";
 import { categoryTone } from "@/lib/categoryTone";
 
-// Image-led destination card: the photo fills a tall frame, with a compact
-// solid panel inset at the bottom for the name and trip-deciding facts.
+// Destination card: photo on top with the ideal-stay badge, then category · area,
+// the place name, a one-line blurb (frontmatter `card`), and best time / budget.
 export default function ArticleCard({
   article,
   priority = false,
@@ -13,61 +12,80 @@ export default function ArticleCard({
   article: ArticleSummary;
   priority?: boolean;
 }) {
-  const facts = [
-    article.bestMonths,
-    article.budgetFrom > 0 ? `from ${peso(article.budgetFrom)}/day` : "",
-    article.idealStay ? shortStay(article.idealStay) : "",
-  ].filter(Boolean);
+  const tone = categoryTone(article.category);
+  const stay = article.idealStay ? shortStay(article.idealStay) : "";
 
   return (
-    <article className="group relative aspect-[4/5] overflow-hidden rounded-card bg-ocean-900 shadow-card transition-shadow duration-150 hover:shadow-card-hover">
-      <img
-        src={article.imageSmall}
-        srcSet={`${article.imageSmall} 800w, ${article.image} 1600w`}
-        sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
-        width={800}
-        height={1000}
-        decoding="async"
-        alt={article.alt}
-        loading={priority ? "eager" : "lazy"}
-        className="photo-pop absolute inset-0 h-full w-full object-cover"
-      />
-      <span className={`absolute left-0 top-4 px-3 py-1 text-[0.7rem] font-bold uppercase tracking-widest ${categoryTone(article.category).tag}`}>
-        {article.categoryLabel}
-      </span>
+    <article className="group relative flex flex-col overflow-hidden rounded-card bg-white shadow-card transition-shadow duration-150 hover:shadow-card-hover">
+      <div className="relative aspect-[3/2] overflow-hidden bg-ocean-900">
+        <img
+          src={article.imageSmall}
+          srcSet={`${article.imageSmall} 800w, ${article.image} 1600w`}
+          sizes="(min-width: 1024px) 33vw, (min-width: 640px) 50vw, 100vw"
+          width={800}
+          height={533}
+          decoding="async"
+          alt={article.alt}
+          loading={priority ? "eager" : "lazy"}
+          className="photo-pop h-full w-full object-cover"
+        />
+        {stay && (
+          <span className="absolute left-3 top-3 rounded-full bg-white px-2.5 py-1 text-xs font-semibold text-ocean-950 shadow-sm">
+            {stay}
+          </span>
+        )}
+      </div>
 
-      <div className="absolute inset-x-3 bottom-3 flex items-end justify-between gap-3 rounded-control bg-white p-4 transition-colors duration-150 group-hover:bg-ocean-900 sm:p-5">
-        <div className="min-w-0">
-          <p className="flex items-center gap-1.5 text-[0.7rem] font-bold uppercase tracking-widest text-muted transition-colors duration-150 group-hover:text-white/70">
-            <FaLocationDot aria-hidden className="text-coral-500" />
-            {article.islandGroupLabel}
-          </p>
-          <h3 className="mt-1 text-2xl font-semibold leading-tight text-ocean-900 transition-colors duration-150 group-hover:text-white">
-            {/* The stretched link makes the whole card clickable. */}
-            <Link
-              href={`/articles/${article.slug}`}
-              className="after:absolute after:inset-0 after:z-10 after:content-[''] focus-visible:outline-none focus-visible:after:rounded-card focus-visible:after:outline-2 focus-visible:after:outline-offset-2 focus-visible:after:outline-lagoon-600"
-            >
-              {article.place}
-            </Link>
-          </h3>
-          {facts.length > 0 && (
-            <p className="mt-1.5 text-sm font-medium text-ocean-800 transition-colors duration-150 group-hover:text-white/85">
-              {facts.join(" · ")}
-            </p>
+      <div className="flex flex-1 flex-col p-5">
+        <p className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[0.7rem] font-bold uppercase tracking-widest text-muted">
+          <span aria-hidden className={`h-2 w-2 shrink-0 rounded-full ${tone.dot}`} />
+          <span>{tone.short}</span>
+          {article.area && (
+            <>
+              <span aria-hidden className="text-sand-300">·</span>
+              <span>{article.area}</span>
+            </>
           )}
-          <p className="sr-only">{article.description}</p>
-        </div>
-        <span aria-hidden className="grid h-10 w-10 shrink-0 place-items-center rounded-full bg-mango-400 text-ocean-950">
-          <FaArrowRight className="h-3.5 w-3.5" />
-        </span>
+        </p>
+        <h3 className="mt-2 text-2xl font-semibold leading-tight text-ocean-900 transition-colors duration-150 group-hover:text-lagoon-700">
+          {/* The stretched link makes the whole card clickable. */}
+          <Link
+            href={`/articles/${article.slug}`}
+            className="after:absolute after:inset-0 after:z-10 after:content-[''] focus-visible:outline-none focus-visible:after:rounded-card focus-visible:after:outline-2 focus-visible:after:outline-offset-2 focus-visible:after:outline-lagoon-600"
+          >
+            {article.cardTitle}
+          </Link>
+        </h3>
+        <p className="mt-1.5 line-clamp-2 flex-1 text-[0.95rem] leading-relaxed text-ocean-800">{article.card}</p>
+        <p className="sr-only">{article.description}</p>
+
+        {(article.bestMonths || article.budgetFrom > 0) && (
+          <dl className="mt-4 flex items-end justify-between gap-4 border-t border-sand-200 pt-3">
+            {article.bestMonths && (
+              <div>
+                <dt className="text-[0.65rem] font-bold uppercase tracking-widest text-muted">Best time</dt>
+                <dd className="mt-0.5 font-semibold text-ocean-900">{article.bestMonths}</dd>
+              </div>
+            )}
+            {article.budgetFrom > 0 && (
+              <div className="ml-auto text-right">
+                <dt className="text-[0.65rem] font-bold uppercase tracking-widest text-muted">From</dt>
+                <dd className="mt-0.5 font-semibold text-ocean-900">
+                  {peso(article.budgetFrom)} <span className="font-normal text-muted">/day</span>
+                </dd>
+              </div>
+            )}
+          </dl>
+        )}
       </div>
     </article>
   );
 }
 
-// "4–7 days" stays; "2–3 days in Moalboal or Badian" -> "2–3 days"; "Half day to 1 day" kept short.
+// Short stays stay as written ("Day trip or 1 night", "1–3 nights");
+// longer ones are trimmed: "2–3 days in Moalboal or Badian" -> "2–3 days".
 function shortStay(value: string) {
+  if (value.length <= 20) return value;
   const m = value.match(/^[\d–-]+\s*(days?|nights?)/i);
-  return m ? m[0] : value.split(/[(,]/)[0].trim().slice(0, 16);
+  return m ? m[0] : value.split(/[(,]/)[0].trim().slice(0, 20);
 }

@@ -2,6 +2,7 @@
 id: 33
 title: "Cagayan de Oro Guide: River Rafting & Bukidnon Ziplines"
 description: "Plan a Cagayan de Oro trip: whitewater rafting, Dahilayan's ziplines and pine forests in Bukidnon, and the ferry hop to Camiguin, with travel advice."
+card: "Whitewater rafting, Bukidnon ziplines, and the ferry to Camiguin."
 date: "2026-11-18"
 updated: "2026-11-18"
 slug: "cagayan-de-oro-bukidnon"

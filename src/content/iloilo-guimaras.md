@@ -2,6 +2,7 @@
 id: 27
 title: "Iloilo & Guimaras Guide: Heritage Churches, Food & Mangoes"
 description: "Plan an Iloilo and Guimaras trip: UNESCO-listed Miagao Church, La Paz batchoy, Spanish-era streets, and a day on the sweet mango island."
+card: "Baroque churches, La Paz batchoy, and Guimaras mangoes."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "iloilo-guimaras"

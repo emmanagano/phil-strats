@@ -2,10 +2,11 @@
 id: 13
 title: "Davao City Travel Guide: Durian, Mount Apo & Culture"
 description: "Explore Davao City's markets, indigenous crafts, Philippine Eagle Center, and Samal Island, with food and itinerary tips for first-time visitors."
+card: "Durian, the Philippine Eagle, and Samal Island on the doorstep."
 date: "2026-10-30"
 updated: "2026-11-17"
 slug: "davao-city-mindanao"
-region: "Davao Region"
+region: "Davao del Sur, Davao Region"
 category: "heritage-culture"
 islandGroup: "mindanao"
 alt: "Aerial view of green farmland and forested mountains in the Davao region of Mindanao."

@@ -2,10 +2,11 @@
 id: 3
 title: "Coron Palawan Travel Guide: Lakes, Wrecks & Island Hopping"
 description: "Discover Kayangan Lake, Twin Lagoon, and the best wreck diving in Coron, Palawan, with tips on when to go, where to stay, and a 3-day itinerary."
+card: "WWII shipwrecks, Kayangan Lake, and limestone lagoons."
 date: "2025-10-14"
 updated: "2026-11-17"
 slug: "coron-palawan"
-region: "Palawan"
+region: "Palawan, MIMAROPA"
 category: "beaches-islands"
 islandGroup: "palawan"
 alt: "Aerial view of Coron Bay in Palawan, featuring limestone cliffs, turquoise reefs, and a traditional Filipino outrigger boat sailing through the clear blue water."

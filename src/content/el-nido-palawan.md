@@ -2,10 +2,11 @@
 id: 2
 title: "El Nido Palawan Travel Guide: Island Hopping & Top Spots"
 description: "Discover El Nido's lagoons, beaches, and island-hopping tours, with tips on when to visit, how to get there, where to stay, and what to do."
+card: "Big Lagoon, island-hopping tours, and towering limestone cliffs."
 date: "2025-10-13"
 updated: "2026-11-17"
 slug: "el-nido-palawan"
-region: "Palawan"
+region: "Palawan, MIMAROPA"
 category: "beaches-islands"
 islandGroup: "palawan"
 alt: "Aerial view of El Nido’s Big Lagoon in Palawan, featuring turquoise waters, limestone cliffs, and a secluded white sand beach, a signature sight from the island-hopping tours."

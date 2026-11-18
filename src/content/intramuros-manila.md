@@ -2,10 +2,11 @@
 id: 5
 title: "Intramuros Manila Guide: Exploring the Walled City"
 description: "Explore Intramuros, Manila's Walled City: Fort Santiago, San Agustin Church, and Spanish colonial streets, with tips for a walking or calesa tour."
+card: "Manila's walled city: old churches, cobblestones, and Fort Santiago."
 date: "2025-10-14"
 updated: "2026-11-17"
 slug: "intramuros-manila"
-region: "Metro Manila"
+region: "Manila, Metro Manila"
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "View of Manila Cathedral inside Intramuros with its iconic dome and clock tower, surrounded by colonial architecture and historic charm."

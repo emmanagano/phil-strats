@@ -2,6 +2,7 @@
 id: 30
 title: "Lake Sebu Travel Guide: T'boli Culture, Falls & Zipline"
 description: "Plan a Lake Sebu trip: meet T'boli weavers, zipline over the Seven Falls, tour the lotus-dotted lake, and read the safety advice first."
+card: "T'boli weaving, seven waterfalls, and a misty highland lake."
 date: "2026-11-17"
 updated: "2026-11-17"
 slug: "lake-sebu-south-cotabato"

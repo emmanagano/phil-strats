@@ -2,10 +2,11 @@
 id: 1
 title: "Boracay Travel Guide: White Beach, Resorts & Activities"
 description: "Plan your Boracay trip: White Beach, top resorts, water sports, nightlife, and when to go for the best weather on the Philippines' famous island."
+card: "Powdery White Beach, sunset sails, and easy island comfort."
 date: "2025-10-13"
 updated: "2026-11-17"
 slug: "boracay-aklan"
-region: "Western Visayas"
+region: "Aklan, Western Visayas"
 category: "beaches-islands"
 islandGroup: "visayas"
 alt: "Sandcastle sculpture reading “I ❤️ Boracay” on White Beach, with people swimming and sailboats on turquoise water in the background, a classic scene on Boracay Island, Aklan."

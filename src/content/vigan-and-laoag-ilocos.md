@@ -2,10 +2,11 @@
 id: 8
 title: "Vigan & Laoag Travel Guide: Heritage Towns of Ilocos"
 description: "Explore Vigan and Laoag in Ilocos: Spanish-era architecture, cobblestone Calle Crisologo, local food, and tips for a northern Luzon heritage trip."
+card: "Cobblestone Calle Crisologo, sand dunes, and Ilocano food."
 date: "2025-10-14"
 updated: "2026-11-17"
 slug: "vigan-and-laoag-ilocos"
-region: "Ilocos Region"
+region: "Ilocos Sur & Norte, Ilocos Region"
 category: "heritage-culture"
 islandGroup: "luzon"
 alt: "Tourists walking along Calle Crisologo in Vigan, Ilocos Sur, surrounded by Spanish colonial houses and cobblestone streets."

@@ -2,10 +2,11 @@
 id: 18
 title: "Pagudpud Beach, Ilocos Norte: Saud Beach & Coast Guide"
 description: "Pagudpud beach guide: Saud Beach, Blue Lagoon, the Patapat Viaduct, and Bangui windmills, with tips for road-tripping the Ilocos Norte coast."
+card: "Saud Beach, coastal cliffs, and the Bangui windmills up north."
 date: "2026-10-30"
 updated: "2026-11-18"
 slug: "pagudpud-ilocos-norte"
-region: "Ilocos Region"
+region: "Ilocos Norte, Ilocos Region"
 category: "beaches-islands"
 islandGroup: "luzon"
 alt: "Long white sand beach and turquoise water at Saud Beach in Pagudpud, Ilocos Norte."

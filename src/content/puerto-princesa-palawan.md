@@ -2,10 +2,11 @@
 id: 4
 title: "Puerto Princesa Underground River Guide: Palawan's Wonder"
 description: "Visit Palawan's UNESCO-listed Underground River, one of the New 7 Wonders of Nature, with permit tips, tours, where to stay, and what to eat."
+card: "The underground river, Honda Bay, and an easy Palawan gateway."
 date: "2025-10-14"
 updated: "2026-11-17"
 slug: "puerto-princesa-palawan"
-region: "Palawan"
+region: "Palawan, MIMAROPA"
 category: "nature-adventure"
 islandGroup: "palawan"
 alt: "Tourists on a paddleboat entering the Puerto Princesa Underground River cave, surrounded by limestone cliffs and turquoise water in Palawan, Philippines."
