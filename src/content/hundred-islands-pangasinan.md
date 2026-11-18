@@ -99,7 +99,7 @@ tags:
   - luzon
 ---
 
-Hundred Islands is a scatter of small, mushroom-shaped limestone islets in the Lingayen Gulf, just off Alaminos. Protected since 1940 as Hundred Islands National Park, the area counts 124 islands at low tide, from Governor's Island with its viewpoint to Pilgrimage Island and its tall statue of Christ the Savior. It is one of the closest island-hopping destinations to Manila, which makes it a classic weekend escape.
+Hundred Islands is a scatter of small, mushroom-shaped limestone islets in the Lingayen Gulf, just off Alaminos. A protected area since 1940, when it became Hundred Islands National Park, the area counts 124 islands at low tide, from Governor's Island with its viewpoint to Pilgrimage Island and its tall statue of Christ the Savior. It is one of the closest island-hopping destinations to Manila, which makes it a classic weekend escape.
 
 ### The main islands
 
