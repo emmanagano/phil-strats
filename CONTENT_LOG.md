@@ -16,14 +16,14 @@ Last full review: **2026-11-19**
 | Section | Data file | Items | Newest item | Last refreshed | Refresh cadence |
 |---|---|---|---|---|---|
 | Destinations | `src/content/*.md` | 37 guides | 2026-11-18 | 2026-11-19 (Mayon, Siquijor); all `verified: "Nov 2026"` | Re-verify fees/routes every 3 months; next by **Feb 2027** |
-| News | `src/data/news.ts` | 27 briefs | 2026-11-18 | 2026-11-19 | Weekly; aim for 2–4 briefs |
+| News | `src/data/news.ts` | 28 briefs | 2026-11-18 | 2026-11-19 | Weekly; aim for 2–4 briefs |
 | Showbiz | `src/data/showbiz.ts` | 18 stories | 2026-11-18 | 2026-11-19 | Weekly; 1–3 stories |
 | Sports | `src/data/sports.ts` | 13 stories | 2026-11-09 | 2026-11-19 | Weekly; 1–3 stories |
 | Books | `src/data/books.ts`, `books-more.ts` | 77 books | n/a | 2026-11-19 | Monthly; after major prize announcements |
 
 ### Topic mix (to keep sections balanced)
 
-- **News:** weather 8, travel 7, economy 6, politics 4, culture 2. Light on culture; prefer travel-relevant briefs.
+- **News:** weather 8, travel 7, economy 6, politics 4, culture 3. Light on culture; prefer travel-relevant briefs.
 - **Showbiz:** music 8, film 3, pageants 2, TV 2, arts 1, stage 1. Music-heavy; look for film, stage and TV.
 - **Sports:** boxing 3, athletics 2, tennis 2, Asian Games 1, golf 1, gymnastics 1, skateboarding 1, surfing 1, weightlifting 1. No basketball, volleyball, esports, billiards or chess yet.
 
@@ -43,6 +43,9 @@ Open items from the 2026-11-19 review (details: `reports/Content refresh Novembe
 
 Follow-ups that can make existing items outdated, or scheduled events worth covering once they happen (never before):
 
+- Impeachment defense resting (verdict expected 20–25 days later, per the court spokesperson).
+- Higantes Festival, Angono (~Nov 22–23; post afterward); Giant Lantern Festival official 2026 dates.
+- Turboprop flights back to NAIA from Clark (only a Pampanga chamber objection so far; wait for DOTr/CAAP).
 - Mayon Volcano alert level (news brief + `albay-mayon-volcano` guide). Kanlaon is at Level 2.
 - VP Sara Duterte impeachment trial: defense expected to rest late Nov / early Dec; verdict.
 - El Niño: any nationwide state of calamity.
@@ -58,6 +61,11 @@ Follow-ups that can make existing items outdated, or scheduled events worth cove
 ## Log
 
 Newest first. One entry per content change: date, section, what was added or changed, and anything left to do.
+
+### 2026-11-19 (news follow-up)
+- **Added News:** Simbang Gabi Dec 16–24 guidelines from the Archdiocese of Manila (Nov 17, culture; linked to the Intramuros guide).
+- **Updated News:** ASEAN brief travel note (300+ NAIA domestic flights moved or canceled Nov 13–19); trade brief (Nov 19: Romualdez says terms still being worked out; Philstar only, attributed).
+- Research: `reports/Content to post late November 2026.md`. Facts came from search snippets (source sites blocked in the session); re-read the linked articles when possible.
 
 ### 2026-11-19 (map)
 - **New:** interactive Philippines map on Destinations (`/articles?view=map`): pins for all 37 guides (new `coordinates` field), island groups filter and zoom. Home "Browse by region" links to it.

@@ -36,11 +36,30 @@ const NEWS: NewsBrief[] = [
       "US President Donald Trump spoke of a \"very big\" trade deal during his Manila visit, but Philippine officials said no agreement has been signed.",
     body: [
       "Trump made the claim on November 18 after a meeting and state lunch with President Ferdinand Marcos Jr. in Manila, before flying to China for the APEC summit. No terms were released.",
-      "Ambassador Jose Manuel Romualdez said nothing had been signed, and the Palace described the outcome as an understanding on economic cooperation rather than a trade deal.",
+      "Ambassador Jose Manuel Romualdez said nothing had been signed, and the Palace described the outcome as an understanding on economic cooperation rather than a trade deal. On November 19 he told Philstar the talks had produced a broad offer for the US to help supply the country's food and energy needs, with the terms still to be worked out.",
     ],
     sources: [
+      { name: "Philstar", url: "https://philstar.com/headlines/2026/11/19/2571199/no-terms-yet-trumps-biggest-trade-deal-philippines" },
       { name: "Manila Times", url: "https://www.manilatimes.net/2026/11/19/news/trump-us-ph-forge-very-big-trade-deal/2473330" },
       { name: "ABC News 4", url: "https://abcnews4.com/news/nation-world/no-deal-signed-yet-philippine-officials-temper-trumps-claim-of-very-big-trade-pact" },
+    ],
+  },
+  {
+    slug: "simbang-gabi-2026-schedule",
+    guides: ["intramuros-manila"],
+    date: "2026-11-17",
+    topic: "culture",
+    title: "Manila sets Simbang Gabi for December 16 to 24",
+    summary:
+      "The Archdiocese of Manila has released its guidelines for this year's Simbang Gabi, the nine days of Masses before Christmas.",
+    body: [
+      "Archbishop Jose Advincula's guidelines set the novena from December 16 to 24. Evening Masses may start as early as 6:00 p.m. and dawn Masses as early as 5:30 a.m.",
+      "Masses held outside a parish church, shrine or recognized chapel, such as in malls or offices, need the archbishop's permission. Each parish publishes its own schedule.",
+    ],
+    travelNote: "Visitors are welcome at Simbang Gabi. Dress modestly, arrive early, and check the parish's own page for its Mass times.",
+    sources: [
+      { name: "GMA News", url: "https://www.gmanetwork.com/news/topstories/metro/1009340/manila-archbishop-advincula-issues-guidelines-for-simbang-gabi-2026/story" },
+      { name: "Interaksyon (Philstar)", url: "https://interaksyon.philstar.com/trends-spotlights/2026/11/17/322003/manila-archdiocese-issues-simbang-gabi-guidelines/" },
     ],
   },
   {
@@ -108,8 +127,10 @@ const NEWS: NewsBrief[] = [
       "The 49th ASEAN Summit and related meetings were held in mid-November around the Philippine International Convention Center in Pasay. It follows the first summit of the year in Cebu in May.",
       "The summit closed on November 18 with more than 100 outcome documents, including plans for an ASEAN Center of Excellence for Creative Industries in Manila. Myanmar and a South China Sea Code of Conduct were left unresolved, and the Philippines handed the 2027 chairmanship to Singapore.",
     ],
-    travelNote: "Security zones around the PICC and CCP complex were set until November 20; traffic in Pasay should be back to normal after that.",
+    travelNote: "Security zones around the PICC and CCP complex were set until November 20; traffic in Pasay should be back to normal after that. The Department of Transportation had more than 300 domestic flights at NAIA moved or canceled between November 13 and 19, so if your flight was affected, ask your airline about rebooking or a refund.",
     sources: [
+      { name: "Inquirer", url: "https://globalnation.inquirer.net/346845/list-pal-cebpac-airasia-flights-affected-by-asean-summit-2026" },
+      { name: "Philippine News Agency", url: "https://www.pna.gov.ph/article/naia-to-implement-heightened-security-during-asean-summit" },
       { name: "Daily Tribune", url: "https://tribune.net.ph/2026/11/09/pasay-announces-road-closures-for-49th-asean-summit" },
       { name: "Philstar Life", url: "https://philstarlife.com/news-and-views/886611-asean-traffic-advisories-road-closures" },
       { name: "Manila Times", url: "https://www.manilatimes.net/2026/11/17/news/philippines-hands-over-asean-2027-chairmanship-to-singapore/2471815" },
