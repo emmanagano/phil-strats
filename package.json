@@ -14,7 +14,7 @@
     "@emailjs/browser": "^4.4.1",
     "@tailwindcss/typography": "^0.5.16",
     "gray-matter": "^4.0.3",
-    "next": "15.2.3",
+    "next": "15.5.29",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-icons": "^5.5.0",
@@ -32,10 +32,15 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "eslint": "^9",
-    "eslint-config-next": "15.2.3",
-    "mapshaper": "^0.6.102",
-    "sharp": "^0.33.5",
+    "eslint-config-next": "15.5.29",
+    "mapshaper": "^0.8.7",
+    "sharp": "^0.35.5",
     "tailwindcss": "^4",
     "typescript": "^5"
+  },
+  "overrides": {
+    "next": {
+      "postcss": "^8.5.33"
+    }
   }
 }
