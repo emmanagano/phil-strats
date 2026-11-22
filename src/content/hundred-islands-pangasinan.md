@@ -111,12 +111,14 @@ Three islands have the most facilities. **Governor's Island** has a viewpoint ov
 
 The islands are worn limestone, and many have small caves and overhangs carved by the sea. Boat tours often stop at Cuenco Cave and Imelda Cave. Around the islands, snorkeling spots and a giant clam sanctuary show the work done to restore marine life in the Lingayen Gulf. Visibility varies with the weather, so go on a calm, sunny morning.
 
-### How island hopping works
-
-Tours leave from Lucap Wharf in Alaminos. Register at the tourism office, pay the environmental fee and choose a boat by size; the price is per boat, so groups pay less per person. Choose a set tour of three or four islands or hire a boat for the day and pick your stops. Bring food and water, since shops are limited on the islands.
-
 ### Pairing with Bolinao and Pangasinan
 
 Hundred Islands fits in a weekend from Manila, but you can extend it with Bolinao's beaches, caves and lighthouse to the west, or stop in Lingayen and Dagupan for bangus (milkfish) and Pangasinan food on the way back.
 
 Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Vigan](/articles/vigan-and-laoag-ilocos).
+
+## Things to do
+
+### How island hopping works
+
+Tours leave from Lucap Wharf in Alaminos. Register at the tourism office, pay the environmental fee and choose a boat by size; the price is per boat, so groups pay less per person. Choose a set tour of three or four islands or hire a boat for the day and pick your stops. Bring food and water, since shops are limited on the islands.

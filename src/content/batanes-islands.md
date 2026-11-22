@@ -129,16 +129,20 @@ Batanes has ten islands, but only three are inhabited. **Batan** is the main isl
 
 Much of the province is protected as the Batanes Protected Landscapes and Seascapes, and the islands sit on the UNESCO World Heritage tentative list. The rules are simple: stay on paths, don't take stones or shells, and only eat coconut crab where local rules allow it (ask, or skip it). Batanes stays green and clean because visitors and locals take this seriously.
 
-### Planning around the weather
-
-Batanes sits in the path of typhoons and the cold northeast monsoon, so weather shapes every trip. Flights to Basco are small and can be cancelled at short notice, and the faluwa to Sabtang stops whenever the channel turns rough. Build at least one buffer day into your plan, book flexible fares, and save Sabtang or Itbayat for your first calm morning. March to May is the most reliable window; from June to October, check forecasts daily, and from November to February, pack for wind and cool rain.
-
-### Getting around Batan
-
-Most visitors explore Batan Island on two day loops. The **North Batan** loop covers Basco Lighthouse on Naidi Hills, the Vayang rolling hills, Valugan Boulder Beach and the Rakuh-a-Payaman pasture. The **South Batan** loop takes in the Mahatao church, the Honesty Coffee Shop, Ivana's stone houses and the old Spanish bridges along the coast. A tricycle with a driver-guide is the easiest way to do both, though confident riders rent scooters, and cyclists tackle the shorter northern roads.
-
 ### Food to try
 
 Ivatan cooking makes the most of what grows on the islands. Look for uvud balls (made from the pith of the banana plant), lunis (Ivatan-style salted pork, cooked like adobo), flying fish and turmeric rice. Meals are simple, fresh and often shared at small family-run eateries in Basco.
 
 Planning more than one stop? See our guides to [Pagudpud](/articles/pagudpud-ilocos-norte) or [Mount Pulag](/articles/mount-pulag-benguet).
+
+## Things to do
+
+### Getting around Batan
+
+Most visitors explore Batan Island on two day loops. The **North Batan** loop covers Basco Lighthouse on Naidi Hills, the Vayang rolling hills, Valugan Boulder Beach and the Rakuh-a-Payaman pasture. The **South Batan** loop takes in the Mahatao church, the Honesty Coffee Shop, Ivana's stone houses and the old Spanish bridges along the coast. A tricycle with a driver-guide is the easiest way to do both, though confident riders rent scooters, and cyclists tackle the shorter northern roads.
+
+## Best time
+
+### Planning around the weather
+
+Batanes sits in the path of typhoons and the cold northeast monsoon, so weather shapes every trip. Flights to Basco are small and can be cancelled at short notice, and the faluwa to Sabtang stops whenever the channel turns rough. Build at least one buffer day into your plan, book flexible fares, and save Sabtang or Itbayat for your first calm morning. March to May is the most reliable window; from June to October, check forecasts daily, and from November to February, pack for wind and cool rain.

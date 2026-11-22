@@ -26,8 +26,10 @@ import {
   peso,
   type BudgetStyleKey,
   type Guide,
+  type GuideNoteSection,
   type MonthRating,
 } from "@/lib/guide";
+import { trackGuide, type GuideControl } from "@/lib/analytics";
 import { useStoredState } from "./useStoredState";
 import { plural } from "@/lib/format";
 
@@ -99,8 +101,20 @@ function onArrowKeys(e: React.KeyboardEvent<HTMLElement>, index: number, count: 
   items?.[next]?.focus();
 }
 
-export default function DestinationGuide({ guide, slug, place }: { guide: Guide; slug: string; place: string }) {
+export default function DestinationGuide({
+  guide,
+  slug,
+  place,
+  notes = {},
+}: {
+  guide: Guide;
+  slug: string;
+  place: string;
+  // Body text placed into a section with a `## <section>` marker (HTML from our own markdown).
+  notes?: Partial<Record<GuideNoteSection, string>>;
+}) {
   const k = (name: string) => `guide:${slug}:${name}`;
+  const track = (control: GuideControl, value?: string | number, debounce = 0) => trackGuide(slug, control, value, debounce);
   const uid = useId();
   const itineraryKeys = Object.keys(guide.itineraries).sort((a, b) => Number(a) - Number(b));
   const firstGreat = Math.max(0, guide.months.findIndex((m) => m.rating === "great"));
@@ -141,11 +155,12 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
   const pickDays = (key: string) => {
     setDays(key);
     setPickedDays(true);
+    track("itinerary_days", key);
   };
 
   return (
     <>
-      <GuideNav steps={steps} doneCount={doneCount} />
+      <GuideNav steps={steps} doneCount={doneCount} onNavigate={(id) => track("nav", id)} />
 
       {/* Wide gaps between the intro and the three chapters; tighter spacing inside each chapter. */}
       <div className="space-y-24 sm:space-y-32">
@@ -183,6 +198,7 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
           {/* When to go */}
           <Section
             id="when-to-go"
+            note={notes["when-to-go"]}
             eyebrow="Pick a month"
             title={`Best time to visit ${place}`}
             intro="Choose a month to see what the weather and the sea are like."
@@ -203,7 +219,10 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
                     aria-controls={`${uid}-month-${i}`}
                     aria-label={`${MONTHS[i]}: ${RATING_LABEL[m.rating]}`}
                     tabIndex={active ? 0 : -1}
-                    onClick={() => setMonth(i)}
+                    onClick={() => {
+                      setMonth(i);
+                      track("month", MONTHS[i]);
+                    }}
                     onKeyDown={(e) => onArrowKeys(e, i, 12, setMonth)}
                     className={`relative flex min-h-11 items-center justify-center pb-2 pt-3 text-sm font-semibold transition-colors ${
                       active ? "bg-ocean-900 text-white" : "bg-white text-ocean-900 hover:bg-sand-100"
@@ -240,10 +259,12 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
           </Section>
 
           {/* Getting there */}
-          <Section id="getting-there" eyebrow="Getting in" title={`How to get to ${place}`} intro="Choose where you're starting from.">
+          <Section id="getting-there"
+            note={notes["getting-there"]} eyebrow="Getting in" title={`How to get to ${place}`} intro="Choose where you're starting from.">
             <Tabs
               label="Starting point"
               tabs={guide.routes.map((r) => r.from)}
+              onChange={(i) => track("route_tab", guide.routes[i].from)}
               render={(i) => {
                 const r = guide.routes[i];
                 return (
@@ -282,6 +303,7 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
                         <div className="mt-6">
                           <a
                             href={liveFaresUrl(r.flight, month)}
+                            onClick={() => track("flight_search", `${r.flight!.from}-${r.flight!.to}`)}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="inline-flex min-h-11 items-center gap-2 rounded-control bg-ocean-900 px-4 py-2.5 text-sm font-semibold text-white transition-colors duration-150 hover:bg-ocean-800"
@@ -307,6 +329,7 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
           {/* Budget */}
           <Section
             id="budget"
+            note={notes["budget"]}
             eyebrow="Set your budget"
             title={`How much does a ${place} trip cost?`}
             intro="Adjust the trip to get a rough total, excluding flights."
@@ -333,6 +356,7 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
                         onClick={() => {
                           setStyle(key);
                           setTouchedBudget(true);
+                          track("budget_style", key);
                         }}
                         className={segBtn(style === key)}
                       >
@@ -355,6 +379,7 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
                         setDays(e.target.value);
                         setTouchedBudget(true);
                         setPickedDays(true);
+                        track("nights", e.target.value, 1000);
                       }}
                       className="h-11 w-full cursor-pointer accent-ocean-900"
                     />
@@ -366,13 +391,13 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
                   <div>
                     <span className={`block ${LABEL}`}>Travelers</span>
                     <div className="mt-1 flex items-center gap-3">
-                      <Stepper label="Fewer travelers" onClick={() => { setTravelers(Math.max(1, travelers - 1)); setTouchedBudget(true); }}>
+                      <Stepper label="Fewer travelers" onClick={() => { const n = Math.max(1, travelers - 1); setTravelers(n); setTouchedBudget(true); track("travelers", n, 1000); }}>
                         <FaMinus />
                       </Stepper>
                       <span className="w-8 text-center font-display text-2xl font-semibold" aria-live="polite">
                         {travelers}
                       </span>
-                      <Stepper label="More travelers" onClick={() => { setTravelers(Math.min(10, travelers + 1)); setTouchedBudget(true); }}>
+                      <Stepper label="More travelers" onClick={() => { const n = Math.min(10, travelers + 1); setTravelers(n); setTouchedBudget(true); track("travelers", n, 1000); }}>
                         <FaPlus />
                       </Stepper>
                     </div>
@@ -414,16 +439,18 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
           {/* Things to do */}
           <Section
             id="things-to-do"
+            note={notes["things-to-do"]}
             eyebrow="Save what you like"
             title={`Top things to do in ${place}`}
             intro="Filter by mood and tap the heart to add a spot to your plan."
           >
-            <Experiences guide={guide} saved={saved} setSaved={setSaved} />
+            <Experiences guide={guide} saved={saved} setSaved={setSaved} track={track} />
           </Section>
 
           {/* Itinerary */}
           <Section
             id="itinerary"
+            note={notes["itinerary"]}
             eyebrow="Choose trip length"
             title={`${place} itinerary`}
             intro="Pick how many days you have. Your budget above updates too."
@@ -468,7 +495,8 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
           </Section>
 
           {/* Stay & eat */}
-          <Section id="stay-and-eat" eyebrow="Base yourself" title={`Where to stay and eat in ${place}`}>
+          <Section id="stay-and-eat"
+            note={notes["stay-and-eat"]} eyebrow="Base yourself" title={`Where to stay and eat in ${place}`}>
             <div className="grid gap-8 md:grid-cols-2 md:gap-10">
               {guide.stays.map((st) => (
                 <div key={st.area} className="flex flex-col border-t-2 border-ocean-900 pt-5">
@@ -521,7 +549,8 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
 
         <Chapter n={3} title="Prepare" intro="What to know and pack, then your plan in one place.">
           {/* Before you go */}
-          <Section id="before-you-go" eyebrow="Prep & pack" title="Know before you go">
+          <Section id="before-you-go"
+            note={notes["before-you-go"]} eyebrow="Prep & pack" title="Know before you go">
             <div className="grid gap-10 lg:grid-cols-[minmax(0,1fr)_22rem] lg:gap-16">
               <dl className="max-w-2xl divide-y divide-sand-200 border-y border-sand-200">
                 {guide.essentials.map((e) => (
@@ -531,7 +560,7 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
                   </div>
                 ))}
               </dl>
-              <PackingList items={guide.packing} packed={packed} setPacked={setPacked} />
+              <PackingList items={guide.packing} packed={packed} setPacked={setPacked} track={track} />
             </div>
           </Section>
 
@@ -547,6 +576,7 @@ export default function DestinationGuide({ guide, slug, place }: { guide: Guide;
               total={total}
               saved={saved}
               packed={packed.length}
+              onCopy={() => track("copy_plan")}
             />
           </Section>
         </Chapter>
@@ -562,12 +592,15 @@ function Section({
   eyebrow,
   title,
   intro,
+  note,
   children,
 }: {
   id: string;
   eyebrow: string;
   title: string;
   intro?: string;
+  // Practical prose from the guide's markdown body, shown above the interactive part.
+  note?: string;
   children: React.ReactNode;
 }) {
   return (
@@ -577,6 +610,9 @@ function Section({
         {title}
       </h2>
       {intro && <p className="mt-3 max-w-2xl text-muted">{intro}</p>}
+      {note && (
+        <div className="prose prose-lg prose-brand mt-8 max-w-3xl" dangerouslySetInnerHTML={{ __html: note }} />
+      )}
       <div className="mt-8">{children}</div>
     </section>
   );
@@ -631,8 +667,22 @@ function Stepper({ label, onClick, children }: { label: string; onClick: () => v
 }
 
 // Every panel is rendered so its content is in the static HTML; inactive panels are hidden.
-function Tabs({ label, tabs, render }: { label: string; tabs: string[]; render: (i: number) => React.ReactNode }) {
-  const [active, setActive] = useState(0);
+function Tabs({
+  label,
+  tabs,
+  render,
+  onChange,
+}: {
+  label: string;
+  tabs: string[];
+  render: (i: number) => React.ReactNode;
+  onChange?: (i: number) => void;
+}) {
+  const [active, setActiveState] = useState(0);
+  const setActive = (i: number) => {
+    setActiveState(i);
+    if (i !== active) onChange?.(i);
+  };
   const id = useId();
   return (
     <div>
@@ -699,22 +749,30 @@ function Experiences({
   guide,
   saved,
   setSaved,
+  track,
 }: {
   guide: Guide;
   saved: string[];
   setSaved: (v: string[]) => void;
+  track: (control: GuideControl, value?: string) => void;
 }) {
   const tags = useMemo(() => ["All", ...Array.from(new Set(guide.experiences.flatMap((e) => e.tags)))], [guide]);
   const [tag, setTag] = useState("All");
-  const toggle = (name: string) =>
-    setSaved(saved.includes(name) ? saved.filter((n) => n !== name) : [...saved, name]);
+  const toggle = (name: string) => {
+    const isSaved = saved.includes(name);
+    setSaved(isSaved ? saved.filter((n) => n !== name) : [...saved, name]);
+    track(isSaved ? "unsave" : "save", name);
+  };
 
   return (
     <>
       <div className="mb-8 flex flex-wrap items-center justify-between gap-4">
         <div className="flex flex-wrap gap-2" role="group" aria-label="Filter things to do">
           {tags.map((t) => (
-            <button key={t} type="button" aria-pressed={tag === t} onClick={() => setTag(t)} className={chip(tag === t)}>
+            <button key={t} type="button" aria-pressed={tag === t} onClick={() => {
+                setTag(t);
+                track("filter", t);
+              }} className={chip(tag === t)}>
               {t}
             </button>
           ))}
@@ -806,10 +864,12 @@ function PackingList({
   items,
   packed,
   setPacked,
+  track,
 }: {
   items: string[];
   packed: string[];
   setPacked: (v: string[]) => void;
+  track: (control: GuideControl, value?: string) => void;
 }) {
   const pct = Math.round((packed.length / items.length) * 100);
   return (
@@ -845,7 +905,10 @@ function PackingList({
                 <input
                   type="checkbox"
                   checked={on}
-                  onChange={() => setPacked(on ? packed.filter((p) => p !== item) : [...packed, item])}
+                  onChange={() => {
+                    setPacked(on ? packed.filter((p) => p !== item) : [...packed, item]);
+                    if (!on) track("pack", item);
+                  }}
                   className="h-6 w-6 shrink-0 cursor-pointer accent-ocean-900"
                 />
                 {item}
@@ -869,6 +932,7 @@ function TripSummary({
   total,
   saved,
   packed,
+  onCopy,
 }: {
   place: string;
   month: number | null;
@@ -879,6 +943,7 @@ function TripSummary({
   total: number;
   saved: string[];
   packed: number;
+  onCopy?: () => void;
 }) {
   const [copied, setCopied] = useState(false);
   const monthName = month === null ? "Not picked yet" : `${MONTHS[month]} (${RATING_LABEL[guide.months[month].rating].toLowerCase()})`;
@@ -895,6 +960,7 @@ function TripSummary({
     try {
       await navigator.clipboard.writeText(text);
       setCopied(true);
+      onCopy?.();
       setTimeout(() => setCopied(false), 2000);
     } catch {
       /* clipboard blocked */
@@ -961,7 +1027,15 @@ function SummaryItem({ icon, label, value }: { icon: React.ReactNode; label: str
 
 /* ---------- sticky jump bar + plan meter ---------- */
 
-function GuideNav({ steps, doneCount }: { steps: { label: string; done: boolean }[]; doneCount: number }) {
+function GuideNav({
+  steps,
+  doneCount,
+  onNavigate,
+}: {
+  steps: { label: string; done: boolean }[];
+  doneCount: number;
+  onNavigate?: (id: string) => void;
+}) {
   const [active, setActive] = useState(SECTIONS[0].id);
   const [progress, setProgress] = useState(0);
 
@@ -1015,6 +1089,7 @@ function GuideNav({ steps, doneCount }: { steps: { label: string; done: boolean 
               <a
                 id={`chip-${s.id}`}
                 href={`#${s.id}`}
+                onClick={() => onNavigate?.(s.id)}
                 aria-current={active === s.id ? "true" : undefined}
                 className={`flex min-h-12 items-center whitespace-nowrap border-b-2 px-3 text-sm font-medium transition-colors focus-visible:outline-offset-[-4px] ${
                   active === s.id
@@ -1029,6 +1104,7 @@ function GuideNav({ steps, doneCount }: { steps: { label: string; done: boolean 
         </ul>
         <a
           href="#your-plan"
+          onClick={() => onNavigate?.("your-plan")}
           aria-label={`Your plan: ${doneCount} of ${steps.length} steps done`}
           className="inline-flex min-h-9 shrink-0 items-center gap-2 rounded-control border border-sand-300 bg-white px-2.5 text-sm font-semibold text-ocean-900 transition hover:border-ocean-900 sm:px-3"
           title={steps.map((s) => `${s.done ? "✓" : "○"} ${s.label}`).join("\n")}

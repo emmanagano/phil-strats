@@ -128,3 +128,17 @@ export function bestMonthsLabel(months: GuideMonth[]): string {
   }
   return ranges.slice(0, 2).join(", ");
 }
+
+// Placement markers for a guide's markdown body: a `## <name>` heading moves the text under it
+// into that section of the interactive guide (rendered above the widget). Text before the first
+// marker stays in "The story behind the guide". Unknown names fail the build.
+export const GUIDE_NOTE_SECTIONS = {
+  "Best time": "when-to-go",
+  "Getting there": "getting-there",
+  Costs: "budget",
+  "Things to do": "things-to-do",
+  Itinerary: "itinerary",
+  "Stay and eat": "stay-and-eat",
+  "Before you go": "before-you-go",
+} as const;
+export type GuideNoteSection = (typeof GUIDE_NOTE_SECTIONS)[keyof typeof GUIDE_NOTE_SECTIONS];

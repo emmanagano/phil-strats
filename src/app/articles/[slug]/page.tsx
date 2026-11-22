@@ -197,7 +197,12 @@ export default async function ArticlePage({ params }: Params) {
       {/* Interactive one-stop guide */}
       {article.guide && (
         <Container className="pb-14 sm:pb-20">
-          <DestinationGuide guide={article.guide} slug={article.slug} place={article.guide.place ?? placeName(article.title)} />
+          <DestinationGuide
+            guide={article.guide}
+            slug={article.slug}
+            place={article.guide.place ?? placeName(article.title)}
+            notes={article.guideNotes}
+          />
           <div className="mx-auto mt-20 max-w-3xl sm:mt-28">
             {article.content.trim() && (
               <section aria-labelledby="story-title" className="border-t-2 border-ocean-900 pt-10">

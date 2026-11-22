@@ -62,6 +62,10 @@ Follow-ups that can make existing items outdated, or scheduled events worth cove
 
 Newest first. One entry per content change: date, section, what was added or changed, and anything left to do.
 
+### 2026-11-23 (guide layout)
+- **Moved, text unchanged:** practical body sections now render inside their guide section via `## <section>` markers: Hundred Islands "How island hopping works" (Things to do), Batanes "Getting around Batan" (Things to do) and "Planning around the weather" (Best time), Banaue "Getting the most from your visit" (Itinerary). `updated:` dates not bumped (no new facts).
+- **Analytics:** guide controls send a GA4 `guide_interaction` event. Register `guide`, `control` and `value` as event-scoped custom dimensions in GA4 to report on them. Review usage in early January.
+
 ### 2026-11-19 (news follow-up)
 - **Added News:** Simbang Gabi Dec 16–24 guidelines from the Archdiocese of Manila (Nov 17, culture; linked to the Intramuros guide).
 - **Updated News:** ASEAN brief travel note (300+ NAIA domestic flights moved or canceled Nov 13–19); trade brief (Nov 19: Romualdez says terms still being worked out; Philstar only, attributed).

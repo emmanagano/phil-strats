@@ -129,8 +129,10 @@ The Ifugao people built and still farm the terraces. Their culture lives on in c
 
 The terraces around Banaue town are the most visited and are seen from roadside viewpoints. The five UNESCO-inscribed clusters of the Rice Terraces of the Philippine Cordilleras are Batad, Bangaan, Hungduan, Mayoyao and Nagacadan. Batad's amphitheater is the most famous and is reached only on foot. Hapao, near Hungduan, is quieter and has hot springs nearby.
 
+Planning more than one stop? See our guides to [Sagada](/articles/sagada-mountain-province) or [Mount Pulag](/articles/mount-pulag-benguet).
+
+## Itinerary
+
 ### Getting the most from your visit
 
 Arrive on the overnight bus, rest for a few hours and visit the viewpoints in the afternoon light. The next morning, start early for Batad to walk before the heat and the day-trippers. Two nights is the minimum to see Banaue and Batad without rushing; three lets you add Hapao or Tappiya Falls. From Banaue, Sagada is a half-day ride away for its caves and hanging coffins.
-
-Planning more than one stop? See our guides to [Sagada](/articles/sagada-mountain-province) or [Mount Pulag](/articles/mount-pulag-benguet).

@@ -8,7 +8,7 @@ import fs from "fs";
 import path from "path";
 import matter from "gray-matter";
 import { getCategory, getIslandGroup } from "./taxonomy";
-import { bestMonthsLabel, type Guide } from "@/lib/guide";
+import { bestMonthsLabel, GUIDE_NOTE_SECTIONS, type Guide, type GuideNoteSection } from "@/lib/guide";
 
 const articlesDir = path.join(process.cwd(), "src/content");
 const imagesDir = path.join(process.cwd(), "public/images");
@@ -66,6 +66,8 @@ export interface Article extends ArticleSummary {
   guide: Guide | null;
   // Required for CC BY / CC BY-SA photos: shown as a caption on the hero.
   imageCredit: ImageCredit | null;
+  // Guide pages only: body text moved into a guide section with a `## <section>` marker, as HTML.
+  guideNotes: Partial<Record<GuideNoteSection, string>>;
 }
 
 export interface ImageCredit {
@@ -109,6 +111,16 @@ function readArticleFile(filename: string) {
   if (cardLen === 0) problems.push("card is missing (a one-line blurb for destination cards, about 60–70 characters)");
   else if (cardLen > 80) warnings.push(`card is ${cardLen} chars (keep it under 80 so it fits two lines)`);
   if (data.guide) problems.push(...validateGuide(data.guide));
+  // In guide bodies, `##` headings are placement markers, so they must name a guide section.
+  if (data.guide) {
+    for (const m of content.matchAll(/^##\s+(.+?)\s*$/gm)) {
+      if (!(m[1] in GUIDE_NOTE_SECTIONS)) {
+        problems.push(
+          `body heading "## ${m[1]}" is not a guide section (use ${Object.keys(GUIDE_NOTE_SECTIONS).join(", ")}; story headings use ###)`,
+        );
+      }
+    }
+  }
   // Map pin: required like the images, so missing coordinates fail the build but only warn in dev.
   const coordinates = parseCoordinates(data.coordinates);
   if (!coordinates) {
@@ -243,14 +255,27 @@ export async function getArticleBySlug(slug: string): Promise<Article | null> {
 
   const { summary, content, guide, imageCredit } = readArticleFile(filename);
   const toc: TocItem[] = [];
-  const html = await unified()
-    .use(remarkParse)
-    .use(remarkGfm)
-    .use(remarkRehype)
-    .use(rehypeSlug)
-    .use(collectToc(toc))
-    .use(rehypeStringify)
-    .process(content);
 
-  return { ...summary, content: String(html), toc, guide, imageCredit };
+  // Guides: text under a `## <section>` marker renders inside that guide section;
+  // everything before the first marker stays as "The story behind the guide".
+  const guideNotes: Partial<Record<GuideNoteSection, string>> = {};
+  let story = content;
+  if (guide) {
+    const [before, ...rest] = content.split(/^##\s+(.+?)\s*$/m);
+    story = before;
+    for (let i = 0; i < rest.length; i += 2) {
+      const id = GUIDE_NOTE_SECTIONS[rest[i] as keyof typeof GUIDE_NOTE_SECTIONS];
+      const html = await renderMarkdown(rest[i + 1] ?? "");
+      if (id && html.trim()) guideNotes[id] = (guideNotes[id] ?? "") + html;
+    }
+  }
+
+  const html = await renderMarkdown(story, toc);
+  return { ...summary, content: html, toc, guide, imageCredit, guideNotes };
+}
+
+async function renderMarkdown(markdown: string, toc?: TocItem[]): Promise<string> {
+  const processor = unified().use(remarkParse).use(remarkGfm).use(remarkRehype).use(rehypeSlug);
+  if (toc) processor.use(collectToc(toc));
+  return String(await processor.use(rehypeStringify).process(markdown));
 }
