@@ -15,28 +15,25 @@ Last full review: **2026-11-19**
 
 | Section | Data file | Items | Newest item | Last refreshed | Refresh cadence |
 |---|---|---|---|---|---|
-| Destinations | `src/content/*.md` | 37 guides | 2026-11-18 | 2026-11-19 (Mayon, Siquijor); all `verified: "Nov 2026"` | Re-verify fees/routes every 3 months; next by **Feb 2027** |
-| News | `src/data/news.ts` | 28 briefs | 2026-11-18 | 2026-11-19 | Weekly; aim for 2–4 briefs |
-| Showbiz | `src/data/showbiz.ts` | 18 stories | 2026-11-18 | 2026-11-19 | Weekly; 1–3 stories |
-| Sports | `src/data/sports.ts` | 13 stories | 2026-11-09 | 2026-11-19 | Weekly; 1–3 stories |
-| Books | `src/data/books.ts`, `books-more.ts` | 77 books | n/a | 2026-11-19 | Monthly; after major prize announcements |
+| Destinations | `src/content/*.md` | 37 guides | 2026-11-18 | 2026-11-23 (Siquijor fee, Iloilo and Davao flights); all `verified: "Nov 2026"` | Re-verify fees/routes every 3 months; next by **Feb 2027** |
+| News | `src/data/news.ts` | 29 briefs | 2026-11-22 | 2026-11-19 | Weekly; aim for 2–4 briefs |
+| Showbiz | `src/data/showbiz.ts` | 19 stories | 2026-11-18 | 2026-11-19 | Weekly; 1–3 stories |
+| Sports | `src/data/sports.ts` | 14 stories | 2026-11-11 | 2026-11-19 | Weekly; 1–3 stories |
+| Books | `src/data/books.ts`, `books-more.ts` | 80 books | 2026-11-23 (added) | 2026-11-23 | Monthly; after major prize announcements |
 
 ### Topic mix (to keep sections balanced)
 
-- **News:** weather 8, travel 7, economy 6, politics 4, culture 3. Light on culture; prefer travel-relevant briefs.
-- **Showbiz:** music 8, film 3, pageants 2, TV 2, arts 1, stage 1. Music-heavy; look for film, stage and TV.
-- **Sports:** boxing 3, athletics 2, tennis 2, Asian Games 1, golf 1, gymnastics 1, skateboarding 1, surfing 1, weightlifting 1. No basketball, volleyball, esports, billiards or chess yet.
+- **News:** weather 8, travel 7, economy 6, politics 5, culture 3. Light on culture; prefer travel-relevant briefs.
+- **Showbiz:** music 8, film 4, pageants 2, TV 2, arts 1, stage 1. Music-heavy; look for film, stage and TV.
+- **Sports:** boxing 3, athletics 3, tennis 2, Asian Games 1, golf 1, gymnastics 1, skateboarding 1, surfing 1, weightlifting 1. No basketball, volleyball, esports, billiards or chess yet.
 
 ## To do
 
 Open items from the 2026-11-19 review (details: `reports/Content refresh November 2026.md`):
 
-- [ ] Sports: Youth Olympics medals (Naomi Cesar 800 m silver, Pi Durden Wangkay 200 m bronze, Dakar, Nov 10–11). Well sourced but no free photo yet; recheck Commons for PSC uploads.
-- [ ] Showbiz: QCinema 2026 (*Ella Arcangel* won the Asian Next Wave Grand Jury Prize, Nov 18). No free photo yet.
 - [ ] Showbiz: Andrea Brillantes, Best Acting Performance in London for *Laya* (set in Oslob). Needs a second source; *Laya* opens Nov 25.
 - [ ] Showbiz: optional line on *Filipiñana* UK/Ireland release (Nov 20, BFI).
-- [ ] Destinations: Cebu City guide (Sinulog Grand Parade Jan 17, 2027; Cebu–Nagoya and Cebu–Shanghai from Dec 1). Getting-there notes for Iloilo (Iloilo–Singapore from Dec 2) and Davao (Davao–Bangkok from Dec 2).
-- [ ] Siquijor ₱50 fee has a single trade source; confirm with an LGU notice and drop the ≈.
+- [ ] Destinations: Cebu City guide (Sinulog Grand Parade Jan 17, 2027; Cebu–Nagoya from Dec 1 is solid; Cebu–Shanghai date unconfirmed, schedule sites only). Hero photo candidate: File:Basilica del Santo Niño in Cebu City (02) (2025-04-18).jpg (CC BY 4.0).
 - **Rule from this review:** any story built on a pending date or decision gets a follow-up date in the Watchlist when it is published (the analog TV and Grammy stories went stale this way).
 
 ## Watchlist
@@ -52,15 +49,28 @@ Follow-ups that can make existing items outdated, or scheduled events worth cove
 - Energy emergency and fuel prices; November CPI (early December).
 - Miss Universe 2026, **Nov 24** (Bea Millan-Windorski); Miss International, **Nov 25** (Katrina Anne Johnson).
 - Esports Nations Cup MLBB, Nov 25–29; Batang Pinoy (Bacolod), Dec 12–18.
-- Palanca Awards 2026 results (likely late November).
+- Palanca Awards 2026 results (2025's were Nov 26–27; check from Nov 26).
 - Bianca Pagdanganan / Dottie Ardina LPGA Q-Series final (post only after LPGA.com results).
-- Asian Academy Creative Awards gala, Dec 3; MMFF Parades of Stars, Dec 12 (Bacolod) and Dec 18 (Metro Manila).
+- Asian Academy Creative Awards gala, Dec 3; MMFF parades: Bacolod Dec 11 or 12 (city government says Dec 11), Metro Manila Dec 18 or 19 (GMA says Dec 19). Confirm with MMFF/MMDA before use.
+- Gilas Pilipinas window 5 in Seremban, Malaysia: vs Syria Nov 27, vs Iran Nov 29 (FIBA). First basketball story, results only.
+- *Laya* opens Nov 25: run the Andrea Brillantes story that day (photo: File:Andrea Brillantes 2022.jpg, CC BY 3.0, small; grid, not lead).
+- Mayon "Alert Level 3 since Oct 30": fits the timeline (Level 3 Jan 6, lowered to 2 Aug 5) but confirm the Oct 30 re-raise with a Phivolcs bulletin.
 - Analog TV switch-off, Jan 15, 2027; Sinulog Grand Parade, Jan 17, 2027; Dinagyang (dates unconfirmed); Grammys, Feb 7, 2027.
-- Unconfirmed, recheck before use: Siargao terminal expansion opening; Antique airport jet service; Baguio environmental fee (proposed for 2027).
+- Unconfirmed, recheck before use: Siargao terminal expansion opening; Antique airport jet service; Baguio environmental fee (still under council review; no amount or start date).
 
 ## Log
 
 Newest first. One entry per content change: date, section, what was added or changed, and anything left to do.
+
+### 2026-11-23 (corrections and books)
+- **Fixed:** Siquijor tourism ecological fee is collected on departure: ₱50, ₱40 seniors and students, free for kids 6 and under (Ordinance 2022-006, since Feb 1, 2026; SunStar, PhilstarLife). Dropped the ≈.
+- **Updated:** Iloilo "Fly into" adds direct Singapore and Bangkok flights (Cebu Pacific resumed Nov 23; Portcalls, Manila Bulletin, CAPA). Davao adds direct Bangkok flights (from Oct 26; BusinessWorld, PNA). The old "from Dec 2" dates were wrong.
+- **Added Books:** *Ermita* (F. Sionil José, setIn Intramuros), *A Portrait of the Artist as Filipino* (Nick Joaquin, setIn Intramuros), *Banana Heart Summer* (Merlinda Bobis). Typographic covers; Open Library covers still need checking by eye.
+- **Watchlist fixes:** MMFF parade dates, Gilas venue and dates, Baguio fee status; dropped the "PVL All-Filipino Finals" (that conference ended in April).
+- **Added Showbiz:** *Ella Arcangel* wins two QCinema prizes (Nov 18). Photo: Bianca Umali (voice lead), cropped from a public-domain Taguig city government photo (Nov 11, 2026); small (384×480) but sharp.
+- **Added News:** Marcos says the US trade deal won't make the US the only supplier (Nov 22; GMA, Daily Tribune, The Star). Follows the Nov 18 trade brief.
+- **Added Sports:** Cesar and Wangkay Youth Olympics medals (Nov 10–11). First Sports story with a place photo (Dakar Games billboard) instead of the athletes.
+- Research: `reports/Content to post early December 2026.md`.
 
 ### 2026-11-23 (guide layout)
 - **Moved, text unchanged:** practical body sections now render inside their guide section via `## <section>` markers: Hundred Islands "How island hopping works" (Things to do), Batanes "Getting around Batan" (Things to do) and "Planning around the weather" (Best time), Banaue "Getting the most from your visit" (Itinerary). `updated:` dates not bumped (no new facts).

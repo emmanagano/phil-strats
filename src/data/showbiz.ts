@@ -29,6 +29,34 @@ export interface ShowbizStory {
 
 const STORIES: ShowbizStory[] = [
   {
+    slug: "ella-arcangel-qcinema-grand-jury-prize",
+    date: "2026-11-18",
+    topic: "film",
+    title: "Animated Ella Arcangel wins two prizes at QCinema 2026",
+    dek: "Mervin Malonzo's film, the only Filipino entry in the Asian Next Wave competition, took the Grand Jury Prize and an award for animation.",
+    body: [
+      "At the 14th QCinema International Film Festival awards in Quezon City on November 18, Ella Arcangel won the Asian Next Wave Grand Jury Prize, worth ₱100,000, and an Artistic Achievement Award for Animation. Best Picture went to the China–France film A Girl Unknown.",
+      "The film is adapted from Julius Villanueva's comic, with Bianca Umali voicing Ella. Toni Cañete's short Maanaa Kanimo also won for the Philippines, taking the Gender Sensitivity Award and Best QCinema-funded Short.",
+    ],
+    why: "A Filipino animated feature took the jury's top prize in a competition of new films from across Asia.",
+    image: {
+      src: "/images/showbiz/ella-arcangel-bianca-umali.jpg",
+      alt: "Bianca Umali smiling at an event in Taguig",
+      caption: "Bianca Umali, who voices Ella, at an event in Taguig in November 2026.",
+      author: "Office of Mayor Lani Cayetano, Taguig",
+      license: "Public domain",
+      licenseUrl: "",
+      source: "https://commons.wikimedia.org/wiki/File:Bianca_Umali_and_Ruru_Madrid_in_2026.jpg",
+    },
+    sources: [
+      { name: "Philstar", url: "https://www.philstar.com/movies/2026/11/19/2571228/ella-arcangel-among-qcinema-2026-winners" },
+      { name: "BusinessWorld", url: "https://bworldonline.com/arts-and-leisure/2026/11/19/795179/a-girl-unknown-ella-arcangel-take-top-qcinema-awards/" },
+      { name: "Inquirer", url: "https://entertainment.inquirer.net/690669/ella-arcangel-wins-two-major-awards-at-14th-qcinema-film-festival" },
+      { name: "Variety", url: "https://variety.com/2026/film/festivals/a-girl-unknown-ella-arcangel-philippines-qcinema-winners-1236953921/" },
+      { name: "Asian Movie Pulse", url: "https://asianmoviepulse.com/2026/11/winners-of-qcinema-2026/" },
+    ],
+  },
+  {
     slug: "carmelle-wins-eurovision-asia",
     featured: true,
     date: "2026-11-14",

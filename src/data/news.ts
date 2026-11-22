@@ -28,6 +28,23 @@ export interface NewsBrief {
 
 const NEWS: NewsBrief[] = [
   {
+    slug: "marcos-us-not-only-supplier",
+    date: "2026-11-22",
+    topic: "politics",
+    title: "Marcos says the US trade deal won't make the US the only supplier",
+    summary:
+      "After APEC in Shenzhen, Marcos said the Philippines wants several sources for food and fuel, and that the planned US purchases aren't final.",
+    body: [
+      "US President Donald Trump said the Philippines would buy all of its farm and energy goods from the United States from January 1. Speaking to reporters after the APEC Economic Leaders' Meeting in Shenzhen, China, President Ferdinand Marcos Jr. said the country wants to keep several suppliers.",
+      "Marcos said the details of the planned US food and energy purchases are not final and the Cabinet is still working on them. Energy Secretary Sharon Garin said talks on US energy imports are ongoing. No agreement has been signed.",
+    ],
+    sources: [
+      { name: "GMA News", url: "https://www.gmanetwork.com/news/money/economy/1010363/marcos-clarifies-trump-claim-that-ph-agreed-us-is-only-source-for-agri-oil-supplies/story/" },
+      { name: "Daily Tribune", url: "https://tribune.net.ph/2026/11/22/marcos-pushes-back-on-trumps-claim-of-exclusive-us-food-buys" },
+      { name: "The Star (Malaysia)", url: "https://thestar.com.my/aseanplus/aseanplus-news/2026/11/21/trump-claims-philippines-to-buy-100-farm-energy-goods-from-us-marcos-clarifies" },
+    ],
+  },
+  {
     slug: "us-trade-deal-announced-not-signed",
     date: "2026-11-18",
     topic: "politics",

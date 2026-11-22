@@ -4,7 +4,7 @@ title: "Davao City Travel Guide: Durian, Mount Apo & Culture"
 description: "Explore Davao City's markets, indigenous crafts, Philippine Eagle Center, and Samal Island, with food and itinerary tips for first-time visitors."
 card: "Durian, the Philippine Eagle, and Samal Island on the doorstep."
 date: "2026-10-30"
-updated: "2026-11-17"
+updated: "2026-11-23"
 slug: "davao-city-mindanao"
 region: "Davao del Sur, Davao Region"
 coordinates: [7.1907, 125.4553]
@@ -17,7 +17,7 @@ guide:
   verdict: "A clean, orderly city with durian, the Philippine Eagle, Samal Island beaches and Mount Apo on its doorstep. Great for food lovers and nature trips. Check your government's travel advice first: the UK advises against all but essential travel to most of Mindanao, including Davao."
   bestFor: ["Food lovers", "Nature lovers", "Families", "City breaks"]
   quickFacts:
-    - {label: "Fly into", value: "Francisco Bangoy Airport (DVO), 20–30 min to downtown"}
+    - {label: "Fly into", value: "Francisco Bangoy Airport (DVO), 20–30 min to downtown; direct flights from Bangkok"}
     - {label: "Ideal stay", value: "3–4 days"}
     - {label: "Daily budget", value: "₱2,500–6,000 per person"}
     - {label: "Best months", value: "Mar–May (rain is spread through the year)"}

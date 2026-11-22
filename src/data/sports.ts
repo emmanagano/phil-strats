@@ -35,6 +35,34 @@ const PD = "Public domain";
 
 const STORIES: SportsStory[] = [
   {
+    slug: "cesar-wangkay-youth-olympics-medals",
+    date: "2026-11-11",
+    topic: "athletics",
+    title: "Naomi Cesar and Pi Durden Wangkay win medals at the Youth Olympics",
+    dek: "An 800 m silver and a 200 m bronze in Dakar gave the nine-athlete Philippine team its two medals.",
+    body: [
+      "Naomi Cesar won silver in the girls' 800 m in Dakar, Senegal, on November 10, in 2:09.34. It was the Philippines' first medal of the Games. A day later, Pi Durden Wangkay took bronze in the boys' 200 m in 21.36.",
+      "The nine-member Philippine team finished 54th in the medal table, with one silver and one bronze.",
+    ],
+    why: "Both of the Philippines' medals in Dakar came on the track, won by teenage athletes.",
+    image: {
+      src: "/images/sports/youth-olympics-dakar.jpg",
+      alt: "Dakar 2026 Youth Olympic Games billboard on a city street",
+      caption: "A Youth Olympic Games sign in Dakar during the Games.",
+      author: "Kikanakana",
+      license: "CC BY 4.0",
+      licenseUrl: "https://creativecommons.org/licenses/by/4.0/",
+      source: "https://commons.wikimedia.org/wiki/File:JOJ_Dakar_2026.jpg",
+    },
+    sources: [
+      { name: "GMA News", url: "https://www.gmanetwork.com/news/sports/othersports/1009078/pi-durden-wangkay-wins-bronze-in-youth-olympic-games-200m-event/story/" },
+      { name: "Daily Tribune: Hail Cesar", url: "https://tribune.net.ph/2026/11/10/hail-cesar" },
+      { name: "Daily Tribune: The power of Pi", url: "https://tribune.net.ph/2026/11/11/the-power-of-pi" },
+      { name: "World Athletics", url: "https://worldathletics.org/competitions/youth-olympic-games/news/youth-olympic-games-dakar-abebe-amare" },
+      { name: "Wikipedia: 2026 in Philippine sports", url: "https://en.wikipedia.org/wiki/2026_in_Philippine_sports" },
+    ],
+  },
+  {
     slug: "pedro-taduran-retains-ibf-title",
     date: "2026-11-08",
     topic: "boxing",

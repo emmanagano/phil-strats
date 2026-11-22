@@ -4,7 +4,7 @@ title: "Siquijor Travel Guide: Waterfalls & White Sand Beaches"
 description: "Discover Siquijor's Cambugahay Falls, Salagdoong Beach, and old-growth balete trees, with practical tips for a laid-back island getaway."
 card: "Waterfalls, an old balete tree, and slow loops around the island."
 date: "2026-10-30"
-updated: "2026-11-19"
+updated: "2026-11-23"
 slug: "siquijor-island"
 region: "Siquijor, Visayas"
 coordinates: [9.199, 123.595]
@@ -79,7 +79,7 @@ guide:
     - {mode: "Scooter rental", cost: "₱300–400/day", note: "The best way to loop the island"}
     - {mode: "Tricycle tour", cost: "₱1,200–1,500/day", note: "For non-riders"}
   fees:
-    - {name: "Tourism ecological fee (on arrival)", amount: "≈ ₱50"}
+    - {name: "Tourism ecological fee (paid when you leave; ₱40 seniors and students, free for kids 6 and under)", amount: "₱50"}
     - {name: "Cambugahay Falls", amount: "≈ ₱50–100"}
     - {name: "Salagdoong Beach", amount: "≈ ₱50"}
   essentials:

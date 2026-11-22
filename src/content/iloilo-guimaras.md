@@ -4,7 +4,7 @@ title: "Iloilo & Guimaras Guide: Heritage Churches, Food & Mangoes"
 description: "Plan an Iloilo and Guimaras trip: UNESCO-listed Miagao Church, La Paz batchoy, Spanish-era streets, and a day on the sweet mango island."
 card: "Baroque churches, La Paz batchoy, and Guimaras mangoes."
 date: "2026-11-17"
-updated: "2026-11-17"
+updated: "2026-11-23"
 slug: "iloilo-guimaras"
 region: "Iloilo & Guimaras, Western Visayas"
 coordinates: [10.7202, 122.5621]
@@ -28,7 +28,7 @@ guide:
     - "Short trips"
   quickFacts:
     - label: "Fly into"
-      value: "Iloilo International Airport (ILO), 30–45 min to the city"
+      value: "Iloilo International Airport (ILO), 30–45 min to the city; direct flights from Singapore and Bangkok"
     - label: "Ideal stay"
       value: "3–5 days"
     - label: "Daily budget"
