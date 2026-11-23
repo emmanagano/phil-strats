@@ -18,15 +18,16 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const { slug } = await params;
   const book = getBookBySlug(slug);
   if (!book) return { title: "Book not found" };
-  const title = `${book.title} by ${book.author}`;
+  const title = book.seoTitle ?? `${book.title} by ${book.author}`;
+  const description = book.seoDescription ?? book.summary;
   return {
     title: pageTitle(title),
-    description: book.summary,
+    description,
     alternates: { canonical: `/books/${book.slug}` },
     openGraph: {
       type: "book",
       title,
-      description: book.summary,
+      description,
       url: `/books/${book.slug}`,
       ...(book.image ? { images: [book.image.src] } : {}),
     },
@@ -121,6 +122,17 @@ export default async function BookPage({ params }: Params) {
                 <p key={p}>{p}</p>
               ))}
             </div>
+
+            {book.notes?.map((n) => (
+              <section key={n.heading} className="mt-10">
+                <h2 className="text-2xl font-semibold text-ocean-900">{n.heading}</h2>
+                <div className="mt-3 space-y-4 text-lg leading-relaxed text-ocean-800">
+                  {n.body.map((p) => (
+                    <p key={p}>{p}</p>
+                  ))}
+                </div>
+              </section>
+            ))}
 
             <aside className="mt-10 grid overflow-hidden rounded-card border border-sand-200 bg-sand-100 text-ocean-900 sm:grid-cols-[6rem_minmax(0,1fr)]">
               <div className="flex items-center gap-3 bg-ocean-900 px-5 py-3 text-white sm:flex-col sm:justify-center sm:gap-2 sm:py-6">

@@ -70,7 +70,7 @@ The markdown files in `src/content/<slug>.md` are the only source of destination
 ### Books
 
 - `src/data/books.ts` is a typed, client-safe array of well-known books by Filipino and Filipino-heritage authors; pages are `/books` (shelf with search, era / type / language / "set in places you can visit" filters and sort, all in query params: `?q=&era=&kind=&lang=&place=1&sort=`, read inside a `<Suspense>` boundary; types come from `bookKind(genre)`) and `/books/[slug]` (`Book` JSON-LD), all in the sitemap and `llms.txt`.
-- Each book needs an original `summary` and `body` (no copied blurbs, no spoilers past the setup), a sourced `why`, and `sources`. Leave out claims you can't source.
+- Each book needs an original `summary` and `body` (no copied blurbs, no spoilers past the setup), a sourced `why`, and `sources`. Leave out claims you can't source. Books with real search demand can add `seoTitle` / `seoDescription` (override the default "Title by Author" title and the summary) and `notes` (reading-guide sections, each rendered with an H2), as on `urbana-at-feliza`.
 - Covers: `coverImage` points to a small (400px) cover thumbnail in `public/images/books/<slug>.jpg`, taken from Open Library, checked by eye, and used only to identify the book; the book page credits "Cover via Open Library" (`openLibrary` work ID, also listed as a source). This is the one exception to the freely-licensed-photos rule. Books without a good cover get a typographic cover (`components/ui/BookCover.tsx`, palette color from `cover`). The list is split across `books.ts` and `books-more.ts`.
 - `setIn` links a book to destination guides (the build fails on an unknown slug); guides show up to three as "Read before you go".
 

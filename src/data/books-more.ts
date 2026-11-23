@@ -29,7 +29,48 @@ export const MORE_BOOKS: Book[] = [
     cover: "sand",
     openLibrary: "OL9786049W",
     coverImage: cover("urbana-at-feliza"),
-    sources: [wiki("List_of_Tagalog_literary_works", "List of Tagalog literary works")],
+    seoTitle: "Urbana at Feliza by Modesto de Castro: Summary and Themes",
+    seoDescription:
+      "Urbana at Feliza explained: who wrote it, how the letters work, what the names mean, the main themes, and where to read the 1864 Tagalog classic free.",
+    notes: [
+      {
+        heading: "Who wrote Urbana at Feliza?",
+        body: [
+          "Modesto de Castro (1819–1864) was a Filipino priest from Biñan, Laguna. He studied at the Colegio de San José, served at the Manila Cathedral and later in Naic, Cavite, and also wrote religious works in Tagalog, among them Pláticas Doctrinales (1864).",
+          "Urbana at Feliza is the book he is remembered for. It earned him the title \"Ama ng Tuluyang Klasika sa Wikang Tagalog\", father of classical Tagalog prose.",
+        ],
+      },
+      {
+        heading: "How the book works",
+        body: [
+          "The whole book is a series of letters. Urbana, the older sister, is studying at a women's college in Manila. Feliza, the younger, writes to her for advice on how to behave in different situations, and Urbana answers. Their youngest brother, Honesto, comes up often as the one whose good conduct the sisters care about.",
+          "There is no plot to spoil: each letter takes up a topic of daily life, from manners and religion to courtship and marriage.",
+        ],
+      },
+      {
+        heading: "What the names mean",
+        body: [
+          "In his preface, de Castro explains that the names are allegorical. Urbana comes from urbanidad, good manners. Feliza comes from the Spanish feliz, happy: happiness reached through self-improvement and obedience. Honesto stands for honesty and honor.",
+        ],
+      },
+      {
+        heading: "Main themes",
+        body: [
+          "Good manners and proper behavior at home, in church and in society; faith and religious duty; preparing for marriage; and the temptations and dangers facing young people, with advice on how to avoid them. Read today, the letters are also a record of everyday values in 19th-century Tagalog society.",
+        ],
+      },
+      {
+        heading: "Where to read it",
+        body: [
+          "The book is in the public domain. The full Tagalog text is free on Project Gutenberg, listed under its original title, Pag Susulatan nang Dalauang Binibini na si Urbana at ni Feliza.",
+        ],
+      },
+    ],
+    sources: [
+      wiki("List_of_Tagalog_literary_works", "List of Tagalog literary works"),
+      { name: "Wikipedia (Tagalog): Urbana at Feliza", url: "https://tl.wikipedia.org/wiki/Urbana_at_Feliza" },
+      { name: "Project Gutenberg: full text", url: "https://www.gutenberg.org/ebooks/15980" },
+    ],
   },
   {
     slug: "ninay",

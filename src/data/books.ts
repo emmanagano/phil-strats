@@ -58,6 +58,13 @@ export interface Book {
   coverImage?: string;
   // Day the book joined the shelf (YYYY-MM-DD), shown on /activity. Defaults to BOOKS_LAUNCHED.
   added?: string;
+  // Optional search title and meta description for books with real search demand (e.g. student
+  // queries). Defaults: "<title> by <author>" and `summary`. Keep the title to 60 characters.
+  seoTitle?: string;
+  seoDescription?: string;
+  // Optional reading-guide sections shown under the body, each with an H2 (sourced, no spoilers
+  // past the setup).
+  notes?: { heading: string; body: string[] }[];
   sources: { name: string; url: string }[];
 }
 

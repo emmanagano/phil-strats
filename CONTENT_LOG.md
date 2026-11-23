@@ -62,6 +62,10 @@ Follow-ups that can make existing items outdated, or scheduled events worth cove
 
 Newest first. One entry per content change: date, section, what was added or changed, and anything left to do.
 
+### 2026-11-23 (Urbana at Feliza)
+- **Expanded Books:** `urbana-at-feliza` gets a search title ("Urbana at Feliza by Modesto de Castro: Summary and Themes"; Search Console pos 9.5, the site's only Google click) and five reading-guide sections: the author, how the letters work, what the names mean, main themes, and a link to the free public-domain text on Project Gutenberg (Tagalog Wikipedia; Gutenberg listing).
+- **New book fields:** optional `seoTitle`, `seoDescription` and `notes` (documented in CLAUDE.md). Next candidate: Desaparesidos (spoiler-light).
+
 ### 2026-11-23 (Batanes rewrite)
 - **Rewritten:** `batanes-islands` retitled "Batanes Travel Guide: Batan & Sabtang Itinerary and Costs" (Search Console: "batan island" pos 7.4, "batanes philippines" 8.5). Added Basco Lighthouse, Valugan Boulder Beach and Vayang Rolling Hills; a 4-day itinerary; FAQs "What is there to do on Batan Island?" and "How much is the Batanes tourism fee?".
 - **Fixed (Batanes and Sabtang):** flights now leave from Clark; direct Manila–Basco flights ended when PAL moved turboprops out of NAIA (Philstar Aug 2025, Bilyonaryo, Traveloka, Philippine Dives). Removed the FAQ's Tuguegarao route (unconfirmed).
