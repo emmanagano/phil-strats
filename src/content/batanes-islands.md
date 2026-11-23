@@ -1,10 +1,10 @@
 ---
 id: 15
-title: "Batanes Travel Guide: Stone Houses & Rolling Green Hills"
-description: "Plan a Batanes trip: rolling green hills, Ivatan stone houses, Sabtang Island, and Basco Lighthouse, with flights, budgets, and the best months to go."
+title: "Batanes Travel Guide: Batan & Sabtang Itinerary and Costs"
+description: "Plan Batanes: flights to Basco, what to see on Batan Island, the faluwa to Sabtang, day-by-day itineraries, costs, and the best months to go."
 card: "Rolling green hills, stone houses, and wild northern cliffs."
 date: "2026-10-30"
-updated: "2026-11-18"
+updated: "2026-11-23"
 slug: "batanes-islands"
 region: "Batanes, Cagayan Valley"
 coordinates: [20.4487, 121.9702]
@@ -17,11 +17,11 @@ guide:
   verdict: "The Philippines' northernmost province: rolling green hills, stone houses, cliffs and almost no crowds. Batanes is safe, spotless and unlike anywhere else in the country. Go for scenery and culture. Weather and flights are unpredictable, so book flexibly."
   bestFor: ["Photographers", "Couples", "Culture lovers", "Scenic road trips"]
   quickFacts:
-    - {label: "Fly into", value: "Basco (BSO), about 1 hr 30 min from Manila or Clark"}
+    - {label: "Fly into", value: "Basco (BSO), about 1 hr 30 min from Clark; no direct Manila flights"}
     - {label: "Ideal stay", value: "4–5 days"}
     - {label: "Daily budget", value: "₱3,500–7,000 per person"}
     - {label: "Best months", value: "Mar–May"}
-    - {label: "Tourism fee", value: "≈ ₱300–500, paid on arrival"}
+    - {label: "Tourism fee", value: "₱405 per person, paid online before you go"}
     - {label: "Plan for", value: "1–2 buffer days for weather delays"}
   months:
     - {rating: "mixed", note: "Cold, windy and rainy. Flights and boats often cancel."}
@@ -37,12 +37,12 @@ guide:
     - {rating: "mixed", note: "Winds pick up."}
     - {rating: "mixed", note: "Cold and windy."}
   routes:
-    - from: "Manila or Clark"
-      flight: {from: "MNL", to: "BSO"}
-      steps: ["Fly to Basco (BSO), about 1 hr 30 min", "Tricycle or hotel pick-up (5–10 min)"]
-      time: "2–3 hrs door to door"
-      cost: "₱6,000–15,000 round trip"
-      tip: "Seats are limited and flights cancel in bad weather. Book early and avoid tight connections."
+    - from: "Manila via Clark"
+      flight: {from: "CRK", to: "BSO"}
+      steps: ["From Manila, bus or car to Clark International Airport (2–3 hrs)", "Fly Clark → Basco (BSO), about 1 hr 30 min", "Tricycle or hotel pick-up (5–10 min)"]
+      time: "Half a day from Manila"
+      cost: "≈ ₱6,000–15,000 round trip"
+      tip: "Direct Manila–Basco flights have ended, so Batanes flights now leave from Clark. Seats are limited and weather cancels flights: book early and keep a buffer day."
   budget:
     usdRate: 58
     styles:
@@ -54,15 +54,23 @@ guide:
     - {name: "South Batan tour", tags: ["culture", "road trip"], blurb: "Honesty Coffee Shop, the stone houses of Ivana and the Mahatao church.", cost: "≈ ₱1,500–2,500 per tricycle", time: "Full day"}
     - {name: "Sabtang Island", tags: ["culture", "island hopping"], blurb: "Traditional Ivatan villages of stone and cogon grass, plus the white sand of Morong Beach, reached by faluwa boat.", cost: "≈ ₱100 boat + ₱2,000 tour", time: "Full day", tip: "The boat runs early morning only and stops in rough seas."}
     - {name: "Rakuh-a-Payaman (Marlboro Hills)", tags: ["nature"], blurb: "Grazing cows on rolling hills above the Pacific.", cost: "Free", time: "1–2 hrs"}
+    - {name: "Basco Lighthouse", tags: ["nature"], blurb: "The stone lighthouse on Naidi Hills above Basco, best at sunset.", cost: "On the North Batan tour", time: "1 hr"}
+    - {name: "Valugan Boulder Beach", tags: ["nature", "road trip"], blurb: "A shore of smooth volcanic boulders facing the Pacific, on Batan's east coast.", cost: "On the North Batan tour", time: "30–45 min"}
+    - {name: "Vayang Rolling Hills", tags: ["nature", "road trip"], blurb: "Grassy ridges and cliffs above the sea on the North Batan loop.", cost: "On the North Batan tour", time: "1 hr"}
     - {name: "Honesty Coffee Shop", tags: ["culture", "food"], blurb: "No staff: pick your snack and leave payment in the box.", cost: "₱50–150", time: "30 min"}
     - {name: "Biking around Basco", tags: ["road trip", "chill"], blurb: "Quiet roads and sea views by bicycle.", cost: "₱300–500/day", time: "Half day"}
   itineraries:
     3:
-      - {title: "Arrive & Basco", items: ["Pay the tourism fee", "Basco Lighthouse at sunset", "Ivatan dinner"]}
+      - {title: "Arrive & Basco", items: ["Show your registration QR code on arrival", "Basco Lighthouse at sunset", "Ivatan dinner"]}
       - {title: "North Batan", items: ["Marlboro Hills", "Valugan Boulder Beach", "Vayang Rolling Hills"]}
       - {title: "South Batan & go", items: ["Honesty Coffee Shop", "Ivana stone houses", "Flight out (or keep a buffer day)"]}
+    4:
+      - {title: "Arrive & Basco", items: ["Show your registration QR code on arrival", "Basco Lighthouse at sunset", "Ivatan dinner"]}
+      - {title: "North Batan", items: ["Marlboro Hills", "Valugan Boulder Beach", "Vayang Rolling Hills"]}
+      - {title: "Sabtang Island", items: ["Early faluwa from Ivana", "Chavayan stone village", "Morong Beach arch"]}
+      - {title: "South Batan & go", items: ["Honesty Coffee Shop", "Ivana stone houses and Mahatao church", "Flight out (swap with Sabtang if the sea is rough)"]}
     5:
-      - {title: "Arrive & Basco", items: ["Pay the tourism fee", "Basco Lighthouse at sunset", "Ivatan dinner"]}
+      - {title: "Arrive & Basco", items: ["Show your registration QR code on arrival", "Basco Lighthouse at sunset", "Ivatan dinner"]}
       - {title: "North Batan", items: ["Marlboro Hills", "Valugan Boulder Beach", "Vayang Rolling Hills"]}
       - {title: "South Batan", items: ["Honesty Coffee Shop", "Ivana stone houses", "Mahatao church"]}
       - {title: "Sabtang Island", items: ["Early faluwa from Ivana", "Chavayan stone village", "Morong Beach arch"]}
@@ -79,10 +87,11 @@ guide:
     - {mode: "Scooter rental", cost: "₱500–700/day"}
     - {mode: "Bicycle", cost: "₱300–500/day"}
   fees:
-    - {name: "Batanes tourism fee", amount: "≈ ₱300–500"}
+    - {name: "Batanes visitor registration (online, before you go)", amount: "₱405"}
     - {name: "Sabtang environmental fee", amount: "≈ ₱200–350"}
     - {name: "Faluwa boat to Sabtang", amount: "≈ ₱100"}
   essentials:
+    - {title: "Register online first", body: "Since June 15, 2026, every visitor must register online and pay ₱405 (a ₱200 ecotourism fee and a ₱205 visitor ID) before arriving. You get a QR code by email to show at Basco Airport or the port. Use the link published by the Batanes provincial tourism office."}
     - {title: "Buffer days", body: "Weather cancels flights and the Sabtang boat. Don't book tight onward connections."}
     - {title: "Cash", body: "Basco has a few ATMs; many places are cash only."}
     - {title: "Signal", body: "Limited outside Basco. Download offline maps."}
@@ -90,7 +99,11 @@ guide:
   packing: ["Windbreaker", "Warm layer", "Rain jacket", "Cash", "Sunscreen", "Hat with strap", "Power bank", "Comfortable shoes"]
 faq:
   - question: "How do I get to Batanes?"
-    answer: "Fly from Manila or Tuguegarao to Basco. Flights are limited and can be canceled by weather, so build in buffer days."
+    answer: "Fly from Clark to Basco, about 1 hour 30 minutes. Direct Manila flights have ended, so from Manila travel to Clark by bus or car first. Flights are limited and weather cancels them, so build in buffer days."
+  - question: "What is there to do on Batan Island?"
+    answer: "Batan, the main island, is explored on two day loops. The North Batan loop covers Basco Lighthouse, Marlboro Hills, the Vayang Rolling Hills and Valugan Boulder Beach. The South Batan loop covers the Honesty Coffee Shop, Ivana's stone houses and the Mahatao church. Hire a tricycle with a driver-guide for about ₱1,500–2,500 a day."
+  - question: "How much is the Batanes tourism fee?"
+    answer: "₱405 per person, paid online before you arrive: a ₱200 ecotourism fee and a ₱205 visitor ID. You'll show the QR code you receive at Basco Airport. Sabtang charges its own environmental fee on top."
   - question: "When is the best time to visit Batanes?"
     answer: "March to June is usually the most reliable window, with calmer weather and clearer skies. Typhoon months can ground flights."
   - question: "How do I get around Batan Island?"

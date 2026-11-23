@@ -62,6 +62,12 @@ Follow-ups that can make existing items outdated, or scheduled events worth cove
 
 Newest first. One entry per content change: date, section, what was added or changed, and anything left to do.
 
+### 2026-11-23 (Batanes rewrite)
+- **Rewritten:** `batanes-islands` retitled "Batanes Travel Guide: Batan & Sabtang Itinerary and Costs" (Search Console: "batan island" pos 7.4, "batanes philippines" 8.5). Added Basco Lighthouse, Valugan Boulder Beach and Vayang Rolling Hills; a 4-day itinerary; FAQs "What is there to do on Batan Island?" and "How much is the Batanes tourism fee?".
+- **Fixed (Batanes and Sabtang):** flights now leave from Clark; direct Manila–Basco flights ended when PAL moved turboprops out of NAIA (Philstar Aug 2025, Bilyonaryo, Traveloka, Philippine Dives). Removed the FAQ's Tuguegarao route (unconfirmed).
+- **Fixed (Batanes and Sabtang):** visitor registration is ₱405 per person online before arrival (₱200 ecotourism + ₱205 visitor ID), since June 15, 2026, Executive Order No. 23 (Radar PH, Travel And Tour World). No portal URL given: sources disagree on the address, so the guide points to the provincial tourism office.
+- **Still to confirm:** current PAL Express Clark–Basco frequency (two daily per Traveloka only); Sabtang environmental fee (≈ ₱200–350; sources disagree).
+
 ### 2026-11-23 (Hundred Islands rewrite)
 - **Rewritten:** `hundred-islands-pangasinan` retitled for search ("Hundred Islands Island Hopping Guide: Boats, Fees & Tips"; Search Console queries at positions 7–14). New quick facts, Marcos and Pilgrimage islands, step-by-step island hopping under Things to do, two query-matching FAQs, foreigner-fee and eTravel notes.
 - **Facts:** 2026 boat rates ≈ ₱1,920 / 2,400 / 2,880 full day (5 / 10 / 15 pax), 3-island drop-off from ≈ ₱1,680; day fees ≈ ₱120–130 (₱80 environmental + ₱30 entrance + ₱10–20 coverage), overnight environmental ≈ ₱160; boats 6am–5:30pm; no separate foreigner rate found (LakbayPinas, Mar 2026, citing Ordinance No. 09-2026; Chill and Travel, Nov 2026). Bus fare ≈ ₱600–800 (no official 2026 fare; Five Star Cubao–Dagupan rose to ₱562 in Mar 2026, Manila Bulletin).

@@ -4,7 +4,7 @@ title: "Sabtang Island, Batanes: Stone Villages Day-Trip Guide"
 description: "Plan a Sabtang Island day trip from Batan: the faluwa boat from Ivana, Chavayan's stone houses, Morong Beach's white sand, fees, and tricycle tours."
 card: "Ivatan stone houses and quiet coastal villages off Batan Island."
 date: "2026-11-18"
-updated: "2026-11-18"
+updated: "2026-11-23"
 slug: "sabtang-island-batanes"
 region: "Batanes, Cagayan Valley"
 coordinates: [20.329, 121.873]
@@ -47,9 +47,9 @@ guide:
       time: "About 1.5 hrs"
       cost: "≈ ₱300–600 tricycle + ≈ ₱100 boat"
       tip: "Be at Ivana Port by 6–6:30am. Boats leave early and don't follow a fixed timetable."
-    - from: "Manila or Clark"
-      flight: {from: "MNL", to: "BSO"}
-      steps: ["Fly to Basco (BSO), about 1 hr 30 min", "Overnight in Basco", "Morning faluwa from Ivana"]
+    - from: "Manila via Clark"
+      flight: {from: "CRK", to: "BSO"}
+      steps: ["Fly Clark → Basco (BSO), about 1 hr 30 min (no direct Manila flights)", "Overnight in Basco", "Morning faluwa from Ivana"]
       time: "1 day + a morning crossing"
       cost: "₱6,000–15,000 round-trip flight"
       tip: "Plan Sabtang for your first calm morning and keep a spare day. See our Batanes guide."
@@ -120,7 +120,7 @@ guide:
   fees:
     - {name: "Faluwa boat (each way)", amount: "≈ ₱100"}
     - {name: "Sabtang environmental fee", amount: "≈ ₱200–350"}
-    - {name: "Batanes tourism fee", amount: "≈ ₱300–500"}
+    - {name: "Batanes visitor registration (online, before you go)", amount: "₱405"}
     - {name: "Tricycle tour (per tricycle)", amount: "≈ ₱800–1,500"}
   essentials:
     - {title: "Boats & weather", body: "Crossings are cancelled in rough seas. Do Sabtang on your first calm morning and keep spare days in your Batanes plan."}
