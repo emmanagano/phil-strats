@@ -62,6 +62,11 @@ Follow-ups that can make existing items outdated, or scheduled events worth cove
 
 Newest first. One entry per content change: date, section, what was added or changed, and anything left to do.
 
+### 2026-11-23 (Pagudpud rewrite)
+- **Rewritten:** `pagudpud-ilocos-norte` retitled "Pagudpud Tourist Spots: Saud Beach, Blue Lagoon and More" (Search Console: "pagudpud packages" pos 7, "pagudpud ilocos norte" 16.8, "pagudpud tourist spot" 25+). Added Cape Bojeador Lighthouse and Pansian Beach, an ordered tourist-spots list under Things to do, FAQs on tourist spots and tour packages (prices from the guide's own getAround figures), and tour prices in quick facts. No new outside facts.
+- **Fixed:** the Batanes paragraph now says Basco flights leave from Clark (was Manila, Clark or Tuguegarao).
+- Note: `saud-beach-pagudpud` title is 61 chars (soft SEO warning, pre-existing); left as is because it ranks for "saud beach".
+
 ### 2026-11-23 (Urbana at Feliza)
 - **Expanded Books:** `urbana-at-feliza` gets a search title ("Urbana at Feliza by Modesto de Castro: Summary and Themes"; Search Console pos 9.5, the site's only Google click) and five reading-guide sections: the author, how the letters work, what the names mean, main themes, and a link to the free public-domain text on Project Gutenberg (Tagalog Wikipedia; Gutenberg listing).
 - **New book fields:** optional `seoTitle`, `seoDescription` and `notes` (documented in CLAUDE.md). Next candidate: Desaparesidos (spoiler-light).

@@ -1,10 +1,10 @@
 ---
 id: 18
-title: "Pagudpud Beach, Ilocos Norte: Saud Beach & Coast Guide"
-description: "Pagudpud beach guide: Saud Beach, Blue Lagoon, the Patapat Viaduct, and Bangui windmills, with tips for road-tripping the Ilocos Norte coast."
+title: "Pagudpud Tourist Spots: Saud Beach, Blue Lagoon and More"
+description: "Pagudpud's tourist spots in one list, from Saud Beach and Blue Lagoon to the Patapat Viaduct and Bangui windmills, with routes from Laoag and Manila."
 card: "Saud Beach, coastal cliffs, and the Bangui windmills up north."
 date: "2026-10-30"
-updated: "2026-11-18"
+updated: "2026-11-23"
 slug: "pagudpud-ilocos-norte"
 region: "Ilocos Norte, Ilocos Region"
 coordinates: [18.5617, 120.787]
@@ -22,7 +22,7 @@ guide:
     - {label: "Daily budget", value: "₱2,000–5,000 per person"}
     - {label: "Best months", value: "Mar–May for calm beaches"}
     - {label: "Surf", value: "Blue Lagoon waves Nov–Feb"}
-    - {label: "Getting around", value: "Rent a van or tricycle for the coastal loop"}
+    - {label: "Tours", value: "Van ≈ ₱3,000–5,000/day or tricycle ≈ ₱1,200–1,800/day"}
   months:
     - {rating: "good", note: "Windy with surf; beaches can be choppy."}
     - {rating: "good", note: "Cool, dry and breezy."}
@@ -59,6 +59,8 @@ guide:
     - {name: "Patapat Viaduct", tags: ["road trip"], blurb: "A coastal bridge curving along the cliffs.", cost: "Free", time: "30 min"}
     - {name: "Blue Lagoon (Maira-ira)", tags: ["beach", "surf"], blurb: "A bright-blue bay with surf in the cooler months.", cost: "Free; board ≈ ₱300/hr", time: "Half day"}
     - {name: "Kabigan Falls", tags: ["nature", "hike"], blurb: "A short jungle trek to an 80 ft waterfall.", cost: "≈ ₱20–50", time: "2 hrs"}
+    - {name: "Cape Bojeador Lighthouse", tags: ["culture", "road trip"], blurb: "A Spanish-era lighthouse on a hill in Burgos, watching over the sea.", cost: "On the coastal loop", time: "45 min"}
+    - {name: "Pansian Beach", tags: ["beach", "chill"], blurb: "A remote, nearly empty beach at the far eastern end of Pagudpud.", cost: "Free", time: "Half day"}
   itineraries:
     2:
       - {title: "Arrive & Saud", items: ["Van from Laoag", "Afternoon at Saud Beach", "Sunset dinner"]}
@@ -88,6 +90,10 @@ guide:
     - {title: "Entry", body: "30 days visa-free for most passports. Register free at etravel.gov.ph."}
   packing: ["Swimwear", "Sunscreen", "Hat", "Cash", "Windbreaker (Nov–Feb)", "Water shoes", "Power bank"]
 faq:
+  - question: "What are the tourist spots in Pagudpud?"
+    answer: "Driving north from Laoag: Kapurpurawan Rock Formation and Cape Bojeador Lighthouse in Burgos, the Bangui windmills, then Pagudpud's Saud Beach, Blue Lagoon (Maira-ira), Kabigan Falls, the Patapat Viaduct and remote Pansian Beach. Two days covers them all."
+  - question: "Are there Pagudpud tour packages?"
+    answer: "Most packages are private van or tricycle tours from Laoag or your resort that cover the coastal loop: about ₱3,000–5,000 a day for a van, or ₱1,200–1,800 for a tricycle. Longer Ilocos packages often combine Pagudpud with Vigan and Laoag. Compare what's included (stops, fees, pickup) before you book."
   - question: "How far is Pagudpud from Laoag?"
     answer: "Pagudpud is about one and a half to two hours north of Laoag by car or van."
   - question: "What are the Bangui windmills?"
@@ -124,6 +130,21 @@ Pagudpud is a good place to eat like an Ilocano. Order bagnet (crispy fried pork
 
 ### Pairing Pagudpud with Vigan and Batanes
 
-Most travelers combine Pagudpud with the heritage town of Vigan and the city of Laoag in a four- or five-day Ilocos road trip. If you are heading to Batanes, note that flights to Basco leave from Manila, Clark or Tuguegarao rather than Laoag, so many travelers do the Ilocos coast and the islands as two linked far-north trips.
+Most travelers combine Pagudpud with the heritage town of Vigan and the city of Laoag in a four- or five-day Ilocos road trip. If you are heading to Batanes, note that flights to Basco leave from Clark, not Laoag, so the Ilocos coast and the islands work best as two separate far-north trips.
 
 Planning more than one stop? See our guides to [Vigan and Laoag](/articles/vigan-and-laoag-ilocos) or [Batanes](/articles/batanes-islands).
+
+## Things to do
+
+### Pagudpud tourist spots, in order from Laoag
+
+1. **Kapurpurawan Rock Formation** (Burgos): white limestone carved by wind and waves.
+2. **Cape Bojeador Lighthouse** (Burgos): a Spanish-era lighthouse above the sea.
+3. **Bangui Windmills** (Bangui): 20 turbines along the shore.
+4. **Saud Beach** (Pagudpud): powdery sand and calm water in the dry season.
+5. **Blue Lagoon (Maira-ira)**: bright blue water, resorts, and surf from November to February.
+6. **Kabigan Falls**: a short jungle walk to an 80 ft waterfall.
+7. **Patapat Viaduct**: the coastal bridge curving along the cliffs.
+8. **Pansian Beach**: remote and nearly empty, at the eastern end of town.
+
+A hired van or tricycle covers the whole list in one or two days.
