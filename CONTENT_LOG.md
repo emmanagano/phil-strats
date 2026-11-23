@@ -62,6 +62,11 @@ Follow-ups that can make existing items outdated, or scheduled events worth cove
 
 Newest first. One entry per content change: date, section, what was added or changed, and anything left to do.
 
+### 2026-11-23 (Hundred Islands rewrite)
+- **Rewritten:** `hundred-islands-pangasinan` retitled for search ("Hundred Islands Island Hopping Guide: Boats, Fees & Tips"; Search Console queries at positions 7–14). New quick facts, Marcos and Pilgrimage islands, step-by-step island hopping under Things to do, two query-matching FAQs, foreigner-fee and eTravel notes.
+- **Facts:** 2026 boat rates ≈ ₱1,920 / 2,400 / 2,880 full day (5 / 10 / 15 pax), 3-island drop-off from ≈ ₱1,680; day fees ≈ ₱120–130 (₱80 environmental + ₱30 entrance + ₱10–20 coverage), overnight environmental ≈ ₱160; boats 6am–5:30pm; no separate foreigner rate found (LakbayPinas, Mar 2026, citing Ordinance No. 09-2026; Chill and Travel, Nov 2026). Bus fare ≈ ₱600–800 (no official 2026 fare; Five Star Cubao–Dagupan rose to ₱562 in Mar 2026, Manila Bulletin).
+- **Still to confirm:** the official Alaminos rate sheet online is from 2016. Replace the ≈ figures if the city publishes Ordinance 09-2026. Track the page's Search Console position from today.
+
 ### 2026-11-23 (corrections and books)
 - **Fixed:** Siquijor tourism ecological fee is collected on departure: ₱50, ₱40 seniors and students, free for kids 6 and under (Ordinance 2022-006, since Feb 1, 2026; SunStar, PhilstarLife). Dropped the ≈.
 - **Updated:** Iloilo "Fly into" adds direct Singapore and Bangkok flights (Cebu Pacific resumed Nov 23; Portcalls, Manila Bulletin, CAPA). Davao adds direct Bangkok flights (from Oct 26; BusinessWorld, PNA). The old "from Dec 2" dates were wrong.
